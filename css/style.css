@@ -1,0 +1,85 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserra';
+}
+
+/* Baniére d'actualité au top */
+.act{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    background-color: #FE665A;
+    color: white;
+    width: auto;
+    height: 25%;
+}
+/* svg fleche qui est un lien*/
+.act svg{
+    width: 50px;
+    height: 50px;
+}
+
+.act h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0px 20px;
+}
+
+nav .logo{
+    width: 10%;
+    height: 10%;
+}
+nav .links{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .links li{
+    text-decoration: none;
+    list-style: none;
+}
+
+nav .links li a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+.links:active{
+    color: #FE665A;
+}
+
+
+
+/* Bouton de base (get started) */
+.gstart{
+    width: 8rem;
+    height: 3rem;
+    background-color: #FE665A;
+    border-color: white;
+    border-radius:0.5625rem;
+    color: white;
+    font-weight: 700;
+    font-weight: 700;
+    text-transform: uppercase;
+} 
+
+.gstart:hover{
+    background-color: white;
+    color: #FE665A;
+    border-color: #FE665A;
+}
