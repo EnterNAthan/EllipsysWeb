@@ -67,8 +67,8 @@ nav .links li a{
 
 /* Bouton de base (get started) */
 .gstart{
-    width: 8rem;
-    height: 3rem;
+    width: 10rem;
+    height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
     border-radius:0.5625rem;
@@ -76,10 +76,74 @@ nav .links li a{
     font-weight: 700;
     font-weight: 700;
     text-transform: uppercase;
+    box-shadow: none;
+    text-decoration: none;
 } 
 
 .gstart:hover{
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
+    box-shadow: #FE665A;
+}
+
+
+.bancontainer1{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding: 0px 20px;
+}
+.bancontainer1 h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+}
+.orange-text-animated{
+    color: #FE665A;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: left;
+    animation: animate 1s linear infinite;
+    text-transform:capitalize;
+}
+
+.validation-list {
+    display: flex;
+    margin : 0% 0% 5% ; 
+  }
+  
+  .validation-item {
+    display: flex;
+    align-items: center;
+    padding-right: 10px;
+  }
+  .validation-item svg{
+    padding: 10px;
+  }
+  .validation-item p{
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+  }
+
+.banlogo{
+    width : 100%;
+    height: 150px;
+    margin-top: 50px;
+    background-color:#292526;
+}
+
+.logos-container {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.barre-orange {
+    width: 2px;
+    height: 40px;
+    background-color: orange;
+    margin: 0 20px;
 }
