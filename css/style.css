@@ -1,7 +1,7 @@
 body{
     margin: 0px;
     padding: 0px;
-    font-family: 'Montserra';
+    font-family: 'Montserrat', serif;
 }
 
 /* Baniére d'actualité au top */
@@ -74,7 +74,6 @@ nav .links li a{
     border-radius:0.5625rem;
     color: white;
     font-weight: 700;
-    font-weight: 700;
     text-transform: uppercase;
     box-shadow: none;
     text-decoration: none;
@@ -87,19 +86,20 @@ nav .links li a{
     box-shadow: #FE665A;
 }
 
-
 .bancontainer1{
     display: flex;
     justify-content:center;
     align-items: center;
     padding: 0px 20px;
 }
+
 .bancontainer1 h1{
     font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     color: black;
 }
+
 .orange-text-animated{
     color: #FE665A;
     font-weight: 700;
@@ -107,6 +107,7 @@ nav .links li a{
     text-align: left;
     animation: animate 1s linear infinite;
     text-transform:capitalize;
+    -webkit-text-stroke: 1px black;
 }
 
 .validation-list {
@@ -128,17 +129,23 @@ nav .links li a{
     text-align: center;
   }
 
-.banlogo{
-    width : 100%;
+/*bannère des logos*/
+.banlogo {
+    width: 100%;
     height: 150px;
     margin-top: 50px;
-    background-color:#292526;
+    background-color: #292526;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .logos-container {
     display: flex;
     align-items: center;
-    overflow: hidden;
+    gap: 26px;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .barre-orange {
