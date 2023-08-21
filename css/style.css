@@ -1,4 +1,10 @@
 body{
+    margin: 0%;
+    padding: 0% ;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+div{
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', serif;
@@ -92,10 +98,13 @@ nav .links li a{
 }
 
 .bancontainer1 h1{
-    font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     color: black;
+    font-size: 3.125rem;
+    font-style: normal;
+    line-height: 3.40625rem; /* 109% */
+    text-transform: capitalize;
 }
 
 /*openAUdit animé*/
@@ -140,6 +149,7 @@ nav .links li a{
     display: flex;
     align-items: center;
     padding-right: 10px;
+    color: #000;
   }
   .validation-item svg{
     padding: 10px;
@@ -166,13 +176,12 @@ nav .links li a{
     align-items: center;
     gap: 26px;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .barre-orange {
     width: 2px;
     height: 40px;
-    background-color: orange;
+    background-color: #FE665A;
     margin: 0 20px;
 }
 
@@ -180,10 +189,12 @@ nav .links li a{
 .informations-container {
     justify-content: center;
     align-items: center;
-    margin: 200px;
+    margin: 5%;
 }
 
 .big-text-explication {
+    font-family: Montserrat;
+    font-weight: 700;
     font-size: 40px;
     font-weight: 700;
     line-height: 47px;
@@ -191,6 +202,7 @@ nav .links li a{
     text-align: center;
 }
 
+/* a modifiez pas bon pour moi */
 .big-text-explication span {
     display: inline-block;
 }
@@ -217,7 +229,6 @@ nav .links li a{
 }
 
 .small-text-explication span {
-    font-family: Bahnschrift, sans-serif;
     display: inline-block;
     font-size: 20px;
     font-weight: 450;
@@ -229,86 +240,65 @@ nav .links li a{
     font-style: normal;
 }
 
-.bullet-list-explication{
-    display: grid;
-    grid-template-columns: auto 2px auto;
+.ban-accordeon{
+    margin-top: 10%;
+    display: flex;
+    justify-content:center;
     align-items: center;
-    gap: 20px;
-    max-width: 1000px;
-    margin: 100px auto 0;
+}  
+
+.ban-accordeon svg{
+    margin-right: 5%;
 }
 
-.image-container img {
-    max-width: 100%;
-    height: auto;
-}
-
-.text-container {
-    display: flex;
-    flex-direction: column;
-    gap: 21px;
-}
-
-.barre-orange-longue {
-    width: 5px;
-    height: 30%;
-    flex-shrink: 0;
-    background-color: #FE665A;
-    border-radius: 3px;
-    margin-bottom: 150px;
-}
-
-.bullet-list-explication span:nth-child(1){
-    color: #FE665A;
-    text-align: center;
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 30px;
-    text-transform: capitalize;
-}
-
-.bullet-list-explication span:nth-child(2){
-    color: #000;
-    font-family: Bahnschrift, sans-serif;
-    text-align: center;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
-}
-
-.liste-points {
-    display: flex;
-    flex-direction: column;
-    margin-top: 60px;
-    gap: 40px;
-}
-
-.point-svg {
-    width: 20px;
-    height: 20px;
-}
-
-.point-item {
+/* Styles pour l'accordéon */
+.accordeon {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .accordeon-item {
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .accordeon-header {
+    padding: 10px;
+    cursor: pointer;
     display: flex;
     align-items: center;
-    gap: 8px;
-    color: black;
-    opacity: 0.7;
-    transition: opacity 0.2s ease-in-out;
-}
+    position: relative;
+    transition: background-color 0.3s;
+    border-left: 4px solid #000; /* Bordure fermée noire */
+  }
+  
+  .accordeon-title {
+    font-weight: bold;
+  }
+  .accordeon-content {
+    padding: 10px;
+    display: none;
+    position: relative;
+    z-index: 2;
+    background-color: #fff;
+    margin-left: 0; /* Supprimer la marge */
+    transition: background-color 0.3s, max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+  
+  .accordeon-item.open .accordeon-content {
+    display: block; /* Afficher le contenu lorsque l'élément est ouvert */
+    max-height: 500px; /* Ajuster la hauteur du contenu ouvert */
+    transition: background-color 0.3s, max-height 0.5s ease-in-out;
+    border-left: 4px solid #FE665A; /* Bordure fermée orange */
+  }
+  
+  .accordeon-item.open .accordeon-header {
+    border-color: #F86642; /* Changer la couleur de la bordure quand ouvert */
+  }
+  
 
-.point-item:hover {
-    opacity: 1;
-}
-
-.point-text {
-    color: #000;
-    margin-left: 10px;
-    text-align: center !important;
-    font-family: "Montserrat", sans-serif !important;
-    font-size: 25px !important;
-    font-weight: 600 !important;
-    text-transform: capitalize;
-}
+  
