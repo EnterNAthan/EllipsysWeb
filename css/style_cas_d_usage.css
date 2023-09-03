@@ -1,6 +1,6 @@
 body{
-    margin: 0%;
-    padding: 0% ;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: Montserrat;
 }
@@ -93,6 +93,8 @@ nav .links li a{
     text-transform: uppercase;
     box-shadow: none;
     text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .gstart:hover{
@@ -114,6 +116,8 @@ nav .links li a{
     text-transform: uppercase;
     box-shadow: none;
     text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
 }
 
 .ensavoirplus:hover{
@@ -121,6 +125,84 @@ nav .links li a{
     color: #FE665A;
     border-color: #FE665A;
     box-shadow: #FE665A;
+}
+
+/* Bouton en savoir plus 2*/
+.ensavoirplus2{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #FE665A;
+    border-color: white;
+    border-radius:0.5625rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ensavoirplus2:hover{
+    background-color: white;
+    color: #FE665A;
+    border-color: #FE665A;
+    box-shadow: #FE665A;
+}
+
+/* Bouton en savoir plus 3*/
+.ensavoirplus3{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #FE665A;
+    border-color: white;
+    border-radius:0.5625rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.ensavoirplus3:hover{
+    background-color: white;
+    color: #FE665A;
+    border-color: #FE665A;
+    box-shadow: #FE665A;
+}
+
+
+.container-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+/* Bouton 'je veux ça' */
+.cpartit{
+    width: 80%;
+    height: 5rem;
+    font-size: 30px;
+    font-family: "Leelawadee UI", serif;
+    background-color: #FE665A;
+    border-color: white;
+    border-radius: 10rem;
+    color: white;
+    margin: auto 0;
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cpartit:hover{
+    background-color: #222;
 }
 
 .bancontainer1 {
@@ -145,6 +227,56 @@ nav .links li a{
     margin-left: 5px;
 }
 
+.bancontainer2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 130px;
+    margin-top: 400px;
+}
+
+.bancontainer2 h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+}
+
+.bancontainer2 h3{
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+.bancontainer2>.acgauche{
+    margin-left: 100px;
+}
+
+.bancontainer3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 130px;
+    margin-top: 400px;
+}
+
+.bancontainer3 h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+    text-align: left;
+    color: black;
+}
+
+.bancontainer3 h3{
+    color: #000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
 .acgauche {
     margin-top: 90px;
 }
@@ -154,12 +286,27 @@ nav .links li a{
     justify-content: center;
     align-items: center;
     margin-top: 90px;
-    margin-right: 60px;
+    margin-right: 100px;
 }
 
 .acdroite img {
+    width: auto;
+    height: auto;
     border-radius: 30px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2); /* Ombre légère */
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#gif2{
+    width: 120%;
+    height: 120%;
+    border-radius: 30px;
+    box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+#gif3{
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
 }
 
 .soustitreban{
@@ -314,16 +461,25 @@ blockquote {
 /* Style pour la vidéo YouTube */
 iframe {
     display: block;
-    margin: 0 auto; /* Centre la vidéo horizontalement */
+    margin: 0 auto;
     max-width: 100%;
+    width: 80%;
+    height: 80vh;
     border-radius: 20px;
-    border: none; /* Supprime la bordure de l'iframe */
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Ajoute une ombre légère */
+    border: none;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-/* Effet de zoom au survol */
 iframe:hover {
-    transform: scale(1.05); /* Zoom de 5% au survol */
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Augmente l'ombre au survol */
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
+
+.separator {
+    border: none;
+    border-top: 3px solid rgba(204, 204, 204, 0.56);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
