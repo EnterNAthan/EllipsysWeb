@@ -70,3 +70,43 @@ function handleScroll() {
     }
 }
 window.addEventListener('scroll', handleScroll);
+
+
+// Fonction pour afficher les questions dans la faq
+
+const questions = document.querySelectorAll('.question');
+
+questions.forEach((question) => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('open');
+        const answer = question.querySelector('.answer');
+
+        if (question.classList.contains('open')) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            answer.style.opacity = '1';
+        } else {
+            answer.style.maxHeight = '0';
+            answer.style.opacity = '0';
+        }
+    });
+});
+
+
+// Fonction pour afficher le bouton de retour en haut de page
+
+window.addEventListener("scroll", () => {
+    const scrollButton = document.querySelector(".scroll-to-top");
+    if (document.documentElement.scrollTop > 300) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+});
+
+document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
