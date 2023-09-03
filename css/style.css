@@ -66,9 +66,15 @@ nav .links li a{
     text-transform: uppercase;
 }
 
-.nav-links.active {
+.links li a:hover {
+    transition: color 0.3s ease;
     color: #FE665A;
 }
+
+.links li a.active {
+    color: #FE665A;
+}
+
 
 /* Bouton de base (get started) */
 button{
