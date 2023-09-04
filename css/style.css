@@ -4,11 +4,7 @@ body{
     padding: 0% ;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;}
-div{
-    margin: 0px;
-    padding: 0px;
-    font-family: 'Montserrat', serif;
-}
+
 
 /* Baniére d'actualité au top */
 .act{
@@ -174,7 +170,7 @@ button:hover{
     font-weight: 700;
     text-align: center;
   }
-
+  
 /*bannère des logos*/
 .banlogo {
     width: 100%;
