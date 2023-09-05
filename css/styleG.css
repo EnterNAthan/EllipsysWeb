@@ -84,6 +84,36 @@ nav .links li a{
 }
 
 /* Bouton de base (get started) */
+button{
+    width: 10rem;
+    height: 2.5rem;
+    background-color: #FE665A;
+    border-color: white;
+    border-radius:0.5625rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    box-shadow: none;
+    text-decoration: none;
+} 
+
+button:hover{
+    background-color: white;
+    color: #FE665A;
+    border-color: #FE665A;
+    box-shadow: #FE665A;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* Bouton de base (get started) */
 .gstart{
     width: 10rem;
     height: 2.5rem;
@@ -233,7 +263,6 @@ nav .links li a{
 }
 
 /*contener des différents contenus*/
-
 .bancontainer1 {
     display: flex;
     justify-content: center;
