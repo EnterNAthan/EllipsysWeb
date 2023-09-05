@@ -692,6 +692,13 @@ iframe:hover {
     color: #F24E1E;
 }
 
+.footer-bottom p{
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    font-size: 0.8rem;
+}
+
 
 /*scroll to top*/
 .scroll-to-top {
@@ -908,16 +915,6 @@ iframe:hover {
     font-size: 14px;
 }
 
-.ban-dark {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 1%;
-    background-color: #292526;
-    width: 100%;
-    height: 40%;
-    text-align: center;
-}
 .video {
     margin-top: 20px;
 }
