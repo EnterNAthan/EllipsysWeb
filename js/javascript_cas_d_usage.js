@@ -55,7 +55,7 @@ window.addEventListener("click", (event) => {
 
 window.addEventListener("click", (event) => {
     if (event.target === modal3) {
-        closeModalFunc2();
+        closeModalFunc3();
     }
 });
 
