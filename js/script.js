@@ -184,6 +184,7 @@ questions.forEach((question) => {
 
 
 
+
 // Fonction pour afficher le bouton de retour en haut de page
 window.addEventListener("scroll", () => {
     const scrollButton = document.querySelector(".scroll-to-top");
