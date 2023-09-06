@@ -235,6 +235,7 @@ button:hover{
 
 .cpartit:hover{
     background-color: #222;
+    color: white;
 }
 
 /* Bouton 'nous contacter */
@@ -291,7 +292,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding-left: 130px;
-    margin-top: 400px;
+    margin-top: 200px;
 }
 
 .bancontainer2 h1{
@@ -318,7 +319,7 @@ button:hover{
     justify-content: center;
     align-items: center;
     padding-left: 130px;
-    margin-top: 400px;
+    margin-top: 200px;
     margin-bottom: 200px;
 }
 
@@ -350,23 +351,10 @@ button:hover{
 }
 
 .acdroite img {
-    width: auto;
-    height: auto;
+    width: 650px;
+    height: 350px;
     border-radius: 30px;
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-}
-
-#gif2{
-    width: 120%;
-    height: 120%;
-    border-radius: 30px;
-    box-shadow: -20px 20px 20px rgba(0, 0, 0, 0.2);
-}
-
-#gif3{
-    border-radius: 30px;
-    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-    margin-left: 100px;
 }
 
 .soustitreban{
@@ -729,6 +717,14 @@ iframe:hover {
     font-size: 0.8rem;
 }
 
+.footer-bottom a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer-bottom a:hover {
+    color: #555;
+}
 
 /*scroll to top*/
 .scroll-to-top {
@@ -737,30 +733,29 @@ iframe:hover {
     right: 20px;
     z-index: 999;
     display: none;
-    background-color: #FE665A;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
     text-align: center;
     line-height: 40px;
+    background-color: transparent;
 }
 
 .scroll-to-top a {
     text-decoration: none;
-    color: #fff;
+    color: #FFA500;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 10px;
     font-size: 30px;
-    border-radius: 30px;
 }
 
-.scroll-to-top:hover ,
 .scroll-to-top a:hover {
-    color: #FFA500;
-    background-color: #F7F7F7;
+    color: #fff;
+    background-color: #FE665A;
 }
 
 .validation-list {
     display: flex;
-    margin : 0% 0% 5% ; 
+    margin : 0 0 5% ;
   }
   
   .validation-item {
@@ -953,4 +948,108 @@ iframe:hover {
     height : 340px;
     top: 0;
     left: 0;
+}
+
+/*styles pour les cartes*/
+.cards-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 100px;
+    overflow: hidden;
+}
+
+.card-container {
+    position: relative;
+    height: 400px;
+    width: 290px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container:hover .card {
+    transform: rotateY(180deg);
+    cursor: grab;
+}
+
+.card {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transition: all 0.3s ease;
+    transform-style: preserve-3d;
+    border: 2px solid #FE665A;
+    border-radius: 30px;
+    background-color: #FE665A;
+    box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-front,
+.card-back {
+    position: absolute;
+    height: 90%;
+    width: 90%;
+    top: 5%;
+    left: 5%;
+    border-radius: 30px;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.3);
+}
+
+.card-front {
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    color: #FE665A;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 35px;
+    gap: 40px;
+}
+
+.card-back {
+    background: #FFC1A1;
+    color: #000000;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 35px;
+    font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,
+    Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; /*police de ChatGPT*/
+    transform: rotateY(-180deg);
+}
+
+.card-back div{
+    margin: 20px;
+}
+
+/* section a propos de*/
+.about-section {
+    background: white;
+    color: black;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    text-align: justify;
+    margin: 100px auto;
+}
+
+.about-section h1 {
+    font-size: 2em;
+    color: #333;
+    text-align: center;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.about-section p:first-child {
+    font-weight: bold;
 }

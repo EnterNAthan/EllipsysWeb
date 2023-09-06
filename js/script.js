@@ -1,3 +1,36 @@
+const nav = document.querySelector('nav');
+// Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
+function handleScroll() {
+    if (window.scrollY > 0) {
+        nav.classList.add('nav-scrolled');
+    } else {
+        nav.classList.remove('nav-scrolled');
+    }
+}
+window.addEventListener('scroll', handleScroll);
+
+
+
+
+// Fonction pour afficher le bouton de retour en haut de page
+window.addEventListener("scroll", () => {
+    const scrollButton = document.querySelector(".scroll-to-top");
+    if (document.documentElement.scrollTop > 300) {
+        scrollButton.style.display = "block";
+    } else {
+        scrollButton.style.display = "none";
+    }
+});
+
+document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
+    e.preventDefault();
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+    });
+});
+
+
 // Sélectionnez tous les éléments d'accordéon
 // creer une alerte ppour testez que le javascript est bien relié a la page html
 console.log("ca marche")
@@ -47,7 +80,7 @@ function loadScriptsOnScroll() {
 
       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
           var scriptSrc = element.getAttribute('data-js-src');
-          
+
           // Charger le script JavaScript associé à l'élément
           loadScript(scriptSrc, function() {
               // Supprimer l'attribut data-js-src pour éviter de charger le script à nouveau
@@ -82,7 +115,7 @@ navLinks.forEach(link => {
 });
 }
 
-// Appelle la fonction lors du chargement de la pag
+// Appelle la fonction lors du chargement de la page
 
 initAccordeon();
 highlightCurrentPage();
@@ -152,16 +185,6 @@ window.addEventListener("click", (event) => {
 
 
 
-const nav = document.querySelector('nav');
-// Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
-function handleScroll() {
-    if (window.scrollY > 0) {
-        nav.classList.add('nav-scrolled');
-    } else {
-        nav.classList.remove('nav-scrolled');
-    }
-}
-window.addEventListener('scroll', handleScroll);
 
 
 
@@ -179,26 +202,5 @@ questions.forEach((question) => {
             answer.style.maxHeight = '0';
             answer.style.opacity = '0';
         }
-    });
-});
-
-
-
-
-// Fonction pour afficher le bouton de retour en haut de page
-window.addEventListener("scroll", () => {
-    const scrollButton = document.querySelector(".scroll-to-top");
-    if (document.documentElement.scrollTop > 300) {
-        scrollButton.style.display = "block";
-    } else {
-        scrollButton.style.display = "none";
-    }
-});
-
-document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
-    e.preventDefault();
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth",
     });
 });
