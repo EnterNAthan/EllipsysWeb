@@ -204,3 +204,7 @@ questions.forEach((question) => {
         }
     });
 });
+
+
+//partit pour animez la page test
+
