@@ -73,6 +73,9 @@ nav .links li a{
     font-weight: 700;
     font-style: normal;
     text-transform: uppercase;
+    position: relative;
+    padding: 1rem 0 0.5rem;
+    margin: 0 1.5rem;
 }
 
 .links li a:hover {
@@ -80,40 +83,28 @@ nav .links li a{
     color: #FE665A;
 }
 
+.links li a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: 50% 50%;
+    width: 80%;
+    height: 1px;
+    background-color: rgb(35, 34, 34);
+    transition: transform 250ms;
+}
+
+.links li a:hover::after {
+    transform: translateX(-50%) scaleX(1);
+}
+
 .links li a.active {
     color: #FE665A;
 }
 
-/* Bouton de base (get started) */
-button{
-    width: 10rem;
-    height: 2.5rem;
-    background-color: #FE665A;
-    border-color: white;
-    border-radius:0.5625rem;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    box-shadow: none;
-    text-decoration: none;
-} 
-
-button:hover{
-    background-color: white;
-    color: #FE665A;
-    border-color: #FE665A;
-    box-shadow: #FE665A;
-}
-
-.center{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
+/*Tous les boutons*/
 /* Bouton de base (get started) */
 .gstart{
     width: 10rem;
@@ -264,7 +255,26 @@ button:hover{
     box-shadow: #FE665A 1px 1px 1px;
 }
 
-/*contener des différents contenus*/
+/* Bouton 'Envoyer' du devis */
+.submit-button {
+    font-size: 20px;
+    width: 50%;
+    height: 60px;
+    background-color: #FE665A;
+    color: #FFF;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: rgb(255, 48, 32);
+}
+
+/*container des différents contenus ainsi que les fenetres modales*/
+/*contenu et fenetre modale 1*/
 .bancontainer1 {
     display: flex;
     justify-content: center;
@@ -287,6 +297,7 @@ button:hover{
     margin-left: 5px;
 }
 
+/*contenu et fenetre modale 2*/
 .bancontainer2 {
     display: flex;
     justify-content: center;
@@ -314,6 +325,7 @@ button:hover{
     margin-left: 100px;
 }
 
+/*contenu et fenetre modale 3*/
 .bancontainer3 {
     display: flex;
     justify-content: center;
@@ -338,10 +350,12 @@ button:hover{
     margin-left: 5px;
 }
 
+/*partie gauche des contenus (texte)*/
 .acgauche {
     margin-top: 90px;
 }
 
+/*partie droite des contenus (image)*/
 .acdroite {
     display: flex;
     justify-content: center;
@@ -357,6 +371,7 @@ button:hover{
     box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
+/*sous-titre des contenus*/
 .soustitreban{
     font-size: 16px;
     font-style: normal;
@@ -365,6 +380,7 @@ button:hover{
     width: 60%;
 }
 
+/*style texte special de base*/
 .orange-text{
     color: #FE665A;
     font-weight: 700;
@@ -396,12 +412,13 @@ button:hover{
     animation: highlightMove 6s linear infinite;
 }
 
+/*animation du texte*/
 @keyframes highlightMove {
     0% {
         left: -1000%;
     }
     100% {
-        left: 110%;
+        left: 90%;
     }
 }
 
@@ -471,7 +488,6 @@ blockquote {
     transition: color 0.3s;
 }
 
-/* Style pour la croix de fermeture au survol */
 .close-modal-icon:hover {
     color: #FE665A;
 }
@@ -523,6 +539,7 @@ iframe:hover {
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
+/*separateur de page*/
 .separator {
     border: none;
     border-top: 3px solid rgba(204, 204, 204, 0.56);
@@ -569,7 +586,6 @@ iframe:hover {
 }
 
 /*FAQ*/
-
 .container-question {
     display: flex;
     flex-direction: column;
@@ -753,25 +769,28 @@ iframe:hover {
     background-color: #FE665A;
 }
 
+/*items de la page d'accueil*/
 .validation-list {
     display: flex;
     margin : 0 0 5% ;
-  }
+}
   
-  .validation-item {
+.validation-item {
     display: flex;
     align-items: center;
     padding-right: 10px;
     color: #000;
-  }
-  .validation-item svg{
+}
+
+.validation-item svg{
     padding: 10px;
-  }
-  .validation-item p{
+}
+
+.validation-item p{
     font-size: 1rem;
     font-weight: 700;
     text-align: center;
-  }
+}
   
 /*bannère des logos*/
 .banlogo {
@@ -838,7 +857,6 @@ iframe:hover {
     justify-content: center;
     align-items: center;
     gap: 1%;
-
 }  
 
 .ban-accordeon svg{
@@ -850,29 +868,30 @@ iframe:hover {
     width: 100%;
     max-width: 500px;
     margin: 0 auto;
-  }
+}
   
-  .accordeon-item {
+.accordeon-item {
     margin-bottom: 10px;
     position: relative;
     overflow: hidden;
-  }
+}
   
-  .accordeon-header {
+.accordeon-header {
     padding-left: 15%;
     cursor: pointer;
     display: flex;
     align-items: center;
     position: relative;
     transition: background-color 0.3s;
-    border-left: 4px solid #000; /* Bordure fermée noire */
-  }
+    border-left: 4px solid #000;
+}
   
-  .accordeon-title {
+.accordeon-title {
     font-weight: bold;
     font-size: large;
-  }
-  .accordeon-content {
+}
+
+.accordeon-content {
     padding-left: 15%;
     display: none;
     position: relative;
@@ -882,21 +901,20 @@ iframe:hover {
     transition: background-color 0.3s, max-height 0.5s ease-in-out;
     max-height: 0;
     overflow: hidden;
-  }
+}
   
-  .accordeon-item.open .accordeon-content {
+.accordeon-item.open .accordeon-content {
     display: block; /* Afficher le contenu lorsque l'élément est ouvert */
     max-height: 500px; /* Ajuster la hauteur du contenu ouvert */
     transition: background-color 0.3s, max-height 0.5s ease-in-out;
     border-left: 4px solid #FE665A; /* Bordure fermée orange */
-  }
+}
   
-  .accordeon-item.open .accordeon-header {
+.accordeon-item.open .accordeon-header {
     border-color: #F86642; /* Changer la couleur de la bordure quand ouvert */
-  }
+}
 
-
-  .paragraph-container {
+.paragraph-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
@@ -904,6 +922,7 @@ iframe:hover {
     margin: 0 auto;
     padding: 20px;
 }
+
 .paragraph {
     display: flex;
     align-items: center;
@@ -912,20 +931,24 @@ iframe:hover {
     border-radius: 5px;
     background-color: #fff;
 }
+
 .paragraph:hover{
     border-color: #F86642;
     border-radius: 10px;
     border-width: 5px;
 }
+
 .left {
     display: flex;
     align-items: center;
 }
+
 .icon {
     width: 24px;
     height: 24px;
     margin-right: 10px;
 }
+
 .content {
     flex: 1;
 }
@@ -943,6 +966,7 @@ iframe:hover {
 .video {
     margin-top: 20px;
 }
+
 .video iframe {
     width :621px; 
     height : 340px;
@@ -1052,4 +1076,104 @@ iframe:hover {
 
 .about-section p:first-child {
     font-weight: bold;
+}
+
+/*bubble section*/
+.bubble-container {
+    font-family: "Roboto Thin", Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
+    Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 100px;
+}
+
+.bubble {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    padding: 30px;
+    background: #000;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: all 0.2s ease;
+}
+
+.left {
+    align-self: flex-start;
+    border-radius: 35px 35px 35px 0;
+}
+
+.right {
+    align-self: flex-end;
+    border-radius: 35px 35px 0 35px;
+}
+
+.bubble:hover {
+    transform: scale(1.05);
+    background-color: #FE665A;
+    cursor: cell;
+}
+
+/*contact section*/
+.contact-container {
+    background-color: #FFF;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.contact-container h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+label {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: black;
+    transition: all 0.3s ease;
+}
+
+input:focus + label,
+textarea:focus + label,
+input:valid + label,
+textarea:valid + label {
+    opacity: 1;
+    top: -18px;
+    font-size: 14px;
+    color: #FE665A;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 0.5;
 }

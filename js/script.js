@@ -12,7 +12,8 @@ window.addEventListener('scroll', handleScroll);
 
 
 
-// Fonction pour afficher le bouton de retour en haut de page
+
+// Fonction pour l'animation de retour en haut de page pour le bouton adéquat
 window.addEventListener("scroll", () => {
     const scrollButton = document.querySelector(".scroll-to-top");
     if (document.documentElement.scrollTop > 300) {
@@ -31,9 +32,12 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
 });
 
 
-// Sélectionnez tous les éléments d'accordéon
+
+
+
+// Sélectionne tous les éléments d'accordéon
 // creer une alerte ppour testez que le javascript est bien relié a la page html
-console.log("ca marche")
+console.log("OK")
 
 function initAccordeon() {
   const accordeonItems = document.querySelectorAll('.accordeon-item');
@@ -60,8 +64,11 @@ function initAccordeon() {
   });
 }
 
-// fonction pour chargez le script de scroll
 
+
+
+
+// fonction pour chargez le script de scroll
 function loadScript(url, callback) {
   var script = document.createElement('script');
   script.type = 'text/javascript';
@@ -90,7 +97,6 @@ function loadScriptsOnScroll() {
   });
 }
 
-
 // Écouter l'événement de défilement de la page
 window.addEventListener('scroll', loadScriptsOnScroll);
 
@@ -100,8 +106,10 @@ window.addEventListener('load', function() {
 });
 
 
-// Appeler la fonction pour initialiser l'accordéon
 
+
+
+// Fonction pour mettre en surbrillance la page actuelle dans la barre de navigation
 function highlightCurrentPage() {
   const navLinks = document.querySelectorAll('.nav-links');
 
@@ -114,11 +122,11 @@ navLinks.forEach(link => {
     });
 });
 }
-
 // Appelle la fonction lors du chargement de la page
-
 initAccordeon();
 highlightCurrentPage();
+
+
 
 
 
@@ -182,7 +190,6 @@ window.addEventListener("click", (event) => {
         closeModalFunc3();
     }
 });
-
 
 
 
