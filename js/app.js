@@ -41,7 +41,7 @@ const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
     tl.from(".validation-item", { opacity: 0, x: -50, stagger: 0.2 }, "-=0.5");
 
     // Animation du bouton
-    tl.from(".ensavoirplus", { opacity: 0, y: 50 }, "-=0.3");
+    tl.from(".btncontact_accueil", { opacity: 0, y: 50 }, "-=0.3");
 
     // Lancement de l'animation
     tl.play();
