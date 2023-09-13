@@ -5,13 +5,6 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    /*background: repeating-linear-gradient(*/
-    /*        -45deg,*/
-    /*        #ffffff,*/
-    /*        #ffffff 10px,*/
-    /*        rgb(255, 255, 255) 10px,*/
-    /*        #f5eef1 25px*/
-    /*);*/
 }
 
 /* loader de la page */
@@ -445,6 +438,14 @@ nav .links li a{
     align-items: center;
     margin-top: 90px;
     margin-right: 100px;
+    margin-left: 100px;
+}
+
+.acdroite img {
+    width: 500px;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -878,8 +879,14 @@ iframe:hover {
 }
 
 .validation-list .validation-item i{
-    font-size: 20px;
+    display: inline-block;
+    font-size: 25px;
     color: #FE665A;
+    transition: transform 0.3s ease;
+}
+
+.validation-list .validation-item i:hover{
+    transform: rotate(360deg);
 }
   
 /*bannère des logos*/
