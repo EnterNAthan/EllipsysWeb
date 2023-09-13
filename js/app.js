@@ -23,25 +23,32 @@
 //     TL.play();
 // })
 
-const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
+// loader 
+window.addEventListener('load' , ()=>{
+    const loader = document.querySelector('.loader');
+    loader.classList.add('fondu-out');
+
+    const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
     // Animation du titre
     tl
-    .from(".l1", { width: 0, duration: 1 })
-    .from(".l2", { width: 0, duration: 1 }, "-=0.5")
-    .from("#logo_elypsis", { scale: 0, duration: 0.5 }, "-=0.5")
-    .from(".nav-links", { opacity: 0, stagger: 0.2 }, "-=0.5")
+    .from("#logo_elypsis", { opacity: 0, stagger : 0.5 }, "-=0.5")
+    .from(".links", { opacity: 0, stagger: 0.5 }, "-=0.5")
     
 
-    tl.from("h1",{opacity: 0, x: -100, stagger: 1});
+    tl.from("h1",{opacity: 0, x: -100, stagger: 1},);
     // Animation du texte
-    tl.from("h1 span", { opacity: 0, y: -50, stagger: 1 });
+    tl.from("h1 span", { opacity: 0, y: -50, stagger: 1 },"-=0.5" );
+
+    tl.from(".acdroite svg",{ opacity: 0, x: -150, stagger:0.2})
 
     // Animation des éléments de validation
-    tl.from(".validation-item", { opacity: 0, x: -50, stagger: 0.2 }, "-=0.5");
+    tl.from(".validation-item", { opacity: 0, x: -50, stagger: 0.2}, "-=0.5");
 
     // Animation du bouton
     tl.from(".btncontact_accueil", { opacity: 0, y: 50 }, "-=0.3");
 
     // Lancement de l'animation
     tl.play();
+
+})
