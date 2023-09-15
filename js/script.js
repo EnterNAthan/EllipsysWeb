@@ -69,6 +69,24 @@ function initAccordeon() {
 
 
 
+document.addEventListener("DOMContentLoaded", function() {
+    const etiquette = document.querySelector('.etiquette');
+    const popup = document.querySelector('.etiquette-popup');
+    const etiquetteContent = document.querySelector('.etiquette-content');
+
+    etiquette.addEventListener('click', function() {
+        // Basculer la popup
+        popup.classList.toggle('hidden');
+        popup.classList.toggle('visible');
+
+        // Agrandir le SVG
+        etiquette.classList.toggle('active');
+
+        // Faire disparaître le texte de l'étiquette
+        etiquetteContent.classList.toggle('hidden-content');
+    });
+});
+
 
 
 // // fonction pour chargez le script de scroll

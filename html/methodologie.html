@@ -3,43 +3,221 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- <script src="../js/script.js"></script> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styleG.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <title>Ellipsys</title>
 </head>
 
-<body>
-    <header>
-        <div class="act">
-            <h3>Actualité : Le groupe ADEO/Leroy Merlin a animé un workshop devant 150 personnes au Salon Big Data Paris
-                2022...</h3>
-            <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"
-                height="39px">
-                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"
-                    fill="white" stroke="white" />
-                <path
+<body onload="initElement();">
+<header>
+    <div class="act">
+        <h3>Actualité : Le groupe ADEO/Leroy Merlin a animé un workshop devant 150 personnes au Salon Big Data Paris
+            2022...</h3>
+        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"
+             height="39px">
+            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"
+                  fill="white" stroke="white" />
+            <path
                     d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"
                     fill="white" stroke="white" />
-            </svg>
+        </svg>
+    </div>
+    <nav>
+        <a href="../html/index.html">
+            <img id="logo_elypsis" src="../images/logo.jpg" class="logo" alt="Logo Ellipsys">
+        </a>
+        <ul class="links">
+            <li><a href="../html/casusages.html">Cas d'usages</a></li>
+            <li><a href="../html/apropos.html">A propos</a></li>
+            <li><a href="../html/Contact.html">Contact</a></li>
+            <li><a href="../html/methodologie.html" class="active">Methodologies</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
+        </ul>
+        <button class="gstart">Get Started</button>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+</header>
+
+<h1 style="text-align: center; margin-top: 100px" class="">Méthodologie</h1>
+<div class="container">
+    <div class="etiquette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+            <g clip-path="url(#clip0_60_253)">
+                <path d="M34.6721 8.77051C34.031 8.77051 7.07456 8.77051 6.43337 8.77051C5.05798 8.77051 3.94172 9.88677
+                3.94172 11.2622C3.94172 12.6376 5.05798 13.7538 6.43337 13.7538C7.07456 13.7538 34.031 13.7538 34.6721
+                13.7538C36.0475 13.7538 37.1638 12.6376 37.1638 11.2622C37.1638 9.88677 36.0475 8.77051 34.6721 8.77051Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M7.26386 13.7539L13.2588 20.9481C14.7521 22.7388 15.5694 24.9979 15.5694
+                27.3284V36.3051C15.5694 37.9296 16.7438 39.315 18.3451 39.5824L22.6341 40.2967C24.154 40.5508 25.536
+                39.3798 25.536 37.8399V27.3301C25.536 24.9979 26.3533 22.7405 27.8466 20.9498L33.8415 13.7539H7.26386Z" fill="#FE665A"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_60_253">
+                    <rect width="39.8665" height="39.8665" fill="white" transform="translate(0.619453 0.464844)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="etiquette-content">
+            <h4>Supprimer les tables inutiles</h4>
+            <p>Lorem ipsum dolor sit</p>
         </div>
-        <nav>
-            <a href="../html/index.html">
-                <img src="../images/logo.jpg"  alt="Logo de l'entreprise">
-            </a>
-            <ul class="links">
-                <li><a href="../html/casusages.html" class="nav-links">Cas d'usages</a></li>
-                <li><a href="../html/apropos.html" class="nav-links">A propos</a></li>
-                <li><a href="../html/Contact.html" class="nav-links">Contact</a></li>
-                <li><a href="../html/methodologie.html" class="nav-links">Methodologie</a></li>
-                <li><a href="../html/blog.html" class="nav-links">Blog</a></li>'
+        <div class="etiquette-popup hidden">
+            <p>Voici quelques informations supplémentaires...</p>
+        </div>
+    </div>
+
+    <div class="etiquette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+            <path opacity="0.15" d="M21.5528 38.8979C31.2178 38.8979 39.0528 31.0629 39.0528 21.3979C39.0528 11.733 31.2178 3.89795 21.5528 3.89795C11.8878 3.89795 4.0528 11.733 4.0528 21.3979C4.0528 31.0629 11.8878 38.8979 21.5528 38.8979Z" fill="#FE665A"/>
+            <path d="M21.5528 5.75655V17.8981C21.5528 19.8318 23.1191 21.3981 25.0528 21.3981H37.1943C38.2443 21.3981 39.0616 20.4758 38.9443 19.4328C38.0396 11.3391 31.6136 4.91305 23.5198 4.0083C22.4751 3.89105 21.5528 4.70655 21.5528 5.75655Z" fill="#FE665A"/>
+        </svg>
+        <div class="etiquette-content">
+            <h4>Comparer les environnements</h4>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+    </div>
+
+    <div class="etiquette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
+            <g clip-path="url(#clip0_60_325)">
+                <path opacity="0.15" d="M20.9094 17.9398C24.7293 17.9398 27.826 14.8431 27.826 11.0231C27.826 7.20314 24.7293 4.10645 20.9094 4.10645C17.0894 4.10645 13.9927 7.20314 13.9927 11.0231C13.9927 14.8431 17.0894 17.9398 20.9094 17.9398Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M7.94062 21.3978C10.3281 21.3978 12.2635 19.4624 12.2635 17.0749C12.2635 14.6874 10.3281 12.752 7.94062 12.752C5.55314 12.752 3.61771 14.6874 3.61771 17.0749C3.61771 19.4624 5.55314 21.3978 7.94062 21.3978Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M33.8782 21.3978C36.2656 21.3978 38.2011 19.4624 38.2011 17.0749C38.2011 14.6874 36.2656 12.752 33.8782 12.752C31.4907 12.752 29.5552 14.6874 29.5552 17.0749C29.5552 19.4624 31.4907 21.3978 33.8782 21.3978Z" fill="#FE665A"/>
+                <path d="M26.097 33.5021H15.722C12.8568 33.5021 10.5345 30.7925 10.5345 27.45C10.5345 24.1076 12.8568 21.3979 15.722 21.3979H26.097C28.9622 21.3979 31.2845 24.1076 31.2845 27.45C31.2845 30.7925 28.9622 33.5021 26.097 33.5021Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M37.4248 24.8564H4.26107C1.99586 24.8564 0.159485 26.6928 0.159485 28.958V29.4024C0.159485 31.6659 1.99586 33.5023 4.26107 33.5023H37.4248C39.7626 33.5023 41.6595 31.6054 41.6595 29.2658V29.0912C41.6595 26.7533 39.7626 24.8564 37.4248 24.8564Z" fill="#FE665A"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_60_325">
+                    <rect width="41.5" height="41.5" fill="white" transform="translate(0.159485 0.647949)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="etiquette-content">
+            <h4>Les impacts d'une régression</h4>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        <div class="etiquette-popup hidden">
+            <p>Voici quelques informations supplémentaires...</p>
+        </div>
+    </div>
+
+    <div class="etiquette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
+            <path d="M34.1632 7.09619H22.2184C22.4046 7.61828 22.5243 8.17195 22.5243 8.75888C22.5243 9.34581 22.4046 9.89949 22.2184 10.4216H34.1632C35.081 10.4216 35.8259 9.67669 35.8259 8.75888C35.8259 7.84108 35.081 7.09619 34.1632 7.09619Z" fill="#FE665A"/>
+            <path d="M7.56027 10.4216H12.8543C12.6681 9.89949 12.5484 9.34581 12.5484 8.75888C12.5484 8.17195 12.6681 7.61828 12.8543 7.09619H7.56027C6.64247 7.09619 5.89758 7.84108 5.89758 8.75888C5.89758 9.67669 6.64247 10.4216 7.56027 10.4216Z" fill="#FE665A"/>
+            <path opacity="0.35" d="M17.5362 13.7471C20.2911 13.7471 22.5243 11.5139 22.5243 8.75907C22.5243 6.00423 20.2911 3.771 17.5362 3.771C14.7814 3.771 12.5482 6.00423 12.5482 8.75907C12.5482 11.5139 14.7814 13.7471 17.5362 13.7471Z" fill="#FE665A"/>
+            <path d="M34.1631 18.7354H30.5318C30.718 19.2574 30.8377 19.8111 30.8377 20.398C30.8377 20.985 30.718 21.5386 30.5318 22.0607H34.1631C35.0809 22.0607 35.8258 21.3158 35.8258 20.398C35.8258 19.4802 35.0809 18.7354 34.1631 18.7354Z" fill="#FE665A"/>
+            <path d="M7.56027 22.0607H21.1677C20.9815 21.5386 20.8618 20.985 20.8618 20.398C20.8618 19.8111 20.9815 19.2574 21.1677 18.7354H7.56027C6.64247 18.7354 5.89758 19.4802 5.89758 20.398C5.89758 21.3158 6.64247 22.0607 7.56027 22.0607Z" fill="#FE665A"/>
+            <path opacity="0.35" d="M25.85 25.3858C28.6048 25.3858 30.838 23.1526 30.838 20.3977C30.838 17.6429 28.6048 15.4097 25.85 15.4097C23.0951 15.4097 20.8619 17.6429 20.8619 20.3977C20.8619 23.1526 23.0951 25.3858 25.85 25.3858Z" fill="#FE665A"/>
+            <path d="M34.1632 30.374H22.2184C22.4046 30.8961 22.5243 31.4498 22.5243 32.0367C22.5243 32.6236 22.4046 33.1773 22.2184 33.6994H34.1632C35.081 33.6994 35.8259 32.9545 35.8259 32.0367C35.8259 31.1189 35.081 30.374 34.1632 30.374Z" fill="#FE665A"/>
+            <path d="M7.56027 33.6994H12.8543C12.6681 33.1773 12.5484 32.6236 12.5484 32.0367C12.5484 31.4498 12.6681 30.8961 12.8543 30.374H7.56027C6.64247 30.374 5.89758 31.1189 5.89758 32.0367C5.89758 32.9545 6.64247 33.6994 7.56027 33.6994Z" fill="#FE665A"/>
+            <path opacity="0.35" d="M17.5362 37.025C20.2911 37.025 22.5243 34.7917 22.5243 32.0369C22.5243 29.2821 20.2911 27.0488 17.5362 27.0488C14.7814 27.0488 12.5482 29.2821 12.5482 32.0369C12.5482 34.7917 14.7814 37.025 17.5362 37.025Z" fill="#FE665A"/>
+        </svg>
+        <div class="etiquette-content">
+            <h4>Migration</h4>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        <div class="etiquette-popup hidden">
+            <p>Voici quelques informations supplémentaires...</p>
+        </div>
+    </div>
+
+    <div class="etiquette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
+            <g clip-path="url(#clip0_60_325)">
+                <path opacity="0.15" d="M20.9094 17.9398C24.7293 17.9398 27.826 14.8431 27.826 11.0231C27.826 7.20314 24.7293 4.10645 20.9094 4.10645C17.0894 4.10645 13.9927 7.20314 13.9927 11.0231C13.9927 14.8431 17.0894 17.9398 20.9094 17.9398Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M7.94062 21.3978C10.3281 21.3978 12.2635 19.4624 12.2635 17.0749C12.2635 14.6874 10.3281 12.752 7.94062 12.752C5.55314 12.752 3.61771 14.6874 3.61771 17.0749C3.61771 19.4624 5.55314 21.3978 7.94062 21.3978Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M33.8782 21.3978C36.2656 21.3978 38.2011 19.4624 38.2011 17.0749C38.2011 14.6874 36.2656 12.752 33.8782 12.752C31.4907 12.752 29.5552 14.6874 29.5552 17.0749C29.5552 19.4624 31.4907 21.3978 33.8782 21.3978Z" fill="#FE665A"/>
+                <path d="M26.097 33.5021H15.722C12.8568 33.5021 10.5345 30.7925 10.5345 27.45C10.5345 24.1076 12.8568 21.3979 15.722 21.3979H26.097C28.9622 21.3979 31.2845 24.1076 31.2845 27.45C31.2845 30.7925 28.9622 33.5021 26.097 33.5021Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M37.4248 24.8564H4.26107C1.99586 24.8564 0.159485 26.6928 0.159485 28.958V29.4024C0.159485 31.6659 1.99586 33.5023 4.26107 33.5023H37.4248C39.7626 33.5023 41.6595 31.6054 41.6595 29.2658V29.0912C41.6595 26.7533 39.7626 24.8564 37.4248 24.8564Z" fill="#FE665A"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_60_325">
+                    <rect width="41.5" height="41.5" fill="white" transform="translate(0.159485 0.647949)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="etiquette-content">
+            <h4>Segmentation utilisateur</h4>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        <div class="etiquette-popup hidden">
+            <p>Voici quelques informations supplémentaires...</p>
+        </div>
+    </div>
+
+    <div class="etiquette">
+        <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
+            <g clip-path="url(#clip0_60_325)">
+                <path opacity="0.15" d="M20.9094 17.9398C24.7293 17.9398 27.826 14.8431 27.826 11.0231C27.826 7.20314 24.7293 4.10645 20.9094 4.10645C17.0894 4.10645 13.9927 7.20314 13.9927 11.0231C13.9927 14.8431 17.0894 17.9398 20.9094 17.9398Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M7.94062 21.3978C10.3281 21.3978 12.2635 19.4624 12.2635 17.0749C12.2635 14.6874 10.3281 12.752 7.94062 12.752C5.55314 12.752 3.61771 14.6874 3.61771 17.0749C3.61771 19.4624 5.55314 21.3978 7.94062 21.3978Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M33.8782 21.3978C36.2656 21.3978 38.2011 19.4624 38.2011 17.0749C38.2011 14.6874 36.2656 12.752 33.8782 12.752C31.4907 12.752 29.5552 14.6874 29.5552 17.0749C29.5552 19.4624 31.4907 21.3978 33.8782 21.3978Z" fill="#FE665A"/>
+                <path d="M26.097 33.5021H15.722C12.8568 33.5021 10.5345 30.7925 10.5345 27.45C10.5345 24.1076 12.8568 21.3979 15.722 21.3979H26.097C28.9622 21.3979 31.2845 24.1076 31.2845 27.45C31.2845 30.7925 28.9622 33.5021 26.097 33.5021Z" fill="#FE665A"/>
+                <path opacity="0.15" d="M37.4248 24.8564H4.26107C1.99586 24.8564 0.159485 26.6928 0.159485 28.958V29.4024C0.159485 31.6659 1.99586 33.5023 4.26107 33.5023H37.4248C39.7626 33.5023 41.6595 31.6054 41.6595 29.2658V29.0912C41.6595 26.7533 39.7626 24.8564 37.4248 24.8564Z" fill="#FE665A"/>
+            </g>
+            <defs>
+                <clipPath id="clip0_60_325">
+                    <rect width="41.5" height="41.5" fill="white" transform="translate(0.159485 0.647949)"/>
+                </clipPath>
+            </defs>
+        </svg>
+        <div class="etiquette-content">
+            <h4>Migrations massives automatisées</h4>
+            <p>Lorem ipsum dolor sit</p>
+        </div>
+        <div class="etiquette-popup hidden">
+            <p>Voici quelques informations supplémentaires...</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- section footer-->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contactez-nous</h3>
+            <p>ellipsys@ellipsys-bi.com</p>
+        </div>
+
+        <div class="address">
+            <h3>Adresse</h3>
+            <p>29, Route d'Esch</p>
+            <p>L.3230 Bettembourg, Luxembourg</p>
+        </div>
+
+        <div class="social-icons">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
+                        class="mdi mdi-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
             </ul>
-            <button>Get Started</button>
-            <label for="nav-toggle" class="icon-burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
-        </nav>
-    </header>
+        </div>
+        <div class="footer-nav">
+            <h3>Liens</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="casusages.html">Cas d'usages</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="methodologie.html">Méthodologies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
+    </div>
+</footer>
+
+<div class="scroll-to-top">
+    <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
+</div>
+ <script src="../js/script.js"></script>
 </body>
