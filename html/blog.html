@@ -3,44 +3,110 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="../css/style.css">
-    <!-- <script src="../js/script.js"></script> -->
-    <title>Ellipsys</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styleG.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
+    <title>Ellipsys - Blog</title>
 </head>
 
-<body>
-    <header>
-        <div class="act">
-            <h3>Actualité : Le groupe ADEO/Leroy Merlin a animé un workshop devant 150 personnes au Salon Big Data Paris
-                2022...</h3>
-            <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"
-                height="39px">
-                <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
-                    d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"
-                    fill="white" stroke="white" />
-                <path
+<body onload="initElement();">
+<header>
+    <div class="act">
+        <h3>Actualité : Le groupe ADEO/Leroy Merlin a animé un workshop devant 150 personnes au Salon Big Data Paris
+            2022...</h3>
+        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"
+             height="39px">
+            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
+                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"
+                  fill="white" stroke="white" />
+            <path
                     d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"
                     fill="white" stroke="white" />
-            </svg>
+        </svg>
+    </div>
+    <nav>
+        <a href="../html/index.html">
+            <img id="logo_elypsis" src="../images/logo.jpg" class="logo" alt="Logo Ellipsys">
+        </a>
+        <ul class="links">
+            <li><a href="../html/casusages.html">Cas d'usages</a></li>
+            <li><a href="../html/apropos.html">A propos</a></li>
+            <li><a href="../html/Contact.html">Contact</a></li>
+            <li><a href="../html/methodologie.html">Methodologies</a></li>
+            <li><a href="../html/blog.html" class="active">Blog</a></li>
+        </ul>
+        <button class="gstart">Get Started</button>
+        <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+</header>
+
+    <div class="container-blog">
+        <h1>Blog</h1>
+        <blockquote>N'hésitez pas à aller faire un tour sur notre blog...</blockquote>
+        <div class="blog-list">
+            <a href="https://ellipsys-bi.blogspot.com/2022/12/supprimer-les-regressions-entre.html"
+               class="blog-item">Switch d'environnements #1 - Comparer les environnements<span class="arrow">→</span></a>
+            <a href="https://ellipsys-bi.blogspot.com/2022/12/supprimer-les-regressions-entre_16.html"
+               class="blog-item">Switch d'environnements #2 - Supprimer les tables inutiles<span class="arrow">→</span></a>
+            <a href="https://ellipsys-bi.blogspot.com/2023/01/identifier-instantanement-les-impacts.html"
+               class="blog-item">Switch d'environnements #3 - Les impacts d'une régression<span class="arrow">→</span></a>
+            <a href="https://ellipsys-bi.blogspot.com/2022/11/emailing-migrations-massives-et.html"
+               class="blog-item">Migrations massives et automatisées, d'outils de dataviz<span class="arrow">→</span></a>
+            <a href="https://ellipsys-bi.blogspot.com/2022/12/faire-de-lanalyse-dimpact-dans-une.html"
+               class="blog-item">Sourcer des données dans une solution de dataviz<span class="arrow">→</span></a>
+            <a href="https://ellipsys-bi.blogspot.com/2023/01/migration-automatique-de-sap-bo-vers.html"
+               class="blog-item">Migration automatique de SAP BO vers une solution tieree<span class="arrow">→</span></a>
+            <a href="https://ellipsys-bi.blogspot.com/2023/05/finops-reduire-les-couts-du-cloud-en.html"
+               class="blog-item">FinOps : réduire les coûts du Cloud en supprimant les "branches mortes" !<span class="arrow">→</span></a>
         </div>
-        <nav>
-            <a href="../html/index.html">
-                <img src="../images/logo.jpg"  alt="Logo de l'entreprise">
-            </a>
-            <ul class="links">
-                <li><a href="../html/casusages.html" class="nav-links">Cas d'usages</a></li>
-                <li><a href="../html/apropos.html" class="nav-links">A propos</a></li>
-                <li><a href="../html/Contact.html" class="nav-links">Contact</a></li>
-                <li><a href="../html/methodologie.html" class="nav-links">Methodologie</a></li>
-                <li><a href="../html/blog.html" class="nav-links">Blog</a></li>'
+    </div>
+
+<!-- section footer-->
+<footer class="footer">
+    <div class="footer-content">
+        <div class="contact-info">
+            <h3>Contactez-nous</h3>
+            <p>ellipsys@ellipsys-bi.com</p>
+        </div>
+
+        <div class="address">
+            <h3>Adresse</h3>
+            <p>29, Route d'Esch</p>
+            <p>L.3230 Bettembourg, Luxembourg</p>
+        </div>
+
+        <div class="social-icons">
+            <h3>Suivez-nous</h3>
+            <ul>
+                <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
+                        class="mdi mdi-linkedin"></i></a></li>
+                <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
             </ul>
-            <button>Get Started</button>
-            <label for="nav-toggle" class="icon-burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
-        </nav>
-    </header>
-    <script src="../js/script.js"></script>
+        </div>
+        <div class="footer-nav">
+            <h3>Liens</h3>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="casusages.html">Cas d'usages</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="methodologie.html">Méthodologies</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
+    </div>
+</footer>
+
+<div class="scroll-to-top">
+    <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
+</div>
+<script src="../js/script.js"></script>
 </body>
