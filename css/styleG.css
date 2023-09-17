@@ -1071,6 +1071,8 @@ iframe:hover {
     left: 0;
 }
 
+
+
 /*styles pour les cartes*/
 .cards-wrapper {
     display: flex;
@@ -1147,6 +1149,39 @@ iframe:hover {
 
 .card-back div{
     margin: 20px;
+}
+
+/* boutons des cards */
+.card-button {
+    width: 50px; /* Largeur du bouton */
+    height: 50px; /* Hauteur du bouton */
+    background-color: #FE665A; /* Couleur de fond */
+    border: none;
+    border-radius: 50%; /* Pour rendre le bouton rond */
+    color: #fff; /* Couleur du texte */
+    font-size: 24px; /* Taille de la police */
+    cursor: pointer;
+    top: 50%; /* Position verticale au milieu de la carte */
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Transition en cas de survol */
+}
+
+/* Style du bouton précédent (flèche vers la gauche) */
+#prev-button::before {
+    content: '\2190'; /* Code de caractère Unicode pour une flèche vers la gauche */
+}
+
+/* Style du bouton suivant (flèche vers la droite) */
+#next-button::before {
+    content: '\2192'; /* Code de caractère Unicode pour une flèche vers la droite */
+}
+
+/* Changer la couleur de fond au survol */
+.card-button:hover {
+    background-color: #D84E43; /* Couleur de fond au survol */
 }
 
 /* section a propos de*/
