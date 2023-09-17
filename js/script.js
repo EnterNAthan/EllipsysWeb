@@ -1,6 +1,3 @@
-
-
-
 const nav = document.querySelector('nav');
 // Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
 function handleScroll() {
@@ -11,9 +8,6 @@ function handleScroll() {
     }
 }
 window.addEventListener('scroll', handleScroll);
-
-
-
 
 
 // Fonction pour l'animation de retour en haut de page pour le bouton adéquat
@@ -38,39 +32,163 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
 
 
 
-// Sélectionne tous les éléments d'accordéon
-// creer une alerte ppour testez que le javascript est bien relié a la page html
-console.log("OK")
 
-function initAccordeon() {
-  const accordeonItems = document.querySelectorAll('.accordeon-item');
+// // Sélectionne tous les éléments d'accordéon
+// // creer une alerte ppour testez que le javascript est bien relié a la page html
+// console.log("OK")
+//
+// function initAccordeon() {
+//   const accordeonItems = document.querySelectorAll('.accordeon-item');
+//
+//   accordeonItems.forEach(item => {
+//     const header = item.querySelector('.accordeon-header');
+//     const content = item.querySelector('.accordeon-content');
+//
+//     header.addEventListener('click', () => {
+//       accordeonItems.forEach(otherItem => {
+//         if (otherItem !== item) {
+//           otherItem.classList.remove('open');
+//           otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
+//         }
+//       });
+//
+//       item.classList.toggle('open');
+//       if (item.classList.contains('open')) {
+//         content.style.maxHeight = content.scrollHeight + 'px';
+//       } else {
+//         content.style.maxHeight = '0';
+//       }
+//     });
+//   });
+// }
+//
+//
+// Animation des etiquettes pop up
+document.addEventListener("DOMContentLoaded", function() {
+    const etiquettes = document.querySelectorAll('.etiquette');
 
-  accordeonItems.forEach(item => {
-    const header = item.querySelector('.accordeon-header');
-    const content = item.querySelector('.accordeon-content');
+    etiquettes.forEach(function(etiquette) {
+        const popup = etiquette.querySelector('.etiquette-popup');
+        const etiquetteContent = etiquette.querySelector('.etiquette-content');
 
-    header.addEventListener('click', () => {
-      accordeonItems.forEach(otherItem => {
-        if (otherItem !== item) {
-          otherItem.classList.remove('open');
-          otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
-        }
-      });
+        etiquette.addEventListener('click', function() {
+            // Basculer la popup
+            popup.classList.toggle('hidden');
+            popup.classList.toggle('visible');
 
-      item.classList.toggle('open');
-      if (item.classList.contains('open')) {
-        content.style.maxHeight = content.scrollHeight + 'px';
-      } else {
-        content.style.maxHeight = '0';
-      }
+            // Agrandir le SVG
+            etiquette.classList.toggle('active');
+
+            // Faire disparaître le texte de l'étiquette
+            etiquetteContent.classList.toggle('hidden-content');
+        });
     });
-  });
-}
+});
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    class Button {
+        constructor(HTMLButtonElement) {
+            this.button = HTMLButtonElement;
+            this.width = this.button.offsetWidth;
+            this.height = this.button.offsetHeight;
+            this.left = this.button.offsetLeft;
+            this.top = this.button.offsetTop;
+            this.x = 0;
+            this.y = 0;
+            this.cursorX = 0;
+            this.cursorY = 0;
+            this.magneticPullX = 0.2; // Ajusté
+            this.magneticPullY = 0.3; // Ajusté
+            this.isHovering = false;
+            this.magnetise();
+            this.createRipple();
+        }
 
+        onEnter = () => {
+            gsap.to(this.button, 0.4, {
+                x: this.x * this.magneticPullX,
+                y: this.y * this.magneticPullY,
+                ease: Power4.easeOut
+            });
+        };
 
+        onLeave = () => {
+            gsap.to(this.button, 0.4, { // Ajusté
+                x: 0,
+                y: 0,
+                ease: Elastic.easeOut.config(1.1, 0.5)
+            });
+        };
 
+        magnetise = () => {
+            document.querySelector("body").addEventListener("mousemove", (e) => {
+                this.left = this.button.getBoundingClientRect().left;
+                this.top = this.button.getBoundingClientRect().top;
+                this.cursorX = e.clientX;
+                this.cursorY = e.clientY;
+
+                const center = {
+                    x: this.left + this.width / 2,
+                    y: this.top + this.height / 2
+                };
+
+                this.x = this.cursorX - center.x;
+                this.y = this.cursorY - center.y;
+
+                const distance = Math.sqrt(this.x * this.x + this.y * this.y);
+                const hoverArea = this.isHovering ? 0.4 : 0.3; // Ajusté
+
+                if (distance < this.width * hoverArea) {
+                    if (!this.isHovering) {
+                        this.isHovering = true;
+                    }
+                    this.onEnter();
+                } else {
+                    if (this.isHovering) {
+                        this.onLeave();
+                        this.isHovering = false;
+                    }
+                }
+            });
+        };
+
+        createRipple = () => {
+            this.button.addEventListener("click", () => {
+                const circle = document.createElement("span");
+                const diameter = Math.max(
+                    this.button.clientWidth,
+                    this.button.clientHeight
+                );
+                const radius = diameter / 2;
+
+                const offsetLeft = this.left + this.x * this.magneticPullX;
+                const offsetTop = this.top + this.y * this.magneticPullY;
+
+                circle.style.width = circle.style.height = `${diameter}px`;
+                circle.style.left = `${this.cursorX - offsetLeft - radius}px`;
+                circle.style.top = `${this.cursorY - offsetTop - radius}px`;
+                circle.classList.add("ripple");
+
+                const ripple = this.button.getElementsByClassName("ripple")[0];
+
+                if (ripple) {
+                    ripple.remove();
+                }
+
+                this.button.appendChild(circle);
+            });
+        }
+    }
+
+    const buttons = document.getElementsByClassName("btncontact_accueil");
+    for (const button of buttons) {
+        new Button(button);
+    }
+});
+//
+//
+//
 // // fonction pour chargez le script de scroll
 // function loadScript(url, callback) {
 //   var script = document.createElement('script');
@@ -80,17 +198,17 @@ function initAccordeon() {
 //   script.onload = callback;
 //   document.head.appendChild(script);
 // }
-
+//
 // // Fonction pour charger les scripts lorsque les éléments deviennent visibles
 // function loadScriptsOnScroll() {
 //   var elements = document.querySelectorAll('[data-js-src]');
-
+//
 //   elements.forEach(function(element) {
 //       var rect = element.getBoundingClientRect();
-
+//
 //       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
 //           var scriptSrc = element.getAttribute('data-js-src');
-
+//
 //           // Charger le script JavaScript associé à l'élément
 //           loadScript(scriptSrc, function() {
 //               // Supprimer l'attribut data-js-src pour éviter de charger le script à nouveau
@@ -99,17 +217,14 @@ function initAccordeon() {
 //       }
 //   });
 // }
-
+//
 // // Écouter l'événement de défilement de la page
 // // window.addEventListener('scroll', loadScriptsOnScroll);
-
+//
 // // Appeler la fonction pour charger les scripts initiaux lorsque la page se charge
 // window.addEventListener('load', function() {
 //   loadScriptsOnScroll();
 // });
-
-
-
 
 
 // Fonction pour mettre en surbrillance la page actuelle dans la barre de navigation
@@ -126,10 +241,22 @@ navLinks.forEach(link => {
 });
 }
 // Appelle la fonction lors du chargement de la page
-initAccordeon();
+// initAccordeon();
 highlightCurrentPage();
 
 
+// algo pour l'animation de la mascotte
+console.log("démarrage de l'animation")
+document.addEventListener('DOMContentLoaded', function() {
+    const animation = lottie.loadAnimation({
+        container: document.getElementById('lottie-animation'),
+        renderer: 'svg',
+        loop: true,
+        autoplay: true,
+        path: '../json/animation-mascotte.json',
+    });
+    console.log("OK pour animation")
+});
 
 
 
@@ -195,9 +322,6 @@ window.addEventListener("click", (event) => {
 });
 
 
-
-
-
 // Fonction pour afficher les réponses dans la faq
 const questions = document.querySelectorAll('.question');
 questions.forEach((question) => {
@@ -217,4 +341,3 @@ questions.forEach((question) => {
 
 
 //partit pour animez la page test
-

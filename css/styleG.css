@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 
-body{
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
+    background-color: white;
+
+    /*background-color: #e3e3e3;*/
+    /*background-image: linear-gradient(45deg, #FE665A, rgb(35, 34, 34));*/
 }
 
 /* loader de la page */
@@ -333,6 +337,7 @@ nav .links li a{
 }
 
 .bancontainer {
+    margin-top: -100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -344,9 +349,10 @@ nav .links li a{
 }
 
 .bancontainer h1{
-    font-size: 50px;
+    text-align: center;
+    font-size: 60px;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 /*container des différents contenus ainsi que les fenetres modales*/
@@ -472,7 +478,7 @@ nav .links li a{
     display: inline;
     color: #FE665A;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
     text-transform: capitalize;
     -webkit-text-stroke: 1px black;
     overflow: hidden;
@@ -857,14 +863,14 @@ iframe:hover {
 /*items de la page d'accueil*/
 .validation-list {
     display: flex;
-    margin : 0 0 5% ;
+    flex-direction: column;
 }
 
 .validation-item {
     display: flex;
     align-items: center;
     padding: 10px;
-    color: #000;
+    color: white;
 }
 
 .validation-list .validation-item p{
@@ -1255,7 +1261,6 @@ iframe:hover {
 
 /*contact section*/
 .contact-container {
-    background-color: #FFF;
     margin-top: 10%;
     margin-bottom: 10%;
     text-align: center;
@@ -1308,4 +1313,263 @@ textarea:valid + label {
 input::placeholder,
 textarea::placeholder {
     opacity: 0.5;
+}
+
+.container-etiquette {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    align-items: flex-start;
+    font-family: "Montserrat", sans-serif;
+    gap: 200px;
+}
+
+.etiquette {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin: 100px;
+    width: 800px;
+    height: 140px;
+    align-items: center;
+}
+
+.etiquette svg {
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+
+.etiquette.active svg {
+    width: 150px;
+    height: 150px;
+}
+
+.etiquette svg:hover {
+    transform: translateY(2px);
+    background-color: #FE665A;
+    cursor: pointer;
+    box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.etiquette svg:hover path {
+    fill: white;
+}
+
+.etiquette-content {
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 0.0000001s ease-in-out;
+}
+
+.etiquette-content h4,
+.etiquette-content p {
+    margin: 0;
+}
+
+.etiquette-content h4 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.etiquette-content h4:hover {
+    color: #FE665A;
+    cursor: pointer;
+}
+
+.etiquette-content p {
+    color: #6F6C90;
+    font-family: DM Sans;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.etiquette-popup {
+    background-color: #FE665A;
+    border-radius: 8px;
+    color: white;
+    padding: 16px;
+    position: absolute;
+    width: 600px;
+    height: 100px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    z-index: 10;
+    margin-left: 200px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.visible {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.hidden-content {
+    opacity: 0;
+}
+
+#object1{
+    display: flex;
+    margin-left: 1000px;
+    position: relative;
+    animation: rotate 4s infinite linear;
+}
+
+#object2{
+    display: flex;
+    margin-left: 500px;
+    position: absolute;
+    animation: rotate 10s infinite linear;
+}
+
+#object3{
+    display: flex;
+    margin-left: 800px;
+    position: absolute;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.lines {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    margin: auto;
+    width: 90vw;
+}
+
+.line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    top: 0;
+    left: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+}
+
+.line::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 15vh;
+    width: 100%;
+    top: -50%;
+    left: 0;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000000 75%, #000000 100%);
+    animation: drop 10s 0s infinite;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
+}
+
+.line:nth-child(1) {
+    margin-left: -25%;
+}
+
+.line:nth-child(1)::after {
+    animation-delay: 2s;
+}
+
+.line:nth-child(3) {
+    margin-left: 25%;
+}
+
+.line:nth-child(3)::after {
+    animation-delay: 3.5s;
+}
+
+@keyframes drop {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 110%;
+    }
+}
+
+
+
+.container-blog {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+}
+
+.container-blog h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 50px;
+}
+
+.blog-list {
+    list-style: none;
+    padding: 0;
+}
+
+.blog-item {
+    display: block;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    color: #333;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.blog-item .arrow {
+    opacity: 0;
+    position: absolute;
+    right: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.blog-item:hover {
+    padding-right: 40px;
+    background-color: #eee;
+}
+
+.blog-item:hover .arrow {
+    opacity: 1;
+}
+
+span.ripple {
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 600ms linear;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+@keyframes ripple {
+    to {
+        transform: scale(4);
+        opacity: 0;
+    }
 }
