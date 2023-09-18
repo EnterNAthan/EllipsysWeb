@@ -13,19 +13,20 @@ body {
 
 /* loader de la page */
 /* container du loader */
-.loader{
-    position : absolute;
+.loader {
+    position: absolute;
     width: 100%;
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     background-color: whitesmoke;
 
 }
+
 /* animation du loader  */
-.anim{
+.anim {
     margin-bottom: 150px;
     align-items: center;
     width: 100%;
@@ -33,20 +34,20 @@ body {
 }
 
 /* text du loader  */
-.text-loader{
+.text-loader {
     font-size: 2rem;
     font-weight: 700;
     color: #FE665A;
 }
 
-.fondu-out{
+.fondu-out {
     opacity: 0;
     transition: opacity 0.7s ease-out;
 }
 
 
 /* Baniére d'actualité au top */
-.act{
+.act {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,25 +59,25 @@ body {
 }
 
 /* svg fleche qui est un lien*/
-.act svg{
+.act svg {
     width: 50px;
     height: 50px;
 }
 
-.act h3{
+.act h3 {
     font-size: 1.25rem;
     font-weight: 700;
     text-align: center;
 }
 
-#logo_elypsis{
+#logo_elypsis {
     width: 80%;
     height: 80%;
     mix-blend-mode: multiply;
 }
 
 /*barre de nav*/
-nav{
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -89,11 +90,12 @@ nav{
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-nav .logo{
+nav .logo {
     width: 10%;
     height: 10%;
 }
-nav .links{
+
+nav .links {
     width: 50%;
     height: 50%;
     display: flex;
@@ -101,12 +103,12 @@ nav .links{
     align-items: center;
 }
 
-nav .links li{
+nav .links li {
     text-decoration: none;
     list-style: none;
 }
 
-nav .links li a{
+nav .links li a {
     text-decoration: none;
     color: black;
     font-weight: 700;
@@ -145,12 +147,12 @@ nav .links li a{
 
 /*Tous les boutons*/
 /* Bouton de base (get started) */
-.gstart{
+.gstart {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -160,7 +162,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.gstart:hover{
+.gstart:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -168,14 +170,14 @@ nav .links li a{
 }
 
 /* Bouton contact de l'accueil */
-.btncontact_accueil{
+.btncontact_accueil {
     width: 20rem;
     height: 5rem;
     font-family: "Leelawadee UI", serif;
     font-size: 28px;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     box-shadow: none;
@@ -184,7 +186,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btncontact_accueil:hover{
+.btncontact_accueil:hover {
     background-color: rgb(255, 255, 255);
     color: #FE665A;
     border-color: #FE665A;
@@ -192,12 +194,12 @@ nav .links li a{
 }
 
 /* Bouton en savoir plus */
-.ensavoirplus{
+.ensavoirplus {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -207,7 +209,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.ensavoirplus:hover{
+.ensavoirplus:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -215,12 +217,12 @@ nav .links li a{
 }
 
 /* Bouton en savoir plus 2*/
-.ensavoirplus2{
+.ensavoirplus2 {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -230,7 +232,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.ensavoirplus2:hover{
+.ensavoirplus2:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -238,12 +240,12 @@ nav .links li a{
 }
 
 /* Bouton en savoir plus 3*/
-.ensavoirplus3{
+.ensavoirplus3 {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -253,14 +255,14 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.ensavoirplus3:hover{
+.ensavoirplus3:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
     box-shadow: #FE665A;
 }
 
-.container-button{
+.container-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -268,7 +270,7 @@ nav .links li a{
 }
 
 /* Bouton 'je veux ça' */
-.cpartit{
+.cpartit {
     width: 80%;
     height: 5rem;
     font-size: 30px;
@@ -287,18 +289,18 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.cpartit:hover{
+.cpartit:hover {
     background-color: #222;
     color: white;
 }
 
 /* Bouton 'nous contacter */
-.btncontact{
+.btncontact {
     font-size: 20px;
     width: 20%;
     height: 60px;
     background-color: #FE665A;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -311,7 +313,7 @@ nav .links li a{
     margin-bottom: 80px;
 }
 
-.btncontact:hover{
+.btncontact:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -343,12 +345,12 @@ nav .links li a{
     align-items: center;
     padding-left: 130px;
     flex-shrink: 0;
-    font-family: 'Euclid Circular B',arial,sans-serif !important;
+    font-family: 'Euclid Circular B', arial, sans-serif !important;
     font-style: normal;
     text-transform: capitalize;
 }
 
-.bancontainer h1{
+.bancontainer h1 {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
@@ -364,14 +366,14 @@ nav .links li a{
     padding-left: 130px;
 }
 
-.bancontainer1 h1{
+.bancontainer1 h1 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     color: black;
 }
 
-.bancontainer1 h3{
+.bancontainer1 h3 {
     color: #000;
     font-size: 14px;
     text-transform: uppercase;
@@ -388,14 +390,14 @@ nav .links li a{
     margin-top: 200px;
 }
 
-.bancontainer2 h1{
+.bancontainer2 h1 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     color: black;
 }
 
-.bancontainer2 h3{
+.bancontainer2 h3 {
     color: #000;
     font-size: 14px;
     text-transform: uppercase;
@@ -403,7 +405,7 @@ nav .links li a{
     margin-left: 5px;
 }
 
-.bancontainer2>.acgauche{
+.bancontainer2>.acgauche {
     margin-left: 100px;
 }
 
@@ -417,14 +419,14 @@ nav .links li a{
     margin-bottom: 200px;
 }
 
-.bancontainer3 h1{
+.bancontainer3 h1 {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
     color: black;
 }
 
-.bancontainer3 h3{
+.bancontainer3 h3 {
     color: #000;
     font-size: 14px;
     text-transform: uppercase;
@@ -456,7 +458,7 @@ nav .links li a{
 
 
 /*sous-titre des contenus*/
-.soustitreban{
+.soustitreban {
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -465,7 +467,7 @@ nav .links li a{
 }
 
 /*style texte special de base*/
-.orange-text{
+.orange-text {
     color: #FE665A;
     font-weight: 700;
     font-size: 2.5rem;
@@ -491,14 +493,12 @@ nav .links li a{
     height: 110%;
     top: 0;
     left: -200%;
-    background: linear-gradient(
-            to right,
+    background: linear-gradient(to right,
             transparent,
             rgba(255, 255, 255, 0.3) 25%,
             rgba(255, 255, 255, 0.5) 50%,
             rgba(255, 255, 255, 1) 75%,
-            transparent 90%
-    );
+            transparent 90%);
     pointer-events: none;
     animation: highlightMove 6s infinite linear;
 }
@@ -508,6 +508,7 @@ nav .links li a{
     0% {
         left: -1000%;
     }
+
     100% {
         left: 70%;
     }
@@ -593,6 +594,7 @@ blockquote {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -607,6 +609,7 @@ blockquote {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -655,7 +658,7 @@ iframe:hover {
     border-radius: 20px;
 }
 
-.container-etude-cas>h1{
+.container-etude-cas>h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-top: 100px;
@@ -686,7 +689,7 @@ iframe:hover {
     margin-bottom: 50px;
 }
 
-.container-question > h1 {
+.container-question>h1 {
     font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 100px;
@@ -716,7 +719,7 @@ iframe:hover {
     font-weight: bold;
 }
 
-.ligne-horiz{
+.ligne-horiz {
     height: 1px;
     border-radius: 20px;
     background-color: #FE665A;
@@ -800,7 +803,7 @@ iframe:hover {
     margin-bottom: 10px;
 }
 
-.social-icons li{
+.social-icons li {
     font-size: 25px;
 }
 
@@ -817,7 +820,7 @@ iframe:hover {
     color: #F24E1E;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     text-align: center;
     margin: 0;
     padding: 20px 0;
@@ -873,28 +876,28 @@ iframe:hover {
     color: white;
 }
 
-.validation-list .validation-item p{
+.validation-list .validation-item p {
     font-size: 18px;
     font-weight: 700;
     text-align: center;
     padding-left: 5px;
 }
 
-.validation-list .validation-item p:hover{
+.validation-list .validation-item p:hover {
     color: #FE665A;
 }
 
-.validation-list .validation-item i{
+.validation-list .validation-item i {
     display: inline-block;
     font-size: 25px;
     color: #FE665A;
     transition: transform 0.3s ease;
 }
 
-.validation-list .validation-item i:hover{
+.validation-list .validation-item i:hover {
     transform: rotate(360deg);
 }
-  
+
 /*bannère des logos*/
 .banlogo {
     width: 100%;
@@ -939,7 +942,7 @@ iframe:hover {
     text-transform: capitalize;
 }
 
-.small-text-explication{
+.small-text-explication {
     margin: -30px auto auto;
     text-align: center;
     width: 70%;
@@ -954,68 +957,83 @@ iframe:hover {
     font-style: normal;
 }
 
-.ban-accordeon{
+/*section accordeon*/
+.ban-accordeon {
     margin-top: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 1%;
-}  
+    color: white;
+}
 
-.ban-accordeon svg{
+.ban-accordeon svg {
     margin: auto;
 }
 
 /* Styles pour l'accordéon */
 .accordeon {
-    width: 100%;
-    max-width: 500px;
+    justify-content: center;
     margin: 0 auto;
 }
-  
+
 .accordeon-item {
-    margin-bottom: 10px;
+    width: 800px;
+    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
-  
-.accordeon-header {
-    padding-left: 15%;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    position: relative;
-    transition: background-color 0.3s;
-    border-left: 4px solid #000;
-}
-  
+
 .accordeon-title {
+    cursor: pointer;
     font-weight: bold;
-    font-size: large;
+    font-size: 35px;
+    padding-left: 10%;
+    transition: background-color 0.3s;
+    border-left: 4px solid #ffaca1;
 }
 
 .accordeon-content {
     padding-left: 15%;
-    display: none;
     position: relative;
     z-index: 2;
-    background-color: #fff;
-    margin-left: 0; /* Supprimer la marge */
+    margin-left: 0;
+    font-size: 25px;
     transition: background-color 0.3s, max-height 0.5s ease-in-out;
     max-height: 0;
     overflow: hidden;
 }
-  
+
+.accordeon-title:hover,
+.accordeon-item.open .accordeon-title {
+    background-color: rgba(255, 103, 65, 0.1);
+    border-color: #F86642;
+}
+
 .accordeon-item.open .accordeon-content {
-    display: block; /* Afficher le contenu lorsque l'élément est ouvert */
-    max-height: 500px; /* Ajuster la hauteur du contenu ouvert */
+    display: block;
+    max-height: 500px;
     transition: background-color 0.3s, max-height 0.5s ease-in-out;
-    border-left: 4px solid #FE665A; /* Bordure fermée orange */
+    border-left: 4px solid #F86642;
 }
-  
-.accordeon-item.open .accordeon-header {
-    border-color: #F86642; /* Changer la couleur de la bordure quand ouvert */
+
+.accordeon-item.open .accordeon-title {
+    border-color: #F86642;
 }
+
+/* partit pour masquez et affichez les lotties */
+.lottie-container{
+    margin-left: auto;
+}
+
+.lottie-container .hidden {
+    display: none;
+}
+
+.lottie-container .visible {
+    display: block;
+}
+
 
 .paragraph-container {
     display: grid;
@@ -1035,7 +1053,7 @@ iframe:hover {
     background-color: #fff;
 }
 
-.paragraph:hover{
+.paragraph:hover {
     border-color: #F86642;
     border-radius: 10px;
     border-width: 5px;
@@ -1071,8 +1089,8 @@ iframe:hover {
 }
 
 .video iframe {
-    width :621px; 
-    height : 340px;
+    width: 621px;
+    height: 340px;
     top: 0;
     left: 0;
 }
@@ -1148,46 +1166,57 @@ iframe:hover {
     font-weight: 500;
     font-size: 22px;
     line-height: 35px;
-    font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,
-    Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; /*police de ChatGPT*/
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
+        Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     transform: rotateY(-180deg);
 }
 
-.card-back div{
+.card-back div {
     margin: 20px;
 }
 
 /* boutons des cards */
 .card-button {
-    width: 50px; /* Largeur du bouton */
-    height: 50px; /* Hauteur du bouton */
-    background-color: #FE665A; /* Couleur de fond */
+    width: 50px;
+    /* Largeur du bouton */
+    height: 50px;
+    /* Hauteur du bouton */
+    background-color: #FE665A;
+    /* Couleur de fond */
     border: none;
-    border-radius: 50%; /* Pour rendre le bouton rond */
-    color: #fff; /* Couleur du texte */
-    font-size: 24px; /* Taille de la police */
+    border-radius: 50%;
+    /* Pour rendre le bouton rond */
+    color: #fff;
+    /* Couleur du texte */
+    font-size: 24px;
+    /* Taille de la police */
     cursor: pointer;
-    top: 50%; /* Position verticale au milieu de la carte */
+    top: 50%;
+    /* Position verticale au milieu de la carte */
     transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.3s ease; /* Transition en cas de survol */
+    transition: background-color 0.3s ease;
+    /* Transition en cas de survol */
 }
 
 /* Style du bouton précédent (flèche vers la gauche) */
 #prev-button::before {
-    content: '\2190'; /* Code de caractère Unicode pour une flèche vers la gauche */
+    content: '\2190';
+    /* Code de caractère Unicode pour une flèche vers la gauche */
 }
 
 /* Style du bouton suivant (flèche vers la droite) */
 #next-button::before {
-    content: '\2192'; /* Code de caractère Unicode pour une flèche vers la droite */
+    content: '\2192';
+    /* Code de caractère Unicode pour une flèche vers la droite */
 }
 
 /* Changer la couleur de fond au survol */
 .card-button:hover {
-    background-color: #D84E43; /* Couleur de fond au survol */
+    background-color: #D84E43;
+    /* Couleur de fond au survol */
 }
 
 /* section a propos de*/
@@ -1219,7 +1248,7 @@ iframe:hover {
 /*bubble section*/
 .bubble-container {
     font-family: "Roboto Thin", Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
+        Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -1282,7 +1311,8 @@ iframe:hover {
     margin-bottom: 30px;
 }
 
-input, textarea {
+input,
+textarea {
     width: 100%;
     padding: 15px;
     border: 1px solid black;
@@ -1300,10 +1330,10 @@ label {
     transition: all 0.3s ease;
 }
 
-input:focus + label,
-textarea:focus + label,
-input:valid + label,
-textarea:valid + label {
+input:focus+label,
+textarea:focus+label,
+input:valid+label,
+textarea:valid+label {
     opacity: 1;
     top: -18px;
     font-size: 14px;
@@ -1422,21 +1452,21 @@ textarea::placeholder {
     opacity: 0;
 }
 
-#object1{
+#object1 {
     display: flex;
     margin-left: 1000px;
     position: relative;
     animation: rotate 4s infinite linear;
 }
 
-#object2{
+#object2 {
     display: flex;
     margin-left: 500px;
     position: absolute;
     animation: rotate 10s infinite linear;
 }
 
-#object3{
+#object3 {
     display: flex;
     margin-left: 800px;
     position: absolute;
@@ -1446,6 +1476,7 @@ textarea::placeholder {
     from {
         transform: rotate(0deg);
     }
+
     to {
         transform: rotate(360deg);
     }
@@ -1505,6 +1536,7 @@ textarea::placeholder {
     0% {
         top: -50%;
     }
+
     100% {
         top: 110%;
     }
@@ -1540,7 +1572,7 @@ textarea::placeholder {
     position: relative;
     overflow: hidden;
     transition: all 0.4s ease;
-    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
 }
 
 .blog-item .arrow {

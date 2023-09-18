@@ -31,38 +31,40 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
 
 
 
+document.addEventListener('DOMContentLoaded', (event) => {
+    initAccordeon();
+});
 
+function initAccordeon() {
+    const accordeonItems = document.querySelectorAll('.accordeon-item');
 
-// // Sélectionne tous les éléments d'accordéon
-// // creer une alerte ppour testez que le javascript est bien relié a la page html
-// console.log("OK")
-//
-// function initAccordeon() {
-//   const accordeonItems = document.querySelectorAll('.accordeon-item');
-//
-//   accordeonItems.forEach(item => {
-//     const header = item.querySelector('.accordeon-header');
-//     const content = item.querySelector('.accordeon-content');
-//
-//     header.addEventListener('click', () => {
-//       accordeonItems.forEach(otherItem => {
-//         if (otherItem !== item) {
-//           otherItem.classList.remove('open');
-//           otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
-//         }
-//       });
-//
-//       item.classList.toggle('open');
-//       if (item.classList.contains('open')) {
-//         content.style.maxHeight = content.scrollHeight + 'px';
-//       } else {
-//         content.style.maxHeight = '0';
-//       }
-//     });
-//   });
-// }
-//
-//
+    accordeonItems.forEach(item => {
+        const title = item.querySelector('.accordeon-title');
+        const content = item.querySelector('.accordeon-content');
+        const lottieId = item.getAttribute('data-lottie-id'); // Récupérez l'ID de l'élément Lottie associé
+
+        title.addEventListener('click', () => {
+            accordeonItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('open');
+                    otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
+                }
+            });
+
+            item.classList.toggle('open');
+            content.style.maxHeight = item.classList.contains('open') ? `${content.scrollHeight}px` : '0';
+
+            // Affichez l'élément Lottie associé
+            if (lottieId) {
+                const lottiePlayer = document.getElementById(lottieId);
+                if (lottiePlayer) {
+                    lottiePlayer.classList.remove('hidden');
+                }
+            }
+        });
+    });
+}
+
 // Animation des etiquettes pop up
 document.addEventListener("DOMContentLoaded", function() {
     const etiquettes = document.querySelectorAll('.etiquette');
