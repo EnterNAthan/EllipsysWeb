@@ -447,7 +447,6 @@ nav .links li a{
     flex-shrink: 0;
     font-family: 'Euclid Circular B',arial,sans-serif !important;
     font-style: normal;
-    text-transform: capitalize;
 }
 
 .bancontainer h1{
@@ -580,7 +579,6 @@ nav .links li a{
     color: #FE665A;
     font-weight: 700;
     font-size: 60px;
-    text-transform: capitalize;
     -webkit-text-stroke: var(--openAudit-anime-stroke);
 }
 
