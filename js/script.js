@@ -37,7 +37,8 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
 
 
 
-// Fonction pour l'accordeon des points forts
+
+// Fonction pour l'animation de l'accordeon
 document.addEventListener('DOMContentLoaded', (event) => {
     initAccordeon();
 });
@@ -48,62 +49,40 @@ function initAccordeon() {
     accordeonItems.forEach(item => {
         const title = item.querySelector('.accordeon-title');
         const content = item.querySelector('.accordeon-content');
-
-        if (item.classList.contains('open')) {
-            content.style.maxHeight = `${content.scrollHeight}px`;
-        }
+        const lottieId = item.getAttribute('data-lottie-id');
 
         title.addEventListener('click', () => {
+
             accordeonItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('open');
                     otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
-                }
-            });
 
-            item.classList.toggle('open');
-            content.style.maxHeight = item.classList.contains('open') ? `${content.scrollHeight}px` : '0';
-        });
-    });
-}
-
-
-
-
-
-document.addEventListener('DOMContentLoaded', (event) => {
-    initAccordeon();
-});
-
-function initAccordeon() {
-    const accordeonItems = document.querySelectorAll('.accordeon-item');
-
-    accordeonItems.forEach(item => {
-        const title = item.querySelector('.accordeon-title');
-        const content = item.querySelector('.accordeon-content');
-        const lottieId = item.getAttribute('data-lottie-id'); // Récupérez l'ID de l'élément Lottie associé
-
-        title.addEventListener('click', () => {
-            accordeonItems.forEach(otherItem => {
-                if (otherItem !== item) {
-                    otherItem.classList.remove('open');
-                    otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
+                    const otherLottieId = otherItem.getAttribute('data-lottie-id');
+                    const otherLottiePlayer = document.getElementById(otherLottieId);
+                    if (otherLottiePlayer) {
+                        otherLottiePlayer.style.opacity = '0';
+                        setTimeout(() => {
+                            otherLottiePlayer.classList.add('hidden');
+                        }, 0.000000001); // duree de la transition
+                    }
                 }
             });
 
             item.classList.toggle('open');
             content.style.maxHeight = item.classList.contains('open') ? `${content.scrollHeight}px` : '0';
 
-            // Affichez l'élément Lottie associé
-            if (lottieId) {
-                const lottiePlayer = document.getElementById(lottieId);
-                if (lottiePlayer) {
-                    lottiePlayer.classList.remove('hidden');
-                }
+            const lottiePlayer = document.getElementById(lottieId);
+            if (lottiePlayer) {
+                lottiePlayer.classList.remove('hidden');
+                setTimeout(() => {
+                    lottiePlayer.style.opacity = '1';
+                }, 600);
             }
         });
     });
 }
+
 
 
 
