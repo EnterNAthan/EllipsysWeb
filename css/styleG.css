@@ -1091,6 +1091,10 @@ iframe:hover {
     display: block;
 }
 
+.lottie-container lottie-player {
+    transition: opacity 1s ease-in-out;
+}
+
 .accordeon-item.open .accordeon-title {
     border-color: #F86642;
 }
