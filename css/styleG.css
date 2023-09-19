@@ -123,7 +123,6 @@ body {
     align-items: center;
     flex-direction: column;
     background-color: var(--background-color);
-
 }
 
 /* animation du loader  */
@@ -170,6 +169,9 @@ body {
     font-weight: 700;
     text-align: center;
     letter-spacing: 1px;
+}
+@media screen and (max-width: 800px) {
+
 }
 
 #logo_elypsis {
@@ -243,6 +245,9 @@ nav .links li a{
 .links li a.active {
     color: #FE665A;
 }
+
+/* Nav bar responsive  */
+
 
 /*Tous les boutons*/
 /* Bouton de base (get started) */
