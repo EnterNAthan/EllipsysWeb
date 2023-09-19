@@ -37,12 +37,19 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
 
 
 
+// Masquer tous les éléments Lottie
+function hideAllLotties() {
+    const lotties = document.querySelectorAll('.lottie-container lottie-player');
+    lotties.forEach(lottie => {
+        lottie.classList.remove('visible');
+        lottie.classList.add('hidden');
+    });
+}
 
 // Fonction pour l'animation de l'accordeon
 document.addEventListener('DOMContentLoaded', (event) => {
     initAccordeon();
 });
-
 function initAccordeon() {
     const accordeonItems = document.querySelectorAll('.accordeon-item');
 
@@ -52,37 +59,28 @@ function initAccordeon() {
         const lottieId = item.getAttribute('data-lottie-id');
 
         title.addEventListener('click', () => {
-
             accordeonItems.forEach(otherItem => {
                 if (otherItem !== item) {
                     otherItem.classList.remove('open');
                     otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
-
-                    const otherLottieId = otherItem.getAttribute('data-lottie-id');
-                    const otherLottiePlayer = document.getElementById(otherLottieId);
-                    if (otherLottiePlayer) {
-                        otherLottiePlayer.style.opacity = '0';
-                        setTimeout(() => {
-                            otherLottiePlayer.classList.add('hidden');
-                        }, 0.000000001); // duree de la transition
-                    }
                 }
             });
 
             item.classList.toggle('open');
             content.style.maxHeight = item.classList.contains('open') ? `${content.scrollHeight}px` : '0';
 
-            const lottiePlayer = document.getElementById(lottieId);
-            if (lottiePlayer) {
-                lottiePlayer.classList.remove('hidden');
-                setTimeout(() => {
-                    lottiePlayer.style.opacity = '1';
-                }, 600);
+            // Masquer tous les autres éléments Lottie
+            hideAllLotties();
+
+            // Afficher le Lottie associé à cet accordéon
+            const newLottiePlayer = document.getElementById(lottieId);
+            if (newLottiePlayer) {
+                newLottiePlayer.classList.remove('hidden');
+                newLottiePlayer.classList.add('visible');
             }
         });
     });
 }
-
 
 
 

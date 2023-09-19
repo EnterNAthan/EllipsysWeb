@@ -1086,6 +1086,7 @@ iframe:hover {
 /* partit pour masquez et affichez les lotties */
 .lottie-container{
     margin-left: auto;
+    position: relative;
 }
 
 .lottie-container .hidden {
@@ -1094,10 +1095,6 @@ iframe:hover {
 
 .lottie-container .visible {
     display: block;
-}
-
-.lottie-container lottie-player {
-    transition: opacity 1s ease-in-out;
 }
 
 .accordeon-item.open .accordeon-title {
