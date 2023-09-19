@@ -1,5 +1,12 @@
-const nav = document.querySelector('nav');
+// JAVASCRIPT
+// @Ellipsys
+// @Auteur: AmpleurWeb
+// @Date:   2023
+
+
+
 // Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
+const nav = document.querySelector('nav');
 function handleScroll() {
     if (window.scrollY > 0) {
         nav.classList.add('nav-scrolled');
@@ -10,7 +17,8 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 
 
-// Fonction pour l'animation de retour en haut de page pour le bouton adéquat
+
+// Fonction pour l'animation de retour en haut de page
 window.addEventListener("scroll", () => {
     const scrollButton = document.querySelector(".scroll-to-top");
     if (document.documentElement.scrollTop > 300) {
@@ -19,7 +27,6 @@ window.addEventListener("scroll", () => {
         scrollButton.style.display = "none";
     }
 });
-
 document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
     e.preventDefault();
     window.scrollTo({
@@ -27,6 +34,39 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
         behavior: "smooth",
     });
 });
+
+
+
+// Fonction pour l'accordeon des points forts
+document.addEventListener('DOMContentLoaded', (event) => {
+    initAccordeon();
+});
+
+function initAccordeon() {
+    const accordeonItems = document.querySelectorAll('.accordeon-item');
+
+    accordeonItems.forEach(item => {
+        const title = item.querySelector('.accordeon-title');
+        const content = item.querySelector('.accordeon-content');
+
+        if (item.classList.contains('open')) {
+            content.style.maxHeight = `${content.scrollHeight}px`;
+        }
+
+        title.addEventListener('click', () => {
+            accordeonItems.forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('open');
+                    otherItem.querySelector('.accordeon-content').style.maxHeight = '0';
+                }
+            });
+
+            item.classList.toggle('open');
+            content.style.maxHeight = item.classList.contains('open') ? `${content.scrollHeight}px` : '0';
+        });
+    });
+}
+
 
 
 
@@ -65,6 +105,82 @@ function initAccordeon() {
     });
 }
 
+
+
+
+
+// Fonction pour le switch dark/light mode
+document.addEventListener('DOMContentLoaded', function () {
+    const body = document.body;  // Notez que c'est `document.body`, et non `document.querySelector("#body")`
+    const toggleSwitch = document.querySelector('#js-switch');
+
+    // Vérifiez si un thème est déjà stocké
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        body.className = savedTheme;
+    }
+
+    function toggleDarkLight() {
+        if(body.classList.contains('ui-light-theme')) {
+            body.classList.remove('ui-light-theme');
+            body.classList.add('ui-dark-theme');
+            localStorage.setItem('theme', 'ui-dark-theme');  // Sauvegardez dans le localStorage
+        } else {
+            body.classList.remove('ui-dark-theme');
+            body.classList.add('ui-light-theme');
+            localStorage.setItem('theme', 'ui-light-theme');  // Sauvegardez dans le localStorage
+        }
+    }
+
+    toggleSwitch.addEventListener('click', toggleDarkLight);
+});
+
+// document.addEventListener('DOMContentLoaded', function () {
+//     const body = document.body;
+//     const toggleSwitch = document.querySelector('#js-switch');
+//     const toggleButton = document.querySelector('.c-theme-switch__toggle');
+//
+//     // Désactivez les transitions
+//     toggleButton.style.transition = 'none';
+//
+//     // Obtenez le thème sauvegardé ou utilisez un thème par défaut
+//     const savedTheme = localStorage.getItem('theme') || 'ui-light-theme';
+//
+//     body.className = savedTheme;
+//
+//     if(savedTheme === 'ui-dark-theme') {
+//         toggleButton.style.transform = 'translateX(37px)';
+//     } else {
+//         toggleButton.style.transform = 'translateX(0)';
+//     }
+//
+//     // Réactivez les transitions
+//     setTimeout(() => {
+//         toggleButton.style.transition = '';
+//     }, -1000);
+//
+//     function toggleDarkLight() {
+//         let nextTheme;
+//         if(body.classList.contains('ui-light-theme')) {
+//             body.classList.replace('ui-light-theme', 'ui-dark-theme');
+//             nextTheme = 'ui-dark-theme';
+//             toggleButton.style.transform = 'translateX(37px)';
+//         } else {
+//             body.classList.replace('ui-dark-theme', 'ui-light-theme');
+//             nextTheme = 'ui-light-theme';
+//             toggleButton.style.transform = 'translateX(0)';
+//         }
+//
+//         localStorage.setItem('theme', nextTheme);
+//     }
+//
+//     toggleSwitch.addEventListener('click', toggleDarkLight);
+// });
+
+
+
+
+
 // Animation des etiquettes pop up
 document.addEventListener("DOMContentLoaded", function() {
     const etiquettes = document.querySelectorAll('.etiquette');
@@ -88,6 +204,10 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
+
+
+
+// Animation aimantée du bouton de contact
 document.addEventListener('DOMContentLoaded', function() {
     class Button {
         constructor(HTMLButtonElement) {
@@ -188,45 +308,7 @@ document.addEventListener('DOMContentLoaded', function() {
         new Button(button);
     }
 });
-//
-//
-//
-// // fonction pour chargez le script de scroll
-// function loadScript(url, callback) {
-//   var script = document.createElement('script');
-//   script.type = 'text/javascript';
-//   script.src = url;
-//   script.async = true;
-//   script.onload = callback;
-//   document.head.appendChild(script);
-// }
-//
-// // Fonction pour charger les scripts lorsque les éléments deviennent visibles
-// function loadScriptsOnScroll() {
-//   var elements = document.querySelectorAll('[data-js-src]');
-//
-//   elements.forEach(function(element) {
-//       var rect = element.getBoundingClientRect();
-//
-//       if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
-//           var scriptSrc = element.getAttribute('data-js-src');
-//
-//           // Charger le script JavaScript associé à l'élément
-//           loadScript(scriptSrc, function() {
-//               // Supprimer l'attribut data-js-src pour éviter de charger le script à nouveau
-//               element.removeAttribute('data-js-src');
-//           });
-//       }
-//   });
-// }
-//
-// // Écouter l'événement de défilement de la page
-// // window.addEventListener('scroll', loadScriptsOnScroll);
-//
-// // Appeler la fonction pour charger les scripts initiaux lorsque la page se charge
-// window.addEventListener('load', function() {
-//   loadScriptsOnScroll();
-// });
+
 
 
 // Fonction pour mettre en surbrillance la page actuelle dans la barre de navigation
@@ -242,12 +324,12 @@ navLinks.forEach(link => {
     });
 });
 }
-// Appelle la fonction lors du chargement de la page
-// initAccordeon();
 highlightCurrentPage();
 
 
-// algo pour l'animation de la mascotte
+
+
+// Algo pour l'animation de la mascotte
 console.log("démarrage de l'animation")
 document.addEventListener('DOMContentLoaded', function() {
     const animation = lottie.loadAnimation({
@@ -273,7 +355,6 @@ const closeModal = document.querySelector(".close-modal");
 const closeModal2 = document.querySelector(".close-modal2");
 const closeModal3 = document.querySelector(".close-modal3");
 
-
 // Fonctions indépendantes pour afficher les boîtes modales
 function openModal() {
     modal.classList.add("active");
@@ -285,7 +366,6 @@ function openModal3() {
     modal3.classList.add("active");
 }
 
-
 // Fonctions indépendantes pour masquer les boîtes modales
 function closeModalFunc() {
     modal.classList.remove("active");
@@ -296,7 +376,6 @@ function closeModalFunc2() {
 function closeModalFunc3() {
     modal3.classList.remove("active");
 }
-
 
 // Écouteurs d'événements pour les boutons des boîtes modales
 boutonEnSavoirPlus.addEventListener("click", openModal);
@@ -323,7 +402,6 @@ window.addEventListener("click", (event) => {
     }
 });
 
-
 // Fonction pour afficher les réponses dans la faq
 const questions = document.querySelectorAll('.question');
 questions.forEach((question) => {
@@ -342,4 +420,4 @@ questions.forEach((question) => {
 });
 
 
-//partit pour animez la page test
+//partie test

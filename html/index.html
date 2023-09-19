@@ -9,12 +9,12 @@
     <title>Ellipsys</title>
 </head>
 
-<body>
+<body class="ui-light-theme">
     <!--Loader du site Fire   -->
     <div class="loader">
         <lottie-player src="https://lottie.host/0dcd9c02-f180-49d5-91ea-3e90a520f322/WSRU2gtxvG.json"
             background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
-        <h5 class="text-loader">Chargement...</h1>
+        <h5 class="text-loader">Chargement...</h5>
     </div>
 
     <header>
@@ -42,7 +42,13 @@
                 <li><a href="../html/methodologie.html">Methodologies</a></li>
                 <li><a href="../html/blog.html">Blog</a></li>
             </ul>
-            <button class="gstart">Get Started</button>
+
+            <div class="l-container">
+                <div class="c-theme-switch" id="js-switch">
+                    <div class="c-theme-switch__toggle"></div>
+                </div>
+            </div>
+
             <label for="nav-toggle" class="icon-burger">
                 <div class="line"></div>
                 <div class="line"></div>
@@ -115,7 +121,7 @@
             <lottie-player class="hidden" id="lottie3" src="https://lottie.host/fbab640c-b432-44de-aedf-5abdf2c16cee/pxjAswc4mw.json"
                 background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></lottie-player>
         </div>
-        
+
         <div class="accordeon">
             <div class="accordeon-item" data-lottie="cloud">
                 <div class="accordeon-header">
@@ -154,7 +160,6 @@
             <span class="orange-text">6 features</span> pour <span class="orange-text">transformer</span> un système
         </h4>
         <div class="cards-wrapper">
-            <button id="prev-button" class="card-button"></button>
             <div class="card-container">
                 <div class="card">
                     <div class="card-front">
@@ -269,9 +274,11 @@
             <button id="next-button" class="card-button"></button>
         </div>
     </div>
+
+
     <!-- Ban dark avis + video -->
     <div class="container-etude-cas">
-        <h4 class="big-text-explication-white">
+        <h4 class="big-text-explication">
             Découvrir Quelques <span class="orange-text">Fonctionnalités</span>
         </h4>
         <div class="video">
@@ -347,6 +354,7 @@
     <script src="../js/app.js"> </script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
+
 </body>
 
 </html>

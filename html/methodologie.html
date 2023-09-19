@@ -10,7 +10,7 @@
     <title>Ellipsys - Méthodologies</title>
 </head>
 
-<body onload="initElement();">
+<body class="ui-light-theme" onload="initElement();">
 <header>
     <div class="act">
         <h3>Actualité : Le groupe ADEO/Leroy Merlin a animé un workshop devant 150 personnes au Salon Big Data Paris
@@ -36,7 +36,11 @@
             <li><a href="../html/methodologie.html" class="active">Methodologies</a></li>
             <li><a href="../html/blog.html">Blog</a></li>
         </ul>
-        <button class="gstart">Get Started</button>
+        <div class="l-container">
+            <div class="c-theme-switch" id="js-switch">
+                <div class="c-theme-switch__toggle"></div>
+            </div>
+        </div>
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -45,16 +49,103 @@
     </nav>
 </header>
 
-<h1 style="text-align: center; margin-top: 100px" class="">Méthodologie</h1>
-<script>
-    var rellax = new Rellax('.rellax');
-</script>
+<h1 style="text-align: center; margin-top: 100px; color: white; font-size: 3.5rem" class="">Méthodologie</h1>
+<!--<script>-->
+<!--    var rellax = new Rellax('.rellax');-->
+<!--</script>-->
 <div class="container-etiquette">
     <div class="lines">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
+
+    <main>
+        <ul id="cards">
+            <li class="card" id="card_1">
+                <div class="card__content">
+                    <div>
+                        <h2>Inventaire des données</h2>
+                        <p>Un 'data catalog' avec des fichiers, des flux, des jeux de données :
+                            toutes les données physiques persistées ou in memory, vues, rapports...</p><br>
+                        <div><a href="casusages.html" class="lire_plus">Lire plus</a></div>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_2">
+                <div class="card__content">
+                    <div>
+                        <h2>Parsing et analyse de logs</h2>
+                        <p>Pour la consommation et l'injection des données</p><br>
+                        <div><a href="casusages.html" class="lire_plus">Lire plus</a></div>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_3">
+                <div class="card__content">
+                    <div>
+                        <h2>Introspection de la couche de dataviz</h2>
+                        <p> > Connaître le lien entre les informations techniques et métier<br><br>
+
+                            > Rassembler l'intelligence (les règles métier)<br><br>
+
+                            > Propager les termes métier dans les couches d'alimentation pour conserver une lecture "business" des process.</p><br>
+                        <div><a href="casusages.html" class="lire_plus">Lire plus</a></div>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-3.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_4">
+                <div class="card__content">
+                    <div>
+                        <h2>Reverse engineering du code :</h2>
+                        <p>Pour un data lineage technique, granulaire, de bout en bout, synchronisé avec le SI.</p><br>
+                        <div><a href="casusages.html" class="lire_plus">Lire plus</a></div>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-2.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_5">
+                <div class="card__content">
+                    <div>
+                        <h2>Parsing du scheduleur</h2>
+                        <p>Pour comprendre l'ordonnancement et le relier au data lineage et aux usages de la donnée.</p><br>
+                        <div><a href="casusages.html" class="lire_plus">Lire plus</a></div>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+            <li class="card" id="card_6">
+                <div class="card__content">
+                    <div>
+                        <h2>OpenAudit</h2>
+                        <p> > Toutes les analyses sont opérées quotidiennement, en mode delta, pour qu'{openAudit} soit continuellement synchronisé avec le Système d'Information.<br><br>
+
+                            > {openAudit}, ce sont aussi des bases de données ouvertes et des interfaces web, on prem' ou en SaaS.<br><br>
+
+                            > Nous mettons à disposition des API's ou des micro composants web sur demande.</p><br>
+                        <div><a href="casusages.html" class="lire_plus">Lire plus</a></div>
+                    </div>
+                    <figure>
+                        <img src="https://codyhouse.co/demo-tutorials/stacking-cards/assets/img/img-1.jpg" alt="Image description">
+                    </figure>
+                </div>
+            </li>
+        </ul>
+    </main>
+
     <div class="rellax" data-rellax-speed="-4">
         <div class="etiquette">
             <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 41 41" fill="none">
@@ -73,41 +164,42 @@
                 </defs>
             </svg>
             <div class="etiquette-content">
-                <h4>Supprimer les tables inutiles</h4>
+                <h4>Inventaire des données</h4>
                 <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="etiquette-popup hidden">
-                <p>Voici quelques informations supplémentaires...</p>
+                <p>Un 'data catalog' avec des fichiers, des flux, des jeux de données :
+                    toutes les données physiques persistées ou in memory, vues, rapports...</p>
             </div>
         </div>
     </div>
-    <div class="rellax" data-rellax-speed="-2">
-        <div id="object2">
-            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="130" viewBox="0 0 150 130" fill="none">
-                <mask id="mask0_4_229" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="0" width="130" height="130">
-                    <path d="M140 0H10V130H140V0Z" fill="white"/>
-                </mask>
-                <g mask="url(#mask0_4_229)">
-                    <path d="M93.4132 97.146L85.2701 93.4689C84.7705 93.2431 84.1824 93.4658 83.9569 93.9653C83.7313 94.4649 83.9534 95.0525 84.4532 95.2783L90.228 97.8858C89.6177 98.0565 88.9041 98.2428 88.1011 98.4302C85.2377 99.0977 81.248 99.7775 76.74 99.8284C67.7237 99.9297 56.7273 97.5224 48.4299 87.5778C40.1105 77.6073 39.4011 66.9733 40.7798 58.7848C41.4703 54.6845 42.6844 51.2063 43.7263 48.7536C44.2468 47.5283 44.7231 46.5621 45.0671 45.9056C45.2391 45.5774 45.3778 45.327 45.4724 45.1606C45.5197 45.0774 45.556 45.0151 45.5797 44.9748C45.5916 44.9546 45.6005 44.9399 45.6059 44.9306C45.6087 44.9261 45.6106 44.9229 45.6116 44.9211C45.6122 44.9202 45.6126 44.9197 45.6127 44.9195C45.6126 44.9197 45.6124 44.9199 44.7647 44.4033C43.917 43.8866 43.9166 43.8873 43.9163 43.8878C43.9162 43.8881 43.9157 43.8888 43.9154 43.8894C43.9146 43.8906 43.9137 43.8921 43.9125 43.8941C43.9101 43.898 43.907 43.9033 43.903 43.91C43.8949 43.9233 43.8836 43.9422 43.8692 43.9668C43.8402 44.0159 43.7987 44.0872 43.7462 44.1796C43.6411 44.3646 43.4915 44.6347 43.3084 44.9841C42.9425 45.6823 42.4426 46.6971 41.8988 47.9773C40.812 50.5356 39.5442 54.1656 38.822 58.4552C37.3754 67.0463 38.1175 78.3174 46.9054 88.85C55.7152 99.4084 67.3872 101.919 76.7625 101.814C81.4504 101.761 85.5872 101.055 88.552 100.364C89.5742 100.125 90.4586 99.8879 91.1801 99.6792L88.4231 105.785C88.1973 106.285 88.419 106.873 88.9194 107.098C89.419 107.324 90.0067 107.102 90.2323 106.602L93.9095 98.4592C94.1346 97.9596 93.9128 97.3718 93.4132 97.146Z" fill="#F86642"/>
-                    <path d="M111.563 69.0016C112.631 60.3552 111.395 49.1273 102.153 38.9909C92.8884 28.8295 81.1172 26.8335 71.7557 27.3507C67.0748 27.6094 62.9725 28.496 60.0413 29.3169C59.0305 29.6 58.1575 29.8756 57.446 30.1159L59.9321 23.8951C60.1356 23.3861 59.8879 22.8083 59.3789 22.6049C58.8697 22.4014 58.2919 22.6492 58.0885 23.1583L54.7727 31.4547C54.5692 31.9639 54.817 32.5415 55.3262 32.745L63.6226 36.0608C64.1317 36.2643 64.7092 36.0164 64.9128 35.5074C65.1162 34.9984 64.8684 34.4206 64.3594 34.2171L58.476 31.8658C59.0782 31.6685 59.7826 31.4512 60.5768 31.2288C63.408 30.4359 67.364 29.5819 71.8654 29.3331C80.8686 28.8357 91.96 30.7581 100.686 40.3287C109.435 49.9245 110.611 60.5171 109.593 68.7582C109.083 72.8848 108.023 76.4129 107.09 78.9091C106.623 80.156 106.19 81.142 105.875 81.8132C105.718 82.1483 105.59 82.4047 105.503 82.5752C105.459 82.6606 105.426 82.724 105.404 82.7659C105.393 82.7863 105.385 82.8017 105.38 82.8109C105.377 82.8158 105.375 82.8188 105.374 82.8206C105.374 82.8213 105.373 82.8218 105.373 82.8225C105.373 82.8218 105.374 82.8218 106.243 83.3004C107.113 83.7798 107.113 83.7793 107.113 83.7787C107.114 83.778 107.114 83.7773 107.114 83.7767C107.115 83.7754 107.115 83.7743 107.117 83.7718C107.119 83.7682 107.122 83.7626 107.126 83.7559C107.133 83.7423 107.144 83.7225 107.157 83.6974C107.184 83.6475 107.222 83.574 107.27 83.4796C107.367 83.2899 107.505 83.0136 107.673 82.6567C108.008 81.9433 108.462 80.9072 108.949 79.6043C109.922 77.0009 111.03 73.3185 111.563 69.0016Z" fill="#F86642"/>
-                </g>
-            </svg>
-        </div>
-    </div>
-    <div class="rellax" data-rellax-speed="7">
-        <div id="object1">
-            <svg xmlns="http://www.w3.org/2000/svg" width="151" height="117" viewBox="0 0 151 117" fill="none">
-            <mask id="mask0_4_243" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="-13" width="131" height="130">
-                <path d="M140.328 -13H10.3281V117H140.328V-13Z" fill="white"/>
-            </mask>
-            <g mask="url(#mask0_4_243)">
-                <path d="M64.9361 105.597C64.5328 105.516 64.161 105.281 63.9136 104.909L22.4952 42.6655C22.2547 42.3041 22.1673 41.8595 22.2531 41.4312C22.3389 41.003 22.5904 40.6263 22.952 40.3856L85.1517 -1.09868C85.8968 -1.59508 86.8959 -1.39225 87.3874 -0.644795L128.277 61.4929C128.771 62.2432 128.568 63.2591 127.822 63.7611L66.1516 105.351C65.7796 105.603 65.3416 105.678 64.9361 105.597ZM26.0939 42.2007L65.7049 101.729L124.686 61.9531L85.5797 2.52623L26.0939 42.2007Z" fill="#FF734F"/>
-                <path d="M49.4112 99.623C49.1307 99.624 48.8529 99.5513 48.6056 99.4087C48.2327 99.194 47.9592 98.8384 47.8456 98.4205L28.1873 25.9617C28.0738 25.5417 28.1299 25.0928 28.3444 24.7148C28.5588 24.3366 28.9137 24.0612 29.33 23.9485L100.974 4.61747C101.832 4.38654 102.714 4.89686 102.95 5.76251L122.606 77.6757C122.721 78.0947 122.665 78.5419 122.454 78.9195C122.241 79.297 121.889 79.5737 121.476 79.6885L49.8337 99.5649C49.6947 99.6035 49.5531 99.6225 49.4112 99.623ZM31.7382 26.6842L50.5374 95.9765L119.056 76.9665L100.259 8.19558L31.7382 26.6842Z" fill="#FF734F"/>
-                <path d="M75.6676 72.8141C75.261 72.8141 74.8539 72.6602 74.5401 72.3511L55.1302 53.2655C54.8167 52.9574 54.6399 52.5341 54.6399 52.0924C54.6399 51.6506 54.8167 51.2276 55.1302 50.9193L74.5401 31.8339C75.1737 31.2095 76.1863 31.2175 76.8112 31.8501L95.682 50.9359C96.314 51.5745 96.314 52.6106 95.682 53.2493L76.8112 72.3349C76.4957 72.6544 76.0816 72.8141 75.6676 72.8141ZM58.5781 52.0926L75.652 68.8808L92.2515 52.0926L75.652 35.3042L58.5781 52.0926Z" fill="#FF734F"/>
-            </g>
-            </svg>
-        </div>
-   </div>
+<!--    <div class="rellax" data-rellax-speed="-2">-->
+<!--        <div id="object2">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="150" height="130" viewBox="0 0 150 130" fill="none">-->
+<!--                <mask id="mask0_4_229" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="0" width="130" height="130">-->
+<!--                    <path d="M140 0H10V130H140V0Z" fill="white"/>-->
+<!--                </mask>-->
+<!--                <g mask="url(#mask0_4_229)">-->
+<!--                    <path d="M93.4132 97.146L85.2701 93.4689C84.7705 93.2431 84.1824 93.4658 83.9569 93.9653C83.7313 94.4649 83.9534 95.0525 84.4532 95.2783L90.228 97.8858C89.6177 98.0565 88.9041 98.2428 88.1011 98.4302C85.2377 99.0977 81.248 99.7775 76.74 99.8284C67.7237 99.9297 56.7273 97.5224 48.4299 87.5778C40.1105 77.6073 39.4011 66.9733 40.7798 58.7848C41.4703 54.6845 42.6844 51.2063 43.7263 48.7536C44.2468 47.5283 44.7231 46.5621 45.0671 45.9056C45.2391 45.5774 45.3778 45.327 45.4724 45.1606C45.5197 45.0774 45.556 45.0151 45.5797 44.9748C45.5916 44.9546 45.6005 44.9399 45.6059 44.9306C45.6087 44.9261 45.6106 44.9229 45.6116 44.9211C45.6122 44.9202 45.6126 44.9197 45.6127 44.9195C45.6126 44.9197 45.6124 44.9199 44.7647 44.4033C43.917 43.8866 43.9166 43.8873 43.9163 43.8878C43.9162 43.8881 43.9157 43.8888 43.9154 43.8894C43.9146 43.8906 43.9137 43.8921 43.9125 43.8941C43.9101 43.898 43.907 43.9033 43.903 43.91C43.8949 43.9233 43.8836 43.9422 43.8692 43.9668C43.8402 44.0159 43.7987 44.0872 43.7462 44.1796C43.6411 44.3646 43.4915 44.6347 43.3084 44.9841C42.9425 45.6823 42.4426 46.6971 41.8988 47.9773C40.812 50.5356 39.5442 54.1656 38.822 58.4552C37.3754 67.0463 38.1175 78.3174 46.9054 88.85C55.7152 99.4084 67.3872 101.919 76.7625 101.814C81.4504 101.761 85.5872 101.055 88.552 100.364C89.5742 100.125 90.4586 99.8879 91.1801 99.6792L88.4231 105.785C88.1973 106.285 88.419 106.873 88.9194 107.098C89.419 107.324 90.0067 107.102 90.2323 106.602L93.9095 98.4592C94.1346 97.9596 93.9128 97.3718 93.4132 97.146Z" fill="#F86642"/>-->
+<!--                    <path d="M111.563 69.0016C112.631 60.3552 111.395 49.1273 102.153 38.9909C92.8884 28.8295 81.1172 26.8335 71.7557 27.3507C67.0748 27.6094 62.9725 28.496 60.0413 29.3169C59.0305 29.6 58.1575 29.8756 57.446 30.1159L59.9321 23.8951C60.1356 23.3861 59.8879 22.8083 59.3789 22.6049C58.8697 22.4014 58.2919 22.6492 58.0885 23.1583L54.7727 31.4547C54.5692 31.9639 54.817 32.5415 55.3262 32.745L63.6226 36.0608C64.1317 36.2643 64.7092 36.0164 64.9128 35.5074C65.1162 34.9984 64.8684 34.4206 64.3594 34.2171L58.476 31.8658C59.0782 31.6685 59.7826 31.4512 60.5768 31.2288C63.408 30.4359 67.364 29.5819 71.8654 29.3331C80.8686 28.8357 91.96 30.7581 100.686 40.3287C109.435 49.9245 110.611 60.5171 109.593 68.7582C109.083 72.8848 108.023 76.4129 107.09 78.9091C106.623 80.156 106.19 81.142 105.875 81.8132C105.718 82.1483 105.59 82.4047 105.503 82.5752C105.459 82.6606 105.426 82.724 105.404 82.7659C105.393 82.7863 105.385 82.8017 105.38 82.8109C105.377 82.8158 105.375 82.8188 105.374 82.8206C105.374 82.8213 105.373 82.8218 105.373 82.8225C105.373 82.8218 105.374 82.8218 106.243 83.3004C107.113 83.7798 107.113 83.7793 107.113 83.7787C107.114 83.778 107.114 83.7773 107.114 83.7767C107.115 83.7754 107.115 83.7743 107.117 83.7718C107.119 83.7682 107.122 83.7626 107.126 83.7559C107.133 83.7423 107.144 83.7225 107.157 83.6974C107.184 83.6475 107.222 83.574 107.27 83.4796C107.367 83.2899 107.505 83.0136 107.673 82.6567C108.008 81.9433 108.462 80.9072 108.949 79.6043C109.922 77.0009 111.03 73.3185 111.563 69.0016Z" fill="#F86642"/>-->
+<!--                </g>-->
+<!--            </svg>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--    <div class="rellax" data-rellax-speed="7">-->
+<!--        <div id="object1">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="151" height="117" viewBox="0 0 151 117" fill="none">-->
+<!--            <mask id="mask0_4_243" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="10" y="-13" width="131" height="130">-->
+<!--                <path d="M140.328 -13H10.3281V117H140.328V-13Z" fill="white"/>-->
+<!--            </mask>-->
+<!--            <g mask="url(#mask0_4_243)">-->
+<!--                <path d="M64.9361 105.597C64.5328 105.516 64.161 105.281 63.9136 104.909L22.4952 42.6655C22.2547 42.3041 22.1673 41.8595 22.2531 41.4312C22.3389 41.003 22.5904 40.6263 22.952 40.3856L85.1517 -1.09868C85.8968 -1.59508 86.8959 -1.39225 87.3874 -0.644795L128.277 61.4929C128.771 62.2432 128.568 63.2591 127.822 63.7611L66.1516 105.351C65.7796 105.603 65.3416 105.678 64.9361 105.597ZM26.0939 42.2007L65.7049 101.729L124.686 61.9531L85.5797 2.52623L26.0939 42.2007Z" fill="#FF734F"/>-->
+<!--                <path d="M49.4112 99.623C49.1307 99.624 48.8529 99.5513 48.6056 99.4087C48.2327 99.194 47.9592 98.8384 47.8456 98.4205L28.1873 25.9617C28.0738 25.5417 28.1299 25.0928 28.3444 24.7148C28.5588 24.3366 28.9137 24.0612 29.33 23.9485L100.974 4.61747C101.832 4.38654 102.714 4.89686 102.95 5.76251L122.606 77.6757C122.721 78.0947 122.665 78.5419 122.454 78.9195C122.241 79.297 121.889 79.5737 121.476 79.6885L49.8337 99.5649C49.6947 99.6035 49.5531 99.6225 49.4112 99.623ZM31.7382 26.6842L50.5374 95.9765L119.056 76.9665L100.259 8.19558L31.7382 26.6842Z" fill="#FF734F"/>-->
+<!--                <path d="M75.6676 72.8141C75.261 72.8141 74.8539 72.6602 74.5401 72.3511L55.1302 53.2655C54.8167 52.9574 54.6399 52.5341 54.6399 52.0924C54.6399 51.6506 54.8167 51.2276 55.1302 50.9193L74.5401 31.8339C75.1737 31.2095 76.1863 31.2175 76.8112 31.8501L95.682 50.9359C96.314 51.5745 96.314 52.6106 95.682 53.2493L76.8112 72.3349C76.4957 72.6544 76.0816 72.8141 75.6676 72.8141ZM58.5781 52.0926L75.652 68.8808L92.2515 52.0926L75.652 35.3042L58.5781 52.0926Z" fill="#FF734F"/>-->
+<!--            </g>-->
+<!--            </svg>-->
+<!--        </div>-->
+<!--   </div>-->
     <div class="rellax" data-rellax-speed="3">
         <div class="etiquette">
             <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
@@ -115,22 +207,22 @@
                 <path d="M21.5528 5.75655V17.8981C21.5528 19.8318 23.1191 21.3981 25.0528 21.3981H37.1943C38.2443 21.3981 39.0616 20.4758 38.9443 19.4328C38.0396 11.3391 31.6136 4.91305 23.5198 4.0083C22.4751 3.89105 21.5528 4.70655 21.5528 5.75655Z" fill="#FE665A"/>
             </svg>
             <div class="etiquette-content">
-                <h4>Comparer les environnements</h4>
+                <h4>Parsing et analyse de logs</h4>
                 <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="etiquette-popup hidden">
-                <p>Voici quelques informations supplémentaires...</p>
+                <p>Pour la consommation et l'injection des données</p>
             </div>
         </div>
     </div>
-    <div class="rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
-        <div id="object3">
-            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none">
-                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M7.25619 18.9292L5.97889 20.4681C3.47693 18.3916 2 15.3153 2 12C2 8.68921 3.47282 5.61675 5.96885 3.54016L7.24797 5.07765C5.20393 6.77819 4 9.28973 4 12C4 14.714 5.2073 17.2287 7.25619 18.9292ZM16.7438 18.9292L18.0211 20.4681C20.5231 18.3916 22 15.3153 22 12C22 8.68921 20.5272 5.61675 18.0311 3.54016L16.752 5.07765C18.7961 6.77819 20 9.28973 20 12C20 14.714 18.7927 17.2287 16.7438 18.9292ZM14.1785 15.8599L15.4509 17.4029C17.0529 16.082 18 14.1173 18 12C18 9.88957 17.0591 7.93072 15.4661 6.60961L14.1894 8.14908C15.329 9.09417 16 10.4912 16 12C16 13.5137 15.3245 14.9149 14.1785 15.8599ZM8.5491 17.4029L9.8215 15.8599C8.6755 14.9149 8 13.5137 8 12C8 10.4912 8.67104 9.09417 9.81062 8.14908L8.53389 6.60961C6.94091 7.93072 6 9.88957 6 12C6 14.1173 6.94714 16.082 8.5491 17.4029Z" fill="#FE665A"/>
-                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#FE665A"/>
-            </svg>
-        </div>
-    </div>
+<!--    <div class="rellax" data-rellax-speed="2" data-rellax-percentage="0.5">-->
+<!--        <div id="object3">-->
+<!--            <svg xmlns="http://www.w3.org/2000/svg" width="84" height="84" viewBox="0 0 24 24" fill="none">-->
+<!--                <path opacity="0.3" fill-rule="evenodd" clip-rule="evenodd" d="M7.25619 18.9292L5.97889 20.4681C3.47693 18.3916 2 15.3153 2 12C2 8.68921 3.47282 5.61675 5.96885 3.54016L7.24797 5.07765C5.20393 6.77819 4 9.28973 4 12C4 14.714 5.2073 17.2287 7.25619 18.9292ZM16.7438 18.9292L18.0211 20.4681C20.5231 18.3916 22 15.3153 22 12C22 8.68921 20.5272 5.61675 18.0311 3.54016L16.752 5.07765C18.7961 6.77819 20 9.28973 20 12C20 14.714 18.7927 17.2287 16.7438 18.9292ZM14.1785 15.8599L15.4509 17.4029C17.0529 16.082 18 14.1173 18 12C18 9.88957 17.0591 7.93072 15.4661 6.60961L14.1894 8.14908C15.329 9.09417 16 10.4912 16 12C16 13.5137 15.3245 14.9149 14.1785 15.8599ZM8.5491 17.4029L9.8215 15.8599C8.6755 14.9149 8 13.5137 8 12C8 10.4912 8.67104 9.09417 9.81062 8.14908L8.53389 6.60961C6.94091 7.93072 6 9.88957 6 12C6 14.1173 6.94714 16.082 8.5491 17.4029Z" fill="#FE665A"/>-->
+<!--                <path fill-rule="evenodd" clip-rule="evenodd" d="M12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12C10 13.1046 10.8954 14 12 14Z" fill="#FE665A"/>-->
+<!--            </svg>-->
+<!--        </div>-->
+<!--    </div>-->
     <div class="rellax" data-rellax-speed="6">
         <div class="etiquette">
             <svg xmlns="http://www.w3.org/2000/svg" width="42" height="43" viewBox="0 0 42 43" fill="none">
@@ -148,11 +240,14 @@
                 </defs>
             </svg>
             <div class="etiquette-content">
-                <h4>Les impacts d'une régression</h4>
+                <h4>Introspection de la couche de dataviz</h4>
                 <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="etiquette-popup hidden">
-                <p>Voici quelques informations supplémentaires...</p>
+                <p> > Connaître le lien entre les informations techniques et métier<br><br>
+                    > Rassembler l'intelligence (les règles métier)<br><br>
+                    > Propager les termes métier dans les couches d'alimentation pour conserver une lecture "business" des process.
+                </p>
             </div>
         </div>
     </div>
@@ -170,11 +265,11 @@
                 <path opacity="0.35" d="M17.5362 37.025C20.2911 37.025 22.5243 34.7917 22.5243 32.0369C22.5243 29.2821 20.2911 27.0488 17.5362 27.0488C14.7814 27.0488 12.5482 29.2821 12.5482 32.0369C12.5482 34.7917 14.7814 37.025 17.5362 37.025Z" fill="#FE665A"/>
             </svg>
             <div class="etiquette-content">
-                <h4>Migration</h4>
+                <h4>Reverse engineering du code :</h4>
                 <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="etiquette-popup hidden">
-                <p>Voici quelques informations supplémentaires...</p>
+                <p>Pour un data lineage technique, granulaire, de bout en bout, synchronisé avec le SI.</p>
             </div>
         </div>
     </div>
@@ -196,11 +291,11 @@
                 </defs>
             </svg>
             <div class="etiquette-content">
-                <h4>Segmentation utilisateur</h4>
+                <h4>Parsing du scheduleur</h4>
                 <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="etiquette-popup hidden">
-                <p>Voici quelques informations supplémentaires...</p>
+                <p>Pour comprendre l'ordonnancement et le relier au data lineage et aux usages de la donnée.</p>
             </div>
         </div>
     </div>
@@ -222,11 +317,14 @@
                 </defs>
             </svg>
             <div class="etiquette-content">
-                <h4>Migrations massives automatisées</h4>
+                <h4>OpenAudit</h4>
                 <p>Lorem ipsum dolor sit</p>
             </div>
             <div class="etiquette-popup hidden">
-                <p>Voici quelques informations supplémentaires...</p>
+                <p> > Toutes les analyses sont opérées quotidiennement, en mode delta, pour qu'{openAudit}
+                    soit continuellement synchronisé avec le Système d'Information.<br><br>
+                    > {openAudit}, ce sont aussi des bases de données ouvertes et des interfaces web, on prem' ou en SaaS.<br><br>
+                    > Nous mettons à disposition des API's ou des micro composants web sur demande.</p>
             </div>
         </div>
     </div>
