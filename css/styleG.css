@@ -171,13 +171,12 @@ body {
     letter-spacing: 1px;
 }
 @media screen and (max-width: 800px) {
-
+        
 }
 
 #logo_elypsis {
     width: 80%;
     height: 80%;
-    background-color: rgba(254, 102, 90, 0.81);
     border-radius: 20px;
 }
 
