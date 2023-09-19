@@ -441,6 +441,7 @@ nav .links li a{
     margin-top: -100px;
     display: flex;
     justify-content: center;
+    text-align: center;
     align-items: center;
     padding-left: 130px;
     flex-shrink: 0;
@@ -576,14 +577,11 @@ nav .links li a{
 
 /*openAUdit animé*/
 .orange-text-animated {
-    position: relative;
-    display: inline;
     color: #FE665A;
     font-weight: 700;
     font-size: 60px;
     text-transform: capitalize;
     -webkit-text-stroke: var(--openAudit-anime-stroke);
-    overflow: hidden;
 }
 
 /* Boîte modale */
@@ -1093,16 +1091,6 @@ iframe:hover {
 
 .lottie-container .visible {
     display: block;
-}
-
-
-.paragraph-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
 }
 
 .accordeon-item.open .accordeon-title {
@@ -1734,6 +1722,7 @@ main {
     font-size: 20px;
     margin-bottom: 20px;
     border-radius: 18px;
+    border: 1px solid #5b5b5b;
     color: var(--text-color);
     text-decoration: none;
     position: relative;
