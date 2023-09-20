@@ -103,13 +103,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    /*background-color: #343541;*/
     background-color: var(--background-color)
-    /*background-color: #1a1a1a;*/
-    /*background-color: #111827;*/
-    /*background-color: rgba(20, 20, 20, 0.9);*/
-    /*background-color: #e3e3e3;*/
-    /*background-image: linear-gradient(45deg, #FE665A, rgb(35, 34, 34));*/
 }
 
 /* loader de la page */
@@ -147,6 +141,10 @@ body {
 
 
 /* Baniére d'actualité au top */
+.act-container {
+    overflow: hidden;
+}
+
 .act {
     display: flex;
     justify-content: center;
@@ -158,6 +156,7 @@ body {
     height: 25%;
     max-height: 120px;
     font-family: Montserrat, serif;
+    white-space: nowrap;
 }
 
 /* svg fleche qui est un lien*/
@@ -172,7 +171,9 @@ body {
     text-align: center;
     letter-spacing: 1px;
 }
-
+@media screen and (max-width: 800px) {
+        
+}
 
 #logo_elypsis {
     width: 80%;
@@ -1122,6 +1123,13 @@ iframe:hover {
     overflow: hidden;
 }
 
+.carousel {
+    display: flex;
+    overflow: hidden;
+    width: 300px;
+    scroll-snap-type: x mandatory;
+}
+
 .card-container {
     position: relative;
     height: 400px;
@@ -1130,6 +1138,8 @@ iframe:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex: 0 0 300px;
+    scroll-snap-align: center;
 }
 
 .card-container:hover .card {
