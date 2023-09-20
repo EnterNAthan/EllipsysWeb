@@ -1123,13 +1123,6 @@ iframe:hover {
     overflow: hidden;
 }
 
-.carousel {
-    display: flex;
-    overflow: hidden;
-    width: 300px;
-    scroll-snap-type: x mandatory;
-}
-
 .card-container {
     position: relative;
     height: 400px;
@@ -1138,8 +1131,6 @@ iframe:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex: 0 0 300px;
-    scroll-snap-align: center;
 }
 
 .card-container:hover .card {
