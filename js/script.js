@@ -5,6 +5,24 @@
 
 
 
+
+
+// Fonction pour changer les actualités
+// Tableau d'actualités
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
 const nav = document.querySelector('nav');
 function handleScroll() {
@@ -398,3 +416,25 @@ questions.forEach((question) => {
 
 
 //partie test
+document.addEventListener("DOMContentLoaded", () => {
+    let index = 0;
+    const carousel = document.getElementById("carousel");
+
+    document.getElementById("prevBtn").addEventListener("click", () => {
+        index -= 1;
+        if (index < 0) index = 0;
+        carousel.scroll({
+            left: 300 * index,
+            behavior: "smooth",
+        });
+    });
+
+    document.getElementById("nextBtn").addEventListener("click", () => {
+        index += 1;
+        if (index >= carousel.children.length) index = carousel.children.length - 1;
+        carousel.scroll({
+            left: 300 * index,
+            behavior: "smooth",
+        });
+    });
+});
