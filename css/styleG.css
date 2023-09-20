@@ -172,7 +172,10 @@ body {
     letter-spacing: 1px;
 }
 @media screen and (max-width: 800px) {
-        
+    .act {
+        height: 100%;
+        max-height: 100%;
+    }
 }
 
 #logo_elypsis {
@@ -247,7 +250,7 @@ nav .links li a{
 }
 
 /* Nav bar responsive  */
-
+media
 
 /*Tous les boutons*/
 /* Bouton de base (get started) */
