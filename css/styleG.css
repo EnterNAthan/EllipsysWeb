@@ -141,10 +141,6 @@ body {
 
 
 /* Baniére d'actualité au top */
-.act-container {
-    overflow: hidden;
-}
-
 .act {
     display: flex;
     justify-content: center;
@@ -157,6 +153,7 @@ body {
     max-height: 120px;
     font-family: Montserrat, serif;
     white-space: nowrap;
+    text-decoration: none;
 }
 
 /* svg fleche qui est un lien*/

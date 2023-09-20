@@ -28,6 +28,10 @@ window.addEventListener('load' , ()=>{
     const loader = document.querySelector('.loader');
     loader.classList.add('fondu-out');
 
+    setTimeout(() => {
+        loader.remove();
+    }, 700);
+
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
     // Animation du titre
