@@ -151,10 +151,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     background-color: var(--act-color);
     color: white;
     width: auto;
     height: 25%;
+    max-height: 120px;
     font-family: Montserrat, serif;
 }
 
@@ -170,9 +172,7 @@ body {
     text-align: center;
     letter-spacing: 1px;
 }
-@media screen and (max-width: 800px) {
-        
-}
+
 
 #logo_elypsis {
     width: 80%;
