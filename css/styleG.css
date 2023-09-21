@@ -616,12 +616,23 @@ nav .links li a{
 }
 
 /* Styles pour les écrans de téléphone (max-width: 800px) */
-@media screen and (max-width: 800px) {
+@media all{ 
     .bancontainer {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         align-items: center;
         padding: 20px;
+    }
+
+    .acdroite {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .acdroite lottie-player {
+        width: 200px;
+        height: 200px;
     }
 
     .bancontainer h1 {
@@ -649,18 +660,8 @@ nav .links li a{
     .btncontact_accueil {
         font-size: 18px;
     }
-
-    .acdroite {
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .acdroite lottie-player {
-        width: 200px;
-        height: 200px;
-    }
 }
+
 /* Boîte modale */
 .modal {
     font-family: Montserrat;
