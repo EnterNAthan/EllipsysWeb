@@ -99,8 +99,9 @@
 }
 
 body {
-    margin: 0%;
-    padding: 0%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
     background-color: var(--background-color)
@@ -143,6 +144,7 @@ body {
 /* Baniére d'actualité au top */
 .act {
     display: flex;
+    width: 200%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -1534,23 +1536,23 @@ main {
 
 @supports (animation-timeline: works) {
 
-    @scroll-timeline cards-element-scrolls-in-body {
+    /* @scroll-timeline cards-element-scrolls-in-body {
         source: selector(body);
         scroll-offsets:
-            /* Start when the start edge touches the top of the scrollport */
+            /* Start when the start edge touches the top of the scrollport
                 selector(#cards) start 1,
-                    /* End when the start edge touches the start of the scrollport */
+                    /* End when the start edge touches the start of the scrollport
                 selector(#cards) start 0
     ;
-        start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport */
-        end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport */
+        start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport 
+        end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport 
         time-range: 4s;
     }
 
     .card {
-        --index0: calc(var(--index) - 1); /* 0-based index */
-        --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index */
-        --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index */
+        --index0: calc(var(--index) - 1); /* 0-based index 
+        --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index 
+        --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index 
     }
 
     .card__content {
@@ -1562,7 +1564,7 @@ main {
 
         animation: var(--duration) linear scale var(--delay) forwards;
         animation-timeline: cards-element-scrolls-in-body;
-    }
+    } */
 
     @keyframes scale {
         to {
@@ -1948,5 +1950,4 @@ span.ripple {
     .btncontact_accueil {
         font-size: 30px;
     }
-
 }
