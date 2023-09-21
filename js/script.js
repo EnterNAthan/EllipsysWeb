@@ -7,21 +7,6 @@
 
 
 
-// Fonction pour changer les actualités
-// Tableau d'actualités
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
 const nav = document.querySelector('nav');
@@ -33,6 +18,8 @@ function handleScroll() {
     }
 }
 window.addEventListener('scroll', handleScroll);
+
+
 
 
 
@@ -55,6 +42,8 @@ document.querySelector(".scroll-to-top a").addEventListener("click", (e) => {
 
 
 
+
+
 // Masquer tous les éléments Lottie
 function hideAllLotties() {
     const lotties = document.querySelectorAll('.lottie-container lottie-player');
@@ -63,7 +52,6 @@ function hideAllLotties() {
         lottie.classList.add('hidden');
     });
 }
-
 // Fonction pour l'animation de l'accordeon
 document.addEventListener('DOMContentLoaded', (event) => {
     initAccordeon();
@@ -129,48 +117,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
     toggleSwitch.addEventListener('click', toggleDarkLight);
 });
-
-// document.addEventListener('DOMContentLoaded', function () {
-//     const body = document.body;
-//     const toggleSwitch = document.querySelector('#js-switch');
-//     const toggleButton = document.querySelector('.c-theme-switch__toggle');
-//
-//     // Désactivez les transitions
-//     toggleButton.style.transition = 'none';
-//
-//     // Obtenez le thème sauvegardé ou utilisez un thème par défaut
-//     const savedTheme = localStorage.getItem('theme') || 'ui-light-theme';
-//
-//     body.className = savedTheme;
-//
-//     if(savedTheme === 'ui-dark-theme') {
-//         toggleButton.style.transform = 'translateX(37px)';
-//     } else {
-//         toggleButton.style.transform = 'translateX(0)';
-//     }
-//
-//     // Réactivez les transitions
-//     setTimeout(() => {
-//         toggleButton.style.transition = '';
-//     }, -1000);
-//
-//     function toggleDarkLight() {
-//         let nextTheme;
-//         if(body.classList.contains('ui-light-theme')) {
-//             body.classList.replace('ui-light-theme', 'ui-dark-theme');
-//             nextTheme = 'ui-dark-theme';
-//             toggleButton.style.transform = 'translateX(37px)';
-//         } else {
-//             body.classList.replace('ui-dark-theme', 'ui-light-theme');
-//             nextTheme = 'ui-light-theme';
-//             toggleButton.style.transform = 'translateX(0)';
-//         }
-//
-//         localStorage.setItem('theme', nextTheme);
-//     }
-//
-//     toggleSwitch.addEventListener('click', toggleDarkLight);
-// });
 
 
 
@@ -306,6 +252,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+
 // Fonction pour mettre en surbrillance la page actuelle dans la barre de navigation
 function highlightCurrentPage() {
   const navLinks = document.querySelectorAll('.nav-links');
@@ -322,20 +270,6 @@ navLinks.forEach(link => {
 highlightCurrentPage();
 
 
-
-
-// Algo pour l'animation de la mascotte
-console.log("démarrage de l'animation")
-document.addEventListener('DOMContentLoaded', function() {
-    const animation = lottie.loadAnimation({
-        container: document.getElementById('lottie-animation'),
-        renderer: 'svg',
-        loop: true,
-        autoplay: true,
-        path: '../json/animation-mascotte.json',
-    });
-    console.log("OK pour animation")
-});
 
 
 
@@ -397,6 +331,10 @@ window.addEventListener("click", (event) => {
     }
 });
 
+
+
+
+
 // Fonction pour afficher les réponses dans la faq
 const questions = document.querySelectorAll('.question');
 questions.forEach((question) => {
@@ -416,25 +354,26 @@ questions.forEach((question) => {
 
 
 //partie test
-document.addEventListener("DOMContentLoaded", () => {
-    let index = 0;
-    const carousel = document.getElementById("carousel");
-
-    document.getElementById("prevBtn").addEventListener("click", () => {
-        index -= 1;
-        if (index < 0) index = 0;
-        carousel.scroll({
-            left: 300 * index,
-            behavior: "smooth",
-        });
-    });
-
-    document.getElementById("nextBtn").addEventListener("click", () => {
-        index += 1;
-        if (index >= carousel.children.length) index = carousel.children.length - 1;
-        carousel.scroll({
-            left: 300 * index,
-            behavior: "smooth",
-        });
-    });
-});
+// caroussel test
+// document.addEventListener("DOMContentLoaded", () => {
+//     let index = 0;
+//     const carousel = document.getElementById("carousel");
+//
+//     document.getElementById("prevBtn").addEventListener("click", () => {
+//         index -= 1;
+//         if (index < 0) index = 0;
+//         carousel.scroll({
+//             left: 300 * index,
+//             behavior: "smooth",
+//         });
+//     });
+//
+//     document.getElementById("nextBtn").addEventListener("click", () => {
+//         index += 1;
+//         if (index >= carousel.children.length) index = carousel.children.length - 1;
+//         carousel.scroll({
+//             left: 300 * index,
+//             behavior: "smooth",
+//         });
+//     });
+// });

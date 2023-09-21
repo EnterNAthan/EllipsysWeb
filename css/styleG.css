@@ -477,6 +477,32 @@ nav .links li a{
     background-color: rgb(255, 48, 32);
 }
 
+.custom-btn{
+    padding: 20px;
+    width: 80rem;
+    height: 4.5rem;
+    background-color: #FE665A;
+    border-color: white;
+    border-radius:0.5625rem;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.custom-btn:hover{
+    background-color: white;
+    color: #FE665A;
+    border: 1px solid rgb(35, 34, 34);
+    box-shadow: #FE665A;
+}
+
+.custom-btn:focus {
+    outline: none;
+}
+
 .bancontainer {
     margin-top: -100px;
     display: flex;
@@ -811,6 +837,7 @@ iframe:hover {
 }
 
 .big-text-explication {
+    margin: 20px;
     font-style: normal;
     margin-top: 100px;
     margin-bottom: 100px;
@@ -1051,7 +1078,7 @@ iframe:hover {
     background-color: var(--ban-logo-color);
     display: flex;
     align-items: center;
-    justify-content: center;
+    overflow: hidden;
 }
 
 .logos-container {
@@ -1059,13 +1086,37 @@ iframe:hover {
     align-items: center;
     gap: 26px;
     justify-content: center;
+    white-space: nowrap;
+}
+
+.logo-action{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: scrollLogos 15s linear infinite;
+    width: calc(200% - 10vw);
+}
+
+.logo img {
+    width: 10vw;
+    margin-right: 40px;
 }
 
 .barre-orange {
+    display: flex;
     width: 2px;
     height: 60px;
     background-color: #FE665A;
     margin: 0 20px;
+}
+
+@keyframes scrollLogos {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 /*container des explications*/
@@ -1190,7 +1241,7 @@ iframe:hover {
 /*styles pour les cartes*/
 .cards-wrapper {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
     margin: 100px;
@@ -1244,7 +1295,7 @@ iframe:hover {
     display: flex;
     flex-direction: column;
     color: #FE665A;
-    font-size: 30px;
+    font-size: clamp(12px, 1.5vw, 30px);
     font-weight: 700;
     line-height: 35px;
     gap: 40px;
@@ -1254,15 +1305,27 @@ iframe:hover {
     background: #FFC1A1;
     color: #000000;
     font-weight: 600;
-    font-size: 26px;
+    font-size: clamp(12px, 1.2vw, 26px);
     line-height: 35px;
     font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,
     Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; /*police de ChatGPT*/
     transform: rotateY(-180deg);
+    cursor: grab;
 }
 
 .card-back div{
     margin: 20px;
+}
+
+.card-back a{
+    text-decoration: none;
+    color: inherit;
+}
+.card-back a:hover,
+.card-back a:focus,
+.card-back a:active {
+    text-decoration: none;
+    color: inherit;
 }
 
 /* boutons des cards */
