@@ -240,50 +240,6 @@ nav .links li a{
     color: #FE665A;
 }
 
-/* Nav bar responsive  */
-@media screen and (max-width: 800px) {
-    nav #logo{
-        float: none;
-        width: auto;
-        justify-content: center;
-    }
-    nav .links{
-        float: none;
-		z-index: 9;
-		left: 0;
-		right: 0;
-		top: 100px;
-		bottom: 100%;
-        background-color: white;
-        overflow: hidden;
-		width: auto;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
-        box-sizing: border-box;
-        transition: all .5s ease-in-out;
-    }
-
-    nav .links a{
-		font-size: 20px;
-	}
-	nav .icon-burger {
-		display: block;
-	}
-	nav :checked ~ .links {
-		bottom: 0;
-	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-    
-}
 /*Tous les boutons*/
 /* Bouton de base (get started) */
 .gstart{
@@ -642,7 +598,7 @@ nav .links li a{
 }
 
 /* Styles pour les écrans de téléphone (max-width: 800px) */
-@media all{ 
+@media screen and (max-width: 800px) {
     .bancontainer {
         flex-direction: column-reverse;
         text-align: center;
@@ -1939,3 +1895,56 @@ span.ripple {
            transition: 500ms all ease;
        }
    }
+
+
+
+
+
+
+
+
+
+/* Nav bar responsive  */
+@media screen and (max-width: 1000px) {
+    nav #logo{
+        float: none;
+        width: auto;
+        justify-content: center;
+    }
+    nav .links{
+        float: none;
+        z-index: 9;
+        left: 0;
+        right: 0;
+        top: 100px;
+        bottom: 100%;
+        background-color: white;
+        overflow: hidden;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        transition: all .5s ease-in-out;
+    }
+
+    nav .links a{
+        font-size: 20px;
+    }
+    nav .icon-burger {
+        display: block;
+    }
+    nav :checked ~ .links {
+        bottom: 0;
+    }
+    nav :checked ~ .icon-burger .line:nth-child(1) {
+        transform: translateY(10px) rotate(225deg);
+    }
+    nav :checked ~ .icon-burger .line:nth-child(2) {
+        opacity: 0;
+    }
+    nav :checked ~ .icon-burger .line:nth-child(3) {
+        transform: translateY(-10px) rotate(-225deg);
+    }
+
+}
