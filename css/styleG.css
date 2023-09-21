@@ -598,51 +598,7 @@ nav .links li a{
 }
 
 /* Styles pour les écrans de téléphone (max-width: 800px) */
-@media screen and (max-width: 800px) {
-    .bancontainer {
-        flex-direction: column-reverse;
-        text-align: center;
-        align-items: center;
-        padding: 20px;
-    }
 
-    .acdroite {
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .acdroite lottie-player {
-        width: 200px;
-        height: 200px;
-    }
-
-    .bancontainer h1 {
-        font-size: 36px;
-    }
-
-    .validation-list {
-        margin-top: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .validation-item {
-        display: flex;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .validation-item p {
-        margin: 0 10px;
-        font-size: 18px;
-    }
-
-    .btncontact_accueil {
-        font-size: 18px;
-    }
-}
 
 /* Boîte modale */
 .modal {
@@ -1945,6 +1901,52 @@ span.ripple {
     }
     nav :checked ~ .icon-burger .line:nth-child(3) {
         transform: translateY(-10px) rotate(-225deg);
+    }
+
+
+    /* baniere d'aceuil responsive  */
+    .bancontainer {
+        flex-direction: column-reverse;
+        text-align: center;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .acdroite {
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .acdroite lottie-player {
+        width: 200px;
+        height: 200px;
+    }
+
+    .bancontainer h1 {
+        font-size: 36px;
+    }
+
+    .validation-list {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .validation-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .validation-item p {
+        margin: 0 10px;
+        font-size: 18px;
+    }
+
+    .btncontact_accueil {
+        font-size: 30px;
     }
 
 }
