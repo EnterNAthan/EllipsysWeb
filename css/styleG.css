@@ -1853,16 +1853,16 @@ span.ripple {
        }
    }
 
-
-
-
-
-
-
-
-
 /* Nav bar responsive  */
 @media screen and (max-width: 1000px) {
+    
+    /* act responsive */
+    .act{
+        width: 1000px;
+    }
+
+
+    /* nav bar */
     nav #logo{
         float: none;
         width: auto;
@@ -1949,4 +1949,10 @@ span.ripple {
     .btncontact_accueil {
         font-size: 30px;
     }
+    
+    /* ban logo responsive */
+    .banlogo{
+        width: 200%;
+    }
+
 }
