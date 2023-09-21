@@ -2044,4 +2044,19 @@ span.ripple {
         margin-right: 20px;
     }
 
+    .bancontainer1 p{
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .bancontainer2 p{
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .bancontainer3 p{
+        font-size: 40px;
+        line-height: normal;
+    }
+
 }
