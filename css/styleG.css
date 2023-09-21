@@ -5,6 +5,7 @@
     @Date:   2023
 */
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
 :root {
     --background-color-light: white;
     --background-color-dark: #202123;
@@ -48,48 +49,48 @@
 }
 
 .ui-dark-theme {
-        --background-color: var(--background-color-dark);
-        --text-color: var(--text-color-dark);
-        --act-color: var(--act-color-dark);
-        --nav-color: var(--nav-color-dark);
-        --nav-box-shadow-scrolled: var(--nav-box-shadow-scrolled-dark);
-        --nav-link-hover-barre: var(--nav-link-hover-barre-dark);
-        --sous-titre-ban-color: var(--sous-titre-ban-color-dark);
-        --openAudit-anime-stroke: var(--openAudit-anime-stroke-dark);
-        --background-color-etude-de-cas: var(--background-color-etude-de-cas-dark);
-        --color-ligne-horiz-question: var(--color-ligne-horiz-question-dark);
-        --question-box-shadow: var(--question-box-shadow-dark);
-        --footer-background-color: var(--footer-background-color-dark);
-        --ban-logo-color: var(--ban-logo-color-dark);
-        --border-left-accordeon-title: var(--border-left-accordeon-title-dark);
-        --boxshadow-color-a-propos-de: var(--boxshadow-color-a-propos-de-dark);
-        --bubble-color-boxshadow: var(--bubble-color-boxshadow-dark);
-        --bubble-color-background: var(--bubble-color-background-dark);
-        --blog-h1-color: var(--blog-h1-color-dark);
-        --blog-item-background-color: var(--blog-item-background-color-dark);
-        --blog-item-hover-background-color: var(--blog-item-hover-background-color-dark);
-        --blog-item-hover-color: var(--blog-item-hover-color-dark);
-        --blog-item-mdi-hover-color: var(--blog-item-mdi-hover-color-dark);
+    --background-color: var(--background-color-dark);
+    --text-color: var(--text-color-dark);
+    --act-color: var(--act-color-dark);
+    --nav-color: var(--nav-color-dark);
+    --nav-box-shadow-scrolled: var(--nav-box-shadow-scrolled-dark);
+    --nav-link-hover-barre: var(--nav-link-hover-barre-dark);
+    --sous-titre-ban-color: var(--sous-titre-ban-color-dark);
+    --openAudit-anime-stroke: var(--openAudit-anime-stroke-dark);
+    --background-color-etude-de-cas: var(--background-color-etude-de-cas-dark);
+    --color-ligne-horiz-question: var(--color-ligne-horiz-question-dark);
+    --question-box-shadow: var(--question-box-shadow-dark);
+    --footer-background-color: var(--footer-background-color-dark);
+    --ban-logo-color: var(--ban-logo-color-dark);
+    --border-left-accordeon-title: var(--border-left-accordeon-title-dark);
+    --boxshadow-color-a-propos-de: var(--boxshadow-color-a-propos-de-dark);
+    --bubble-color-boxshadow: var(--bubble-color-boxshadow-dark);
+    --bubble-color-background: var(--bubble-color-background-dark);
+    --blog-h1-color: var(--blog-h1-color-dark);
+    --blog-item-background-color: var(--blog-item-background-color-dark);
+    --blog-item-hover-background-color: var(--blog-item-hover-background-color-dark);
+    --blog-item-hover-color: var(--blog-item-hover-color-dark);
+    --blog-item-mdi-hover-color: var(--blog-item-mdi-hover-color-dark);
 }
 
-.ui-light-theme{
-        --background-color: var(--background-color-light);
-        --text-color: var(--text-color-light);
-        --act-color: var(--act-color-light);
-        --nav-box-shadow-scrolled: var(--nav-box-shadow-scrolled-light);
-        --nav-link-hover-barre: var(--nav-link-hover-barre-light);
-        --sous-titre-ban-color: var(--sous-titre-ban-color-light);
-        --openAudit-anime-stroke: var(--openAudit-anime-stroke-light);
-        --background-color-etude-de-cas: var(--background-color-etude-de-cas-light);
-        --color-ligne-horiz-question: var(--color-ligne-horiz-question-light);
-        --question-box-shadow: var(--question-box-shadow-light);
-        --footer-background-color: var(--footer-background-color-light);
-        --ban-logo-color: var(--ban-logo-color-light);
-        --border-left-accordeon-title: var(--border-left-accordeon-title-light);
-        --boxshadow-color-a-propos-de: var(--boxshadow-color-a-propos-de-light);
-        --bubble-color-background: var(--bubble-color-background-light);
-        --blog-h1-color: var(--blog-h1-color-light);
-        --blog-item-background-color: var(--blog-item-background-color-light);
+.ui-light-theme {
+    --background-color: var(--background-color-light);
+    --text-color: var(--text-color-light);
+    --act-color: var(--act-color-light);
+    --nav-box-shadow-scrolled: var(--nav-box-shadow-scrolled-light);
+    --nav-link-hover-barre: var(--nav-link-hover-barre-light);
+    --sous-titre-ban-color: var(--sous-titre-ban-color-light);
+    --openAudit-anime-stroke: var(--openAudit-anime-stroke-light);
+    --background-color-etude-de-cas: var(--background-color-etude-de-cas-light);
+    --color-ligne-horiz-question: var(--color-ligne-horiz-question-light);
+    --question-box-shadow: var(--question-box-shadow-light);
+    --footer-background-color: var(--footer-background-color-light);
+    --ban-logo-color: var(--ban-logo-color-light);
+    --border-left-accordeon-title: var(--border-left-accordeon-title-light);
+    --boxshadow-color-a-propos-de: var(--boxshadow-color-a-propos-de-light);
+    --bubble-color-background: var(--bubble-color-background-light);
+    --blog-h1-color: var(--blog-h1-color-light);
+    --blog-item-background-color: var(--blog-item-background-color-light);
 
     .c-theme-switch {
         .c-theme-switch__toggle {
@@ -192,7 +193,7 @@ nav {
     box-shadow: var(--nav-box-shadow-scrolled);
 }
 
-nav .links{
+nav .links {
     width: 50%;
     height: 50%;
     display: flex;
@@ -200,12 +201,12 @@ nav .links{
     align-items: center;
 }
 
-nav .links li{
+nav .links li {
     text-decoration: none;
     list-style: none;
 }
 
-nav .links li a{
+nav .links li a {
     text-decoration: none;
     color: var(--text-color);
     font-weight: 700;
@@ -244,12 +245,12 @@ nav .links li a{
 
 /*Tous les boutons*/
 /* Bouton de base (get started) */
-.gstart{
+.gstart {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -259,7 +260,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.gstart:hover{
+.gstart:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -267,14 +268,14 @@ nav .links li a{
 }
 
 /* Bouton contact de l'accueil */
-.btncontact_accueil{
+.btncontact_accueil {
     width: 20rem;
     height: 5rem;
     font-family: "Leelawadee UI", serif;
     font-size: 28px;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     box-shadow: none;
@@ -283,7 +284,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.btncontact_accueil:hover{
+.btncontact_accueil:hover {
     background-color: rgb(255, 255, 255);
     color: #FE665A;
     border-color: #FE665A;
@@ -291,12 +292,12 @@ nav .links li a{
 }
 
 /* Bouton en savoir plus */
-.ensavoirplus{
+.ensavoirplus {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -306,7 +307,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.ensavoirplus:hover{
+.ensavoirplus:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -314,12 +315,12 @@ nav .links li a{
 }
 
 /* Bouton en savoir plus 2*/
-.ensavoirplus2{
+.ensavoirplus2 {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -329,7 +330,7 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.ensavoirplus2:hover{
+.ensavoirplus2:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -337,12 +338,12 @@ nav .links li a{
 }
 
 /* Bouton en savoir plus 3*/
-.ensavoirplus3{
+.ensavoirplus3 {
     width: 10rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -352,14 +353,14 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.ensavoirplus3:hover{
+.ensavoirplus3:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
     box-shadow: #FE665A;
 }
 
-.container-button{
+.container-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -367,7 +368,7 @@ nav .links li a{
 }
 
 /* Bouton 'je veux ça' */
-.cpartit{
+.cpartit {
     width: 80%;
     height: 5rem;
     font-size: 30px;
@@ -386,18 +387,18 @@ nav .links li a{
     transition: background-color 0.3s, color 0.3s;
 }
 
-.cpartit:hover{
+.cpartit:hover {
     background-color: #222;
     color: white;
 }
 
 /* Bouton 'nous contacter */
-.btncontact{
+.btncontact {
     font-size: 20px;
     width: 20%;
     height: 60px;
     background-color: #FE665A;
-    border-radius:0.5625rem;
+    border-radius: 0.5625rem;
     color: white;
     font-weight: 700;
     text-transform: uppercase;
@@ -410,7 +411,7 @@ nav .links li a{
     margin-bottom: 80px;
 }
 
-.btncontact:hover{
+.btncontact:hover {
     background-color: white;
     color: #FE665A;
     border-color: #FE665A;
@@ -435,32 +436,6 @@ nav .links li a{
     background-color: rgb(255, 48, 32);
 }
 
-.custom-btn{
-    padding: 20px;
-    width: 80rem;
-    height: 4.5rem;
-    background-color: #FE665A;
-    border-color: white;
-    border-radius:0.5625rem;
-    color: white;
-    font-weight: 700;
-    text-transform: uppercase;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.custom-btn:hover{
-    background-color: white;
-    color: #FE665A;
-    border: 1px solid rgb(35, 34, 34);
-    box-shadow: #FE665A;
-}
-
-.custom-btn:focus {
-    outline: none;
-}
-
 .bancontainer {
     margin-top: -100px;
     display: flex;
@@ -469,11 +444,11 @@ nav .links li a{
     align-items: center;
     padding-left: 130px;
     flex-shrink: 0;
-    font-family: 'Euclid Circular B',arial,sans-serif !important;
+    font-family: 'Euclid Circular B', arial, sans-serif !important;
     font-style: normal;
 }
 
-.bancontainer h1{
+.bancontainer h1 {
     text-align: center;
     font-size: 60px;
     font-weight: bold;
@@ -489,14 +464,14 @@ nav .links li a{
     padding-left: 130px;
 }
 
-.bancontainer1 h1{
+.bancontainer1 h1 {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: left;
     color: var(--text-color);
 }
 
-.bancontainer1 h3{
+.bancontainer1 h3 {
     color: var(--text-color);
     font-size: 24px;
     text-transform: uppercase;
@@ -513,14 +488,14 @@ nav .links li a{
     margin-top: 200px;
 }
 
-.bancontainer2 h1{
+.bancontainer2 h1 {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: left;
     color: var(--text-color);
 }
 
-.bancontainer2 h3{
+.bancontainer2 h3 {
     color: var(--text-color);
     font-size: 24px;
     text-transform: uppercase;
@@ -528,7 +503,7 @@ nav .links li a{
     margin-left: 5px;
 }
 
-.bancontainer2>.acgauche{
+.bancontainer2>.acgauche {
     margin-left: 100px;
 }
 
@@ -542,14 +517,14 @@ nav .links li a{
     margin-bottom: 200px;
 }
 
-.bancontainer3 h1{
+.bancontainer3 h1 {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: left;
     color: var(--text-color);
 }
 
-.bancontainer3 h3{
+.bancontainer3 h3 {
     color: var(--text-color);
     font-size: 24px;
     text-transform: uppercase;
@@ -573,7 +548,7 @@ nav .links li a{
 }
 
 /*sous-titre des contenus*/
-.soustitreban{
+.soustitreban {
     font-size: 26px;
     font-style: normal;
     font-weight: 500;
@@ -583,7 +558,7 @@ nav .links li a{
 }
 
 /*style texte special de base*/
-.orange-text{
+.orange-text {
     color: #FE665A;
     font-weight: 700;
     font-size: 3.5rem;
@@ -681,6 +656,7 @@ blockquote {
     from {
         opacity: 0;
     }
+
     to {
         opacity: 1;
     }
@@ -695,6 +671,7 @@ blockquote {
     from {
         opacity: 1;
     }
+
     to {
         opacity: 0;
     }
@@ -743,7 +720,7 @@ iframe:hover {
     border-radius: 20px;
 }
 
-.container-etude-cas>h1{
+.container-etude-cas>h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-top: 100px;
@@ -776,7 +753,7 @@ iframe:hover {
     color: var(--text-color);
 }
 
-.container-question > h1 {
+.container-question>h1 {
     font-size: 3.5rem;
     font-weight: 700;
     margin-bottom: 100px;
@@ -805,7 +782,7 @@ iframe:hover {
     margin: 0;
 }
 
-.ligne-horiz{
+.ligne-horiz {
     height: 1px;
     border-radius: 20px;
     background-color: var(--color-ligne-horiz-question);
@@ -889,7 +866,7 @@ iframe:hover {
     margin-bottom: 10px;
 }
 
-.social-icons li{
+.social-icons li {
     font-size: 25px;
 }
 
@@ -906,7 +883,7 @@ iframe:hover {
     color: #F24E1E;
 }
 
-.footer-bottom p{
+.footer-bottom p {
     text-align: center;
     margin: 0;
     padding: 20px 0;
@@ -953,6 +930,7 @@ iframe:hover {
 .validation-list {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .validation-item {
@@ -962,28 +940,28 @@ iframe:hover {
     color: var(--text-color);
 }
 
-.validation-list .validation-item p{
+.validation-list .validation-item p {
     font-size: 22px;
     font-weight: 700;
     text-align: center;
     padding-left: 10px;
 }
 
-.validation-list .validation-item p:hover{
+.validation-list .validation-item p:hover {
     color: #FE665A;
 }
 
-.validation-list .validation-item i{
+.validation-list .validation-item i {
     display: inline-block;
     font-size: 25px;
     color: #FE665A;
     transition: transform 0.3s ease;
 }
 
-.validation-list .validation-item i:hover{
+.validation-list .validation-item i:hover {
     transform: rotate(360deg);
 }
-  
+
 /*bannère des logos*/
 .banlogo {
     width: 100%;
@@ -1003,7 +981,7 @@ iframe:hover {
     white-space: nowrap;
 }
 
-.logo-action{
+.logo-action {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1028,6 +1006,7 @@ iframe:hover {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -1042,7 +1021,7 @@ iframe:hover {
     margin: auto;
 }
 
-.small-text-explication{
+.small-text-explication {
     margin: -30px auto auto;
     text-align: center;
     width: 70%;
@@ -1058,7 +1037,7 @@ iframe:hover {
 }
 
 /*section accordeon*/
-.ban-accordeon{
+.ban-accordeon {
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -1067,7 +1046,7 @@ iframe:hover {
     color: var(--text-color);
 }
 
-.ban-accordeon svg{
+.ban-accordeon svg {
     margin: auto;
 }
 
@@ -1123,7 +1102,7 @@ iframe:hover {
 }
 
 /* partit pour masquez et affichez les lotties */
-.lottie-container{
+.lottie-container {
     margin-left: auto;
     position: relative;
 }
@@ -1146,8 +1125,8 @@ iframe:hover {
 }
 
 .video iframe {
-    width :1200px;
-    height : 600px;
+    width: 1200px;
+    height: 600px;
     top: 0;
     left: 0;
 }
@@ -1221,71 +1200,28 @@ iframe:hover {
     font-weight: 600;
     font-size: clamp(12px, 1.2vw, 26px);
     line-height: 35px;
-    font-family: Söhne,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,
-    Helvetica Neue,Arial,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji; /*police de ChatGPT*/
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
+        Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    /*police de ChatGPT*/
     transform: rotateY(-180deg);
     cursor: grab;
 }
 
-.card-back div{
+.card-back div {
     margin: 20px;
 }
 
-.card-back a{
+.card-back a {
     text-decoration: none;
     color: inherit;
 }
+
 .card-back a:hover,
 .card-back a:focus,
 .card-back a:active {
     text-decoration: none;
     color: inherit;
 }
-
-/* boutons des cards */
-.card-button {
-    width: 50px;
-    /* Largeur du bouton */
-    height: 50px;
-    /* Hauteur du bouton */
-    background-color: #FE665A;
-    /* Couleur de fond */
-    border: none;
-    border-radius: 50%;
-    /* Pour rendre le bouton rond */
-    color: #fff;
-    /* Couleur du texte */
-    font-size: 24px;
-    /* Taille de la police */
-    cursor: pointer;
-    top: 50%;
-    /* Position verticale au milieu de la carte */
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s ease;
-    /* Transition en cas de survol */
-}
-
-/* Style du bouton précédent (flèche vers la gauche) */
-#prev-button::before {
-    content: '\2190';
-    /* Code de caractère Unicode pour une flèche vers la gauche */
-}
-
-/* Style du bouton suivant (flèche vers la droite) */
-#next-button::before {
-    content: '\2192';
-    /* Code de caractère Unicode pour une flèche vers la droite */
-}
-
-/* Changer la couleur de fond au survol */
-.card-button:hover {
-    background-color: #D84E43;
-    /* Couleur de fond au survol */
-}
-
 /* section a propos de*/
 .about-section {
     background: white;
@@ -1315,7 +1251,7 @@ iframe:hover {
 /*bubble section*/
 .bubble-container {
     font-family: "Roboto Thin", Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
+        Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -1401,10 +1337,10 @@ label {
     transition: all 0.3s ease;
 }
 
-input:focus + label,
-textarea:focus + label,
-input:valid + label,
-textarea:valid + label {
+input:focus+label,
+textarea:focus+label,
+input:valid+label,
+textarea:valid+label {
     opacity: 1;
     top: -18px;
     font-size: 14px;
@@ -1426,8 +1362,10 @@ textarea::placeholder {
 
 #cards {
     /*height: calc(var(--numcards) * var(--card-height) + (var(--numcards) - 1) * var(--card-margin));*/
-    padding-bottom: calc(var(--numcards) * var(--card-top-offset)); /* Make place at bottom, as items will slide to that position*/
-    margin-bottom: var(--card-margin); /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
+    padding-bottom: calc(var(--numcards) * var(--card-top-offset));
+    /* Make place at bottom, as items will slide to that position*/
+    margin-bottom: var(--card-margin);
+    /* Don't include the --card-margin in padding, as that will affect the scroll-timeline*/
     list-style: none;
     display: grid;
     grid-template-columns: 1fr;
@@ -1483,7 +1421,7 @@ main {
     align-items: stretch;
 }
 
-.card__content > div {
+.card__content>div {
     grid-area: text;
     margin: 2em;
     place-self: center;
@@ -1493,12 +1431,12 @@ main {
     place-items: start;
 }
 
-.card__content > figure {
+.card__content>figure {
     grid-area: img;
     overflow: hidden;
 }
 
-.card__content > figure > img {
+.card__content>figure>img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1568,11 +1506,7 @@ main {
     @keyframes scale {
         to {
             transform:
-                    scale(calc(
-                            1.1
-                            -
-                            calc(0.1 * var(--reverse-index))
-                    ));
+                scale(calc(1.1 - calc(0.1 * var(--reverse-index))));
         }
     }
 }
@@ -1610,7 +1544,7 @@ main {
     background-color: #575757;
 }
 
-.etiquette.active svg{
+.etiquette.active svg {
     width: 150px;
     height: 150px;
     background-color: #FE665A;
@@ -1746,6 +1680,7 @@ main {
     0% {
         top: -50%;
     }
+
     100% {
         top: 110%;
     }
@@ -1831,44 +1766,44 @@ span.ripple {
     flex-direction: column;
 }
 
-   .c-theme-switch {
-       position: relative;
-       width: 70px;
-       height: 30px;
-       margin-bottom: 16px;
-       border-radius: 50px;
-       color: var(--text-color);
-       border: 2px solid var(--text-color);
-       cursor: pointer;
+.c-theme-switch {
+    position: relative;
+    width: 70px;
+    height: 30px;
+    margin-bottom: 16px;
+    border-radius: 50px;
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+    cursor: pointer;
 
-       .c-theme-switch__toggle {
-           width: 24px;
-           height: 24px;
-           background: #FE665A;
-           border-radius: 100%;
-           position: absolute;
-           top: 3px;
-           left: 4px;
-           transition: 500ms all ease;
-       }
-   }
+    .c-theme-switch__toggle {
+        width: 24px;
+        height: 24px;
+        background: #FE665A;
+        border-radius: 100%;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        transition: 500ms all ease;
+    }
+}
 
 /* Nav bar responsive  */
 @media screen and (max-width: 1000px) {
-    
+
     /* act responsive */
-    .act{
+    .act {
         width: 1000px;
     }
 
-
     /* nav bar */
-    nav #logo{
+    nav #logo {
         float: none;
         width: auto;
         justify-content: center;
     }
-    nav .links{
+
+    nav .links {
         float: none;
         z-index: 9;
         left: 0;
@@ -1885,25 +1820,29 @@ span.ripple {
         transition: all .5s ease-in-out;
     }
 
-    nav .links a{
+    nav .links a {
         font-size: 20px;
     }
+
     nav .icon-burger {
         display: block;
     }
-    nav :checked ~ .links {
+
+    nav :checked~.links {
         bottom: 0;
     }
-    nav :checked ~ .icon-burger .line:nth-child(1) {
+
+    nav :checked~.icon-burger .line:nth-child(1) {
         transform: translateY(10px) rotate(225deg);
     }
-    nav :checked ~ .icon-burger .line:nth-child(2) {
+
+    nav :checked~.icon-burger .line:nth-child(2) {
         opacity: 0;
     }
-    nav :checked ~ .icon-burger .line:nth-child(3) {
+
+    nav :checked~.icon-burger .line:nth-child(3) {
         transform: translateY(-10px) rotate(-225deg);
     }
-
 
     /* baniere d'aceuil responsive  */
     .bancontainer {
@@ -1914,45 +1853,115 @@ span.ripple {
     }
 
     .acdroite {
+        width: auto;
         margin-top: 20px;
         margin-left: 0;
         margin-right: 0;
     }
 
     .acdroite lottie-player {
-        width: 200px;
-        height: 200px;
+        width: 700px !important;
+        height: 700px !important;
     }
 
-    .bancontainer h1 {
-        font-size: 36px;
+    h1 {
+        font-size: 50px;
     }
 
     .validation-list {
-        margin-top: 20px;
+        margin-top: 30px;
+        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     .validation-item {
         display: flex;
-        align-items: center;
+        align-items: start;
+        justify-content: center;
         margin-bottom: 10px;
     }
 
     .validation-item p {
-        margin: 0 10px;
-        font-size: 18px;
+        margin: 0 30px;
+        font-size: 138px;
     }
 
     .btncontact_accueil {
         font-size: 30px;
+        margin-top: 80px;
+        margin-bottom: 30px;
     }
-    
-    /* ban logo responsive */
-    .banlogo{
-        width: 200%;
+
+    /* ban logo responsive problèmes de taille a reglez  */
+    .banlogo {
+        justify-content: center;
+        width: 100%;
+        height: 300px;
     }
+
+    .logo img {
+        width: 20vw;
+        margin-right: 40px;
+    }
+
+    /* accordeon */
+    .ban-accordeon {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .lottie-container {
+        margin: 0 auto;
+    }
+
+    .accordeon-item {
+        width: 100%;
+        margin-bottom: 30px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .accordeon-title {
+        font-size: 36px;
+        padding-left: 0;
+        text-align: center;
+        border-left: none;
+    }
+
+    .accordeon-content {
+        padding: 20px;
+        font-size: 28px;
+        margin: 0 50px;
+        text-align: center;
+        border-left: none;
+    }
+
+    .lottie-container .visible {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* responsive wrapper */
+    .cards-wrapper {
+        flex-wrap: wrap;
+        margin: 20px; /* Ajustez la marge selon vos besoins */
+    }
+
+    .card-container {
+        width: 400px; /* 50% de largeur avec marge */
+       height: 600px;
+    }
+
+    .card-front{
+        font-size: 30px;
+    }
+
+    .card-back{
+        font-size: 30px;
+    }
+
 
 }
