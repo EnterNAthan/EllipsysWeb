@@ -461,9 +461,8 @@ nav .links li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 130px;
+    margin-left: 130px;
 }
-
 .bancontainer1 h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -504,7 +503,7 @@ nav .links li a {
 }
 
 .bancontainer2>.acgauche {
-    margin-left: 100px;
+    margin-left: 130px;
 }
 
 /*contenu et fenetre modale 3*/
@@ -1976,6 +1975,73 @@ span.ripple {
         line-height: normal;
         padding: 30px;
         
+    }
+
+    /* Pages Cas D'usages */
+    /* bancontainer1 */
+    
+    .bancontainer1 {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .bancontainer1 .acdroite{
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    
+    .acdroite{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .acdroite img{
+        margin: 0 0 !important;
+        width: 700px;
+        height: 700px;
+    }
+
+    .bancontainer2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0px;
+        margin-top: 100px;
+    }
+    
+    .bancontainer2>.acgauche {
+        text-align: left;
+    }
+
+    .bancontainer2 img{
+        width: 700px;
+        height: 700px;
+        margin: 0 0;
+    }
+
+    .bancontainer3{
+        flex-direction: column-reverse;
+    }
+
+    .container-question{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+
+    .question {
+        cursor: pointer;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    
+    .question-text {
+        font-size: 25px;
+        margin-right: 20px;
     }
 
 }
