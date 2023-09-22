@@ -311,6 +311,7 @@ nav .links li a {
     border-color: white;
     border-radius: 0.5625rem;
     color: white;
+    margin-top: 20px;
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: none;
@@ -334,6 +335,7 @@ nav .links li a {
     border-color: white;
     border-radius: 0.5625rem;
     color: white;
+    margin-top: 20px;
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: none;
@@ -357,6 +359,7 @@ nav .links li a {
     border-color: white;
     border-radius: 0.5625rem;
     color: white;
+    margin-top: 20px;
     font-weight: 700;
     text-transform: uppercase;
     box-shadow: none;
@@ -546,7 +549,6 @@ nav .links li a {
 
 /*partie gauche des contenus (texte)*/
 .acgauche {
-    margin-top: 90px;
 }
 
 /*partie droite des contenus (image)*/
@@ -554,9 +556,6 @@ nav .links li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 90px;
-    margin-right: 100px;
-    margin-left: 100px;
 }
 
 /*sous-titre des contenus*/
@@ -566,6 +565,7 @@ nav .links li a {
     font-weight: 500;
     line-height: 30px;
     width: 80%;
+    margin-top: 20px;
     color: var(--sous-titre-ban-color);
 }
 
@@ -1944,7 +1944,19 @@ span.ripple {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.language-switcher {
+    display: flex;
     flex-direction: column;
+    gap: 5px;
+}
+
+.language-switcher a img {
+    width: 30px; /* Ajustez la taille des drapeaux */
+    height: auto;
 }
 
 .c-theme-switch {
