@@ -99,8 +99,12 @@
     }
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -145,25 +149,22 @@ body {
 /* Baniére d'actualité au top */
 .act {
     display: flex;
-    width: 200%;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
     background-color: var(--act-color);
     color: white;
-    width: auto;
     height: 25%;
     max-height: 120px;
     font-family: Montserrat, serif;
-    white-space: nowrap;
     text-decoration: none;
 }
 
 /* svg fleche qui est un lien*/
-.act svg {
-    width: 50px;
-    height: 50px;
-}
+/*.act svg {*/
+/*    width: 50px;*/
+/*    height: 50px;*/
+/*}*/
 
 .act h3 {
     font-size: 1.25rem;
@@ -185,8 +186,8 @@ nav {
     align-items: center;
     padding: 0 20px;
     transition: box-shadow 0.3s;
-    /*background-color: #434553;*/
     background-color: var(--nav-color);
+    font-size: 15px;
 }
 
 .nav-scrolled {
@@ -214,7 +215,8 @@ nav .links li a {
     text-transform: uppercase;
     position: relative;
     padding: 1rem 0 0.5rem;
-    margin: 0 1.5rem;
+    margin: 0;
+    display: block;
 }
 
 .links li a:hover {
@@ -243,6 +245,10 @@ nav .links li a {
     color: #FE665A;
 }
 
+#icons{
+    cursor: pointer;
+}
+
 /*Tous les boutons*/
 /* Bouton de base (get started) */
 .gstart {
@@ -269,8 +275,9 @@ nav .links li a {
 
 /* Bouton contact de l'accueil */
 .btncontact_accueil {
-    width: 20rem;
-    height: 5rem;
+    width: 70%;
+    height: auto;
+    padding: 1rem 2rem;
     font-family: "Leelawadee UI", serif;
     font-size: 28px;
     background-color: #FE665A;
@@ -437,12 +444,11 @@ nav .links li a {
 }
 
 .bancontainer {
-    margin-top: -100px;
     display: flex;
     justify-content: center;
     text-align: center;
     align-items: center;
-    padding-left: 130px;
+    padding-left: 5%;
     flex-shrink: 0;
     font-family: 'Euclid Circular B', arial, sans-serif !important;
     font-style: normal;
@@ -451,6 +457,8 @@ nav .links li a {
 .bancontainer h1 {
     text-align: center;
     font-size: 60px;
+    flex-shrink: 1;
+    min-width: 50px;
     font-weight: bold;
     color: var(--text-color);
 }
@@ -577,7 +585,7 @@ nav .links li a {
 
 /* Boîte modale */
 .modal {
-    font-family: Montserrat;
+    font-family: Roboto, sans-serif;
     display: none;
     position: fixed;
     top: 0;
@@ -589,6 +597,9 @@ nav .links li a {
     justify-content: center;
     align-items: center;
     overflow-y: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s;
 }
 
 .modal-content {
@@ -649,6 +660,8 @@ blockquote {
 .modal.active {
     display: flex;
     animation: fadeIn 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
 }
 
 @keyframes fadeIn {
@@ -747,9 +760,9 @@ iframe:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+    margin: 100px auto 50px;
     color: var(--text-color);
+    width: 80%;
 }
 
 .container-question>h1 {
@@ -826,7 +839,6 @@ iframe:hover {
 .footer-content {
     display: flex;
     justify-content: space-between;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -927,6 +939,8 @@ iframe:hover {
 
 /*items de la page d'accueil*/
 .validation-list {
+    margin-top: 40px;
+    margin-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -936,11 +950,13 @@ iframe:hover {
     display: flex;
     align-items: center;
     padding: 10px;
+    flex: 1;
+    min-width: 150px;
     color: var(--text-color);
 }
 
 .validation-list .validation-item p {
-    font-size: 22px;
+    font-size: 1.5rem;
     font-weight: 700;
     text-align: center;
     padding-left: 10px;
@@ -963,9 +979,9 @@ iframe:hover {
 
 /*bannère des logos*/
 .banlogo {
-    width: 100%;
-    height: 200px;
-    margin-top: 100px;
+    height: 15vw;
+    min-height: 100px;
+    margin-top: 5vw;
     background-color: var(--ban-logo-color);
     display: flex;
     align-items: center;
@@ -990,15 +1006,16 @@ iframe:hover {
 
 .logo img {
     width: 10vw;
-    margin-right: 40px;
+    min-width: 70px;
 }
 
 .barre-orange {
     display: flex;
-    width: 2px;
-    height: 60px;
+    width: 0.3vw;
+    height: 7vw;
+    margin-left: 15px;
+    margin-right: 15px;
     background-color: #FE665A;
-    margin: 0 20px;
 }
 
 @keyframes scrollLogos {
@@ -1041,6 +1058,7 @@ iframe:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     gap: 1%;
     color: var(--text-color);
 }
@@ -1053,10 +1071,12 @@ iframe:hover {
 .accordeon {
     justify-content: center;
     margin: 0 auto;
+    width: 100%;
+    max-width: 800px;
 }
 
 .accordeon-item {
-    width: 800px;
+    width: 100%;;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -1064,6 +1084,7 @@ iframe:hover {
 
 .accordeon-title {
     cursor: pointer;
+    text-align: left;
     font-weight: bold;
     font-size: 35px;
     padding-left: 10%;
@@ -1072,6 +1093,7 @@ iframe:hover {
 }
 
 .accordeon-content {
+    text-align: left;
     padding-left: 15%;
     position: relative;
     z-index: 2;
@@ -1102,6 +1124,8 @@ iframe:hover {
 
 /* partit pour masquez et affichez les lotties */
 .lottie-container {
+    width: 100%;
+    max-width: 600px;
     margin-left: auto;
     position: relative;
 }
@@ -1787,89 +1811,90 @@ span.ripple {
     }
 }
 
+/* Close btn */
+.sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0;
+}
+
 /* Nav bar responsive  */
 @media screen and (max-width: 1000px) {
 
-    /* act responsive */
+    /* nav et act responsive */
+    .act h3 {
+        font-size: 1rem;
+    }
+
     .act {
-        width: 1000px;
+        height: 15%;
+        padding: 10px;
     }
 
-    /* nav bar */
-    nav #logo {
-        float: none;
-        width: auto;
-        justify-content: center;
-    }
-
-    nav .links {
-        float: none;
-        z-index: 9;
-        left: 0;
-        right: 0;
-        top: 100px;
-        bottom: 100%;
-        background-color: white;
-        overflow: hidden;
-        width: auto;
-        height: auto;
-        flex-direction: column;
-        justify-content: space-evenly;
-        box-sizing: border-box;
-        transition: all .5s ease-in-out;
-    }
-
-    nav .links a {
-        font-size: 20px;
-    }
-
-    nav .icon-burger {
+    #icons{
         display: block;
+        font-size: 70px;
+        color: var(--text-color);
     }
 
-    nav :checked~.links {
-        bottom: 0;
+    #icons:before{
+        content: "\2630";
     }
 
-    nav :checked~.icon-burger .line:nth-child(1) {
-        transform: translateY(10px) rotate(225deg);
+    .active #icons:before{
+        content: "\2715";
+        z-index: 100;
     }
 
-    nav :checked~.icon-burger .line:nth-child(2) {
-        opacity: 0;
+    nav ul{
+        position: fixed;
+        right: -100%;
+        flex-direction: column;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-60%);
+        text-align: center;
+        transition: 0.25s;
+        z-index: 100;
     }
 
-    nav :checked~.icon-burger .line:nth-child(3) {
-        transform: translateY(-10px) rotate(-225deg);
+    nav li{
+        padding: 3px 0;
+    }
+    nav.active ul{
+        right: 0;
     }
 
     /* baniere d'aceuil responsive  */
     .bancontainer {
         flex-direction: column-reverse;
-        text-align: center;
-        align-items: center;
         padding: 20px;
     }
 
-    .acdroite {
-        width: auto;
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
+    .bancontainer h1{
+        font-size: 45px;
+    }
+
+    .orange-text-animated {
+        font-size: 45px;
     }
 
     .acdroite lottie-player {
-        width: 700px !important;
-        height: 700px !important;
-    }
-
-    h1 {
-        font-size: 50px;
+        width: 350px !important;
+        height: 350px !important;
     }
 
     .validation-list {
         margin-top: 30px;
-        margin-bottom: 10px;
         display: flex;
         flex-direction: column;
     }
@@ -1887,70 +1912,54 @@ span.ripple {
     }
 
     .btncontact_accueil {
-        font-size: 30px;
-        margin-top: 80px;
-        margin-bottom: 30px;
+        font-size: 27px;
+        margin-top: 50px;
+        margin-bottom: 50px;
     }
 
-    /* ban logo responsive problèmes de taille a reglez  */
-    .banlogo {
-        justify-content: center;
-        width: 100%;
-        height: 300px;
+    .informations-container{
+        padding: 20px;
     }
 
-    .logo img {
-        width: 20vw;
-        margin-right: 40px;
+    .informations-container h4{
+        font-size: 40px;
     }
 
     /* accordeon */
     .ban-accordeon {
         flex-direction: column;
-        align-items: center;
-
     }
 
-    .lottie-container {
-        margin: 0 auto;
+    .ban-accordeon .lottie-container lottie-player{
+        margin-top: 20px;
+        width: 90% !important;
+    }
+
+    .accordeon{
+        padding: 20px;
+        width: 90%;
     }
 
     .accordeon-item {
-        width: 100%;
-        margin-bottom: 30px;
-        position: relative;
         overflow: hidden;
     }
 
     .accordeon-title {
-        font-size: 36px;
-        padding-left: 0;
-        text-align: center;
-        border-left: none;
+        font-size: 27px;
     }
 
     .accordeon-content {
-        padding: 20px;
-        font-size: 28px;
-        margin: 0 50px;
-        text-align: center;
-        border-left: none;
-    }
-
-    .lottie-container .visible {
-        display: block;
-        width: 100%;
-        margin: 0 auto;
+        font-size: 20px;
     }
 
     /* responsive wrapper */
     .cards-wrapper {
         flex-wrap: wrap;
-        margin: 20px; /* Ajustez la marge selon vos besoins */
+        margin: 20px;
     }
 
     .card-container {
-        width: 400px; /* 50% de largeur avec marge */
+        width: 400px;
        height: 600px;
     }
 
@@ -1964,71 +1973,138 @@ span.ripple {
 
     /* responsive bubble */
     .bubble-container {
-        margin-right: 30px;
-        margin-left: 30px;
-        margin-bottom: 100px;
+        display: flex;
+        flex-direction: column;
     }
 
     .bubble {
-        font-size: 25px;
+        width: 100%;
+        font-size: 20px;
         font-style: normal;
         line-height: normal;
-        padding: 30px;
         
+    }
+
+    /* responsive footer*/
+    .footer-content {
+        flex-wrap: wrap;
+    }
+
+    .contact-info,
+    .address,
+    .social-icons,
+    .footer-nav {
+        flex: 50%;
+        margin-right: 20px;
+        margin-bottom: 20px;
     }
 
     /* Pages Cas D'usages */
     /* bancontainer1 */
-    
     .bancontainer1 {
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    
-    .bancontainer1 .acdroite{
-        width: 100%;
-        margin-top: 20px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    .acdroite{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .acdroite img{
-        margin: 0 0 !important;
-        width: 700px;
-        height: 700px;
-    }
-
-    .bancontainer2 {
+        margin: 0;
+        width: 90%;
+        padding: 20px;
+        text-align: left;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-left: 0px;
-        margin-top: 100px;
     }
-    
-    .bancontainer2>.acgauche {
+
+    .bancontainer1 .acgauche h1
+    {
+        font-size: 40px;
+    }
+
+    .bancontainer1 .acgauche h3{
+        font-size: 22px;
+    }
+
+    .bancontainer1 .soustitreban{
+        font-size: 20px;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    /*.bancontainer1 .acdroite{*/
+    /*    width: 50px !important;*/
+    /*    height: 50px !important;*/
+    /*}*/
+
+
+    /* bancontainer2 */
+    .bancontainer2 {
+        padding-left: 15px;
+        flex-direction: column;
+    }
+
+    .bancontainer2 h1 {
+        font-size: 40px;
         text-align: left;
     }
 
-    .bancontainer2 img{
-        width: 700px;
-        height: 700px;
-        margin: 0 0;
+    .bancontainer2 h3 {
+        font-size: 22px;
+        margin-left: 0;
+        text-align: left;
     }
 
-    .bancontainer3{
-        flex-direction: column-reverse;
+    .bancontainer2 .soustitreban{
+        font-size: 20px;
+        text-align: justify;
+        margin-bottom: 30px;
     }
+
+    .bancontainer2>.acgauche {
+        margin-left: 0;
+    }
+
+    /*.bancontainer2 .acdroite{*/
+    /*    width: 50px !important;*/
+    /*    height: 50px !important;*/
+    /*}*
+
+
+     */
+    /* bancontainer3 */
+    .bancontainer3 {
+        text-align: left;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bancontainer3 .acgauche h1
+    {
+        font-size: 40px;
+    }
+
+    .bancontainer3 .acgauche h3{
+        font-size: 22px;
+    }
+
+    .bancontainer3 .soustitreban{
+        font-size: 20px;
+        width: 100%;
+        text-align: justify;
+        margin-bottom: 30px;
+    }
+
+    /*.bancontainer3 .acdroite{*/
+    /*    width: 50px !important;*/
+    /*    height: 50px !important;*/
+    /*}*/
 
     .container-question{
-        margin-right: 50px;
-        margin-left: 50px;
+        width: 96%;
+        margin-top: 0;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-question h1{
+        font-size: 40px;
     }
 
     .question {
@@ -2038,10 +2114,45 @@ span.ripple {
         flex-direction: column;
         position: relative;
     }
-    
+
+    .ligne-horiz{
+        width: 90%;
+        margin: auto;
+    }
+
     .question-text {
-        font-size: 25px;
-        margin-right: 20px;
+        font-size: 20px;
+        margin-right: 10px;
+    }
+
+    .triangle{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-right: 15px;
+    }
+
+    .modal-content {
+        max-width: 90%;
+    }
+
+    .close-modal-icon {
+        top: 20px;
+        right: 20px;
+        font-size: 30px;
+        width: 18px;
+        height: 18px;
+    }
+
+    .l-container{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        margin: 20px;
+    }
+
+    span.orange-text{
+        font-size: 40px;
     }
 
     .bancontainer1 p{
