@@ -46,7 +46,7 @@
 <!-- section contact-->
 <div class="contact-container">
     <h1>Contactez-Nous</h1>
-    <form class="contact-form">
+    <form class="contact-form" action="send_email.php" method="POST">
         <div class="input-field">
             <input type="text" id="surname" name="family-name" placeholder="Votre nom" autocomplete="family-name" required>
             <label for="surname">Nom</label>
@@ -63,7 +63,7 @@
             <textarea id="message" rows="4" placeholder="Votre message" required></textarea>
             <label for="message">Message</label>
         </div>
-        <button type="submit" class="submit-button">Envoyer</button>
+        <button type="submit" class="submit-button"><span>Envoyer</span></button>
     </form>
 </div>
 
