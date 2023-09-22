@@ -298,6 +298,11 @@ nav .links li a {
     box-shadow: #FE665A;
 }
 
+.btncontact_accueil a{
+    text-decoration: none;
+    color: inherit;
+}
+
 /* Bouton en savoir plus */
 .ensavoirplus {
     width: 10rem;
@@ -814,7 +819,7 @@ iframe:hover {
 
 .answer {
     font-family: "Source Code Pro", monospace;
-    padding: 10px;
+    padding: 25px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease-in-out, opacity 0.5s ease-in-out;
