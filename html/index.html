@@ -18,6 +18,7 @@
     <script src='https://www.google.com/recaptcha/api.js'></script>
 
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/styleG.css">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -35,17 +36,17 @@
 <header>
     <a href="../html/Contact.html" class="act">
         <h3>{openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</h3>
-<!--        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"-->
-<!--             height="39px">-->
-<!--            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"-->
-<!--                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"-->
-<!--                  fill="white" stroke="white" />-->
-<!--            <path-->
-<!--                    d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"-->
-<!--                    fill="white" stroke="white" />-->
-<!--        </svg>-->
+        <!--        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"-->
+        <!--             height="39px">-->
+        <!--            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"-->
+        <!--                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"-->
+        <!--                  fill="white" stroke="white" />-->
+        <!--            <path-->
+        <!--                    d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"-->
+        <!--                    fill="white" stroke="white" />-->
+        <!--        </svg>-->
     </a>
-    <nav>
+    <nav id="nav">
         <a href="../html/index.html" background="transparent">
             <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
         </a>
@@ -53,27 +54,23 @@
             <li><a href="../html/casusages.html">Cas d'usages</a></li>
             <li><a href="../html/apropos.html">A propos</a></li>
             <li><a href="../html/Contact.html">Contact</a></li>
+            <!--
             <li><a href="../html/methodologie.html">Methodologies</a></li>
+            -->
             <li><a href="../html/blog.html">Blog</a></li>
         </ul>
-
-        <div class="l-container">
-            <div class="c-theme-switch" id="js-switch">
-                <div class="c-theme-switch__toggle"></div>
-            </div>
-        </div>
-
-        <label for="nav-toggle" class="icon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
+        <div id="icons"></div>
     </nav>
 </header>
+<div class="l-container">
+    <div class="c-theme-switch" id="js-switch">
+        <div class="c-theme-switch__toggle"></div>
+    </div>
+</div>
 <div class="bancontainer">
     <div class="acgauche">
         <!-- titre de la baniéres -->
-        <h1>Contrôler et transformer un Système d'Information<br><span class="orange-text-animated">{openAudit}</span>
+        <h1>Maîtriser & transformer un Système<br><span class="orange-text-animated">{openAudit}</span>
         </h1>
         <div class="validation-list">
             <div class="validation-item">
@@ -86,11 +83,11 @@
             </div>
             <div class="validation-item">
                 <p><i class="mdi mdi-check-circle-outline rotate-icon"></i></p>
-                <p>Migrations automatisées</p>
+                <p>Migrations automatiques</p>
             </div>
         </div>
 
-        <button class="btncontact_accueil">Nous contacter</button>
+        <button class="btncontact_accueil"><a href="Contact.html">Nous contacter</a></button>
     </div>
     <div class="acdroite">
         <lottie-player src="https://lottie.host/fea48ad7-5e8f-4e9a-aa59-6414379d72af/j85tb1ZTuN.json"
@@ -102,6 +99,8 @@
         <div class="logo-action">
             <div class="logo"><img src="../images/logos/ADEO.png" alt="ADEO Logo"></div>
             <div class="barre-orange"></div>
+            <div class="logo"><img src="../images/logos/Leroy%20Merlin.png" alt="Leroy Merlin Logo"></div>
+            <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/BGL.png" alt="BGL Logo"></div>
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/BIL.png" alt="BIL Logo"></div>
@@ -117,8 +116,6 @@
             <div class="logo"><img src="../images/logos/EIB.png" alt="EIB Logo"></div>
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/INRAE.png" alt="INRAE Logo"></div>
-            <div class="barre-orange"></div>
-            <div class="logo"><img src="../images/logos/Leroy%20Merlin.png" alt="Leroy Merlin Logo"></div>
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/Luxair.png" alt="Luxair Logo"></div>
             <div class="barre-orange"></div>
@@ -130,6 +127,8 @@
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/ADEO.png" alt="ADEO Logo"></div>
             <div class="barre-orange"></div>
+            <div class="logo"><img src="../images/logos/Leroy%20Merlin.png" alt="Leroy Merlin Logo"></div>
+            <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/BGL.png" alt="BGL Logo"></div>
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/BIL.png" alt="BIL Logo"></div>
@@ -145,8 +144,6 @@
             <div class="logo"><img src="../images/logos/EIB.png" alt="EIB Logo"></div>
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/INRAE.png" alt="INRAE Logo"></div>
-            <div class="barre-orange"></div>
-            <div class="logo"><img src="../images/logos/Leroy%20Merlin.png" alt="Leroy Merlin Logo"></div>
             <div class="barre-orange"></div>
             <div class="logo"><img src="../images/logos/Luxair.png" alt="Luxair Logo"></div>
             <div class="barre-orange"></div>
@@ -164,7 +161,7 @@
         <H4>
             <span class="orange-text"> Un logiciel SaaS,</span><br>
             des<span class="orange-text"> processus automatisés</span>
-             pour<span class="orange-text"> agir sans attendre !</span>
+            pour<span class="orange-text"> agir efficacement !</span>
         </H4>
     </div>
     <!--
@@ -191,7 +188,7 @@
                 <div class="accordeon-title"> Sécurité : seulement de la métadonnée </div>
             </div>
             <div class="accordeon-content">
-                <p>Vos métadonnées collectées par vos soins seront poussées sur le serveur de process de {openAudit} dans le Cloud pour être parsées.
+                <p> Les métadonnées collectées sont poussées automatiquement sur le serveur de process de {openAudit} dans le Cloud, pour être parsées.
                     Les logs relatifs aux usages de la donnée peuvent être anonymisés.</p>
             </div>
         </div>
@@ -200,8 +197,8 @@
                 <div class="accordeon-title">Des processus légers, rejoués en continu</div>
             </div>
             <div class="accordeon-content">
-                <p>L'ensemble des données sont parsées au delta pour que les analyses soient opérées quotidiennement,
-                    au plus proche de la réalité du Système d'Information</p>
+                <p>L'ensemble des métadonnées sont parsées au delta pour que les analyses soient opérées quotidiennement,
+                    au plus proche de la réalité du Système d'Information.</p>
             </div>
         </div>
         <div class="accordeon-item" data-lottie-id="lottie3">
@@ -213,8 +210,10 @@
                     sont traitées par réconciliations structurelles, par captures de logs, etc., pour une représentation complète des flux.</p>
             </div>
         </div>
+        <!--
+        <button class="btncontact_accueil"><a href="Contact.html">J'essaye</a></button>
+        -->
     </div>
-    <button class="btncontact_accueil" href="Contact.html">J'essaye</button>
 </div>
 
 
@@ -234,11 +233,11 @@
                               d="M9.90071 19.2083C9.90071 18.3799 10.5723 17.7083 11.4007 17.7083H34.7858C35.6142 17.7083 36.2858 18.3799 36.2858 19.2083V26.8333C36.2858 27.6617 35.6142 28.3333 34.7858 28.3333H11.4007C10.5723 28.3333 9.90071 27.6617 9.90071 26.8333V19.2083ZM9.90071 61.7083C9.90071 60.8799 10.5723 60.2083 11.4007 60.2083H34.7858C35.6142 60.2083 36.2858 60.8799 36.2858 61.7083V69.3333C36.2858 70.1617 35.6142 70.8333 34.7858 70.8333H11.4007C10.5723 70.8333 9.90071 70.1617 9.90071 69.3333V61.7083ZM4.80444 38.9583C3.97602 38.9583 3.30444 39.6299 3.30444 40.4583V48.0833C3.30444 48.9117 3.97602 49.5833 4.80444 49.5833H24.8914C25.7198 49.5833 26.3914 48.9117 26.3914 48.0833V40.4583C26.3914 39.6299 25.7198 38.9583 24.8914 38.9583H4.80444Z"
                               fill="#FE665A" />
                     </svg>
-                    <div>{oA.Lineage} - dataflows</div>
+                    <div>{oA.Lineage}-dataflows</div>
                 </div>
                 <div class="card-back">
                     <a href="casusages.html">
-                        <div>{openAudit} permet d'appréhender l'origine et les usages de chaque donnée dans les bases de données</div>
+                        <div>{openAudit} permet d'appréhender l'origine et les usages de chaque donnée dans les bases de données.</div>
                     </a>
                 </div>
             </div>
@@ -257,11 +256,11 @@
                         <rect opacity="0.3" x="47.1241" y="7.08331" width="8.45675" height="70.8333" rx="1"
                               fill="#FE665A" />
                     </svg>
-                    <div>{oA.Lineage} - dataviz</div>
+                    <div>{oA.Lineage}-dataviz</div>
                 </div>
                 <div class="card-back">
                     <a href="casusages.html">
-                        <div>{openAudit} permet d'opérer un data lineage dans les dashboards pour mettre en lumière les régles de gestion</div>
+                        <div>{openAudit} permet d'opérer un data lineage dans les dashboards pour mettre en lumière les régles de gestion.</div>
                     </a>
                 </div>
             </div>
@@ -277,11 +276,11 @@
                               d="M42.0769 46.0834C45.9067 46.0834 49.0114 43.1359 49.0114 39.5C49.0114 35.8641 45.9067 32.9167 42.0769 32.9167C38.247 32.9167 35.1423 35.8641 35.1423 39.5C35.1423 43.1359 38.247 46.0834 42.0769 46.0834Z"
                               fill="#FE665A" />
                     </svg>
-                    <div>{oA.Harmony} - dataflows</div>
+                    <div>{oA.Harmony}-dataflows</div>
                 </div>
                 <div class="card-back">
                     <a href="casusages.html">
-                        <div>{openAudit} permet d'identifier les tables et fichiers inutiles dans les flux de données, pour alléger les systèmes</div>
+                        <div>{openAudit} permet d'identifier les tables et les fichiers inutiles au sein des flux de données, pour alléger les systèmes.</div>
                     </a>
                 </div>
             </div>
@@ -297,7 +296,7 @@
                               d="M36.7336 28.9106C35.956 29.695 35.956 30.9669 36.7336 31.7514L42.8603 37.9324L52.2024 28.5074C52.5912 28.1152 53.2215 28.1152 53.6103 28.5074L57.2254 32.1546C57.6142 32.5468 57.6142 33.1828 57.2254 33.575L47.8833 43L54.0099 49.1809C54.7875 49.9654 56.0483 49.9654 56.8258 49.1809L74.1021 31.7514C74.8797 30.9669 74.8797 29.695 74.1021 28.9106L56.8258 11.481C56.0483 10.6966 54.7875 10.6966 54.0099 11.481L36.7336 28.9106Z"
                               fill="#FE665A" />
                     </svg>
-                    <div>{oA.Harmony} - dataviz</div>
+                    <div>{oA.Harmony}-dataviz</div>
                 </div>
                 <div class="card-back">
                     <a href="casusages.html">
@@ -317,11 +316,11 @@
                               d="M36.7336 28.9106C35.956 29.695 35.956 30.9669 36.7336 31.7514L42.8603 37.9324L52.2024 28.5074C52.5912 28.1152 53.2215 28.1152 53.6103 28.5074L57.2254 32.1546C57.6142 32.5468 57.6142 33.1828 57.2254 33.575L47.8833 43L54.0099 49.1809C54.7875 49.9654 56.0483 49.9654 56.8258 49.1809L74.1021 31.7514C74.8797 30.9669 74.8797 29.695 74.1021 28.9106L56.8258 11.481C56.0483 10.6966 54.7875 10.6966 54.0099 11.481L36.7336 28.9106Z"
                               fill="#FE665A" />
                     </svg>
-                    <div>{oA.Reverse} - dataflows</div>
+                    <div>{oA.Reverse}-dataflows</div>
                 </div>
                 <div class="card-back">
                     <a href="casusages.html">
-                        <div>{openAudit} permet de migrer automatiquement des technologies de stockage de données entre elles</div>
+                        <div>{openAudit} permet de migrer automatiquement des technologies de stockage de données entre elles.</div>
                     </a>
                 </div>
             </div>
@@ -337,11 +336,11 @@
                               d="M36.7336 28.9106C35.956 29.695 35.956 30.9669 36.7336 31.7514L42.8603 37.9324L52.2024 28.5074C52.5912 28.1152 53.2215 28.1152 53.6103 28.5074L57.2254 32.1546C57.6142 32.5468 57.6142 33.1828 57.2254 33.575L47.8833 43L54.0099 49.1809C54.7875 49.9654 56.0483 49.9654 56.8258 49.1809L74.1021 31.7514C74.8797 30.9669 74.8797 29.695 74.1021 28.9106L56.8258 11.481C56.0483 10.6966 54.7875 10.6966 54.0099 11.481L36.7336 28.9106Z"
                               fill="#FE665A" />
                     </svg>
-                    <div>{oA.Reverse} - dataviz</div>
+                    <div>{oA.Reverse}-dataviz</div>
                 </div>
                 <div class="card-back">
                     <a href="casusages.html">
-                        <div>{openAudit} permet de migrer automatiquement des technologies de datatiz entre elles</div>
+                        <div>{openAudit} permet de migrer automatiquement des technologies de dataviz entre elles.</div>
                     </a>
                 </div>
             </div>
@@ -364,15 +363,15 @@
 
 <!-- Foire aux questions -->
 <div class="informations-container">
-    <h4 class="big-text-explication">En quoi <span class="orange-text">{openAudit}</span> peut vous permettre</BR> de solutionner des problèmes complexes.
+    <h4 class="big-text-explication">En quoi <span class="orange-text">{openAudit}</span> peut vous permettre</BR>d'adresser des problématiques complexes.
     </h4>
     <div class="bubble-container">
-        <div class="bubble left">Un indicateur est mal calculé : je peux remonter dans les flux au sein de la totalité du système et identifier l'origine du problème dans le code : "drill trough"</div>
-        <div class="bubble right">RGPD : je peux connaître instantanément les personnes ou les machines qui accèdent à telle ou telle données personnelle, possiblement à tord </div>
-        <div class="bubble left">Data Loss Prevention (DLP) : je peux savoir au départ d'une données sensible si est requetée indument par une personne ou une machine quelque part dans le système </div>
-        <div class="bubble right">Migrer ma dataviz : je peux décommissionner une technologie legacy de dataviz, typiquement SAP BO, et migrer vers une technologie du moment : Looker, ou Power BI </div>
-        <div class="bubble left">Migrer mes dataflows : je peux décommissionner une technologie de stockage de données, typiquement Cobol ou Oracle, et migrer ver le Cloud : GCP, Redshift... </div>
-        <div class="bubble right">Baisser les coûts du Cloud : je peux identifier les tables, les fichiers, les dashboards  qui ne servent pas ("branches mortes") et les décommissionner - C'est 50 % d'un système ! </div>
+        <div class="bubble left">Un indicateur est mal calculé : je peux remonter dans les flux au sein de la totalité du système et identifier l'origine du problème dans le code : "drill trough".</div>
+        <div class="bubble right">RGPD : je peux connaître instantanément les personnes ou les machines qui accèdent à telle ou telle donnée personnelle, possiblement à tord. </div>
+        <div class="bubble left">Data Loss Prevention (DLP) : je peux savoir au départ d'une données sensible si est requetée indûment par une personne ou une machine quelque part dans le système. </div>
+        <div class="bubble right">Migrer ma dataviz : je peux décommissionner une technologie legacy de dataviz, typiquement SAP BO, et migrer vers une technologie du moment : Looker, ou Power BI. </div>
+        <div class="bubble left">Migrer mes dataflows : je peux décommissionner une technologie de stockage de données, typiquement Cobol ou Oracle, et migrer vers le Cloud : GCP, Redshift... </div>
+        <div class="bubble right">Baisser les coûts du Cloud : je peux identifier les tables, les fichiers et les dashboards  qui ne servent pas, ainsi que tous les processus associés, et les décommissionner. </div>
     </div>
 </div>
 
@@ -416,7 +415,8 @@
                 <li><a href="casusages.html">Cas d'usages</a></li>
                 <li><a href="apropos.html">À propos</a></li>
                 <li><a href="Contact.html">Contact</a></li>
-                <li><a href="methodologie.html">Méthodologies</a></li>
+                <!--<li><a href="methodologie.html">Méthodologies</a></li>
+                -->
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>

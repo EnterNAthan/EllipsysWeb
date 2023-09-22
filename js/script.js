@@ -7,6 +7,20 @@
 
 
 
+// fonction menu burger
+const links = document.querySelectorAll("nav li")
+icons.addEventListener('click', () => {
+    nav.classList.toggle('active');
+});
+links.forEach((link)=>{
+    link.addEventListener('click', ()=>{
+        nav.classList.remove('active');
+    })
+});
+
+
+
+
 
 // Fonction pour afficher une légère ombre sur la barre de navigation quand on scroll
 const nav = document.querySelector('nav');
@@ -353,7 +367,7 @@ questions.forEach((question) => {
 });
 
 
-//partie test
+// partie test
 // caroussel test
 // document.addEventListener("DOMContentLoaded", () => {
 //     let index = 0;
