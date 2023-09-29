@@ -11,94 +11,102 @@
 </head>
 
 <body class="ui-light-theme" onload="initElement();">
-<header>
-    <a href="../html/Contact.html" class="act">
-        <h3>{openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</h3>
-        <!--        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"-->
-        <!--             height="39px">-->
-        <!--            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"-->
-        <!--                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"-->
-        <!--                  fill="white" stroke="white" />-->
-        <!--            <path-->
-        <!--                    d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"-->
-        <!--                    fill="white" stroke="white" />-->
-        <!--        </svg>-->
-    </a>
-    <nav id="nav">
-        <a href="../html/index.html" background="transparent">
-            <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
+    <header>
+        <a href="../html/Contact.html" class="act">
+            <h3>{openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</h3>
+            <!--        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"-->
+            <!--             height="39px">-->
+            <!--            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"-->
+            <!--                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"-->
+            <!--                  fill="white" stroke="white" />-->
+            <!--            <path-->
+            <!--                    d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"-->
+            <!--                    fill="white" stroke="white" />-->
+            <!--        </svg>-->
         </a>
-        <ul class="links">
-            <li><a href="../html/casusages.html">Cas d'usages</a></li>
-            <li><a href="../html/apropos.html">A propos</a></li>
-            <li><a href="../html/Contact.html" class="active">Contact</a></li>
+        <nav id="nav">
+            <a href="../html/index.html" background="transparent">
+                <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Ellipsys Logo">
+            </a>
+            <ul class="links">
+                <li><a href="../html/casusages.html">Use Cases</a></li>
+                <li><a href="../html/apropos.html">About</a></li>
+                <li><a href="../html/Contact.html">Contact</a></li>
+                <!--
             <li><a href="../html/methodologie.html">Methodologies</a></li>
-            <li><a href="../html/blog.html">Blog</a></li>
-        </ul>
-        <div id="icons"></div>
-    </nav>
-</header>
-<div class="l-container">
-    <div class="c-theme-switch" id="js-switch">
-        <div class="c-theme-switch__toggle"></div>
+            -->
+                <li><a href="../html/blog.html">Blog</a></li>
+            </ul>
+            <div id="icons"></div>
+        </nav>
+    </header>
+    <div class="l-container">
+        <div class="c-theme-switch" id="js-switch">
+            <div class="c-theme-switch__toggle"></div>
+        </div>
+        <div class="language-switcher">
+            <a href="index.html"><img src="../images/french.png" alt="Français"></a>
+            <a href="#"><img src="../images/english.png" alt="English"></a>
+        </div>
     </div>
-    <div class="language-switcher">
-        <a href="Contact.html"><img src="../images/french.png" alt="Français"></a>
-        <a href="#"><img src="../images/english.png" alt="English"></a>
+    <!-- section contact-->
+    <div class="contact-container">
+        <h1>Contact Us</h1>
+        <form class="contact-form" action="send_email.php" method="POST">
+            <div class="input-field">
+                <input type="text" id="surname" name="family-name" placeholder="Your last name"
+                    autocomplete="family-name" required>
+                <label for="surname">Last Name</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="name" name="given-name" placeholder="Your first name" autocomplete="given-name"
+                    required>
+                <label for="name">First Name</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" placeholder="Email address" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="submit-button"><span>Send</span></button>
+        </form>
     </div>
-</div>
-<!-- section contact-->
-<div class="contact-container">
-    <h1>Contactez-Nous</h1>
-    <form class="contact-form" action="send_email.php" method="POST">
-        <div class="input-field">
-            <input type="text" id="surname" name="family-name" placeholder="Votre nom" autocomplete="family-name" required>
-            <label for="surname">Nom</label>
-        </div>
-        <div class="input-field">
-            <input type="text" id="name" name="given-name" placeholder="Votre prénom" autocomplete="given-name" required>
-            <label for="name">Prénom</label>
-        </div>
-        <div class="input-field">
-            <input type="email" id="email" placeholder="Adresse e-mail" required>
-            <label for="email">Email</label>
-        </div>
-        <div class="input-field">
-            <textarea id="message" rows="4" placeholder="Votre message" required></textarea>
-            <label for="message">Message</label>
-        </div>
-        <button type="submit" class="submit-button"><span>Envoyer</span></button>
-    </form>
-</div>
 
+
+    <!-- section footer-->
     <footer class="footer">
         <div class="footer-content">
             <div class="contact-info">
-                <h3>Contactez-nous</h3>
-                <p>ellipsys@ellipsys-bi.com</p>
+                <h3>Contact Us</h3>
+                <p>contact@ellipsys-lab.com</p>
             </div>
 
             <div class="address">
-                <h3>Adresse</h3>
+                <h3>Address</h3>
                 <p>29, Route d'Esch</p>
                 <p>L.3230 Bettembourg, Luxembourg</p>
             </div>
 
             <div class="social-icons">
-                <h3>Suivez-nous</h3>
+                <h3>Follow Us</h3>
                 <ul>
-                    <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i class="mdi mdi-linkedin"></i></a></li>
+                    <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
+                                class="mdi mdi-linkedin"></i></a></li>
                     <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
                 </ul>
             </div>
             <div class="footer-nav">
-                <h3>Liens</h3>
+                <h3>Links</h3>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="casusages.html">Cas d'usages</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="casusages.html">Use Cases</a></li>
+                    <li><a href="apropos.html">About Us</a></li>
                     <li><a href="Contact.html">Contact</a></li>
-                    <li><a href="methodologie.html">Méthodologies</a></li>
+                    <!--<li><a href="methodologie.html">Methodologies</a></li>
+                -->
                     <li><a href="blog.html">Blog</a></li>
                 </ul>
             </div>
@@ -112,5 +120,10 @@
         <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
     </div>
 </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
 <script src="../js/script.js"></script>
+<script src="../js/app.js"> </script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
+
 </html>
