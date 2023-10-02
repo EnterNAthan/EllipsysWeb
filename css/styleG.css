@@ -435,6 +435,7 @@ nav .links li a {
 
 /* Bouton 'Envoyer' du devis */
 .submit-button {
+    text-decoration: none;
     font-size: 20px;
     width: 50%;
     height: 60px;
