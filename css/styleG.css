@@ -2302,6 +2302,7 @@ span.ripple {
 
     .modal-content {
         max-width: 90%;
+        padding: 20px 20px;
     }
 
     .close-modal-icon {
@@ -2338,4 +2339,5 @@ span.ripple {
         line-height: normal;
     }
 
+    /* section en savoir plus  */
 }
