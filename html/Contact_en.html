@@ -52,26 +52,24 @@
     <!-- section contact-->
     <div class="contact-container">
         <h1>Contact Us</h1>
-        <form class="contact-form" action="send_email.php" method="POST">
+        <form class="contact-form">
             <div class="input-field">
-                <input type="text" id="surname" name="family-name" placeholder="Your last name"
-                    autocomplete="family-name" required>
+                <input type="text" id="surname" name="family-name" placeholder="Votre nom" autocomplete="family-name" required>
                 <label for="surname">Last Name</label>
             </div>
             <div class="input-field">
-                <input type="text" id="name" name="given-name" placeholder="Your first name" autocomplete="given-name"
-                    required>
+                <input type="text" id="name" name="given-name" placeholder="Votre prénom" autocomplete="given-name" required>
                 <label for="name">First Name</label>
             </div>
             <div class="input-field">
-                <input type="email" id="email" placeholder="Email address" required>
+                <input type="email" id="email" name="email" placeholder="Adresse e-mail" required>
                 <label for="email">Email</label>
             </div>
             <div class="input-field">
-                <textarea id="message" rows="4" placeholder="Your message" required></textarea>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
                 <label for="message">Message</label>
             </div>
-            <button type="submit" class="submit-button"><span>Send</span></button>
+            <a href="mailto:contact@ellipsys-lab.com?subject=Contact&body=Nom: %20Surname%0A Prénom: %20Name%0A Email: %20Email%0A Message: %20Message" type="submit" class="submit-button"><span>Envoyer</span></a>
         </form>
     </div>
 
