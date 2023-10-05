@@ -1,36 +1,16 @@
-// const titreSpans = document.querySelectorAll('h1 span');
-// const btns = document.querySelectorAll('.ensavoirplus');
-// const logo = document.querySelector('#logo_elypsis');
-// const medias = document.querySelectorAll('.validation-item');
-// const l1 = document.querySelector('.l1');
-// const l2 = document.querySelector('.l2');
-
-// window.addEventListener('load', () => {
-
-//     const TL = gsap.timeline({paused: true});
-
-//     TL
-//     .staggerFrom(titreSpans, 1, {top: -50, opacity: 0, ease: "power2.out"}, 0.3)
-//     .staggerFrom(btns, 1, {opacity: 0, ease: "power2.out"}, 0.3, '-=1')
-//     .from(l1, 1, {width: 0, ease: "power2.out"}, '-=2')
-//     .from(l2, 1, {width: 0, ease: "power2.out"}, '-=2')
-//     .from(logo, 0.4, {transform: "scale(0)", ease: "power2.out"}, '-=2')
-//     .staggerFrom(medias, 1, {right: -200, ease: "power2.out"}, 0.3, '-=1');
-
-    
-    
-
-//     TL.play();
-// })
-
-// loader 
-window.addEventListener('load' , ()=>{
+// loader
+window.addEventListener('load', () => {
     const loader = document.querySelector('.loader');
-    loader.classList.add('fondu-out');
+    document.documentElement.classList.add('no-scroll'); // Empêche le défilement
 
+    loader.classList.add('fondu-out');
     setTimeout(() => {
         loader.remove();
+        document.documentElement.classList.remove('no-scroll'); // Rétablit le défilement
     }, 700);
+
+
+
 
     const tl = gsap.timeline({ defaults: { ease: "power2.out" } });
 
@@ -38,7 +18,7 @@ window.addEventListener('load' , ()=>{
     tl
     .from("#logo_elypsis", { opacity: 0, stagger : 0.5 }, "-=0.5")
     .from(".links", { opacity: 0, stagger: 0.5 }, "-=0.5")
-    
+
 
     tl.from("h1",{opacity: 0, x: -100, stagger: 1},);
     // Animation du texte
