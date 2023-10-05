@@ -13,33 +13,18 @@
 
 <body class="ui-light-theme">
 <header>
-    <div class="news-container">
-        <div class="news-wrapper">
-            <span class="news"><a href="Contact.html">
-                    {openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</a></span>
-            <span class="news"><a href="Contact.html">
-                    Ellipsys est maintenant membre de l'UGAP - les collaborations avec les acteurs publics français sont facilitées.</a></span>
-            <span class="news"><a href="Contact.html">
-                    Ellipsys exposait au salon Big Data et AI Paris 2023 les 25 et 26 septembre 2023, pour présenter les nouvelles fonctionnalités de {openAudit}.</a></span>
-            <span class="news"><a href="Contact.html">
-                    Nouvelle 4 : NEWS ICI ICI!</a></span>
-            <span class="news"><a href="Contact.html">
-                    Nouvelle 5 : NEWS ICI ICI!</a></span>
-
-            <!-- Ajouter autant de news voulu... mais les dupliquer -->
-
-            <span class="news"><a href="Contact.html">
-                    {openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</a></span>
-            <span class="news"><a href="Contact.html">
-                    Ellipsys est maintenant membre de l'UGAP - les collaborations avec les acteurs publics français sont facilitées.</a></span>
-            <span class="news"><a href="Contact.html">
-                    Ellipsys exposait au salon Big Data et AI Paris 2023 les 25 et 26 septembre 2023, pour présenter les nouvelles fonctionnalités de {openAudit}.</a></span>
-            <span class="news"><a href="Contact.html">
-                    Nouvelle 4 : NEWS ICI ICI!</a></span>
-            <span class="news"><a href="Contact.html">
-                    Nouvelle 5 : NEWS ICI ICI!</a></span>
-        </div>
-    </div>
+    <a href="../html/Contact.html" class="act">
+        <h3>{openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</h3>
+        <!--        <svg class="mon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 46 39" fill="none" width="46px"-->
+        <!--             height="39px">-->
+        <!--            <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"-->
+        <!--                  d="M6.22919 19.5C6.22919 18.8269 6.87278 18.2812 7.66669 18.2812H25.3959V20.7188H7.66669C6.87278 20.7188 6.22919 20.1731 6.22919 19.5Z"-->
+        <!--                  fill="white" stroke="white" />-->
+        <!--            <path-->
+        <!--                    d="M25.3959 20.7188V29.25C25.3959 29.743 25.746 30.1873 26.2833 30.376C26.8203 30.5646 27.4387 30.4605 27.8498 30.1119L39.3498 20.3619C39.6195 20.1333 39.7709 19.8232 39.7709 19.5C39.7709 19.1768 39.6195 18.8667 39.3498 18.6383L27.8498 8.88825C27.4387 8.53968 26.8203 8.43542 26.2833 8.62405C25.746 8.8127 25.3959 9.25711 25.3959 9.75003V18.2812V20.7188Z"-->
+        <!--                    fill="white" stroke="white" />-->
+        <!--        </svg>-->
+    </a>
     <nav id="nav">
         <a href="../index.html" background="transparent">
             <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
@@ -58,10 +43,10 @@
     <div class="c-theme-switch" id="js-switch">
         <div class="c-theme-switch__toggle"></div>
     </div>
-    <div class="language-switcher">
-        <a href="#"><img src="../images/french.png" alt="Français"></a>
-        <a href="casusages_en.html"><img src="../images/english.png" alt="English"></a>
-    </div>
+<!--    <div class="language-switcher">-->
+<!--        <a href="#"><img src="../images/french.png" alt="Français"></a>-->
+<!--        <a href="casusages_en.html"><img src="../images/english.png" alt="English"></a>-->
+<!--    </div>-->
 </div>
 <div class="bancontainer1">
     <div class="acgauche">
@@ -109,8 +94,8 @@
                     etc.</p>
 
                 <h1 style="color: black">Le data lineage dans les dataflows</h1>
-                <!--                <p>Un véritable data lineage dans les alimentations, exhaustif et totalement automatisé,-->
-                <!--                    qui présente de multiples vues en fonction des besoins.</p>-->
+<!--                <p>Un véritable data lineage dans les alimentations, exhaustif et totalement automatisé,-->
+<!--                    qui présente de multiples vues en fonction des besoins.</p>-->
 
                 <h2>Résoudre les ruptures dans le data lineage</h2>
                 <blockquote>
@@ -118,7 +103,7 @@
                         <li><p>Vues : si elles sont stockées, <span class="orange-text" style="font-size: 16px">
                             {openAudit}</span>
                             les lira, même si elles sont empilées
-                            (vues de vues de vues...).</p></li>
+                        (vues de vues de vues...).</p></li>
 
                         <li><p>Dynamic SQL : si <span class="orange-text" style="font-size: 16px">{openAudit}</span>
                             ne parvient pas à le résoudre directement,
@@ -150,18 +135,18 @@
                 <h2>Différents niveaux d'analyse pour les alimentations</h2>
                 <blockquote>
                     <ul>
-                        <li><p><u style="color: #fb344b"><b>Nuage de points :</b></u> cette vue permet de connaître instantanément les usages
+                        <li><p><u style="color: #fb344b">Nuage de points :</u> cette vue permet de connaître instantanément les usages
                             d’un data point en faisant abstraction des transformations.<br>
                             Il est également possible à partir d’un usage (un dashboard, une donnée d’un dashboard, une requête),
                             d’identifier instantanément ses sources opérationnelles.</p></li>
 
-                        <li><p><u style="color: #fb344b"><b>Cartographie :</b></u> cette vue permet à partir de n'importe quel data point (champ, table)
+                        <li><p><u style="color: #fb344b">Cartographie :</u> cette vue permet à partir de n'importe quel data point (champ, table)
                             d’afficher une cartographie complète du flux amont ou aval, c'est-à-dire depuis
                             les sources opérationnelles jusqu'à l'exposition des données (dataviz, requête).<br>
                             Les informations utilisées sont mises en lumière, et les usages de l’information sont précisés
                             au survol (qui consulte la donnée, quand, comment).</p></li>
 
-                        <li><p><u style="color: #fb344b"><b>Data lineage granulaire :</b></u> cette vue permet de suivre de façon progressive le déploiement
+                        <li><p><u style="color: #fb344b">Data lineage granulaire :</u> cette vue permet de suivre de façon progressive le déploiement
                             d’une donnée dans le Système d’Information à partir d’un data point par des clics itératifs,
                             ou a contrario de remonter jusqu'aux sources opérationnelles.<br>
                             Chaque transformation (job ELT/ETL, code procédural/objet) peut être analysée avec le « drill through ».
@@ -197,30 +182,30 @@
                     physique et une donnée du dashboard, etc.</p>
 
                 <h1 style="color: black">Le data lineage dans la couche de data visualisation</h1>
-
-
-
+                
+                
+                
                 <H2>Pourquoi c'est utile</H2>
                 <blockquote>
                     <ul>
-                        <li><p>Certaines technologies de data visualisation utilisent des couches sémantiques pour créer de
-                            l'intelligibilité pour le métier, et ainsi lui donner de l'autonomie. Ces couches sémantiques
-                            créent de l'abstraction : les champs physiques sous-jacents sont difficiles à identifier, ce qui
-                            rend le sourcing complexe.</p></li>
+                      <li><p>Certaines technologies de data visualisation utilisent des couches sémantiques pour créer de
+                    l'intelligibilité pour le métier, et ainsi lui donner de l'autonomie. Ces couches sémantiques
+                    créent de l'abstraction : les champs physiques sous-jacents sont difficiles à identifier, ce qui
+                    rend le sourcing complexe.</p></li>
 
-                        <li><p>De plus, les technologies de data visualisation interrogent souvent des vues, des vues de vues…
-                            ce qui complique encore une fois le sourcing.</p></li>
+                    <li><p>De plus, les technologies de data visualisation interrogent souvent des vues, des vues de vues…
+                    ce qui complique encore une fois le sourcing.</p></li>
 
-                        <li><p>Les technologies de data visualisation se multipliant, de véritables analyses d'impact (ou sourcing)
-                            multi-technologiques sont complexes à opérer.</p></li>
+                    <li><p>Les technologies de data visualisation se multipliant, de véritables analyses d'impact (ou sourcing)
+                    multi-technologiques sont complexes à opérer.</p></li>
 
-                        <li><p>Les technologies de data visualisation permettent maintenant de faire de la "data
-                            prep" dans des proportions importantes, ce qui créé une forte opacité.</p></li>
+                    <li><p>Les technologies de data visualisation permettent maintenant de faire de la "data
+                    prep" dans des proportions importantes, ce qui créé une forte opacité.</p></li>
                     </ul>
-                </blockquote>
+                </blockquote> 
 
                 <h2>Techniquement</h2>
-
+            
                 <blockquote>
                     <ul>
                         <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> opère un data
@@ -254,15 +239,15 @@
         </div>
     </div>
     <div class="acdroite">
-        <object id="svg1" type="image/svg+xml" data="../images/svg/dataflow mapping.svg"
+        <object id="svg1" type="image/svg+xml" data="../images/svg/data%20flow%20mapping.svg"
                 width="500" height="500">Votre navigateur ne supporte pas SVG</object>
     </div>
 </div>
 
 <div class="bancontainer2">
     <div class="acdroite">
-        <object type="image/svg+xml" data="../images/svg/dataflow optimization.svg"
-                width="500" height="500">Votre navigateur ne supporte pas SVG</object>
+        <object type="image/svg+xml" data="../images/svg/data%20flow%20optimization.svg"
+                 width="500" height="500">Votre navigateur ne supporte pas SVG</object>
     </div>
 
     <div class="acgauche">
@@ -274,10 +259,10 @@
             <span class="orange-text">Optimiser</span> Un Système
         </h1>
         <!-- sous-titre de la bannière -->
-        <p class="soustitreban">Les capacités techniques du Cloud permettent une infinie scalabilité. Et ça tombe bien,
-            puisque les sources de données se sont mulipliées, ainsi que les utilisateurs et les uses case business.<BR>
+        <p class="soustitreban">Les capacité technique du Cloup permettent une infinie scalabilité. Et ça tombe bien,
+            puisque le sources de données se sont mulipliées, ainsi que les utilisateurs et les uses case business.<BR>
             Il y malheureusement des effets de bord : les systèmes ne sont plus intelligibles, maintenables, et ils
-            finissent par coûter cher.<BR><BR> Nous proposons des fonctionnalités permettant de détecter la matière
+            finissent par coûter cher.<BR><BR> Nous proposons des fonctionnaliter permettant de détecter la matière
             morte dans les systèmes, que ce soient des tables, des fichiers, des dashboards, afin de les ramener à leur optimum.</p>
 
         <button class="ensavoirplus2">En savoir plus</button>
@@ -433,8 +418,8 @@
         <!-- sous-titre de la bannière -->
         <p class="soustitreban">Les technologies de stockage de la donnée ou de data visualisation se sont accumulées au fil du temps.
             Certaines de ces technologies ont vécu, ou ne sont pas bien portées vers le Cloud. Il faut migrer. Hélas, les volumétries,
-            et la complexité intrinsèque de certaines technologies rendent ces projets excessivement coûteux. <BR><BR>{openAudit}, en s'appuyant
-            sur l'extrême granularité de son reverse engineering permet de mettre en œuvre ces migrations de façon automatisée.
+            et la complexité intrinsèque de certaines technologies rendent ces projet excessivement coûteux. <BR><BR>{openAudit}, en s'appuyant
+            sur l'extrême granularité de son reverse engineering permet de mettre en oeuvre ces migrations de façon automatisée.
         </p>
 
         <button class="ensavoirplus3">En savoir plus</button>
@@ -460,14 +445,13 @@
                 <h2>Le problème</h2>
                 <blockquote>
                     <ul>
-                        <li><p>Les grandes entreprises accumulent les technologies de processing depuis toujours. On assiste à un
-                            empilement continu, car la suppression d'une technologie présente souvent trop de risques.
-                            Mais les compétences qui y sont associées se raréfient, et la retro-documentation est rarement en place.</p></li>
-                        <li><p>À un moment, les entreprises doivent se lancer ! Ce peut être des projets en consultance, longs,
-                            onéreux, et hasardeux. Nous pensons qu'il est préférable d'automatiser le process.</p></li>
-                    </ul>
-                </blockquote>
-
+                      <li><p>Les grandes entreprises accumulent les technologies de processing depuis toujours. On assiste à un
+                        empilement continu, car la suppression d'une technologie présente souvent trop de risques.
+                        Mais les compétences qui y sont associées se raréfient, et la retro-documentation est rarement en place.</p></li>
+                    <li><p>À un moment, les entreprises doivent se lancer ! Ce peut être des projets en consultance, longs,
+                        onéreux, et hasardeux. Nous pensons qu'il est préférable d'automatiser le process.</p></li>
+                </blockquote>   
+          
 
                 <h2>Techniquement</h2>
                 <blockquote>
@@ -520,13 +504,13 @@
                 <H2>Cinématique d'ensemble</H2>
                 <blockquote>
                     <ul>
-                        <li><p>La plupart des outils de dataviz ont deux points communs : une couche sémantique qui fait
-                            l’interface entre l’IT et le métier, et un éditeur de dashboard.</p></li>
+                    <li><p>La plupart des outils de dataviz ont deux points communs : une couche sémantique qui fait
+                    l’interface entre l’IT et le métier, et un éditeur de dashboard.</p></li>
 
-                        <li><p>Nous nous appuyons sur le reverse engineering automatisé de
-                            <span class="orange-text" style="font-size: 16px">{openAudit}</span>
-                                pour déconstruire la complexité en source, ce qui nous permet de l'adresser à nouveau
-                                dans la technologie cible.</p></li>
+                <p>Nous nous appuyons sur le reverse engineering automatisé de
+                    <li><span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                    pour déconstruire la complexité en source, ce qui nous permet de l'adresser à nouveau
+                    dans la technologie cible.</p></li>
                     </ul>
                 </blockquote>
 
@@ -557,7 +541,7 @@
         </div>
     </div>
     <div class="acdroite">
-        <object type="image/svg+xml" data="../images/svg/dataflow migration.svg"
+        <object type="image/svg+xml" data="../images/svg/data%20flow%20migration.svg"
                 width="500" height="500">Votre navigateur ne supporte pas SVG</object>
     </div>
 </div>
@@ -617,10 +601,10 @@
             <div class="ligne-horiz"></div>
 
             <div class="answer">
-                <p>
-                    Ellipsys développe des parsers en nombre depuis longtemps et est en capacité d'en développer de nouveaux en des temps records.
+                <p>Ellipsys développe des parsers en nombre depuis longtemps et est en capacité d'en développer de nouveaux en des temps records.
                     Par ailleurs les technologies Cloud utilisent massivement le SQL et ses dérivés. Et nous avons une véritable expertise sur le SQL,
-                    les vues SQL, les vues de vues (...) ainsi qu'une méthodologie pour traiter les procédures dynamiques, les triggers, etc.
+                    les vues SQL, les vues  de vues (...) ainsi qu'une méthodologie pour traiter les procédures dynamiques, les triggers, etc.
+
                 </p>
             </div>
 
@@ -653,7 +637,7 @@
         <div class="question">
 
             <div class="question-text">
-                <h3>À t'on accès aux bases de données liées au traitement des métadonnées par {openAudit}</h3>
+                <h3>A t'on accès aux bases de données liées au traitement des métadonnées par {openAudit}</h3>
                 <div class="triangle">
                     <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
@@ -689,10 +673,9 @@
 
             <div class="answer">
                 <p>
-                    Oui. Nous avons un certain nombre de clients bancaires qui refusent de pousser leurs données à l'extérieur.
+                    Oui. Nous avons un certain nombre de clients bancaires qui refusent de pousser leurs données à l'exterieur.
                     Nous installons {openAudit} sur des VMs chez eux. Idéalement, il nous faut un accès en VPN pour pouvoir faire la maintenance
-                    corrective, ou les montées de version. On peut aussi créer un sas sécuritaire avec un serveur Citadelle.
-                </p>
+                    corrective, ou les montées de version. On peut aussi créer un sas sécuritaire avec un serveur Citadelle.</p>
             </div>
 
         </div>
@@ -711,10 +694,10 @@
 
             <div class="answer">
                 <p>
-                    Nos PoCs ne sont jamais gratuits, car le set up prend du temps, et que sa valeur est importante. Néanmoins, dès qu'une licence est
+                    Nos PoCs ne sont jamais gratuits, car le set up prend du temps, et que sa valeur est importante. Néanmoins dès qu'une licence est
                     signée, le set up est offert (à périmètre technique constant).
-                    Par ailleurs, nous proposons des licences pluriannuelles qui dépendent directement du nombre de technologies concernées (dataflows et dataviz)
-                    mais aussi des volumétries. Nous proposons un large nombre d'accès, toujours suffisant dans le contexte du client.
+                    Par ailleurs nous proposons des licences pluriannelles qui dépendent directement du nombre de technologies concernées (dataflows et dataviz)
+                    mais aussi des volumétrie. Nous proposons un large nombre d'accès, toujours suffisant dans le contexte du client.
                 </p>
             </div>
 
@@ -748,12 +731,12 @@
         <div class="footer-nav">
             <h3>Liens</h3>
             <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="../html/casusages.html">Cas d'usages</a></li>
-                <li><a href="../html/apropos.html">À propos</a></li>
-                <li><a href="../html/Contact.html">Contact</a></li>
-                <!--                    <li><a href="../html/methodologie.html">Méthodologies</a></li>-->
-                <li><a href="../html/blog.html">Blog</a></li>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="casusages.html">Cas d'usages</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <li><a href="methodologie.html">Méthodologies</a></li>
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
     </div>
