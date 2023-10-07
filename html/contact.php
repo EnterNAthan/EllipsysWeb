@@ -1,3 +1,40 @@
+<?php
+$messageSent = false;
+$errorMessage = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Checking For reCAPTCHA
+    $captcha = $_POST['g-recaptcha-response'] ?? '';
+    $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LftAdUaAAAAAIte8m8B3YNRwbygHrnFiTf0vFN2&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
+
+    if (!$captcha || !json_decode($response)->success) {
+        $errorMessage = "Your CAPTCHA response was wrong.";
+    } else {
+        if (empty($_POST["name"]) || empty($_POST["surname"]) || empty($_POST["email"]) || empty($_POST["message"])) {
+            $errorMessage = "Fill All Fields.";
+        } else {
+            $email = filter_var($_POST['email'], FILTER_SANITIZE_EMAIL);
+            $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+
+            if (!$email) {
+                $errorMessage = "Invalid Sender's Email";
+            } else {
+                $to = 'contact@ellipsys-lab.com';
+                $subject = 'Message from website';
+                $messageContent = "Nom: " . $_POST['surname'] . "\n" . "Prénom: " . $_POST['name'] . "\n\n" . $_POST['message'];
+                $headers = 'From:' . $email . "\r\n";
+
+                if (mail($to, $subject, $messageContent, $headers)) {
+                    $messageSent = true;
+                } else {
+                    $errorMessage = "Failed to send email, try again.";
+                }
+            }
+        }
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -5,9 +42,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styleG.css">
-    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/7.2.96/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <title>Ellipsys - Blog</title>
+    <title>Ellipsys - Contact</title>
 </head>
 
 <body class="ui-light-theme">
@@ -46,15 +83,16 @@
             <!--                Autres News en attente</a></span>-->
         </div>
     </div>
+
     <nav id="nav">
         <a href="../index.html" background="transparent">
             <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
         </a>
         <ul class="links">
-            <li><a href="../html/casusages.html">CAS D'USAGES</a></li>
-            <li><a href="../html/apropos.html">A PROPOSE</a></li>
-            <li><a href="../html/Contact.html">CONTACT</a></li>
-            <li><a href="../html/blog.html" class="active">BLOG</a></li>
+            <li><a href="../html/casusages.html">Cas d'usages</a></li>
+            <li><a href="../html/apropos.html">A propos</a></li>
+            <li><a href="../html/Contact.html" class="active">Contact</a></li>
+            <li><a href="../html/blog.html">Blog</a></li>
         </ul>
         <div id="icons"></div>
     </nav>
@@ -65,36 +103,47 @@
 <!--    </div>-->
 <!--    <div class="language-switcher">-->
 <!--        <a href="#"><img src="../images/french.png" alt="Français"></a>-->
-<!--        <a href="blog_en.html"><img src="../images/english.png" alt="English"></a>-->
+<!--        <a href="Contact_en.html"><img src="../images/english.png" alt="English"></a>-->
 <!--    </div>-->
 <!--</div>-->
-<div class="container-blog">
-    <h1>Blog</h1>
-    <i class="validation-item"></i>
-    <div class="blog-list">
-        <a href="https://ellipsys-bi.blogspot.com/2022/12/supprimer-les-regressions-entre.html"
-           class="blog-item" target="_blank">Switch d'environnements #1 - Comparer les environnements<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-        <a href="https://ellipsys-bi.blogspot.com/2022/12/supprimer-les-regressions-entre_16.html"
-           class="blog-item" target="_blank">Switch d'environnements #2 - Supprimer les tables inutiles<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-        <a href="https://ellipsys-bi.blogspot.com/2023/01/identifier-instantanement-les-impacts.html"
-           class="blog-item" target="_blank">Switch d'environnements #3 - Les impacts d'une régression<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-        <a href="https://ellipsys-bi.blogspot.com/2022/11/emailing-migrations-massives-et.html"
-           class="blog-item" target="_blank">Migrations massives et automatisées, d'outils de dataviz<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-        <a href="https://ellipsys-bi.blogspot.com/2022/12/faire-de-lanalyse-dimpact-dans-une.html"
-           class="blog-item" target="_blank">Sourcer des données dans une solution de dataviz<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-        <a href="https://ellipsys-bi.blogspot.com/2023/01/migration-automatique-de-sap-bo-vers.html"
-           class="blog-item" target="_blank">Migration automatique de SAP BO vers une solution tierce<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-        <a href="https://ellipsys-bi.blogspot.com/2023/05/finops-reduire-les-couts-du-cloud-en.html"
-           class="blog-item" target="_blank">FinOps : réduire les coûts du Cloud en supprimant les "branches mortes" !<span class="mdi mdi-eye-arrow-right-outline"></span></a>
-    </div>
+<!-- section contact-->
+<div class="contact-container">
+    <h1>Contactez-Nous</h1>
+
+    <?php if($messageSent): ?>
+        <p>Votre message a été envoyé avec succès !</p>
+    <?php else: ?>
+        <?php if(!empty($errorMessage)): ?>
+            <p class="error-message"><?php echo $errorMessage; ?></p>
+        <?php endif; ?>
+
+        <form class="contact-form" method="post">
+            <div class="input-field">
+                <input type="text" id="surname" name="surname" placeholder="Votre nom" autocomplete="family-name" required>
+                <label for="surname">Nom</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="name" name="name" placeholder="Votre prénom" autocomplete="given-name" required>
+                <label for="name">Prénom</label>
+            </div>
+            <div class="input-field">
+                <input type="email" id="email" name="email" placeholder="Adresse e-mail" autocomplete="email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+                <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
+                <label for="message">Message</label>
+            </div>
+            <button type="submit" class="submit-button"><span>Envoyer</span></button>
+        </form>
+    <?php endif; ?>
 </div>
 
-<!-- section footer-->
 <footer class="footer">
     <div class="footer-content">
         <div class="contact-info">
             <h3>Contactez-nous</h3>
-            <p>ellipsys@ellipsys-lab.com</p>
+            <p>ellipsys@ellipsys-bi.com</p>
         </div>
 
         <div class="address">
@@ -106,20 +155,19 @@
         <div class="social-icons">
             <h3>Suivez-nous</h3>
             <ul>
-                <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
-                        class="mdi mdi-linkedin"></i></a></li>
+                <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i class="mdi mdi-linkedin"></i></a></li>
                 <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
             </ul>
         </div>
         <div class="footer-nav">
             <h3>Liens</h3>
             <ul>
-                <li><a href="../index.html">ACCUEIL</a></li>
-                <li><a href="casusages.html">CAS D'USAGES</a></li>
-                <li><a href="apropos.html">À PROPOS</a></li>
-                <li><a href="Contact.html">CONTACT</a></li>
-                <!--                <li><a href="methodologie.html">Méthodologies</a></li>-->
-                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="casusages.html">Cas d'usages</a></li>
+                <li><a href="apropos.html">À propos</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+                <!--                    <li><a href="methodologie.html">Méthodologies</a></li>-->
+                <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
     </div>
@@ -127,8 +175,10 @@
         <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
     </div>
 </footer>
+
 <div class="scroll-to-top">
     <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
 </div>
-<script src="../js/script.js"></script>
 </body>
+<script src="../js/script.js"></script>
+</html>
