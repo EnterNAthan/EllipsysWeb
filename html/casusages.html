@@ -53,11 +53,11 @@
             <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
         </a>
         <ul class="links">
-            <li><a href="../html/casusages.html" class="active">Cas d'usages</a></li>
-            <li><a href="../html/apropos.html">A propos</a></li>
-            <li><a href="../html/Contact.html">Contact</a></li>
-<!--            <li><a href="../html/methodologie.html">Methodologies</a></li>-->
-            <li><a href="../html/blog.html">Blog</a></li>
+            <li><a href="../html/casusages.html" class="active">CAS D'USAGE</a></li>
+            <li><a href="../html/apropos.html">A PROPOS</a></li>
+            <li><a href="../html/Contact.html">CONTACT</a></li>
+            <!--            <li><a href="../html/methodologie.html">Methodologies</a></li>-->
+            <li><a href="../html/blog.html">BLOG</a></li>
         </ul>
         <div id="icons"></div>
     </nav>
@@ -94,11 +94,13 @@
         <div id="explications-modal1" class="modal">
             <div class="modal-content">
                 <span class="close-modal"><i class="material-icons close-modal-icon">close</i></span>
+                <!--
                 <h2>Comment ça fonctionne ?</h2>
+                -->
                 <h3><b>1) {oA-Lineage}-dataflows : data lineage dans les dataflows</b></h3>
                 <p>Au départ de n’importe quelle « data point » (un champ d’une table, une table, un fichier,
                     un schéma),
-                    <span class="orange-text" style="font-size: 16px">{openAudit}</span> permet d'appréhender
+                    <span class="orange-text" style="font-size: 16px;">{openAudit}</span> permet d'appréhender
                     son origine et ses usages,
                     on-premise et dans le Cloud, à travers un data lineage technique, multi technologique.
                     Les analyses sous-jacentes sont rejouées quotidiennement de façon automatisée.</p>
@@ -107,7 +109,7 @@
                     et les usages de chaque « data point » est défini au survol : qui consulte quelle information,
                     quand, via quels outils, ce qui est d’un intérêt majeur dans un cadre « compliance ».</p>
 
-                <p><span class="orange-text" style="font-size: 16px">{openAudit}</span> propose différents modes de
+                <p><span class="orange-text" style="font-size: 16px;">{openAudit}</span> propose différents modes de
                     représentation graphique pour son data lineage (métier / IT).</p>
 
 
@@ -116,28 +118,30 @@
                     identifier les ruptures et les corriger, la Data Loss Prevention (DLP), BCBS 239 (Bâle III), RGPD,
                     etc.</p>
 
+                <!--
                 <h1 style="color: black">Le data lineage dans les dataflows</h1>
-<!--                <p>Un véritable data lineage dans les alimentations, exhaustif et totalement automatisé,-->
-<!--                    qui présente de multiples vues en fonction des besoins.</p>-->
+                -->
+                <!--                <p>Un véritable data lineage dans les alimentations, exhaustif et totalement automatisé,-->
+                <!--                    qui présente de multiples vues en fonction des besoins.</p>-->
 
                 <h2>Résoudre les ruptures dans le data lineage</h2>
                 <blockquote>
                     <ul>
-                        <li><p>Vues : si elles sont stockées, <span class="orange-text" style="font-size: 16px">
+                        <li><p>Vues : si elles sont stockées, <span class="orange-text" style="font-size: 1.2rem">
                             {openAudit}</span>
                             les lira, même si elles sont empilées
-                        (vues de vues de vues...).</p></li>
+                            (vues de vues de vues...).</p></li>
 
-                        <li><p>Dynamic SQL : si <span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                        <li><p>Dynamic SQL : si <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
                             ne parvient pas à le résoudre directement,
                             le dynamic SQL est résolu avec des paramètres d'exécution, ou avec les journaux
                             d'exécution.</p></li>
 
                         <li><p>Autres : en cas de transfert d'informations par FTP,
                             ou lorsque le schéma de base de données n'est pas précisé (c'est le cas dans de nombreux ETL),
-                            <span class="orange-text" style="font-size: 16px">{openAudit}</span> résout ces ruptures
+                            <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> résout ces ruptures
                             par reconnaissance structurelle,
-                            ou <span class="orange-text" style="font-size: 16px">{openAudit}</span> lit le Batch /
+                            ou <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> lit le Batch /
                             le Shell.</p></li>
                     </ul>
                 </blockquote>
@@ -145,7 +149,7 @@
                 <h2>Associer dynamiquement différentes technologies de transformation de données</h2>
                 <blockquote>
                     <ul>
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> analyse toutes
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> analyse toutes
                             les technologies de processing (langage objet/procédural, ELT/ETL),
                             on-premise ou Cloud, et les associe dans un seul data flow, au niveau le plus fin.
                             Le drill through permet d'accéder au code.</p></li>
@@ -204,43 +208,45 @@
                 <p>Faire la lumière sur des règles de gestion complexes, faire de l’analyse d’impact entre un champ
                     physique et une donnée du dashboard, etc.</p>
 
+                <!--
                 <h1 style="color: black">Le data lineage dans la couche de data visualisation</h1>
-                
-                
-                
+                -->
+
+
+
                 <H2>Pourquoi c'est utile</H2>
                 <blockquote>
                     <ul>
-                      <li><p>Certaines technologies de data visualisation utilisent des couches sémantiques pour créer de
-                    l'intelligibilité pour le métier, et ainsi lui donner de l'autonomie. Ces couches sémantiques
-                    créent de l'abstraction : les champs physiques sous-jacents sont difficiles à identifier, ce qui
-                    rend le sourcing complexe.</p></li>
+                        <li><p>Certaines technologies de data visualisation utilisent des couches sémantiques pour créer de
+                            l'intelligibilité pour le métier, et ainsi lui donner de l'autonomie. Ces couches sémantiques
+                            créent de l'abstraction : les champs physiques sous-jacents sont difficiles à identifier, ce qui
+                            rend le sourcing complexe.</p></li>
 
-                    <li><p>De plus, les technologies de data visualisation interrogent souvent des vues, des vues de vues…
-                    ce qui complique encore une fois le sourcing.</p></li>
+                        <li><p>De plus, les technologies de data visualisation interrogent souvent des vues, des vues de vues…
+                            ce qui complique encore une fois le sourcing.</p></li>
 
-                    <li><p>Les technologies de data visualisation se multipliant, de véritables analyses d'impact (ou sourcing)
-                    multi-technologiques sont complexes à opérer.</p></li>
+                        <li><p>Les technologies de data visualisation se multipliant, de véritables analyses d'impact (ou sourcing)
+                            multi-technologiques sont complexes à opérer.</p></li>
 
-                    <li><p>Les technologies de data visualisation permettent maintenant de faire de la "data
-                    prep" dans des proportions importantes, ce qui créé une forte opacité.</p></li>
+                        <li><p>Les technologies de data visualisation permettent maintenant de faire de la "data
+                            prep" dans des proportions importantes, ce qui créé une forte opacité.</p></li>
                     </ul>
-                </blockquote> 
+                </blockquote>
 
                 <h2>Techniquement</h2>
-            
+
                 <blockquote>
                     <ul>
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> opère un data
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> opère un data
                             lineage dans la couche de data visualisation, dans les expressions, dans les variables,
                             etc., pour identifier les champs directement ou indirectement en source
                             d'un data point.</p></li>
 
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> analyse
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> analyse
                             le contenu des vues pour identifier les champs physiques qui sont en source des données
                             d'une couche de data visualisation, même si les vues sont empilées.</p></li>
 
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> combine les
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> combine les
                             analyses des différentes technologies de dataviz dans une même grille, ce qui permettra
                             aux métiers et à l'IT de réaliser des analyses d'impact entre toutes les couches
                             d'alimentation et tous les outils de data visualisation. Simplement.</p></li>
@@ -270,7 +276,7 @@
 <div class="bancontainer2">
     <div class="acdroite">
         <object type="image/svg+xml" data="../images/svg/dataflow%20optimization.svg"
-                 width="500" height="500">Votre navigateur ne supporte pas SVG</object>
+                width="500" height="500">Votre navigateur ne supporte pas SVG</object>
     </div>
 
     <div class="acgauche">
@@ -294,7 +300,9 @@
         <div id="explications-modal2" class="modal">
             <div class="modal-content">
                 <span class="close-modal2"><i class="material-icons close-modal-icon">close</i></span>
+                <!--
                 <h2>Comment ça fonctionne ?</h2>
+                -->
                 <h3><b>1) {oA-Harmony}-dataflows : détecter les branches mortes dans les dataflows</b></h3>
                 <p>Grâce à une analyse des usages de l'information, associée au parcours de l'information
                     (data lineage), <span class="orange-text" style="font-size: 16px">{openAudit}</span>
@@ -311,7 +319,9 @@
                 <p>Décommissionnement des branches mortes avant migration, rationalisation d'un système pour baisser
                     la maintenance, FinOps, GreenOps pour une IT plus vertueuse.</p>
 
-                <h1 style="color: black">Détecter les branches mortes dans les alimentations</h1>
+                <!--
+                    <h1 style="color: black">Détecter les branches mortes dans les alimentations</h1>
+                -->
                 <!--
                 <p>Une large partie du contenu des systèmes d'information n'a pas de valeur ajoutée (répliqué,
                     obsolète), avec des impacts importants : maintenance, licences, migrations techniques rendues
@@ -321,27 +331,27 @@
                 <h2>Techniquement</h2>
                 <blockquote>
                     <ul>
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> analyse les
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> analyse les
                             journaux des bases de données d'audit et la couche de data
                             visualisation pour découvrir quelles données sont réellement utilisées.</p></li>
 
                         <li><p>À partir des champs utilisés dans les bases de données pour alimenter les outils
                             de data visualisation, ou les requêtes adhoc (ODBC, JDBC), ou encore à partir de flux
-                            ETL/ELT spécifiques, <span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                            ETL/ELT spécifiques, <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
                             identifie les flux d'information, les tables qui sont
                             en source, i.e les "branches vivantes" du système d'information. Par opposition,
-                            <span class="orange-text" style="font-size: 16px">{openAudit}</span> identifie les
+                            <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> identifie les
                             "branches mortes", i.e les tables, procédures, jobs ETL/ELT
                             qui construisent de l'information sans qu’elle ne soit jamais exploitée.</p></li>
 
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> met en œuvre ces
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> met en œuvre ces
                             analyses de manière dynamique, et permet ainsi, en créant une profondeur d'historique
                             conséquente, d'identifier formellement les branches qui sont continuellement inutilisées,
                             avec tout ce qu'elles concentrent : tables, fichiers, procédures, jobs ELT/ETL.
                             Des décommissionnements de masse peuvent avoir lieu dans des temps records.</p></li>
 
                         <li><p>Dans le Cloud, via une analyse de certains logs,
-                            <span class="orange-text" style="font-size: 16px">{openAudit}</span> identifie ce que coûte
+                            <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> identifie ce que coûte
                             la conservation des branches mortes dans le système. La ressource machine économisable
                             est également mise en lumière. L’entreprise peut rentrer dans une logique FinOps
                             et GreenOps.</p></li>
@@ -373,7 +383,9 @@
                 <p>Rationalisation massive de la couche de data visualisation pour baisser les coûts, faire reculer
                     le risque d’erreurs, en améliorer l’intelligibilité.</p>
 
-                <h1 style="color: black">Détection des dashboards inutiles, répliqués</h1>
+                <!--
+                    <h1 style="color: black">Détection des dashboards inutiles, répliqués</h1>
+                -->
                 <!--
                 <p>La couche de data visualisation est bien souvent d’une complexité insondable, car on empile les
                     technologies, mais aussi, on modifie les règles de gestion, on réplique, on surcharge des formules,
@@ -385,21 +397,21 @@
 
                 <blockquote>
                     <ul>
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> va directement
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> va directement
                             parser les fichiers de la solution de data visualisation pour récupérer l'intelligence,
                             la structure des dashboard et la couche sémantique s’il y en a une ;</p></li>
 
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> va accéder
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> va accéder
                             également au référentiel pour garder la cohérence des IDs entre les différents
                             objets du dashboard (couche sémantique, query, dashboard, autres) ;</p></li>
 
-                        <li><p>Une sonde d’<span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                        <li><p>Une sonde d’<span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
                             va récupérer certains logs des bases d’audit qui sont associées
                             aux solutions de data visualisation.</p></li>
                     </ul>
                 </blockquote>
 
-                <h2>A partir de là, {openAudit} va permettre :</h2>
+                <h2>A partir de là, <span class="orange-text" style="font-size: 1.3rem">{openAudit}</span> va permettre :</h2>
 
                 <blockquote>
                     <ul>
@@ -451,7 +463,10 @@
         <div id="explications-modal3" class="modal">
             <div class="modal-content">
                 <span class="close-modal3"><i class="material-icons close-modal-icon">close</i></span>
+
+                <!--
                 <h2>Comment ça fonctionne ?</h2>
+                -->
                 <h3><b>1) {oA-Reverse}-dataflows: migrer les technologies dataflows</b></h3>
                 <p>Les migrations technologiques des langages procéduraux sont souvent si délicates que les entreprises
                     préfèrent empiler les technologies plutôt que de les décommissionner.
@@ -463,32 +478,33 @@
 
                 <b><u>Cas d'usages :</u></b>
                 <p>Changement de SGBD, migration Cloud, maintenabilité d'un système legacy, etc.</p>
-
+                <!--
                 <h1 style="color: black">Traduire les langages procéduraux/objets</h1>
+                -->
                 <h2>Le problème</h2>
                 <blockquote>
                     <ul>
-                      <li><p>Les grandes entreprises accumulent les technologies de processing depuis toujours. On assiste à un
-                        empilement continu, car la suppression d'une technologie présente souvent trop de risques.
-                        Mais les compétences qui y sont associées se raréfient, et la retro-documentation est rarement en place.</p></li>
-                    <li><p>À un moment, les entreprises doivent se lancer ! Ce peut être des projets en consultance, longs,
-                        onéreux, et hasardeux. Nous pensons qu'il est préférable d'automatiser le process.</p></li>
+                        <li><p>Les grandes entreprises accumulent les technologies de processing depuis toujours. On assiste à un
+                            empilement continu, car la suppression d'une technologie présente souvent trop de risques.
+                            Mais les compétences qui y sont associées se raréfient, et la retro-documentation est rarement en place.</p></li>
+                        <li><p>À un moment, les entreprises doivent se lancer ! Ce peut être des projets en consultance, longs,
+                            onéreux, et hasardeux. Nous pensons qu'il est préférable d'automatiser le process.</p></li>
                     </ul>
-                </blockquote>   
-          
+                </blockquote>
+
 
                 <h2>Techniquement</h2>
                 <blockquote>
                     <ul>
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
                             va « parser » le code en source, il va décomposer toute la complexité
                             du code grâce à une grammaire permettant des analyses exhaustives et ultra granulaires.
                             Toutes les subtilités vont être prises en considération,</p></li>
 
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
                             en déduit la cinématique d’ensemble et l’intelligence, qui sera reconstruite
                             dans un arbre algorithmique, agnostique. Sur cette base,
-                            <span class="orange-text" style="font-size: 16px">{openAudit}</span> va produire
+                            <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> va produire
                             du « SQL standard »,</p></li>
 
                         <li><p>Puis l’intelligence va être reconstruite a minima dans le SQL spécifique de la base de
@@ -499,7 +515,7 @@
                             un exécutable NodeJS ou autre. Typiquement les curseurs « Boucle For », les variables,
                             le code conditionnel « If Else », les « Switchs », les appels à procédure, etc.,</p></li>
 
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span>
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
                             produit des fichiers "Yaml" (fichiers intuitifs).
                             Ainsi, la compréhension de la complexité est partagée avec le plus grand nombre,</p></li>
 
@@ -524,17 +540,19 @@
                 <p>Migrer SAP BO vers Looker ou PowerBI, migrer Qlik Sense vers Power BI, etc., de nombreux cas
                     de figure sont possibles !</p>
 
+                <!--
                 <h1 style="color: black">Migrer les technos de data visualisation</h1>
+                -->
                 <H2>Cinématique d'ensemble</H2>
                 <blockquote>
                     <ul>
-                    <li><p>La plupart des outils de dataviz ont deux points communs : une couche sémantique qui fait
-                    l’interface entre l’IT et le métier, et un éditeur de dashboard.</p></li>
+                        <li><p>La plupart des outils de dataviz ont deux points communs : une couche sémantique qui fait
+                            l’interface entre l’IT et le métier, et un éditeur de dashboard.</p></li>
 
-                <li><p>Nous nous appuyons sur le reverse engineering automatisé de
-                    <span class="orange-text" style="font-size: 16px">{openAudit}</span>
-                    pour déconstruire la complexité en source, ce qui nous permet de l'adresser à nouveau
-                    dans la technologie cible.</p></li>
+                        <li><p>Nous nous appuyons sur le reverse engineering automatisé de
+                            <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>
+                            pour déconstruire la complexité en source, ce qui nous permet de l'adresser à nouveau
+                            dans la technologie cible.</p></li>
                     </ul>
                 </blockquote>
 
@@ -542,17 +560,17 @@
 
                 <blockquote>
                     <ul>
-                        <li><p><span class="orange-text" style="font-size: 16px">{openAudit}</span> pourra alimenter
+                        <li><p><span class="orange-text" style="font-size: 1.2rem">{openAudit}</span> pourra alimenter
                             la technologie cible à partir de la couche sémantique unique, une sorte de modèle pivot.
                             Ce modèle aura été généré automatiquement au départ des outils de data visualisation
                             à décommissionner,</p></li>
 
                         <li><p>La structure du dashboard initial aura été également analysée par
-                            <span class="orange-text" style="font-size: 16px">{openAudit}</span>,
+                            <span class="orange-text" style="font-size: 1.2rem">{openAudit}</span>,
                             et elle pourra également être retranscrite dans la technologie cible,</p></li>
 
                         <p>Ainsi des projets de migration tentaculaires, difficiles, ou impossibles à mettre en
-                            œuvre peuvent l'être dans un <b>temps record</b> !</p>
+                            œuvre peuvent l'être dans un temps record !</p>
                     </ul>
                 </blockquote>
                 <!--
@@ -755,12 +773,12 @@
         <div class="footer-nav">
             <h3>Liens</h3>
             <ul>
-                <li><a href="../index.html">Accueil</a></li>
-                <li><a href="casusages.html">Cas d'usages</a></li>
-                <li><a href="apropos.html">À propos</a></li>
-                <li><a href="Contact.html">Contact</a></li>
-<!--                <li><a href="methodologie.html">Méthodologies</a></li>-->
-                <li><a href="blog.html">Blog</a></li>
+                <li><a href="../index.html">ACCUEIL</a></li>
+                <li><a href="casusages.html">CAS D'USAGES</a></li>
+                <li><a href="apropos.html">À PROPOSE</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <!--                <li><a href="methodologie.html">Méthodologies</a></li>-->
+                <li><a href="blog.html">BLOG</a></li>
             </ul>
         </div>
     </div>

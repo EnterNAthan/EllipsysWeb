@@ -330,7 +330,7 @@ nav .links li a {
 
 /* Bouton en savoir plus */
 .ensavoirplus {
-    width: 10rem;
+    width: 15rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
@@ -354,7 +354,7 @@ nav .links li a {
 
 /* Bouton en savoir plus 2*/
 .ensavoirplus2 {
-    width: 10rem;
+    width: 15rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
@@ -378,7 +378,7 @@ nav .links li a {
 
 /* Bouton en savoir plus 3*/
 .ensavoirplus3 {
-    width: 10rem;
+    width: 15rem;
     height: 2.5rem;
     background-color: #FE665A;
     border-color: white;
@@ -515,7 +515,6 @@ nav .links li a {
 .bancontainer1 h3 {
     color: var(--text-color);
     font-size: 24px;
-    text-transform: uppercase;
     font-weight: 700;
     margin-left: 5px;
 }
@@ -539,7 +538,6 @@ nav .links li a {
 .bancontainer2 h3 {
     color: var(--text-color);
     font-size: 24px;
-    text-transform: uppercase;
     font-weight: 700;
     margin-left: 5px;
 }
@@ -568,11 +566,9 @@ nav .links li a {
 .bancontainer3 h3 {
     color: var(--text-color);
     font-size: 24px;
-    text-transform: uppercase;
     font-weight: 700;
     margin-left: 5px;
 }
-
 
 /*partie droite des contenus (image)*/
 .acdroite {
@@ -638,7 +634,7 @@ nav .links li a {
     max-height: 80vh;
     overflow-y: auto;
     margin: 10px;
-    gap: 25px;
+    gap: 10px;
     border: none;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     padding: 40px;
@@ -1263,7 +1259,7 @@ iframe:hover {
     font-size: clamp(12px, 1.2vw, 26px);
     line-height: 35px;
     font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
-        Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+    Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     /*police de ChatGPT*/
     transform: rotateY(-180deg);
     cursor: grab;
@@ -1313,7 +1309,7 @@ iframe:hover {
 /*bubble section*/
 .bubble-container {
     font-family: "Roboto Thin", Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-        Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
+    Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -1535,35 +1531,35 @@ main {
 
 /*@supports (animation-timeline: works) {*/
 
-    /* @scroll-timeline cards-element-scrolls-in-body {
-        source: selector(body);
-        scroll-offsets:
-            /* Start when the start edge touches the top of the scrollport
-                selector(#cards) start 1,
-                    /* End when the start edge touches the start of the scrollport
-                selector(#cards) start 0
-    ;
-        start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport 
-        end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport 
-        time-range: 4s;
-    }
+/* @scroll-timeline cards-element-scrolls-in-body {
+    source: selector(body);
+    scroll-offsets:
+        /* Start when the start edge touches the top of the scrollport
+            selector(#cards) start 1,
+                /* End when the start edge touches the start of the scrollport
+            selector(#cards) start 0
+;
+    start: selector(#cards) start 1; /* Start when the start edge touches the top of the scrollport
+    end: selector(#cards) start 0; /* End when the start edge touches the start of the scrollport
+    time-range: 4s;
+}
 
-    .card {
-        --index0: calc(var(--index) - 1); /* 0-based index 
-        --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index 
-        --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index 
-    }
+.card {
+    --index0: calc(var(--index) - 1); /* 0-based index
+    --reverse-index: calc(var(--numcards) - var(--index0)); /* reverse index
+    --reverse-index0: calc(var(--reverse-index) - 1); /* 0-based reverse index
+}
 
-    .card__content {
-        transform-origin: 50% 0;
-        will-change: transform;
+.card__content {
+    transform-origin: 50% 0;
+    will-change: transform;
 
-        --duration: calc(var(--reverse-index0) * 1s);
-        --delay: calc(var(--index0) * 1s);
+    --duration: calc(var(--reverse-index0) * 1s);
+    --delay: calc(var(--index0) * 1s);
 
-        animation: var(--duration) linear scale var(--delay) forwards;
-        animation-timeline: cards-element-scrolls-in-body;
-    } */
+    animation: var(--duration) linear scale var(--delay) forwards;
+    animation-timeline: cards-element-scrolls-in-body;
+} */
 
 /*    @keyframes scale {*/
 /*        to {*/
@@ -2011,7 +2007,7 @@ span.ripple {
 
     .card-container {
         width: 400px;
-       height: 600px;
+        height: 600px;
     }
 
     .card-front{
@@ -2033,7 +2029,7 @@ span.ripple {
         font-size: 20px;
         font-style: normal;
         line-height: normal;
-        
+
     }
 
     /* responsive footer*/
