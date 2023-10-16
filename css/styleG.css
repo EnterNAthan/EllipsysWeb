@@ -100,7 +100,7 @@
     }
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
@@ -175,7 +175,8 @@ body {
     font-size: 1.25rem;
     font-weight: 700;
     letter-spacing: 1px;
-    margin-right: 1300px; /* distance entre les actualités */
+    margin-right: 1300px;
+    /* distance entre les actualités */
 }
 
 .news a {
@@ -187,6 +188,7 @@ body {
     0% {
         transform: translateX(0);
     }
+
     100% {
         transform: translateX(-50%);
     }
@@ -270,7 +272,7 @@ nav .links li a {
     color: #FE665A;
 }
 
-#icons{
+#icons {
     cursor: pointer;
 }
 
@@ -323,7 +325,7 @@ nav .links li a {
     box-shadow: #FE665A;
 }
 
-.btncontact_accueil a{
+.btncontact_accueil a {
     text-decoration: none;
     color: inherit;
 }
@@ -505,6 +507,7 @@ nav .links li a {
     align-items: center;
     margin-left: 130px;
 }
+
 .bancontainer1 h1 {
     font-size: 3.5rem;
     font-weight: 700;
@@ -649,7 +652,7 @@ nav .links li a {
     margin-top: 20px;
 }
 
-.modal-content p{
+.modal-content p {
     margin-top: 20px;
 }
 
@@ -664,11 +667,11 @@ blockquote {
     margin: 30px 0;
 }
 
-blockquote ul{
+blockquote ul {
     padding-left: 10px;
 }
 
-blockquote li{
+blockquote li {
     margin: 50px;
 }
 
@@ -748,7 +751,8 @@ iframe:hover {
 .separator {
     border: none;
     border-top: 3px solid rgba(204, 204, 204, 0.56);
-    margin-top: 30px; /* ajustement de l'espacement */
+    margin-top: 30px;
+    /* ajustement de l'espacement */
     margin-bottom: 30px;
 }
 
@@ -1111,7 +1115,8 @@ iframe:hover {
 }
 
 .accordeon-item {
-    width: 100%;;
+    width: 100%;
+    ;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -1259,7 +1264,7 @@ iframe:hover {
     font-size: clamp(12px, 1.2vw, 26px);
     line-height: 35px;
     font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif,
-    Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+        Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     /*police de ChatGPT*/
     transform: rotateY(-180deg);
     cursor: grab;
@@ -1280,6 +1285,7 @@ iframe:hover {
     text-decoration: none;
     color: inherit;
 }
+
 /* section a propos de*/
 .about-section {
     background: white;
@@ -1309,7 +1315,7 @@ iframe:hover {
 /*bubble section*/
 .bubble-container {
     font-family: "Roboto Thin", Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell,
-    Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
+        Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emojiserif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
@@ -1832,7 +1838,8 @@ span.ripple {
 }
 
 .language-switcher a img {
-    width: 30px; /* Ajustez la taille des drapeaux */
+    width: 30px;
+    /* Ajustez la taille des drapeaux */
     height: auto;
 }
 
@@ -1887,22 +1894,22 @@ span.ripple {
         padding: 10px;
     }
 
-    #icons{
+    #icons {
         display: block;
         font-size: 70px;
         color: var(--text-color);
     }
 
-    #icons:before{
+    #icons:before {
         content: "\2630";
     }
 
-    .active #icons:before{
+    .active #icons:before {
         content: "\2715";
         z-index: 100;
     }
 
-    nav ul{
+    nav ul {
         position: fixed;
         right: -100%;
         flex-direction: column;
@@ -1914,10 +1921,11 @@ span.ripple {
         z-index: 100;
     }
 
-    nav li{
+    nav li {
         padding: 3px 0;
     }
-    nav.active ul{
+
+    nav.active ul {
         right: 0;
     }
 
@@ -1927,7 +1935,7 @@ span.ripple {
         padding: 20px;
     }
 
-    .bancontainer h1{
+    .bancontainer h1 {
         font-size: 45px;
     }
 
@@ -1964,11 +1972,11 @@ span.ripple {
         margin-bottom: 50px;
     }
 
-    .informations-container{
+    .informations-container {
         padding: 20px;
     }
 
-    .informations-container h4{
+    .informations-container h4 {
         font-size: 40px;
     }
 
@@ -1977,12 +1985,12 @@ span.ripple {
         flex-direction: column;
     }
 
-    .ban-accordeon .lottie-container lottie-player{
+    .ban-accordeon .lottie-container lottie-player {
         margin-top: 20px;
         width: 90% !important;
     }
 
-    .accordeon{
+    .accordeon {
         padding: 20px;
         width: 90%;
     }
@@ -2010,11 +2018,11 @@ span.ripple {
         height: 600px;
     }
 
-    .card-front{
+    .card-front {
         font-size: 30px;
     }
 
-    .card-back{
+    .card-back {
         font-size: 30px;
     }
 
@@ -2057,16 +2065,15 @@ span.ripple {
         flex-direction: column-reverse;
     }
 
-    .bancontainer1 .acgauche h1
-    {
+    .bancontainer1 .acgauche h1 {
         font-size: 40px;
     }
 
-    .bancontainer1 .acgauche h3{
+    .bancontainer1 .acgauche h3 {
         font-size: 22px;
     }
 
-    .bancontainer1 .soustitreban{
+    .bancontainer1 .soustitreban {
         font-size: 20px;
         width: 100%;
         text-align: justify;
@@ -2096,7 +2103,7 @@ span.ripple {
         text-align: left;
     }
 
-    .bancontainer2 .soustitreban{
+    .bancontainer2 .soustitreban {
         font-size: 20px;
         text-align: justify;
         margin-bottom: 30px;
@@ -2120,16 +2127,15 @@ span.ripple {
         flex-direction: column-reverse;
     }
 
-    .bancontainer3 .acgauche h1
-    {
+    .bancontainer3 .acgauche h1 {
         font-size: 40px;
     }
 
-    .bancontainer3 .acgauche h3{
+    .bancontainer3 .acgauche h3 {
         font-size: 22px;
     }
 
-    .bancontainer3 .soustitreban{
+    .bancontainer3 .soustitreban {
         font-size: 20px;
         width: 100%;
         text-align: justify;
@@ -2141,7 +2147,7 @@ span.ripple {
     /*    height: 50px !important;*/
     /*}*/
 
-    .container-question{
+    .container-question {
         width: 96%;
         margin-top: 0;
         align-items: center;
@@ -2149,7 +2155,7 @@ span.ripple {
         text-align: center;
     }
 
-    .container-question h1{
+    .container-question h1 {
         font-size: 40px;
     }
 
@@ -2161,7 +2167,7 @@ span.ripple {
         position: relative;
     }
 
-    .ligne-horiz{
+    .ligne-horiz {
         width: 90%;
         margin: auto;
     }
@@ -2171,7 +2177,7 @@ span.ripple {
         margin-right: 10px;
     }
 
-    .triangle{
+    .triangle {
         position: absolute;
         bottom: 0;
         right: 0;
@@ -2191,28 +2197,28 @@ span.ripple {
         height: 18px;
     }
 
-    .l-container{
+    .l-container {
         position: relative;
         bottom: 0;
         left: 0;
         margin: 20px;
     }
 
-    span.orange-text{
+    span.orange-text {
         font-size: 40px;
     }
 
-    .bancontainer1 p{
-        font-size: 40px;
-        line-height: normal;
-    }
-
-    .bancontainer2 p{
+    .bancontainer1 p {
         font-size: 40px;
         line-height: normal;
     }
 
-    .bancontainer3 p{
+    .bancontainer2 p {
+        font-size: 40px;
+        line-height: normal;
+    }
+
+    .bancontainer3 p {
         font-size: 40px;
         line-height: normal;
     }
