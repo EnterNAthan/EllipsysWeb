@@ -168,7 +168,7 @@ body {
 
 .news-wrapper {
     display: flex;
-    animation: scrollNews 65s linear infinite;
+    animation: scrollNews 35s linear infinite;
 }
 
 .news {
@@ -632,7 +632,7 @@ nav .links li a {
     flex-direction: column;
     font-family: "Montserrat", sans-serif;
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     max-width: 80%;
     max-height: 80vh;
     overflow-y: auto;
@@ -663,16 +663,16 @@ blockquote {
     font-size: 1.2rem;
     background-color: rgba(91, 87, 87, 0.13);
     border-left: 5px solid #232222;
-    padding: 10px;
+    padding: 15px;
     margin: 30px 0;
 }
 
 blockquote ul {
-    padding-left: 10px;
+    padding-left: 0px;
 }
 
 blockquote li {
-    margin: 50px;
+    margin: 10px;
 }
 
 /* Style pour la croix de fermeture */
