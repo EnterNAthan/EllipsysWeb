@@ -148,8 +148,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         <div class="address">
             <h3>Adresse</h3>
-            <p>29, Route d'Esch</p>
-            <p>L.3230 Bettembourg, Luxembourg</p>
+            <p>29 Route d'Esch</p>
+            <p>L-3230 Bettembourg, Luxembourg</p>
         </div>
 
         <div class="social-icons">
