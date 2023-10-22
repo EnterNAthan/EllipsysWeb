@@ -1146,7 +1146,7 @@ iframe:hover {
 
 .accordeon-title:hover,
 .accordeon-item.open .accordeon-title {
-    background-color: rgba(255, 103, 65, 0.1);
+    /* background-color: rgba(255, 103, 65, 0.1); */
     border-color: #F86642;
 }
 
@@ -2189,6 +2189,7 @@ span.ripple {
     .modal-content {
         max-width: 90%;
         padding: 20px 20px;
+        font-size: 1rem;
     }
 
     .close-modal-icon {
@@ -2240,5 +2241,7 @@ span.ripple {
         margin-bottom: 10px;
         font-size: 1rem;
     }
+
+    /* modal  */
 
 }
