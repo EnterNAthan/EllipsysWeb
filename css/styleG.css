@@ -606,7 +606,7 @@ nav .links li a {
     color: #FE665A;
     font-weight: 700;
     font-size: 60px;
-    -webkit-text-stroke: var(--openAudit-anime-stroke);
+    /*-webkit-text-stroke: var(--openAudit-anime-stroke);*/
 }
 
 /* Boîte modale */
@@ -2225,22 +2225,20 @@ span.ripple {
         line-height: normal;
     }
 
-    /* Réduisez la marge supérieure pour réduire l'espace blanc sur les appareils mobiles */
     .about-section {
-        margin: 100px 100px;
-        max-width: 700px;
-        
-
+        margin: 50px 50px;
+        max-width: 90%;
     }
 
     /* Augmentez la taille de la police pour une meilleure lisibilité sur les petits écrans */
     .about-section h1 {
-        font-size: 1.5em;
+        font-size: 2rem;
         text-align: center;
     }
 
     .about-section p {
         margin-bottom: 10px;
+        font-size: 1rem;
     }
 
 }
