@@ -2144,6 +2144,9 @@ span.ripple {
         margin-bottom: 30px;
     }
 
+    .modal p{
+        font-size: 20px !important;
+    }
     /*.bancontainer3 .acdroite{*/
     /*    width: 50px !important;*/
     /*    height: 50px !important;*/
