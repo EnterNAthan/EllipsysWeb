@@ -143,7 +143,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <div class="footer-content">
         <div class="contact-info">
             <h3>Contactez-nous</h3>
-            <p>ellipsys@ellipsys-bi.com</p>
+            <p>contact@ellipsys-lab.com</p>
         </div>
 
         <div class="address">
