@@ -7,9 +7,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $captcha = $_POST['g-recaptcha-response'] ?? '';
     $response = file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=6LftAdUaAAAAAIte8m8B3YNRwbygHrnFiTf0vFN2&response=" . $captcha . "&remoteip=" . $_SERVER['REMOTE_ADDR']);
 
-    if (!$captcha || !json_decode($response)->success) {
-        $errorMessage = "Your CAPTCHA response was wrong.";
-    } else {
+    // if (!$captcha || !json_decode($response)->success) {
+    //     $errorMessage = "Your CAPTCHA response was wrong.";
+    // } else {
         if (empty($_POST["name"]) || empty($_POST["surname"]) || empty($_POST["email"]) || empty($_POST["message"])) {
             $errorMessage = "Fill All Fields.";
         } else {
@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 }
             }
         }
-    }
+    // }
 }
 ?>
 
