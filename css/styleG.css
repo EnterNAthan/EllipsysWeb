@@ -783,7 +783,7 @@ iframe:hover {
 .big-text-explication {
     font-style: normal;
     margin: 100px 20px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 .big-text-explication span {
@@ -1978,7 +1978,7 @@ span.ripple {
         padding: 20px;
     }
 
-    .informations-container h4 {
+    .informations-container h2 {
         font-size: 40px;
     }
 
