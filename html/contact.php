@@ -46,7 +46,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
     <title>Ellipsys - Contact</title>
     <meta name="description" content="Une équipe à votre disposition pour vos projets les plus ambitieux">
-    <link rel="canonical" href="https://www.ellipsys-bi.com/nom-de-la-page" />
+    <link rel="canonical" href="https://www.ellipsys-bi.com/contact.php" />
 </head>
 
 <body class="ui-light-theme">

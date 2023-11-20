@@ -1116,7 +1116,6 @@ iframe:hover {
 
 .accordeon-item {
     width: 100%;
-    ;
     margin-bottom: 30px;
     position: relative;
     overflow: hidden;
@@ -1126,7 +1125,7 @@ iframe:hover {
     cursor: pointer;
     text-align: left;
     font-weight: bold;
-    font-size: 35px;
+    font-size: 30px;
     padding-left: 10%;
     transition: background-color 0.3s;
     border-left: var(--border-left-accordeon-title);
