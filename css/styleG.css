@@ -993,14 +993,14 @@ iframe:hover {
     color: var(--text-color);
 }
 
-.validation-list .validation-item p {
+.validation-list .validation-item h5 {
     font-size: 1.3rem;
     font-weight: 700;
     text-align: center;
     padding-left: 10px;
 }
 
-.validation-list .validation-item p:hover {
+.validation-list .validation-item h5:hover {
     color: #FE665A;
 }
 
