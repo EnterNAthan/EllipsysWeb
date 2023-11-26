@@ -76,7 +76,12 @@
                 <img id="logo_elypsis" src="images/logotr.png" class="logo" alt="Logo Ellipsys">
             </a>
             <ul class="links">
-                <li><a href="html/casusages.html">CAS D'USAGE</a></li>
+                <li><a href="html/Cartographier.html">Cartographier</a></li>
+                <li><a href="html/Migrer.html">Migrer</a></li>
+                <li><a href="html/Simplifier.html">Simlifier</a></li>
+                <li><a href="html/methodologie.html">Methodologie</a></li>
+
+                <!-- <li><a href="html/casusages.html">CAS D'USAGE</a></li> -->
                 <li><a href="html/apropos.html">A PROPOS</a></li>
                 <li><a href="html/contact.php">CONTACT</a></li>
                 <!--
@@ -489,7 +494,32 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.7.8/lottie.min.js"></script>
-
+    <script type="application/ld+json">
+        {
+           "@context": "http://schema.org",
+           "@type": "Organization",
+           "@id":"Ellipsys",
+           "name": "Ellipsys",
+           "url": "https://ellipsys-bi.com/index.html",
+           "logo": "https://ellipsys-bi.com/images/logotr.png",
+           "description": "Ellipsys est l'éditeur d'openAudit, un logiciel de gouvernance des données qui s'appuie sur le data lineage technique.",
+           "address": {
+             "@type": "PostalAddress",
+             "streetAddress": "29 Route d'Esch",
+             "addressLocality": "Ville",
+             "addressRegion": "Bettembourg",
+             "postalCode": "L-3230",
+             "addressCountry": "Luxembourg"
+           },
+           "contactPoint": {
+             "@type": "ContactPoint",
+             "telephone": "+XX-XXXXXXX",
+             "contactType": "Support client"
+             // ajoutez des same as avec les réseau sociaux 
+           }
+        }
+        </script>
+        
 </body>
 
 </html>

@@ -18,6 +18,7 @@
      "@type": "ContactPoint",
      "telephone": "+XX-XXXXXXX",
      "contactType": "Support client"
+     // ajoutez des same as avec les réseau sociaux 
    }
 }
 </script>

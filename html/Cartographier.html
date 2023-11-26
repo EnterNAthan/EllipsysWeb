@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styleG.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link id="pagestyle" rel="stylesheet" type="text/css" href="../css/styleG.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js"></script>
-    <title>Ellipsys - Contact</title>
-    <meta name="description" content="Une équipe à votre disposition pour vos projets les plus ambitieux">
-    <link rel="canonical" href="https://www.ellipsys-bi.com/Contact" />
+    <title>Ellipsys - Cas d'Usages</title>
+    <meta name="description" content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la "matière morte"et automatisation des migrations. ">
+    <link rel="canonical" href="https://www.ellipsys-bi.com/casusages" />
 </head>
 
 <body class="ui-light-theme">
@@ -81,81 +82,50 @@
             <a href="../html/"><img src="../images/english.png" alt="English"></a>
         </div>
     </div>
+    
+    <section>
+    <div class="bancontainer1">
+        <div class="acgauche">
+            <!-- domaine de la bannière -->
+            <h3>{oA.Lineage}</h3>
+    
+            <!-- titre de la bannière -->
+            <h1>
+                <span class="orange-text">Cartographier</span> Un Système d’Information 
+            </h1>
+            <!-- sous-titre de la bannière -->
+            <p class="soustitreban">Les systèmes d'information sont d'une telle complexité, que les équipes ne parviennent plus à
+                naviguer efficacement dans les flux pour opérer les investigations souhaitées. Les architectures Data Mesh orientées
+                Domaines accélèrent cet état de fait.<BR><BR>
+                Le data lineage technique et multi-technologique de {openAudit} permet d'appréhender l'origine et les usages de chacune
+                des données des systèmes on-premise et/ou Cloud d'un clic de souris. Les analyses sous-jacentes sont rejouées quotidiennement.</p>
+    
+            <button class="ensavoirplus">En savoir plus</button>
+        </div>
 
-<!-- Container de switch entre chaque aspect du themes -->
-<div class="l-container">
-    <div class="c-theme-switch" id="js-switch">
-        <div class="c-theme-switch__toggle"></div>
+        <div class="acdroite">
+                <object id="svg1" type="image/svg+xml" data="../images/svg/dataflow%20mapping.svg"
+                        width="500" height="500">Votre navigateur ne supporte pas SVG</object>
+        </div>
     </div>
-    <div class="language-switcher">
-        <a href="#"><img src="../images/french.png" alt="Français"></a>
-        <a href="../html/Contact_en.html"><img src="../images/english.png" alt="English"></a>
-    </div>
+    </section>
+    <section id="Dataflows">
+        <div class="bancontainer2">
+            <div class="acdroite">
+                <object type="image/svg+xml" data="../images/svg/dataflow%20optimization.svg"
+                        width="500" height="500">Votre navigateur ne supporte pas SVG</object>
+            </div>
+            <div class="acgauche">
+                <!-- domaine de la bannière -->
+                <h3>{oA.Lineage}</h3>
+        
+                <!-- titre de la bannière -->
+                <h1>
+                    Faire du <span class="orange-text">Data Lineage</span> dans les <span class="orange-text">Dataflows</span>
+                </h1>
+                <p class="soustitreban">Les systèmes d'information sont d'une telle complexité, que les équipes ne parviennent plus à
+                    naviguer efficacement dans les flux pour opérer les investigations souhaitées. Les architectures Data Mesh orientées
+                    Domaines accélèrent cet état de fait.<BR><BR>
+                    Le data lineage technique et multi-technologique de {openAudit} permet d'appréhender l'origine et les usages de chacune
+                    des données des systèmes on-premise et/ou Cloud d'un clic de souris. Les analyses sous-jacentes sont rejouées quotidiennement.</p>
 </div>
-
-<div class="contact-container">
-    <h1>Contactez-Nous</h1>
-    <form class="contact-form">
-        <div class="input-field">
-            <input type="text" id="surname" name="family-name" placeholder="Votre nom" autocomplete="family-name" required>
-            <label for="surname">Nom</label>
-        </div>
-        <div class="input-field">
-            <input type="text" id="name" name="given-name" placeholder="Votre prénom" autocomplete="given-name" required>
-            <label for="name">Prénom</label>
-        </div>
-        <div class="input-field">
-            <input type="email" id="email" name="email" placeholder="Adresse e-mail" autocomplete="email" required>
-            <label for="email">Email</label>
-        </div>
-        <div class="input-field">
-            <textarea id="message" name="message" rows="4" placeholder="Votre message" required></textarea>
-            <label for="message">Message</label>
-        </div>
-        <a href="mailto:contact@ellipsys-lab.com?subject=Contact&body=Nom: %20Surname%0A Prénom: %20Name%0A Email: %20Email%0A Message: %20Message" type="submit" class="submit-button"><span>Envoyer</span></a>
-    </form>
-</div>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="contact-info">
-                <h3>Contactez-nous</h3>
-                <p>contact@ellipsys-lab.com</p>
-            </div>
-
-            <div class="address">
-                <h3>Adresse</h3>
-                <p>29 Route d'Esch</p>
-                <p>L-3230 Bettembourg, Luxembourg</p>
-            </div>
-
-            <div class="social-icons">
-                <h3>Suivez-nous</h3>
-                <ul>
-                    <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i class="mdi mdi-linkedin"></i></a></li>
-                    <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
-                </ul>
-            </div>
-            <div class="footer-nav">
-                <h3>Liens</h3>
-                <ul>
-                    <li><a href="../index.html">Accueil</a></li>
-                    <li><a href="casusages.html">Cas d'usages</a></li>
-                    <li><a href="apropos.html">À propos</a></li>
-                    <li><a href="Contact.html">Contact</a></li>
-<!--                    <li><a href="methodologie.html">Méthodologies</a></li>-->
-                    <li><a href="blog.html">Blog</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
-        </div>
-    </footer>
-
-    <div class="scroll-to-top">
-        <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
-    </div>
-</body>
-<script src="../js/script.js"></script>
-</html>
