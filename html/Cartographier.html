@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <title>Ellipsys - Cartographier</title>
-    <meta name="description"
-        content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la
+    <meta name="description" content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la
         matière morte et automatisation des migrations. ">
     <link rel=" canonical" href="https://www.ellipsys-bi.com/cartographier" />
 </head>
@@ -106,7 +105,7 @@
                     des données des systèmes on-premise et/ou Cloud d'un clic de souris. Les analyses sous-jacentes sont
                     rejouées quotidiennement.</p>
 
-<!--                <button class="ensavoirplus">En savoir plus</button>-->
+                <!--                <button class="ensavoirplus">En savoir plus</button>-->
             </div>
 
             <div class="acdroite">
@@ -119,103 +118,155 @@
 
     <section>
         <div class="informations-container">
-                <H2 class="big-text-explication"> Faire du <span class="orange-text">Data Lineage</span> dans les <span
-                            class="orange-text">Dataflows</span>
-                </H2>
+            <H2 class="big-text-explication"> Faire du <span class="orange-text">Data Lineage</span> dans les <span
+                    class="orange-text">Dataflows</span>
+            </H2>
         </div>
-            <div class="bancontainer-cas">
-                <h3>Le problème</h3>
-                <blockquote class="block-probleme">Nous rencontrons des entreprises qui viennent de migrer dans le Cloud et qui
-                    souffrent déjà d’une hypertrophie de leur Système d’Information, avec des flux intriqués, de la
-                    réplication, etc.<BR><BR>Les équipes data passent beaucoup trop de temps à tenter de maîtriser leurs
-                    Systèmes d’Information. Quand les architectures sont plus anciennes, les experts manquent souvent à
-                    l’appel pour retro documenter les Systèmes d’Information et permettre un véritable partage de la
-                    connaissance.</blockquote>
+        </div>
+        <div class="bancontainer-cas">
+            <h3>Le problème</h3>
+            <blockquote class="block-probleme">Nous rencontrons des entreprises qui viennent de migrer dans le Cloud et
+                qui
+                souffrent déjà d’une hypertrophie de leur Système d’Information, avec des flux intriqués, de la
+                réplication, etc.<BR><BR>Les équipes data passent beaucoup trop de temps à tenter de maîtriser leurs
+                Systèmes d’Information. Quand les architectures sont plus anciennes, les experts manquent souvent à
+                l’appel pour retro documenter les Systèmes d’Information et permettre un véritable partage de la
+                connaissance.</blockquote>
 
-                    <div class="soustitreban">
-                        <h3>Nos réponses</h3>
-                            Au départ de n’importe quel « data point » (un champ d’une table, une table, un fichier, un
-                            schéma), {openAudit} permet d'appréhender son origine, son devenir et ses usages, à travers un data
-                            lineage technique, multi technologique. <BR><BR>Le process est dynamique, opéré en mode delta,
-                            quotidiennement, et il est donc parfaitement synchronisé au Système d'Information.
+            <div class="soustitreban">
+                <h3>Nos réponses</h3>
+                Au départ de n’importe quel « data point » (un champ d’une table, une table, un fichier, un
+                schéma), {openAudit} permet d'appréhender son origine, son devenir et ses usages, à travers un data
+                lineage technique, multi technologique. <BR><BR>Le process est dynamique, opéré en mode delta,
+                quotidiennement, et il est donc parfaitement synchronisé au Système d'Information.
 
-                        <br><br>
-                        <H4>Nous proposons différents niveaux d'analyses :</H4>
-                        <br><br>
+                <br><br>
+                <H4>Nous proposons différents niveaux d'analyses :</H4>
+                <br><br>
 
-                        <blockquote class="block-solutions">
-                            • Nuage de points : cette vue permet de connaître instantanément les usages (dans la couche de
-                            reporting, via des queries) d’un data point en faisant abstraction des transformations.
-                            <br><br>
-                            • Cartographie : cette vue permet à partir de n'importe quel data point (champ, table, schéma de
-                            bases de données) d’afficher une cartographie complète du flux amont ou aval, c'est-à-dire depuis
-                            les sources opérationnelles jusqu'à l'exposition des données (dataviz, requêtes). Les informations
-                            utilisées sont mises en lumière et les usages de l’information sont précisés au survol : qui
-                            consulte la donnée, quand, comment.
-                            <br><br>
-                            • Data lineage granulaire : cette vue permet de suivre de façon progressive le déploiement d’une
-                            donnée dans le Système d’Information à partir d’un data point par des clics itératifs, ou a
-                            contrario, de remonter jusqu'aux sources opérationnelles. Chaque transformation (job ELT/ETL, code
-                            procédural/objet) peut être analysée avec le « drill through ». Le détail précis des usages des
-                            données (qui la consulte, quand, comment…) est précisé.
-                            <br><br>
-                        </blockquote>
+                <blockquote class="block-solutions">
+                    • Nuage de points : cette vue permet de connaître instantanément les usages (dans la couche de
+                    reporting, via des queries) d’un data point en faisant abstraction des transformations.
+                    <br><br>
+                    • Cartographie : cette vue permet à partir de n'importe quel data point (champ, table, schéma de
+                    bases de données) d’afficher une cartographie complète du flux amont ou aval, c'est-à-dire depuis
+                    les sources opérationnelles jusqu'à l'exposition des données (dataviz, requêtes). Les informations
+                    utilisées sont mises en lumière et les usages de l’information sont précisés au survol : qui
+                    consulte la donnée, quand, comment.
+                    <br><br>
+                    • Data lineage granulaire : cette vue permet de suivre de façon progressive le déploiement d’une
+                    donnée dans le Système d’Information à partir d’un data point par des clics itératifs, ou a
+                    contrario, de remonter jusqu'aux sources opérationnelles. Chaque transformation (job ELT/ETL, code
+                    procédural/objet) peut être analysée avec le « drill through ». Le détail précis des usages des
+                    données (qui la consulte, quand, comment…) est précisé.
+                    <br><br>
+                </blockquote>
 
-                        <br><br>
-                        <H4>{openAudit} résout l’ensemble des ruptures dans le data lineage</H4>
-                        <br><br>
+                <br><br>
+                <H4>{openAudit} résout l’ensemble des ruptures dans le data lineage</H4>
+                <br><br>
 
-                        <blockquote class="block-solutions">
-                            • Vues : si elles sont stockées, {openAudit} les lira, même si elles sont empilées (vues de vues de
-                            vues...).
-                            • Dynamic SQL : si {openAudit} ne parvient pas à le résoudre directement, le dynamic SQL est résolu
-                            avec des paramètres d'exécution, ou avec les journaux d'exécution.
-                            <br><br>
-                            • Autres : en cas de transfert d'informations par FTP, ou lorsque le schéma de base de données n'est
-                            pas précisé (c'est le cas dans de nombreux ETL), {openAudit} résout ces ruptures par reconnaissance
-                            structurelle, ou {openAudit} lit le Batch / le Shell.
-                            <br><br>
-                            • {openAudit} analyse toutes les technologies de processing (langage objet/procédural, ELT/ETL),
-                            on-premise ou Cloud, et les associe dans un seul data flow, au niveau le plus fin. Le drill through
-                            permet d'accéder au code.
-                            <br><br>
-                        </blockquote>
-                        <br><br>
-                        <h3>Use cases</h3>
-                        <div class="contact-container">
-                                <h4>La Data Observabilité, Buzzword ou nécessité ?</h4>
-                                <p>
-                                    Le data lineage de {openAudit} permet de sensiblement renforcer l’observabilité des données, un sujet de
-                                    préoccupation fort pour les entreprises.
-                                </p>
-                                <a href="https://ellipsys-bi.blogspot.com/2023/11/la-data-observabilite-buzzword-ou_21.html"><button
-                                        class="ensavoirplus2">En savoir plus</button>
-                            </a>
-                        </div>
+                <blockquote class="block-solutions">
+                    • Vues : si elles sont stockées, {openAudit} les lira, même si elles sont empilées (vues de vues de
+                    vues...).
+                    • Dynamic SQL : si {openAudit} ne parvient pas à le résoudre directement, le dynamic SQL est résolu
+                    avec des paramètres d'exécution, ou avec les journaux d'exécution.
+                    <br><br>
+                    • Autres : en cas de transfert d'informations par FTP, ou lorsque le schéma de base de données n'est
+                    pas précisé (c'est le cas dans de nombreux ETL), {openAudit} résout ces ruptures par reconnaissance
+                    structurelle, ou {openAudit} lit le Batch / le Shell.
+                    <br><br>
+                    • {openAudit} analyse toutes les technologies de processing (langage objet/procédural, ELT/ETL),
+                    on-premise ou Cloud, et les associe dans un seul data flow, au niveau le plus fin. Le drill through
+                    permet d'accéder au code.
+                    <br><br>
+                </blockquote>
+                <br><br>
+                <!-- <div class="informations-container">
+                            <H2 class="big-text-explication"> Uses cases
+                            </H2>
+                    </div> -->
+                <div class="contact-container">
+                    <h4>La Data Observabilité, Buzzword ou nécessité ?</h4>
+                    <p>
+                        Le data lineage de {openAudit} permet de sensiblement renforcer l’observabilité des données, un
+                        sujet de
+                        préoccupation fort pour les entreprises.
+                    </p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/11/la-data-observabilite-buzzword-ou_21.html"><button
+                            class="ensavoirplus2">En savoir plus</button>
+                    </a>
+                </div>
 
-                        <div class="separator"></div>
+                <div class="separator"></div>
 
-                        <div class="contact-container">
-                            <h4>BCBS 239 : L'enjeu de la fréquence et de l'exactitude du reporting de risque.</h4>
-                            <p>BCBS 239 est un texte bancaire relatif à la qualité du reporting de risque. Il impose la possibilité de
-                                sourcer les données de risque dans les systèmes avec une solution de data lineage. </p>
-                            <a href="https://ellipsys-bi.blogspot.com/2023/10/bcbs-239-lenjeu-de-la-frequence-et-de.html"><button
-                                    class="ensavoirplus2">En savoir plus</button></a>
-                        </div>
+                <div class="contact-container">
+                    <h4>BCBS 239 : L'enjeu de la fréquence et de l'exactitude du reporting de risque.</h4>
+                    <p>BCBS 239 est un texte bancaire relatif à la qualité du reporting de risque. Il impose la
+                        possibilité de
+                        sourcer les données de risque dans les systèmes avec une solution de data lineage. </p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/10/bcbs-239-lenjeu-de-la-frequence-et-de.html"><button
+                            class="ensavoirplus2">En savoir plus</button></a>
+                </div>
 
-                        <div class="separator"></div>
+                <div class="separator"></div>
 
-                        <div class="contact-container">
-                            <h4>Cybersécurité : le data lineage technique, l’arme idéale pour la Data Leaks </h4>
-                            <p>La DLP (Data Leaks Prevention) est une discipline de la cyber sécurité qui vise à détecter les fuites de
-                                données sensibles. Le data lineage technique couplé à la détection des usages de l’information permet de
-                                savoir au départ d’une donnée de risque, qui y accède, et dans quel contexte. </p>
-                                <a href="https://ellipsys-bi.blogspot.com/2023/01/le-data-lineage-technique-larme-ideale.htmlention ">
-                                    <button class="ensavoirplus2">En savoir plus</button>
-                                </a>
-                        </div>
-                    </div>
+                <div class="contact-container">
+                    <h4>Cybersécurité : le data lineage technique, l’arme idéale pour la Data Leaks </h4>
+                    <p>La DLP (Data Leaks Prevention) est une discipline de la cyber sécurité qui vise à détecter les
+                        fuites de
+                        données sensibles. Le data lineage technique couplé à la détection des usages de l’information
+                        permet de
+                        savoir au départ d’une donnée de risque, qui y accède, et dans quel contexte. </p>
+                    <a
+                        href="https://ellipsys-bi.blogspot.com/2023/01/le-data-lineage-technique-larme-ideale.htmlention ">
+                        <button class="ensavoirplus2">En savoir plus</button>
+                    </a>
+                </div>
             </div>
+        </div>
+        <div class="informations-container">
+            <H2 class="big-text-explication"> Faire du <span class="orange-text">Data Lineage</span> dans la couche
+                de <span class="orange-text">Data visualisation</span>
+            </H2>
+        </div>
+        <div class="bancontainer-cas">
+            <h3>Le problème</h3>
+            <blockquote class="block-probleme">Certaines technologies de data visualisation utilisent des couches
+                sémantiques pour créer de l'intelligibilité pour le métier, et ainsi lui donner de l'autonomie. Mais ces
+                couches sémantiques créent de l'abstraction : les champs physiques sous-jacents sont difficiles à
+                identifier, ce qui rend le sourcing complexe. <br><br>
+                De plus, les technologies de data visualisation interrogent souvent des vues, des vues de vues… ce qui
+                complique encore une fois le sourcing. <br><br>
+                Par ailleurs, les technologies de data visualisation permettent maintenant de faire de la "data prep"
+                dans des proportions importantes : l’intelligence s’est déplacée des datamarts vers les solutions de
+                data visualisation. Cela créé une forte opacité avec des règles de gestion qui ont tendance à foisonner.
+            </blockquote>
+
+            <div class="soustitreban">
+                <h3>Nos réponses</h3>
+                {openAudit} permet d'appréhender l'ensemble des technologies de data visualisation de l'entreprise sur
+                une interface unique d'analyse d'impact. Le data lineage dans le dashboard ou dans les couches
+                alimentation peut être déclenché depuis cette interface.
+                <br><br>
+                <H4>Ses spécificités : </H4>
+                <br><br>
+
+                <blockquote class="block-solutions">
+                    • {openAudit} opère un data lineage dans les expressions, dans les variables, etc., pour identifier
+                    les champs directement ou indirectement en source d'un data point.
+                    <br><br>
+                    • {openAudit} analyse le contenu des vues pour identifier les champs physiques qui sont en source
+                    des données d'une couche de data visualisation, même si les vues sont empilées.
+                    <br><br>
+                    • {openAudit} combine les analyses des différentes technologies de dataviz dans une même grille, ce
+                    qui permettra aux métiers et à l'IT de réaliser des analyses d'impact entre toutes les couches
+                    d'alimentation et tous les outils de data visualisation.
+                    <br><br>
+                </blockquote>
+                <br><br>
+            </div>
+        </div>
     </section>
     <footer class="footer">
         <div class="footer-content">
@@ -241,13 +292,14 @@
             <div class="footer-nav">
                 <h3>Liens</h3>
                 <ul>
-                    <li><a href="../index.html">ACCUEIL</a></li>
-                    <li><a href="html/casusages.html">CAS D'USAGES</a></li>
-                    <li><a href="html/apropos.html">À PROPOS</a></li>
-                    <li><a href="html/Contact.html">CONTACT</a></li>
-                    <!--<li><a href="html/methodologie.html">Méthodologies</a></li>
-                -->
-                    <li><a href="html/blog.html">BLOG</a></li>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../html/Cartographier.html">Cartographier</a></li>
+                    <li><a href="../html/Migrer.html">Migrer</a></li>
+                    <li><a href="../html/Simplifier.html">Simplifier</a></li>
+                    <li><a href="../html/methodologie.html">Méthodologies</a></li>
+                    <li><a href="../html/apropos.html">À Propos</a></li>
+                    <li><a href="../html/Contact.html">Conctact</a></li>
+                    <li><a href="../html/blog.html">Blog</a></li>
                 </ul>
             </div>
         </div>

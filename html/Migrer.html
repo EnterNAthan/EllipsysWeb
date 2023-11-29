@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <title>Ellipsys - Migrer</title>
-    <meta name="description" content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la "matière morte"et automatisation des migrations. ">
-    <link rel="canonical" href="https://www.ellipsys-bi.com/casusages" />
+    <meta name="description"
+        content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la "
+        matière morte"et automatisation des migrations. ">
+    <link rel=" canonical" href="https://www.ellipsys-bi.com/casusages" />
 </head>
 
 <body class="ui-light-theme">
@@ -25,7 +27,7 @@
                         sont facilitées.</a></span>
                 <span class="news"><a href="../html/Contact.html">
                         Ellipsys travaille en collaboration avec Dawizz, un spécialiste Français du Data Catalogue
-                    pour une solution de Data / Metadata Management complètement automatisée</a></span>
+                        pour une solution de Data / Metadata Management complètement automatisée</a></span>
                 <!--            <span class="news"><a href="html/Contact.html">-->
                 <!--                Autres News en attente</a></span>-->
 
@@ -82,27 +84,242 @@
     </div>
 
     <section id="Reverse">
-        <div class="bancontainer3">
+        <div class="bancontainer1">
             <div class="acgauche">
                 <!-- domaine de la bannière -->
-                <h3>{oA.Reverse}/h3>
-        
+                <h3>{oA.Reverse}</h3>
+
                 <!-- titre de la bannière -->
                 <h1>
                     <span class="orange-text">Migrer</span> la couche dataflow ou dataviz
                 </h1>
                 <!-- sous-titre de la bannière -->
-                <p class="soustitreban">Les technologies de stockage de la donnée ou de data visualisation se sont accumulées au fil du temps.
-                    Certaines de ces technologies ont vécu, ou ne sont pas bien portées vers le Cloud. Il faut migrer. Hélas, les volumétries,
-                    et la complexité intrinsèque de certaines technologies rendent ces projets excessivement coûteux. <BR><BR>{openAudit}, en s'appuyant
-                    sur l'extrême granularité de son reverse engineering permet de mettre en œuvre ces migrations de façon automatisée.
+                <p class="soustitreban">Les technologies de stockage de la donnée ou de data visualisation se sont
+                    accumulées au fil du temps.
+                    Certaines de ces technologies ont vécu, ou ne sont pas bien portées vers le Cloud. Il faut
+                    migrer. Hélas, les volumétries,
+                    et la complexité intrinsèque de certaines technologies rendent ces projets excessivement
+                    coûteux. <BR><BR>{openAudit}, en s'appuyant
+                    sur l'extrême granularité de son reverse engineering permet de mettre en œuvre ces migrations de
+                    façon automatisée.
                 </p>
-        
-                <button class="ensavoirplus3">En savoir plus</button>
+
+                <!-- <button class="ensavoirplus3">En savoir plus</button> -->
             </div>
             <div class="acdroite">
-                <object type="image/svg+xml" data="../images/svg/dataflow%20migration.svg"
-                        width="500" height="500">Votre navigateur ne supporte pas SVG</object>
+                <object type="image/svg+xml" data="../images/svg/dataflow%20migration.svg" width="500"
+                    height="500">Votre navigateur ne supporte pas SVG</object>
             </div>
         </div>
-    </section>    
+    </section>
+    <section>
+        <div class="informations-container">
+            <H2 class="big-text-explication"> Migrer les <span class="orange-text">technologies</span> dans le <span
+                    class="orange-text">cloud</span> de façon <span class="orange-text">automatisée.</span>
+            </H2>
+        </div>
+        <div class="bancontainer-cas">
+            <h3>Le problème</h3>
+            <blockquote class="block-probleme">Les grandes entreprises accumulent les technologies de stockage depuis
+                toujours. On assiste à un empilement continu, car la suppression d'une technologie présente souvent trop
+                de risques. Les compétences qui y sont associées se raréfient et la retro-documentation est rarement en
+                place.
+                <BR><BR>
+                Quand les entreprises se lancent, ce sont des projets en consultance, longs, onéreux et hasardeux.
+            </blockquote>
+
+            <div class="soustitreban">
+                <h3>Nos réponses</h3>
+                Nous pensons qu'il est préférable d'automatiser le process. Pour ce faire, nous avons développé une
+                méthodologie unique permettant d’automatiser ces migrations en se basant sur les capacités uniques
+                d’introspection des systèmes de {openAudit}.
+
+                <br><br>
+                <H4>les capacités uniques
+                    d’introspection des systèmes de {openAudit} :</H4>
+                <br><br>
+
+                <blockquote class="block-solutions">
+                    • {openAudit} va « parser » le code en source, il va décomposer toute la complexité du code grâce à
+                    une grammaire permettant des analyses exhaustives et ultra granulaires. Toutes les subtilités vont
+                    être prises en considération.
+                    <br><br>
+                    • {openAudit} en déduit la cinématique d’ensemble et l’intelligence, qui sera reconstruite dans un
+                    arbre algorithmique, agnostique. Sur cette base, {openAudit} va produire du « SQL standard ».
+                    <br><br>
+                    • Puis l’intelligence va être reconstruite a minima dans le SQL spécifique de la base de données
+                    cible (par exemple BigQuery pour Google, Redshift pour Amazon, Azure SQL pour Microsoft, etc.).
+                    <br><br>
+                    • Tous les traitements complexes non reproductibles en SQL simple, seront pilotés par un exécutable
+                    (Node JS ou autre). Typiquement les curseurs « Boucle For », les variables, le code conditionnel «
+                    If Else », les « Switchs », les appels à procédure, etc.
+                    <br><br>
+                    • {openAudit} produit des fichiers "Yaml" (fichiers intuitifs). Ainsi, la compréhension de la
+                    complexité est partagée avec le plus grand nombre.
+                    <br><br>
+                    • Éventuellement, de nouveaux mécanismes d'orchestration peuvent être mis en place, pour
+                    déconstruire les curseurs de curseurs (les boucles de boucles) pour optimiser les chaînes de
+                    transformation, etc.
+                </blockquote>
+                <br><br>
+
+                <br><br>
+                <!-- <h3>Use cases</h3> -->
+                <div class="contact-container">
+                    <h4>Migrer Oracle vers PostgreSQL</h4>
+                    <p>De nombreuses entreprises souhaitent mitrer leurs bases de données Oracle vers PostgreSQL qui est
+                        une solution open source très efficace. {openAudit} permet d’opérer ce mouvement de façon
+                        automatisée. Et de façon forfaitaire.
+                    </p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/10/migrer-de-oracle-postgre-en_25.html"><button
+                            class="ensavoirplus2">En savoir plus</button>
+                    </a>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="contact-container">
+                    <h4>Quitter Cobol</h4>
+                    <p>Cobol existe depuis 7O ans. Ses qualités intrinsèques de fiabilité, de stabilité font que c’est
+                        un langage surreprésenté dans le monde financier. Néanmoins, certaines entreprises souhaitent
+                        s’en séparer. C’est possible.</p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/05/reprendre-le-controle-de-son-patrimoine.html"><button
+                            class="ensavoirplus2">En savoir plus</button></a>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="contact-container">
+                    <h4>Migrer Teradata vers BigQuery (GCP) </h4>
+                    <p>La DLP (Data Leaks Prevention) est une discipline de la cyber sécurité qui vise à détecter les
+                        fuites de
+                        données sensibles. Le data lineage technique couplé à la détection des usages de l’information
+                        permet de
+                        savoir au départ d’une donnée de risque, qui y accède, et dans quel contexte. </p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/11/passer-de-teradata-bigquery-automatiser.html">
+                        <button class="ensavoirplus2">En savoir plus</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="bancontainer-cas">
+            <h3>Le problème</h3>
+            <blockquote class="block-probleme">Les solutions de dataviz embarquent de plus en plus
+                d’intelligence. Et
+                certaines d’entre elles sont là depuis plusieurs décennies. <BR><BR>Il y a ainsi un nombre
+                incalculable
+                de règles de gestion savamment construites qui menacent de ne pas être reconduites dans la
+                technologie
+                cible en cas d’échec de la migration. Et les métiers veulent du « 1 pour 1 », sans la moindre
+                régression, avec un rendu quasi identique. Pour ce faire, les sociétés de service proposent des
+                missions
+                de service longues, chères et hasardeuses.
+            </blockquote>
+
+            <div class="soustitreban">
+                <h3>Nos réponses</h3>
+                {openAudit}, en s’appuyant sur ses capacités d’introspection exceptionnelles de la couche de
+                data
+                visualisation en source, permet d’automatiser le processus de « reconstruction » de la
+                plateforme
+                dans la technologie cible.
+                <br><br>
+                <H4>La méthodologie :</H4>
+                <br><br>
+
+                <blockquote class="block-solutions">
+                    • La plupart des outils de dataviz ont deux points communs : une couche sémantique qui fait
+                    l’interface entre l’IT et le métier et un éditeur de dashboard.
+                    <br><br>
+                    • Nous nous appuyons sur le reverse engineering automatisé de {openAudit} pour déconstruire
+                    intégralement la complexité en source, ce qui nous permet de l'adresser à nouveau dans la
+                    technologie cible.
+                    <br><br>
+                    • {openAudit} pourra alimenter la technologie cible à partir de la couche sémantique unique,
+                    une
+                    sorte de « modèle pivot » (pour certaines technologies). Ce modèle aura été généré
+                    automatiquement
+                    au départ des outils de data visualisation à décommissionner,
+                    <br><br>
+                    • La structure du dashboard initial aura été également analysée par {openAudit}, et elle
+                    pourra
+                    également être retranscrite dans la technologie cible.
+                    <br><br>
+                </blockquote>
+                <br><br>
+
+
+
+                <div class="contact-container">
+                    <h4>Migrer de SAP BO vers Looker</h4>
+                    <p>Looker est la technologie de data visualisation de Google Cloud Platform. Cette
+                        technologie séduit de plus en plus de clients, notamment des clients qui utilisait
+                        préalablement SAP BO. Nous avons appris à automatiser la migration entre ces 2
+                        technologies.
+                    </p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-looker-en.html"><button
+                            class="ensavoirplus2">En savoir plus</button>
+                    </a>
+                </div>
+
+                <div class="separator"></div>
+
+                <div class="contact-container">
+                    <h4>Migrer de SAP BO vers Power BI </h4>
+                    <p>Power BI est la technologie de data visualisation la plus plébiscitée par les entreprises
+                        à l’heure actuelle. SAP n’a pas d’ambitions très claires pour Business Object. Ainsi, de
+                        nombreuses entreprises opèrent ce mouvement. Nous avons appris à automatiser le process.
+                    </p>
+                    <a href="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-power-bi.html"><button
+                            class="ensavoirplus2">En savoir plus</button></a>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="contact-info">
+                    <h3>Contactez-nous</h3>
+                    <p>contact@ellipsys-lab.com</p>
+                </div>
+    
+                <div class="address">
+                    <h3>Adresse</h3>
+                    <p>29 Route d'Esch</p>
+                    <p>L-3230 Bettembourg, Luxembourg</p>
+                </div>
+    
+                <div class="social-icons">
+                    <h3>Suivez-nous</h3>
+                    <ul>
+                        <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
+                                    class="mdi mdi-linkedin"></i></a></li>
+                        <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="footer-nav">
+                    <h3>Liens</h3>
+                    <ul>
+                        <li><a href="../index.html">Accueil</a></li>
+                        <li><a href="../html/Cartographier.html">Cartographier</a></li>
+                        <li><a href="../html/Migrer.html">Migrer</a></li>
+                        <li><a href="../html/Simplifier.html">Simplifier</a></li>
+                        <li><a href="../html/methodologie.html">Méthodologies</a></li>
+                        <li><a href="../html/apropos.html">À Propos</a></li>
+                        <li><a href="../html/Contact.html">Conctact</a></li>
+                        <li><a href="../html/blog.html">Blog</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
+            </div>
+        </footer>
+        <div class="scroll-to-top">
+            <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
+        </div>
+</body>
+<script src="../js/script.js"></script>
+
+</html>
