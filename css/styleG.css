@@ -2318,3 +2318,54 @@ span.ripple {
     /* modal  */
 
 }
+
+.subPage {
+    max-width: 1200px; /* Largeur maximale similaire à un container Bootstrap */
+    margin: 0 auto; /* Centrer le container */
+    padding: 15px; /* Espacement intérieur */
+}
+
+.bi-schema {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.bi-desc {
+    flex: 0 0 33.333333%; /* équivalent à col-md-4 */
+    max-width: 33.333333%;
+    padding-right: 15px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+/* Pour les écrans plus petits, vous pouvez ajouter des requêtes média pour ajuster les colonnes */
+@media (max-width: 768px) {
+    .bi-desc {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+.section-title h3 {
+    text-align: center;
+    font-size: 1.5em; /* Ajuster selon vos préférences */
+}
+
+.bi-desc-content p {
+    font-size: 1em;
+    line-height: 1.5;
+}
+.bi-desc a {
+    display: block;
+    text-align: center;
+    color: #000; /* Couleur du texte */
+    text-decoration: none;
+}
+
+.bi-desc img {
+    max-width: 100%;
+    height: auto;
+}
+
