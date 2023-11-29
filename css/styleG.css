@@ -522,56 +522,88 @@ nav .links li a {
     margin-left: 5px;
 }
 
-/*contenu et fenetre modale 2*/
-.bancontainer2 {
+.bancontainer-cas{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 130px;
-    margin-top: 200px;
-}
-
-.bancontainer2 h1 {
-    font-size: 3.5rem;
-    font-weight: 700;
-    text-align: left;
-    color: var(--text-color);
-}
-
-.bancontainer2 h3 {
-    color: var(--text-color);
-    font-size: 24px;
-    font-weight: 700;
-    margin-left: 5px;
-}
-
-.bancontainer2>.acgauche {
+    flex-direction: column;
     margin-left: 130px;
+    gap: 30px;
 }
 
-/*contenu et fenetre modale 3*/
-.bancontainer3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 130px;
-    margin-top: 200px;
-    margin-bottom: 200px;
-}
-
-.bancontainer3 h1 {
+.bancontainer-cas h3 {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: left;
     color: var(--text-color);
 }
 
-.bancontainer3 h3 {
+.bancontainer-cas p{
     color: var(--text-color);
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 23px;
     margin-left: 5px;
 }
+
+.bancontainer-cas u{
+    color: var(--text-color);
+    font-size: 23px;
+    margin-left: 5px;
+}
+
+.bancontainer-cas .orange-text {
+    color: #FE665A;
+    font-weight: 700;
+    font-size: 23px !important;
+}
+
+/*!*contenu et fenetre modale 2*!*/
+/*.bancontainer2 {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding-left: 130px;*/
+/*    margin-top: 200px;*/
+/*}*/
+
+/*.bancontainer2 h1 {*/
+/*    font-size: 3.5rem;*/
+/*    font-weight: 700;*/
+/*    text-align: left;*/
+/*    color: var(--text-color);*/
+/*}*/
+
+/*.bancontainer2 h3 {*/
+/*    color: var(--text-color);*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*    margin-left: 5px;*/
+/*}*/
+
+/*.bancontainer2>.acgauche {*/
+/*    margin-left: 130px;*/
+/*}*/
+
+/*!*contenu et fenetre modale 3*!*/
+/*.bancontainer3 {*/
+/*    display: flex;*/
+/*    justify-content: center;*/
+/*    align-items: center;*/
+/*    padding-left: 130px;*/
+/*    margin-top: 200px;*/
+/*    margin-bottom: 200px;*/
+/*}*/
+
+/*.bancontainer3 h1 {*/
+/*    font-size: 3.5rem;*/
+/*    font-weight: 700;*/
+/*    text-align: left;*/
+/*    color: var(--text-color);*/
+/*}*/
+
+/*.bancontainer3 h3 {*/
+/*    color: var(--text-color);*/
+/*    font-size: 24px;*/
+/*    font-weight: 700;*/
+/*    margin-left: 5px;*/
+/*}*/
 
 /*partie droite des contenus (image)*/
 .acdroite {
@@ -593,6 +625,13 @@ nav .links li a {
     color: var(--sous-titre-ban-color);
 }
 
+.soustitreban h4{
+    font-size: 35px;
+    font-weight: 700;
+    margin-top: 20px;
+    color: var(--sous-titre-ban-color);
+}
+
 /*style texte special de base*/
 .orange-text {
     color: #FE665A;
@@ -607,6 +646,16 @@ nav .links li a {
     font-weight: 700;
     font-size: 60px;
     /*-webkit-text-stroke: var(--openAudit-anime-stroke);*/
+}
+
+.dataflows{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Boîte modale */
@@ -656,19 +705,41 @@ nav .links li a {
     margin-top: 20px;
 }
 
-blockquote {
+.block-probleme {
     display: flex;
     flex-direction: column;
-    font-family: "Dubai", monospace;
+    font-family: "Myanmar Text", serif;
+    font-weight: 700;
     font-size: 1.2rem;
-    background-color: rgba(91, 87, 87, 0.13);
-    border-left: 5px solid #232222;
-    padding: 15px;
-    margin: 30px 0;
+    background-color: rgba(255, 69, 58, 0.1);
+    border-left: 5px solid #FF453A;
+    border-right: 5px solid #FF453A;
+    padding: 35px;
+    margin: 20px 130px 0 0;
+    box-shadow: var(--question-box-shadow);
+    color: var(--text-color);
+    transition: transform 0.1s ease-in-out;
+}
+
+.block-solutions{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(52, 168, 83, 0.1);
+    border-left: 5px solid #34A853;
+    border-right: 5px solid #34A853;
+    padding: 35px;
+    margin: 10px 0;
+    box-shadow: var(--question-box-shadow);
+    color: var(--text-color);
+    transition: all 0.1s ease-in-out;
+}
+
+blockquote:hover {
+    transform: scale(1.01);
 }
 
 blockquote ul {
-    padding-left: 0px;
+    padding-left: 0;
 }
 
 blockquote li {
@@ -783,7 +854,7 @@ iframe:hover {
 .big-text-explication {
     font-style: normal;
     margin: 100px 20px;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
 }
 
 .big-text-explication span {
