@@ -282,7 +282,7 @@ nav .links li a {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--nav-color);
+    background-color: var(--background-color);
     min-width: 160px;
     box-shadow: var(--nav-box-shadow-scrolled);
     z-index: 1;
@@ -294,6 +294,7 @@ nav .links li a {
     text-decoration: none;
     display: block;
     text-align: left;
+    text-transform: lowercase !important;
 }
 
 .dropdown:hover .dropdown-content {
