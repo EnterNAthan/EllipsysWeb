@@ -209,7 +209,7 @@ body {
 /*barre de nav*/
 nav {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     padding: 0 20px;
     transition: box-shadow 0.3s;
@@ -222,7 +222,7 @@ nav {
 }
 
 nav .links {
-    width: 50%;
+    width: 70%;
     height: 50%;
     display: flex;
     justify-content: space-around;
@@ -232,6 +232,11 @@ nav .links {
 nav .links li {
     text-decoration: none;
     list-style: none;
+    margin-right: 20px;
+}
+
+nav .links li:last-child {
+    margin-right: 0;
 }
 
 nav .links li a {
@@ -293,7 +298,7 @@ nav .links li a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: left;
+    text-align: center;
     text-transform: lowercase !important;
 }
 
@@ -1104,6 +1109,7 @@ iframe:hover {
     align-items: center;
     padding: 10px;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 .validation-list .validation-item h5 {
