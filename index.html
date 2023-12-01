@@ -446,6 +446,147 @@
                 ainsi que tous les processus associés, et les décommissionner. </div>
         </div>
     </div>
+    <div class="container-question">
+        <h1>Les <span class="orange-text">Questions</span> Fréquentes</h1>
+        <div class="faq">
+            <div class="question">
+                <div class="question-text">
+                    <h3>Quelles sont les technologies qui sont adressées par {openAudit} à ce jour ? </h3>
+                    <div class="triangle">
+                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="ligne-horiz"></div>
+    
+                <div class="answer">
+                    <p>
+                        Dataflows (code procédural) : SQL, et vues SQL, PL/SQL, T-SQL, Teradata Bteq, PostgreSQL, Perl, Big Query, Cobol, Java, Redshift ||
+                        Dataflows (ETL/ELT) : Genio, Talend, SSIS, DataStage, Stambia, BODS ||
+                        Dataviz : Data Studio, Qlik Sense, SAP BO, Looker, Crystal Report, SSRS.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="question">
+    
+                <div class="question-text">
+                    <h3>Est-ce qu'il est possible de travailler sur d'autres technologies ? </h3>
+                    <div class="triangle">
+                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ligne-horiz"></div>
+    
+                <div class="answer">
+                    <p>Ellipsys développe des parsers en nombre depuis longtemps et est en capacité d'en développer de nouveaux en des temps records.
+                        Par ailleurs les technologies Cloud utilisent massivement le SQL et ses dérivés. Et nous avons une véritable expertise sur le SQL,
+                        les vues SQL, les vues de vues (...) ainsi qu'une méthodologie pour traiter les procédures dynamiques, les triggers, etc.
+    
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="question">
+    
+                <div class="question-text">
+                    <h3>Qu'en est-il des données à caractère personnel collectées et de leurs traitements ?</h3>
+                    <div class="triangle">
+                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ligne-horiz"></div>
+    
+                <div class="answer">
+                    <p>
+                        {openAudit} va adjoindre au data lineage l’analyse des logs, pour savoir qui a consommé la donnée, quand et comment (ce qui correspond aux usages de la donnée).
+                        Les logs d'audit générés contiennent toutes les requêtes SQL exécutées sur la base, que ce soit par des programmes ou des utilisateurs.
+                        Ces requêtes peuvent contenir des informations "sensibles" telles que des noms de clients, matricules d'utilisateurs, etc.
+                        Pour être sûr d'être exhaustif, tous les entiers, flottants et chaînes de caractères présents dans les requêtes sont masqués et remplacés par des variables.
+                        Nous n'avons pas accès à la table de mapping.
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="question">
+    
+                <div class="question-text">
+                    <h3>A t'on accès aux bases de données liées au traitement des métadonnées par {openAudit} ?</h3>
+                    <div class="triangle">
+                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                </div>
+    
+                <div class="ligne-horiz"></div>
+    
+                <div class="answer">
+                    <p>
+                        Les bases de données d'{openAudit}, qui permettent de construire nos réponses sur les interfaces Web, sont
+                        systématiquement mises à disposition des clients pour qu'ils puissent construire des réponses au délà de celle
+                        que nous proposons. Typiquement, certains de nos clients ont "branché" PowerBI ou Qlik pour pouvoir faire des
+                        analyses complémentaires.
+    
+                    </p>
+                </div>
+    
+            </div>
+    
+            <div class="question">
+    
+                <div class="question-text">
+                    <h3>{openAudit} est un logiciel SaaS, mais est-il possible de l'intégrer on prem' ?</h3>
+                    <div class="triangle">
+                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ligne-horiz"></div>
+    
+                <div class="an  swer">
+                    <p>
+                        Oui. Nous avons un certain nombre de clients bancaires qui refusent de pousser leurs données à l'extérieur.
+                        Nous installons {openAudit} sur des VMs chez eux. Idéalement, il nous faut un accès en VPN pour pouvoir faire la maintenance
+                        corrective, ou les montées de version. On peut aussi créer un sas sécuritaire avec un serveur Citadelle.</p>
+                </div>
+    
+            </div>
+    
+            <div class="question">
+    
+                <div class="question-text">
+                    <h3>Quel est le mode de facturation de {openAudit} ? </h3>
+                    <div class="triangle">
+                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M34.1667 -0.00032765L17.0833 17.083L-7.46736e-07 -0.000326157L34.1667 -0.00032765Z" fill="#F24E1E"/>
+                        </svg>
+                    </div>
+                </div>
+                <div class="ligne-horiz"></div>
+    
+                <div class="answer">
+                    <p>
+                        Nos PoCs ne sont jamais gratuits, car le set up prend du temps, et que sa valeur est importante. Néanmoins, dès qu'une licence est
+                        signée, le set up est offert (à périmètre technique constant).
+                        Par ailleurs, nous proposons des licences pluriannuelles qui dépendent directement du nombre de technologies concernées (dataflows et dataviz)
+                        mais aussi des volumétries. Nous proposons un large nombre d'accès, toujours suffisant dans le contexte du client.
+                    </p>
+                </div>
+    
+            </div>
+        </div>
+    </div>
 
     <!-- Ban dark avis + video
 <div class="container-etude-cas">
