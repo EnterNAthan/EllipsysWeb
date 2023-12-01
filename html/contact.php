@@ -91,17 +91,30 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
             </a>
             <ul class="links">
-                <li><a href="../html/Cartographier.html">Cartographier</a></li>
-                <li><a href="../html/Migrer.html">Migrer</a></li>
-                <li><a href="../html/Simplifier.html">Simlifier</a></li>
-                <li><a href="../html/methodologie.html">Methodologie</a></li>
-
-                <!-- <li><a href="html/casusages.html">CAS D'USAGE</a></li> -->
+                <li class="dropdown">
+                    <a href="../html/Cartographier.html" >Cartographier<i class="mdi mdi-arrow-down-thick"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../html/Cartographier.html#dataflows">{oA.Lineage} -</br>DataFlows</a></li>
+                        <li><a href="../html/Cartographier.html#dataviz">{oA.Lineage} -</br>DataViz</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Migrer.html">Migrer<i class="mdi mdi-arrow-down-thick"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../html/Migrer.html#dataflows">{oA.Reverse} -</br>DataFlows</a></li>
+                        <li><a href="../html/Migrer.html#dataviz">{oA.Reverse} -</br>Dataviz</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="../html/Simplifier.html">Simplifier<i class="mdi mdi-arrow-down-thick"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../html/Simplifier.html#dataflows">{oA.Harmony} -<br>DataFlows</a></li>
+                        <li><a href="../html/Simplifier.html#dataviz">{oA.Harmony} -<br>Dataviz</a></li>
+                    </ul>
+                </li>
+                <!-- <li><a href="../html/methodologie.html">Methodologies</a></li> -->
                 <li><a href="../html/apropos.html">A PROPOS</a></li>
-                <li><a href="../html/contact.php">CONTACT</a></li>
-                <!--
-            <li><a href="../html/methodologie.html">Methodologies</a></li>
-            -->
+                <li><a href="../html/contact.php" class="active">CONTACT</a></li>
                 <li><a href="../html/blog.html">BLOG</a></li>
             </ul>
             <div id="icons"></div>
