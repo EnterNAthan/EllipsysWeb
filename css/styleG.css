@@ -272,6 +272,38 @@ nav .links li a {
     color: #FE665A;
 }
 
+/* Style pour le menu déroulant */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--nav-color);
+    min-width: 160px;
+    box-shadow: var(--nav-box-shadow-scrolled);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--nav-color);
+}
+
 #icons {
     cursor: pointer;
 }
@@ -513,7 +545,7 @@ nav .links li a {
 
 .bancontainer1 h1 {
     font-size: 3.5rem;
-    font-weight: 700;
+    font-weight: 400;
     text-align: left;
     color: var(--text-color);
 }
@@ -536,6 +568,14 @@ nav .links li a {
     font-size: 2.5rem;
     font-weight: 700;
     text-align: left;
+    color: var(--text-color);
+}
+
+.bancontainer-cas .petit-titre {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
     color: var(--text-color);
 }
 
@@ -711,8 +751,6 @@ nav .links li a {
 .block-probleme {
     display: flex;
     flex-direction: column;
-    font-family: "Myanmar Text", serif;
-    font-weight: 700;
     font-size: 1.2rem;
     background-color: rgba(255, 69, 58, 0.1);
     border-left: 5px solid #FF453A;
@@ -944,10 +982,10 @@ iframe:hover {
 
 /* Footer */
 .footer {
-    background-color: var(--footer-background-color);
-    color: #fff;
-    padding: 40px 0;
-    font-size: 1rem;
+    background-color: var(--footer-background-color) !important;
+    color: #fff !important;
+    padding: 40px 0 !important;
+    font-size: 1rem !important;
 }
 
 .footer-content {
@@ -2371,4 +2409,19 @@ span.ripple {
 .bi-desc img {
     max-width: 100%;
     height: auto;
+}
+
+.card-header .btn {
+    text-align: left;
+    width: 100%;
+}
+
+.card-header .btn .arrow {
+    float: right; /* Place la flèche à droite */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Lorsque l'élément collapsible est ouvert, la flèche tourne */
+.card-header .btn:not(.collapsed) .arrow {
+    transform: rotate(-180deg);
 }

@@ -21642,40 +21642,6 @@ body {
   outline: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  padding: 0;
-  margin: 0;
-}
-
-a,
-span {
-  display: inline-block;
-}
-
-a {
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  color: inherit;
-}
-
-a:focus {
-  outline: none !important;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
-  text-decoration: none;
-}
-
 input[type=number]::-webkit-inner-spin-button,
 input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
@@ -21691,10 +21657,6 @@ img {
   max-width: 100%;
 }
 
-p {
-  font-size: 15px;
-}
-
 p.lg {
   font-size: 16px;
 }
@@ -21707,10 +21669,6 @@ p.sm {
   p {
     font-size: 17px;
   }
-}
-
-span {
-  font-size: 12px;
 }
 
 .btn:focus,

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <title>Ellipsys - Cartographier</title>
     <meta name="description" content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la
-        matière morte et automatisation des migrations. ">
+        matière morte et automatisation des migrations.">
     <link rel=" canonical" href="https://www.ellipsys-bi.com/cartographier" />
 </head>
 
@@ -19,12 +19,12 @@
     <header>
         <div class="news-container">
             <div class="news-wrapper">
-                <span class="news"><a href="../html/Contact.html">
+                <span class="news"><a href="Contact.html">
                         {openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</a></span>
-                <span class="news"><a href="../html/Contact.html">
+                <span class="news"><a href="Contact.html">
                         Ellipsys est maintenant membre de l'UGAP - les collaborations avec les acteurs publics français
                         sont facilitées.</a></span>
-                <span class="news"><a href="../html/Contact.html">
+                <span class="news"><a href="Contact.html">
                         Ellipsys travaille en collaboration avec Dawizz, un spécialiste Français du Data Catalogue
                         pour une solution de Data / Metadata Management complètement automatisée</a></span>
 
@@ -33,12 +33,12 @@
                 <!-- Ajoute autant de news que voulu... mais les DUPLIQUER pour que cela fonctionne-->
                 <!--            <span class="news"><a href="html/Contact.html"> -->
                 <!--                    Ellipsys exposait au salon Big Data et AI Paris 2023 les 25 et 26 septembre 2023, pour présenter les nouvelles fonctionnalités de {openAudit}. </a></span>-->
-                <span class="news"><a href="../html/Contact.html">
+                <span class="news"><a href="Contact.html">
                         {openAudit} permet de migrer SAP BO au forfait vers Power BI ou Looker !</a></span>
-                <span class="news"><a href="../html/Contact.html">
+                <span class="news"><a href="Contact.html">
                         Ellipsys est maintenant membre de l'UGAP - les collaborations avec les acteurs publics français
                         sont facilitées.</a></span>
-                <span class="news"><a href="../html/Contact.html">
+                <span class="news"><a href="Contact.html">
                         Ellipsys travaille en collaboration avec Dawizz, un spécialiste Français du Data Catalogue
                         pour une solution de Data / Metadata Management complètement automatisée</a></span>
                 <!--            <span class="news"><a href="html/Contact.html">-->
@@ -59,12 +59,15 @@
                 <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Logo Ellipsys">
             </a>
             <ul class="links">
-                <li><a href="../html/Cartographier.html">Cartographier</a></li>
-                <li><a href="../html/Migrer.html">Migrer</a></li>
-                <li><a href="../html/Simplifier.html">Simplifier</a></li>
-                <li><a href="../html/methodologie.html">Methodologie</a></li>
-
-                <!-- <li><a href="html/casusages.html">CAS D'USAGE</a></li> -->
+                <li class="dropdown">
+                    <a href="#">Cas d'usages<i class="mdi mdi-arrow-down-thick"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../html/Cartographier.html" class="active">Cartographier</a></li>
+                        <li><a href="../html/Migrer.html">Migrer</a></li>
+                        <li><a href="../html/Simplifier.html">Simplifier</a></li>
+                    </ul>
+                </li>
+                <li><a href="../html/methodologie.html">Methodologies</a></li>
                 <li><a href="../html/apropos.html">A PROPOS</a></li>
                 <li><a href="../html/contact.php">CONTACT</a></li>
                 <li><a href="../html/blog.html">BLOG</a></li>
@@ -122,7 +125,6 @@
                     class="orange-text">Dataflows</span>
             </H2>
         </div>
-        </div>
         <div class="bancontainer-cas">
             <h3>Le problème</h3>
             <blockquote class="block-probleme">Nous rencontrons des entreprises qui viennent de migrer dans le Cloud et
@@ -141,7 +143,7 @@
                 quotidiennement, et il est donc parfaitement synchronisé au Système d'Information.
 
                 <br><br>
-                <H4>Nous proposons différents niveaux d'analyses :</H4>
+                <H4 class="petit-titre">Nous proposons différents niveaux d'analyses :</H4>
                 <br><br>
 
                 <blockquote class="block-solutions">
@@ -163,7 +165,7 @@
                 </blockquote>
 
                 <br><br>
-                <H4>{openAudit} résout l’ensemble des ruptures dans le data lineage</H4>
+                <H4 class="petit-titre">{openAudit} résout l’ensemble des ruptures dans le data lineage</H4>
                 <br><br>
 
                 <blockquote class="block-solutions">
@@ -181,13 +183,13 @@
                     permet d'accéder au code.
                     <br><br>
                 </blockquote>
-                <br><br>
-                <!-- <div class="informations-container">
-                            <H2 class="big-text-explication"> Uses cases
+                <br>
+                <div class="informations-container">
+                            <H2 class="big-text-explication"> Cas d'usages
                             </H2>
-                    </div> -->
+                    </div>
                 <div class="contact-container">
-                    <h4>La Data Observabilité, Buzzword ou nécessité ?</h4>
+                    <h4 class="petit-titre">La Data Observabilité, Buzzword ou nécessité ?</h4>
                     <p>
                         Le data lineage de {openAudit} permet de sensiblement renforcer l’observabilité des données, un
                         sujet de
@@ -201,7 +203,7 @@
                 <div class="separator"></div>
 
                 <div class="contact-container">
-                    <h4>BCBS 239 : L'enjeu de la fréquence et de l'exactitude du reporting de risque.</h4>
+                    <h4 class="petit-titre">BCBS 239 : L'enjeu de la fréquence et de l'exactitude du reporting de risque.</h4>
                     <p>BCBS 239 est un texte bancaire relatif à la qualité du reporting de risque. Il impose la
                         possibilité de
                         sourcer les données de risque dans les systèmes avec une solution de data lineage. </p>
@@ -212,7 +214,7 @@
                 <div class="separator"></div>
 
                 <div class="contact-container">
-                    <h4>Cybersécurité : le data lineage technique, l’arme idéale pour la Data Leaks </h4>
+                    <h4 class="petit-titre">Cybersécurité : le data lineage technique, l’arme idéale pour la Data Leaks </h4>
                     <p>La DLP (Data Leaks Prevention) est une discipline de la cyber sécurité qui vise à détecter les
                         fuites de
                         données sensibles. Le data lineage technique couplé à la détection des usages de l’information

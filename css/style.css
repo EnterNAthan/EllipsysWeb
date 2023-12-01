@@ -23,15 +23,6 @@
     padding-top: 0px;
   }
 }
-footer ul {
-  display: flex;
-}
-footer ul li {
-  padding-right: 20px;
-}
-footer .footer_info {
-  margin-left: 15vw;
-}
 /*=====================================*/
 /*-- :::: Space Decrease :::: --*/
 /*=====================================*/
@@ -21767,11 +21758,7 @@ button.close:hover, button.close:focus, button.close:active {
   opacity: .75;
 }
 
-h1,
-.h1 {
-  font-size: 33px;
-  font-weight: 700;
-}
+
 
 @media (min-width: 480px) {
   h1,
@@ -21794,11 +21781,6 @@ h1,
   }
 }
 
-h2,
-.h2 {
-  font-size: 30px;
-  font-weight: 700;
-}
 
 @media (min-width: 480px) {
   h2,
@@ -21821,45 +21803,7 @@ h2,
   }
 }
 
-h3,
-.h3 {
-  font-size: 50px;
-}
 
-h4,
-.h4 {
-  font-size: 28px;
-}
-
-h5,
-.h5 {
-  font-size: 24px;
-}
-
-h6,
-.h6 {
-  font-size: 21px;
-}
-
-p {
-  font-size: 18px;
-}
-
-.p1 {
-  font-size: 18px;
-}
-
-.p2 {
-  font-size: 16px;
-}
-
-.p3 {
-  font-size: 14px;
-}
-
-.span {
-  font-size: 12px;
-}
 
 .text-md {
   font-size: 16px !important;
@@ -21871,9 +21815,7 @@ p {
   line-height: 34px !important;
 }
 
-a:hover, a:focus, a:active {
-  color: #d95b4c;
-}
+
 
 /* /////////////////////////// 
     Header Area

@@ -8,10 +8,10 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
-    <title>Ellipsys - Cas d'Usages</title>
+    <title>Ellipsys - Simplifier</title>
     <meta name="description"
-        content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la "
-        matière morte"et automatisation des migrations. ">
+        content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la
+        matière morte et automatisation des migrations. ">
     <link rel=" canonical" href="https://www.ellipsys-bi.com/casusages" />
 </head>
 
@@ -24,6 +24,8 @@
                     {openAudit} allows you to migrate SAP BO as a package to Power BI or Looker!</a></span>
                 <span class="news"><a href="Contact_en.html">
                     Ellipsys is now a member of UGAP - collaborations with French public actors are facilitated.</a></span>
+                <span class="news"><a href="Contact_en.html">
+                    Ellipsys exhibited at the Big Data and AI Paris 2023 trade show on September 25 and 26, 2023, to present the new features of {openAudit}.</a></span>
                 <!--                <span class="news"><a href="Contact_en.html">-->
                 <!--                    Nouvelle 4 : NEWS ICI ICI!</a></span>-->
                 <!--                <span class="news"><a href="Contact_en.html">-->
@@ -48,9 +50,14 @@
                 <img id="logo_elypsis" src="../images/logotr.png" class="logo" alt="Ellipsys Logo">
             </a>
             <ul class="links">
-                <li><a href="../html/Cartographier_en.html">Map</a></li>
-                <li><a href="../html/Migrer_en.html">Migrate</a></li>
-                <li><a href="../html/Simplifier_en.html">Simplify</a></li>
+                <li class="dropdown">
+                    <a href="#">Uses Cases <i class="mdi mdi-arrow-down-thick"></i></a>
+                    <ul class="dropdown-content">
+                        <li><a href="../html/Cartographier.html">Map</a></li>
+                        <li><a href="../html/Migrer.html">Migrate</a></li>
+                        <li><a href="../html/Simplifier.html" class="active">Simplify</a></li>
+                    </ul>
+                </li>
                 <li><a href="../html/methodologie.html">Methodology</a></li>
                 <li><a href="../html/apropos_en.html">About</a></li>
                 <li><a href="../html/Contact_en.html">Contact</a></li>
@@ -93,7 +100,7 @@
             </div>
             <div class="acdroite">
                 <object type="image/svg+xml" data="../images/svg/dataflow%20optimization.svg" width="500"
-                    height="500">Votre navigateur ne supporte pas SVG</object>
+                    height="500">Your browser don't support this SVG</object>
             </div>
         </div>
         <section>
@@ -137,10 +144,14 @@
                         a FinOps and GreenOps logic.
                         <br><br>
                     </blockquote>
-                    <br><br>
-                    <!-- <h3>Use cases</h3> -->
+                    <br>
+
+                    <div class="informations-container">
+                        <H2 class="big-text-explication"> Uses cases
+                        </H2>
+                    </div>
                     <div class="contact-container">
-                        <h4>Lower Cloud costs! Identify and remove “dead branches” </h4>
+                        <h4 class="petit-titre">Lower Cloud costs! Identify and remove “dead branches” </h4>
                         <p>{openAudit} can be used to significantly reduce Cloud bills since on average 50% of what is
                             found there is not used.
                         </p>
@@ -151,8 +162,12 @@
 
                     <div class="separator"></div>
 
+                    <div class="informations-container">
+                        <H2 class="big-text-explication"> Uses cases
+                        </H2>
+                    </div>
                     <div class="contact-container">
-                        <h4>Reduce IT debt - why do it ?</h4>
+                        <h4 class="petit-titre">Reduce IT debt - why do it ?</h4>
                         <p>{openAudit} can help reduce “IT debt”: identify “dead material” to decommission it to make
                             the systems read intelligible, easier to migrate.</p>
                         <a href="https://ellipsys-bi.blogspot.com/2023/03/reduce-it-debt-why.html"><button
@@ -183,7 +198,7 @@
                     Obsolete, broken, replicated dashboards are detected and can be
                     archived or discarded to reduce costs and reduce the risk of errors.
 
-                    <H4>Technically</H4>
+                    <H4 class="petit-titre">Technically</H4>
                     <br><br>
 
                     <blockquote class="block-solutions">
@@ -203,9 +218,12 @@
 
                     <div class="separator"></div>
 
-
+                    <div class="informations-container">
+                        <H2 class="big-text-explication"> Uses cases
+                        </H2>
+                    </div>
                     <div class="contact-container">
-                        <h4>Simply over-administer an SAP BO platform</h4>
+                        <h4 class="petit-titre">Simply over-administer an SAP BO platform</h4>
                         <p>Specific functionalities for SAP BO have been developed allowing massive archiving actions of
                             replicated, obsolete, dysfunctional reports. Which is typically essential when preparing for
                             a migration.
@@ -216,8 +234,8 @@
                     </div>
                 </div>
             </div>
-            </div>
-            </div>
+        </section>
+    </section>
             <footer class="footer">
                 <div class="footer-content">
                     <div class="contact-info">
