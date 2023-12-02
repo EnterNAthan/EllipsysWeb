@@ -168,9 +168,11 @@
                         open source solution.{openAudit} allows this movement to be carried out automatically. And on a
                         flat rate basis.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/10/migrate-from-oracle-to-postgre-by.html"><button
-                            class="ensavoirplus2">Learn More</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer12')">En savoir plus</button>
+                </div>
+                <div id="iframeContainer12" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/10/migrate-from-oracle-to-postgre-by.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer12')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -181,8 +183,12 @@
                     <p>Cobol has been around for 70 years. Its intrinsic qualities of reliability and stability mean
                         that it is a language over-represented in the financial world. However, some companies want to
                         get rid of it. It's possible.</p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/05/take-back-control-of-your-cobol-assets.html"><button
-                            class="ensavoirplus2">Learn More</button></a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer13')">En savoir plus</button>
+                </div>
+
+                <div id="iframeContainer13" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/05/take-back-control-of-your-cobol-assets.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer13')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -192,10 +198,14 @@
                     <h4 class="petit-titre">Migrate Teradata to BigQuery (GCP) </h4>
                     <p>One of our clients decided to switch their Teradata assets to Google Cloud Platform (BigQuery).
                         This operation could take place in an automated way. We explain the methodology.</p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/moving-from-teradata-to-bigquery.html">
-                        <button class="ensavoirplus2">Learn More</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer14')">En savoir plus</button>
                 </div>
+
+                <div id="iframeContainer14" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/05/take-back-control-of-your-cobol-assets.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer14')">×</button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -243,15 +253,19 @@
                     <H2 class="big-text-explication"> Uses cases
                     </H2>
                 </div>
+
                 <div class="contact-container">
-                    <h3>Migrate from SAP BO to Looker</h3>
+                    <h4 class="petit-titre">Migrate from SAP BO to Looker</h3>
                     <p>Looker is the data visualization technology of Google Cloud Platform. This technology is
                         attracting more and more customers, particularly customers who previously used SAP BO. We
                         learned how to automate the migration between these 2 technologies.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/migrate-from-sap-bo-to-looker-by.htm"><button
-                            class="ensavoirplus2">Learn More</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer15')">En savoir plus</button>
+                </div>
+                
+                <div id="iframeContainer15" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrate-from-sap-bo-to-looker-by.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer15')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -262,8 +276,12 @@
                         have very clear ambitions for Business Object. So, many companies are making this move. We
                         learned to automate the process.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/migrate-from-sap-bo-to-power-bi.html"><button
-                            class="ensavoirplus2">Learn More</button></a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer16')">En savoir plus</button>
+                </div>
+                
+                <div id="iframeContainer16" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrate-from-sap-bo-to-power-bi.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer16')">×</button>
                 </div>
             </div>
         </div>
@@ -312,5 +330,22 @@
         </div>
 </body>
 <script src="../js/script.js"></script>
+<script>
+    function toggleIframe(iframeId) {
+        var iframeContainer = document.getElementById(iframeId);
+        var closeButton = iframeContainer.querySelector('.close-button');
 
+        var isDisplayed = iframeContainer.style.display === 'block';
+
+        window.requestAnimationFrame(function () {
+            if (!isDisplayed) {
+                iframeContainer.style.display = 'block';
+                closeButton.style.display = 'block';
+            } else {
+                iframeContainer.style.display = 'none';
+                closeButton.style.display = 'none';
+            }
+        });
+    }
+</script>
 </html>

@@ -2443,3 +2443,29 @@ span.ripple {
 .card-header .btn:not(.collapsed) .arrow {
     transform: rotate(-180deg);
 }
+
+.close-button {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    width: 30px; /* Width of the close button */
+    height: 30px; /* Height of the close button */
+    line-height: 30px; /* Center the 'x' vertically */
+    text-align: center; /* Center the 'x' horizontally */
+    background-color: red; /* Red background */
+    color: white; /* White 'x' */
+    font-size: 20px; /* Size of the 'x' */
+    font-weight: bold; /* Make the 'x' bold */
+    border-radius: 15px; /* Round corners */
+    cursor: pointer; /* Change mouse pointer on hover */
+    border: none; /* Remove border */
+    display: none; /* Initially hidden */
+  }
+
+  .iframe-container {
+    position: relative;
+    display: none; /* Initially hidden */
+    z-index: 10;
+    width: 100%; /* Full width */
+    height: 600px; /* Adjust height as needed */
+  }

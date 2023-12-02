@@ -190,9 +190,11 @@
                         une solution open source très efficace. {openAudit} permet d’opérer ce mouvement de façon
                         automatisée. Et de façon forfaitaire.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/10/migrer-de-oracle-postgre-en_25.html"><button
-                            class="ensavoirplus2">En savoir plus</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer7')">En savoir plus</button>
+                </div>
+                <div id="iframeContainer7" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/10/migrer-de-oracle-postgre-en_25.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer7')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -202,8 +204,11 @@
                     <p>Cobol existe depuis 7O ans. Ses qualités intrinsèques de fiabilité, de stabilité font que c’est
                         un langage surreprésenté dans le monde financier. Néanmoins, certaines entreprises souhaitent
                         s’en séparer. C’est possible.</p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/05/reprendre-le-controle-de-son-patrimoine.html"><button
-                            class="ensavoirplus2">En savoir plus</button></a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer8')">En savoir plus</button>
+                </div>
+                <div id="iframeContainer8" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/05/reprendre-le-controle-de-son-patrimoine.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer8')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -215,17 +220,21 @@
                         données sensibles. Le data lineage technique couplé à la détection des usages de l’information
                         permet de
                         savoir au départ d’une donnée de risque, qui y accède, et dans quel contexte. </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/passer-de-teradata-bigquery-automatiser.html">
-                        <button class="ensavoirplus2">En savoir plus</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer9')">En savoir plus</button>
                 </div>
+                
+                <div id="iframeContainer9" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/passer-de-teradata-bigquery-automatiser.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer9')">×</button>
+                </div>
+
             </div>
         </div>
     </section>
     <section id="dataviz">
         <div class="informations-container">
             <H2 class="big-text-explication-h2"> Migrer les <span class="orange-text-h2">technologies</span> de <span
-                    class="orange-text-h2">data visualisation </span> vers le Cloud de façon<span class="orange-text-h2">automatisée.</span>
+                    class="orange-text-h2">data visualisation</span> vers le Cloud de façon<span class="orange-text-h2">automatisée.</span>
             </H2>
         </div>
         <div class="bancontainer-cas">
@@ -285,9 +294,13 @@
                         préalablement SAP BO. Nous avons appris à automatiser la migration entre ces 2
                         technologies.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-looker-en.html"><button
-                            class="ensavoirplus2">En savoir plus</button>
-                    </a>
+                   
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer10')">En savoir plus</button>
+                </div>
+
+                <div id="iframeContainer10" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-looker-en.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer10')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -298,9 +311,14 @@
                         à l’heure actuelle. SAP n’a pas d’ambitions très claires pour Business Object. Ainsi, de
                         nombreuses entreprises opèrent ce mouvement. Nous avons appris à automatiser le process.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-power-bi.html"><button
-                            class="ensavoirplus2">En savoir plus</button></a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer11')">En savoir plus</button>
                 </div>
+
+                <div id="iframeContainer11" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-power-bi.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer11')">×</button>
+                </div>
+                
             </div>
         </div>
     </section>
@@ -349,5 +367,22 @@
         </div>
 </body>
 <script src="../js/script.js"></script>
+<script>
+    function toggleIframe(iframeId) {
+        var iframeContainer = document.getElementById(iframeId);
+        var closeButton = iframeContainer.querySelector('.close-button');
 
+        var isDisplayed = iframeContainer.style.display === 'block';
+
+        window.requestAnimationFrame(function () {
+            if (!isDisplayed) {
+                iframeContainer.style.display = 'block';
+                closeButton.style.display = 'block';
+            } else {
+                iframeContainer.style.display = 'none';
+                closeButton.style.display = 'none';
+            }
+        });
+    }
+</script>
 </html>

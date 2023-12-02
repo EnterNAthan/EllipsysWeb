@@ -12,8 +12,8 @@ const links = document.querySelectorAll("nav li")
 icons.addEventListener('click', () => {
     nav.classList.toggle('active');
 });
-links.forEach((link)=>{
-    link.addEventListener('click', ()=>{
+links.forEach((link) => {
+    link.addEventListener('click', () => {
         nav.classList.remove('active');
     })
 });
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function toggleDarkLight() {
-        if(body.classList.contains('ui-light-theme')) {
+        if (body.classList.contains('ui-light-theme')) {
             body.classList.remove('ui-light-theme');
             body.classList.add('ui-dark-theme');
             localStorage.setItem('theme', 'ui-dark-theme');  // Sauvegardez dans le localStorage
@@ -137,14 +137,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Animation des etiquettes pop up
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const etiquettes = document.querySelectorAll('.etiquette');
 
-    etiquettes.forEach(function(etiquette) {
+    etiquettes.forEach(function (etiquette) {
         const popup = etiquette.querySelector('.etiquette-popup');
         const etiquetteContent = etiquette.querySelector('.etiquette-content');
 
-        etiquette.addEventListener('click', function() {
+        etiquette.addEventListener('click', function () {
             // Basculer la popup
             popup.classList.toggle('hidden');
             popup.classList.toggle('visible');
@@ -163,7 +163,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 // Animation aimantée du bouton de contact
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     class Button {
         constructor(HTMLButtonElement) {
             this.button = HTMLButtonElement;
@@ -270,16 +270,16 @@ document.addEventListener('DOMContentLoaded', function() {
 
 // Fonction pour mettre en surbrillance la page actuelle dans la barre de navigation
 function highlightCurrentPage() {
-  const navLinks = document.querySelectorAll('.nav-links');
+    const navLinks = document.querySelectorAll('.nav-links');
 
-navLinks.forEach(link => {
-    link.addEventListener('click', () => {
-        navLinks.forEach(otherLink => {
-            otherLink.classList.remove('active');
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.forEach(otherLink => {
+                otherLink.classList.remove('active');
+            });
+            link.classList.add('active');
         });
-        link.classList.add('active');
     });
-});
 }
 highlightCurrentPage();
 

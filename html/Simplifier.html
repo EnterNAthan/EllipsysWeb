@@ -9,8 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
     <title>Ellipsys - Cas d'Usages</title>
-    <meta name="description"
-        content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la
+    <meta name="description" content="{openAudit}, c'est 3 fonctionnalités pour transformer un SI :  cartographie automatisée, identification de la
         matière morte et automatisation des migrations.">
     <link rel=" canonical" href="https://www.ellipsys-bi.com/casusages" />
 </head>
@@ -75,7 +74,8 @@
                     </ul>
                 </li>
                 <li class="dropdown">
-                    <a href="../html/Simplifier.html"  class="active">Simplifier<i class="mdi mdi-arrow-down-thick"></i></a>
+                    <a href="../html/Simplifier.html" class="active">Simplifier<i
+                            class="mdi mdi-arrow-down-thick"></i></a>
                     <ul class="dropdown-content">
                         <li><a href="../html/Simplifier.html#dataflows">{oA.Harmony} -<br>DataFlows</a></li>
                         <li><a href="../html/Simplifier.html#dataviz">{oA.Harmony} -<br>Dataviz</a></li>
@@ -132,7 +132,8 @@
         </div>
         <section id="dataflows">
             <div class="informations-container">
-                <H2 class="big-text-explication-h2">Détecter la <span class="orange-text-h2">matière morte </span> les flux
+                <H2 class="big-text-explication-h2">Détecter la <span class="orange-text-h2">matière morte </span> les
+                    flux
                     d’alimentation.
                 </H2>
             </div>
@@ -181,13 +182,20 @@
                         </H2>
                     </div>
                     <div class="contact-container">
-                        <h4 class="petit-titre">Baisser les coûts du Cloud, Identifier et supprimer les "branches mortes"</h4>
+                        <h4 class="petit-titre">Baisser les coûts du Cloud, Identifier et supprimer les "branches
+                            mortes"</h4>
                         <p>{openAudit} peut servir à baisser sensiblement les factures Cloud puisqu’en moyenne 50 % de
                             ce qu’on y trouve ne sert pas.
                         </p>
-                        <a href="https://ellipsys-bi.blogspot.com/2023/11/baisser-les-couts-du-cloud-identifier.html"><button
-                                class="ensavoirplus2">En savoir plus</button>
-                        </a>
+                        <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer17')">En savoir
+                            plus</button>
+                    </div>
+
+                    <div id="iframeContainer17" class="iframe-container">
+                        <iframe
+                            src="https://ellipsys-bi.blogspot.com/2023/11/baisser-les-couts-du-cloud-identifier.html"
+                            style="width:100%; height:600px;"></iframe>
+                        <button class="close-button" onclick="toggleIframe('iframeContainer17')">×</button>
                     </div>
 
                     <div class="separator"></div>
@@ -197,8 +205,11 @@
                         <h4 class="petit-titre">Réduire la dette IT - pourquoi faire ?</h4>
                         <p>{openAudit} peut permettre de réduire la « dette IT » : identifier « matière morte » pour la
                             décommissionner pour rendre les systèmes lus intelligible, plus facile à migrer. </p>
-                        <a href="https://ellipsys-bi.blogspot.com/2023/03/reduire-la-dette-it-pourquoi-faire.html"><button
-                                class="ensavoirplus2">En savoir plus</button></a>
+                        <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer18')">En savoir plus</button>
+                    </div>
+                    <div id="iframeContainer18" class="iframe-container">
+                        <iframe src="https://ellipsys-bi.blogspot.com/2023/03/reduire-la-dette-it-pourquoi-faire.html" style="width:100%; height:600px;"></iframe>
+                        <button class="close-button" onclick="toggleIframe('iframeContainer18')">×</button>
                     </div>
                 </div>
             </div>
@@ -262,58 +273,78 @@
                             massives d’archivage de reports répliqués, obsolètes, dysfonctionnels. Ce qui est
                             typiquement essentiel dans le cadre de la préparation d’une migration.
                         </p>
-                        <a href="https://ellipsys-bi.blogspot.com/2023/01/principes-techniques-generaux-pour.html"><button
-                                class="ensavoirplus2">En savoir plus</button>
-                        </a>
+                        
+                        <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer19')">En savoir plus</button>
                     </div>
+                <div id="iframeContainer19" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/01/principes-techniques-generaux-pour.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer19')">×</button>
+                </div>
                 </div>
             </div>
         </section>
     </section>
-        </section>
-        <footer class="footer">
-            <div class="footer-content">
-                <div class="contact-info">
-                    <h3>Contactez-nous</h3>
-                    <p>contact@ellipsys-lab.com</p>
-                </div>
-
-                <div class="address">
-                    <h3>Adresse</h3>
-                    <p>29 Route d'Esch</p>
-                    <p>L-3230 Bettembourg, Luxembourg</p>
-                </div>
-
-                <div class="social-icons">
-                    <h3>Suivez-nous</h3>
-                    <ul>
-                        <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
-                                    class="mdi mdi-linkedin"></i></a></li>
-                        <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
-                    </ul>
-                </div>
-                <div class="footer-nav">
-                    <h3>Liens</h3>
-                    <ul>
-                        <li><a href="../index.html">Accueil</a></li>
-                        <li><a href="../html/Cartographier.html">Cartographier</a></li>
-                        <li><a href="../html/Migrer.html">Migrer</a></li>
-                        <li><a href="../html/Simplifier.html">Simplifier</a></li>
-                        <li><a href="../html/methodologie.html">Méthodologies</a></li>
-                        <li><a href="../html/apropos.html">À Propos</a></li>
-                        <li><a href="../html/Contact.html">Contact</a></li>
-                        <li><a href="../html/blog.html">Blog</a></li>
-                    </ul>
-                </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contactez-nous</h3>
+                <p>contact@ellipsys-lab.com</p>
             </div>
-            <div class="footer-bottom">
-                <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
+
+            <div class="address">
+                <h3>Adresse</h3>
+                <p>29 Route d'Esch</p>
+                <p>L-3230 Bettembourg, Luxembourg</p>
             </div>
-        </footer>
-        <div class="scroll-to-top">
-            <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
+
+            <div class="social-icons">
+                <h3>Suivez-nous</h3>
+                <ul>
+                    <li><a href="https://www.linkedin.com/company/ellipsys/?viewAsMember=true"><i
+                                class="mdi mdi-linkedin"></i></a></li>
+                    <li><a href="https://twitter.com/ellipsys_BI"><i class="mdi mdi-twitter"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-nav">
+                <h3>Liens</h3>
+                <ul>
+                    <li><a href="../index.html">Accueil</a></li>
+                    <li><a href="../html/Cartographier.html">Cartographier</a></li>
+                    <li><a href="../html/Migrer.html">Migrer</a></li>
+                    <li><a href="../html/Simplifier.html">Simplifier</a></li>
+                    <li><a href="../html/methodologie.html">Méthodologies</a></li>
+                    <li><a href="../html/apropos.html">À Propos</a></li>
+                    <li><a href="../html/Contact.html">Contact</a></li>
+                    <li><a href="../html/blog.html">Blog</a></li>
+                </ul>
+            </div>
         </div>
+        <div class="footer-bottom">
+            <p><a href="https://ampleurweb.com/"> © 2023 AmpleurWeb.</a></p>
+        </div>
+    </footer>
+    <div class="scroll-to-top">
+        <a href="#top"><i class="mdi mdi-arrow-up-drop-circle-outline"></i></a>
+    </div>
 </body>
 <script src="../js/script.js"></script>
+<script>
+    function toggleIframe(iframeId) {
+        var iframeContainer = document.getElementById(iframeId);
+        var closeButton = iframeContainer.querySelector('.close-button');
 
+        var isDisplayed = iframeContainer.style.display === 'block';
+
+        window.requestAnimationFrame(function () {
+            if (!isDisplayed) {
+                iframeContainer.style.display = 'block';
+                closeButton.style.display = 'block';
+            } else {
+                iframeContainer.style.display = 'none';
+                closeButton.style.display = 'none';
+            }
+        });
+    }
+</script>
 </html>

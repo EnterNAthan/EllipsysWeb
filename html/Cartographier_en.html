@@ -191,9 +191,12 @@
                         {openAudit}'s data lineage significantly strengthens data observability, a major concern for
                         businesses.
                     </p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/11/data-observability-buzzword-or-necessity_21.html"><button
-                            class="ensavoirplus2">Learn More</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer4')">Learn more</button>
+                </div>
+                
+                <div id="iframeContainer4" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/data-observability-buzzword-or-necessity_21.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer4')">×</button>
                 </div>
 
                 <div class="separator"></div>
@@ -202,10 +205,13 @@
                     <h4 class="petit-titre">BCBS 239: The issue of frequency and accuracy of risk reporting.</h4>
                     <p>BCBS 239 is a banking text relating to the quality of risk reporting. It requires the possibility
                         of sourcing risk data in systems with a data lineage solution.</p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/10/bcbs-239-issue-of-frequency-and.html"><button
-                            class="ensavoirplus2">Learn More</button></a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer5')">Learn more</button>
                 </div>
-
+                
+                <div id="iframeContainer5" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/10/bcbs-239-issue-of-frequency-and.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer5')">×</button>
+                  </div>
                 <div class="separator"></div>
 
                 <div class="contact-container">
@@ -213,10 +219,13 @@
                     <p>DLP (Data Leaks Prevention) is a cyber security discipline that aims to detect leaks of sensitive
                         data. Technical data lineage coupled with the detection of information uses makes it possible to
                         know at the start of risk data, who is accessing it, and in what context.</p>
-                    <a href="https://ellipsys-bi.blogspot.com/2023/04/cybersecurity-data-lineage-at-service.html ">
-                        <button class="ensavoirplus2">Learn More</button>
-                    </a>
+                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer6')">Learn more</button>
                 </div>
+                <div id="iframeContainer6" class="iframe-container">
+                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/data-observability-buzzword-or-necessity_21.html" style="width:100%; height:600px;"></iframe>
+                    <button class="close-button" onclick="toggleIframe('iframeContainer6')">×</button>
+                </div>
+
             </div>
         </div>
     </section>
@@ -310,5 +319,22 @@
     </div>
 </body>
 <script src="../js/script.js"></script>
+<script>
+    function toggleIframe(iframeId) {
+        var iframeContainer = document.getElementById(iframeId);
+        var closeButton = iframeContainer.querySelector('.close-button');
 
+        var isDisplayed = iframeContainer.style.display === 'block';
+
+        window.requestAnimationFrame(function () {
+            if (!isDisplayed) {
+                iframeContainer.style.display = 'block';
+                closeButton.style.display = 'block';
+            } else {
+                iframeContainer.style.display = 'none';
+                closeButton.style.display = 'none';
+            }
+        });
+    }
+</script>
 </html>

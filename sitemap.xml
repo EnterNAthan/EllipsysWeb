@@ -7,7 +7,25 @@
         <priority>0.8</priority>
     </url>
     <url>
-        <loc>https://ellipsys-bi.com/html/casusages.html</loc>
+        <loc>https://ellipsys-bi.com/html/Cartographier.html</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ellipsys-bi.com/html/Migrer.html</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ellipsys-bi.com/html/Simplifier.html</loc>
+        <lastmod>2023-09-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://ellipsys-bi.com/html/Methodologie.html</loc>
         <lastmod>2023-09-22</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
