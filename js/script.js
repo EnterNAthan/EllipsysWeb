@@ -287,6 +287,31 @@ highlightCurrentPage();
 
 
 
+
+
+
+
+// Fonction pour afficher les réponses dans la faq
+const questions = document.querySelectorAll('.question');
+questions.forEach((question) => {
+    question.addEventListener('click', () => {
+        question.classList.toggle('open');
+        const answer = question.querySelector('.answer');
+
+        if (question.classList.contains('open')) {
+            answer.style.maxHeight = answer.scrollHeight + 'px';
+            answer.style.opacity = '1';
+        } else {
+            answer.style.maxHeight = '0';
+            answer.style.opacity = '0';
+        }
+    });
+});
+
+
+
+
+
 // Tous les boutons uniques pour ouvrir et fermer les boîtes modales
 const boutonEnSavoirPlus = document.querySelector(".ensavoirplus");
 const boutonEnSavoirPlus2 = document.querySelector(".ensavoirplus2");
@@ -344,50 +369,3 @@ window.addEventListener("click", (event) => {
         closeModalFunc3();
     }
 });
-
-
-
-
-
-// Fonction pour afficher les réponses dans la faq
-const questions = document.querySelectorAll('.question');
-questions.forEach((question) => {
-    question.addEventListener('click', () => {
-        question.classList.toggle('open');
-        const answer = question.querySelector('.answer');
-
-        if (question.classList.contains('open')) {
-            answer.style.maxHeight = answer.scrollHeight + 'px';
-            answer.style.opacity = '1';
-        } else {
-            answer.style.maxHeight = '0';
-            answer.style.opacity = '0';
-        }
-    });
-});
-
-
-// partie test
-// caroussel test
-// document.addEventListener("DOMContentLoaded", () => {
-//     let index = 0;
-//     const carousel = document.getElementById("carousel");
-//
-//     document.getElementById("prevBtn").addEventListener("click", () => {
-//         index -= 1;
-//         if (index < 0) index = 0;
-//         carousel.scroll({
-//             left: 300 * index,
-//             behavior: "smooth",
-//         });
-//     });
-//
-//     document.getElementById("nextBtn").addEventListener("click", () => {
-//         index += 1;
-//         if (index >= carousel.children.length) index = carousel.children.length - 1;
-//         carousel.scroll({
-//             left: 300 * index,
-//             behavior: "smooth",
-//         });
-//     });
-// });
