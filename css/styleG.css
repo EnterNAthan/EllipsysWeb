@@ -563,11 +563,35 @@ nav .links li a {
     margin-left: 5px;
 }
 
+.bancontainer-centre{
+    text-align: center;
+    font-size: 65px;
+    letter-spacing: 2px;
+    flex-shrink: 1;
+    min-width: 50px;
+    font-weight: bold;
+}
+
+.bancontainer-centre p{
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+    margin-top: -30px;
+}
+
 .bancontainer-cas{
     display: flex;
     flex-direction: column;
     margin-left: 130px;
     gap: 20px;
+}
+
+.bancontainer-cas p{
+    display: block;
+    justify-content: center;
+    font-size: 18px;
+    margin-top: -30px;
 }
 
 .bancontainer-cas h3 {
@@ -1475,7 +1499,7 @@ iframe:hover {
     border-radius: 35px 35px 35px 0;
 }
 
-/*bubble de droite*/
+/*bubble de droite*/ 
 .right {
     align-self: flex-end;
     border-radius: 35px 35px 0 35px;
@@ -1488,8 +1512,8 @@ iframe:hover {
 }
 
 .contact-container {
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     text-align: center;
     border-radius: 10px;
 }
