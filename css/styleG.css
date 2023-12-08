@@ -566,6 +566,7 @@ nav .links li a {
 .bancontainer-centre{
     text-align: center;
     font-size: 65px;
+    letter-spacing: 2px;
     flex-shrink: 1;
     min-width: 50px;
     font-weight: bold;
@@ -575,7 +576,8 @@ nav .links li a {
 .bancontainer-centre p{
     justify-content: center;
     text-align: left;
-    line-height: normal;
+    font-size: 20px;
+    line-height: 30px;
     margin-top: -30px;
     margin-bottom: 50px;
 }
@@ -647,10 +649,12 @@ nav .links li a {
     width: 50%;
     margin-right: 10%;
     color: var(--text-color);
+    line-height: 30px;
 }
 
 .acgauche-usage p{
     font-size: 20px;
+    line-height: 30px;
 }
 
 .acgauche-usage img{
@@ -673,10 +677,12 @@ nav .links li a {
     width: 50%;
     margin-left: 10%;
     color: var(--text-color);
+    line-height: 30px;
 }
 
 .acdroite-usage p{
     font-size: 20px;
+    line-height: 30px;
 }
 
 .acdroite-usage img{
@@ -748,8 +754,7 @@ nav .links li a {
     font-size: 26px;
     /*font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     /* font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
-    /* font-style: normal; */
-    line-height: normal;
+    line-height: 30px;
     font-weight: 400;
     width: 90%;
     margin-top: 20px;
@@ -1495,6 +1500,14 @@ iframe:hover {
 .card-back a:active {
     text-decoration: none;
     color: inherit;
+}
+
+.text-card{
+    font-size: 1.2vw;
+}
+
+.text-petit-card{
+    font-size: 1vw;
 }
 
 /* section a propos de*/
