@@ -576,8 +576,8 @@ nav .links li a {
 .bancontainer-centre p{
     justify-content: center;
     text-align: left;
-    font-size: 18px;
-    line-height: 20px;
+    font-size: 20px;
+    line-height: 30px;
     margin-top: -30px;
     margin-bottom: 50px;
 }
@@ -636,7 +636,55 @@ nav .links li a {
 }
 
 .acgauche-usage{
+    padding: 30px;
     margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.acgauche-usage .petit-texte{
+    font-size: 20px;
+    width: 50%;
+    margin-right: 10%;
+    color: var(--text-color);
+}
+
+.acgauche-usage p{
+    font-size: 20px;
+}
+
+.acgauche-usage img{
+    width: 20%;
+    height: auto;
+    margin-left: 20px;
+}
+
+.acdroite-usage{
+    padding: 30px;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.acdroite-usage .petit-texte{
+    font-size: 20px;
+    width: 50%;
+    margin-left: 10%;
+    color: var(--text-color);
+}
+
+.acdroite-usage p{
+    font-size: 20px;
+}
+
+.acdroite-usage img{
+    width: 20%;
+    height: auto;
+    margin-right: 20px;
 }
 
 /*!*contenu et fenetre modale 2*!*/
@@ -908,6 +956,8 @@ iframe:hover {
     margin-top: 30px;
     /* ajustement de l'espacement */
     margin-bottom: 30px;
+    width: 70%;
+    margin: 0 auto;
 }
 
 /*etude de cas*/
@@ -946,6 +996,7 @@ iframe:hover {
     margin: 100px 20px;
     font-size: 2.5rem;
     text-align: left;
+    color: var(--text-color);
 }
 
 .big-text-explication span {
@@ -2449,8 +2500,9 @@ span.ripple {
     position: relative;
     display: none;
     z-index: 10;
-    width: 100%;
+    width: 80%;
     height: auto;
+    margin: 0 auto;
 }
 
 /* section pour la page methodologie */
