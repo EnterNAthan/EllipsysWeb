@@ -118,173 +118,200 @@
     </section>
     <section id="dataflows">
         <div class="informations-container">
-            <H2 class="big-text-explication-h2"> Migrate <span class="orange-text-h2">cloud storage</span> technologies
-                automatically
+            <H2 class="big-text-explication-h2"> Migrer les <span class="orange-text-h2">technologies de stockage
+                </span> dans le
+                <span class="orange-text-h2">Cloud</span> de façon <span class="orange-text-h2">automatisée </span>
             </H2>
         </div>
-        <div class="bancontainer-cas">
-            <h3>The problem</h3>
-            <blockquote class="block-probleme">Large companies have been accumulating storage technologies forever.
-                There is continued stacking, as removing one technology often poses too much risk.
-                <br><br>
-                The skills associated with it are becoming rarer and retro-documentation is rarely in place.
-                When companies start, they are consultancy projects, long, expensive and hazardous.
-            </blockquote>
+        <div class="bancontainer-centre">
+            <p class="soustitreban">
+                Nous avons développé une méthodologie unique permettant d’automatiser les migrations de systèmes de
+                bases de données. Les capacités uniques d’introspection des systèmes de {openAudit} en particulier dans
+                les technologies legacy permettent de reconstruire cette complexité dans le système cible, souvent dans
+                le Cloud.
+            </p>
+        </div>
 
-            <div class="soustitreban">
-                <h3>Our solutions</h3>
-                We think it is better to automate the process. To do this, we have developed a unique methodology to
-                automate these migrations based on the unique introspection capabilities of {openAudit} systems.
-                <br><br>
-                <blockquote class="block-solutions">
-                    • {openAudit} will “parse” the source code, it will break down all the complexity of the code
-                    using a grammar allowing exhaustive and ultra-granular analyses.
-                    All the subtleties will be taken into consideration.
-                    <br><br>
-                    • {openAudit} deduces the overall kinematics and intelligence, which will be reconstructed in an
-                    agnostic algorithmic tree. On this basis, {openAudit} will produce “standard SQL”.
-                    <br><br>
-                    • Then the intelligence will be reconstructed at a minimum in the specific SQL of the target
-                    database (for example BigQuery for Google, Redshift for Amazon, Azure SQL for Microsoft, etc.).
-                    <br><br>
-                    • All complex processing that cannot be reproduced in simple SQL will be controlled by an executable
-                    (Node JS or other). Typically “For Loop” cursors, variables, “If Else ” conditional code , “
-                    Switches ”, procedure calls, etc.
-                    <br><br>
-                    • {openAudit} produces “Yaml” files (intuitive files). Thus, the understanding of complexity is
-                    shared with as many people as possible.
-                    <br><br>
-                    • Eventually, new orchestration mechanisms can be implemented, to deconstruct cursors of cursors
-                    (loops of loops) to optimize transformation chains, etc.
-                </blockquote>
-                <br>
-                <div class="informations-container">
-                    <H2 class="big-text-explication"> Uses cases
-                    </H2>
-                </div>
-                <div class="contact-container">
-                    <h4 class="petit-titre">Migrate Oracle to PostgreSQL</h4>
-                    <p>Many companies want to migrate their Oracle databases to PostgreSQL which is a very effective
-                        open source solution.{openAudit} allows this movement to be carried out automatically. And on a
-                        flat rate basis.
-                    </p>
-                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer12')">En savoir plus</button>
-                </div>
-                <div id="iframeContainer12" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/10/migrate-from-oracle-to-postgre-by.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer12')">×</button>
-                </div>
+        <div class="separator"></div>
 
-                <div class="separator"></div>
+        <div class="acgauche-usage">
+            <div class="petit-texte">
+                <h3>Créer du SQL standard depuis la technologie en source</h3>
+                <p class="soustitreban">
+                    {openAudit} « parse » le code en source, et décompose toute la complexité du
+                    code. Par exemple, dans le PL/SQL, le T-SQL ou dans Cobol. Toutes les subtilités vont être prises en
+                    considération. Sur cette base, {openAudit} va produire du « SQL standard ».
+                </p>
+            </div>
+            <object id="svg1" type="image/svg+xml" data="../images/svg/2-1-Parser et creer du SQL.svg">Votre navigateur
+                ne supporte pas
+                SVG</object>
+        </div>
 
-            
-                <div class="contact-container">
-                    <h4 class="petit-titre">Exit Cobol</h4>
-                    <p>Cobol has been around for 70 years. Its intrinsic qualities of reliability and stability mean
-                        that it is a language over-represented in the financial world. However, some companies want to
-                        get rid of it. It's possible.</p>
-                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer13')">En savoir plus</button>
-                </div>
-
-                <div id="iframeContainer13" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/05/take-back-control-of-your-cobol-assets.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer13')">×</button>
-                </div>
-
-                <div class="separator"></div>
-
-    
-                <div class="contact-container">
-                    <h4 class="petit-titre">Migrate Teradata to BigQuery (GCP) </h4>
-                    <p>One of our clients decided to switch their Teradata assets to Google Cloud Platform (BigQuery).
-                        This operation could take place in an automated way. We explain the methodology.</p>
-                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer14')">En savoir plus</button>
-                </div>
-
-                <div id="iframeContainer14" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/05/take-back-control-of-your-cobol-assets.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer14')">×</button>
-                </div>
-
+        <div class="acdroite-usage">
+            <object id="svg1" type="image/svg+xml" data="../images/svg/2-2_Reconstruire l'intelligence.svg">Votre
+                navigateur ne supporte pas
+                SVG</object>
+            <div class="petit-texte">
+                <h3>Reconstruire l’intelligence dans la technologie cible</h3>
+                <p class="soustitreban">{openAudit} va reconstruire l’intelligence a minima dans le SQL spécifique de la
+                    base de données cible (par exemple BigQuery pour Google, Redshift pour Amazon, Azure SQL pour
+                    Microsoft, etc.). Tous les traitements complexes, non reproductibles en SQL simple, seront pilotés
+                    par un exécutable.
+                </p>
             </div>
         </div>
+
+        <div class="separator"></div>
+
+        <h3 class="big-text-explication-h2">Cas d'usages</h3>
+        <div class="acgauche-usage">
+            <h2 class="petit-texte">Migrer Oracle vers PostgreSQL</h2>
+            <!--            <p>-->
+            <!--                Le data lineage de {openAudit} permet de sensiblement renforcer l’observabilité des données, un-->
+            <!--                sujet de-->
+            <!--                préoccupation fort pour les entreprises.-->
+            <!--            </p>-->
+            <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer1')">En savoir plus</button>
+        </div>
+
+        <div id="iframeContainer1" class="iframe-container">
+            <iframe src="https://ellipsys-bi.blogspot.com/2023/10/migrer-de-oracle-postgre-en_25.html"
+                style="width:100%; height:600px;"></iframe>
+            <button class="close-button" onclick="toggleIframe('iframeContainer1')">×</button>
+        </div>
+
+        <div class="acgauche-usage">
+            <h2 class="petit-texte">Migrer Teradata vers BigQuery (GCP) </h2>
+            <!--            <p>-->
+            <!--                BCBS 239 est un texte bancaire relatif à la qualité du reporting de risque. Il impose la
+                possibilité de
+                sourcer les données de risque dans les systèmes avec une solution de data lineage.-->
+            <!--            </p>-->
+            <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer2')">En savoir plus</button>
+        </div>
+
+        <div id="iframeContainer2" class="iframe-container">
+            <iframe src="https://ellipsys-bi.blogspot.com/2023/11/passer-de-teradata-bigquery-automatiser.html"
+                style="width:100%; height:600px;"></iframe>
+            <button class="close-button" onclick="toggleIframe('iframeContainer2')">×</button>
+        </div>
+
+        <div class="acgauche-usage">
+            <h2 class="petit-texte">Quitter Cobol</h2>
+            <!--            <p>La DLP (Data Leaks Prevention) est une discipline de la cyber sécurité qui vise à détecter les-->
+            <!--                fuites de-->
+            <!--                données sensibles. Le data lineage technique couplé à la détection des usages de l’information-->
+            <!--                permet de-->
+            <!--                savoir au départ d’une donnée de risque, qui y accède, et dans quel contexte. </p>-->
+            <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer3')">En savoir plus</button>
+        </div>
+
+        <div id="iframeContainer3" class="iframe-container">
+            <iframe src="https://ellipsys-bi.blogspot.com/2023/05/reprendre-le-controle-de-son-patrimoine.html"
+                style="width:100%; height:600px;"></iframe>
+            <button class="close-button" onclick="toggleIframe('iframeContainer3')">×</button>
+        </div>
+
+        <div style="margin-top: 150px" class="separator"></div>
     </section>
     <section id="dataviz">
         <div class="informations-container">
-            <H2 class="big-text-explication-h2"> Migrate <span class="orange-text-h2">data visualization </span> technologies
-                to the Cloud in an automated way
+            <H2 class="big-text-explication-h2"> Migrer les <span class="orange-text-h2">technologies</span> de <span
+                    class="orange-text-h2">data visualisation</span> vers le Cloud de façon <span
+                    class="orange-text-h2">automatisée.</span>
             </H2>
         </div>
-        <div class="bancontainer-cas">
-            <h3>The problem </h3>
-            <blockquote class="block-probleme">Dataviz solutions embed more and more intelligence. And some of them have
-                been there for several decades. There are thus an innumerable number of carefully constructed management
-                rules which threaten not to be carried over into the target technology in the event of a failure of the
-                migration. <br><br> And the professions want “1 for 1”, without the slightest regression, with an almost
-                identical result. To do this, service companies offer long, expensive and hazardous service missions.
-            </blockquote>
+        <div class="bancontainer-centre">
+            <p class="soustitreban">
+                {openAudit}, en s’appuyant sur des capacités d’introspection exceptionnelles de certaines technologies
+                de data visualisation, permet d’automatiser le processus de « reconstruction » de la plateforme dans la
+                technologie cible : l’intelligence et le layout.
+                Nous avons en particulier une forte expérience dans les migrations entre SAP BO et Power BI de
+                Microsoft, ou SAP BO vers Looker de Google.
 
-            <div class="soustitreban">
-                <h3>Our answers </h3>
-                {openAudit}, relying on its exceptional introspection capabilities of the source data visualization
-                layer, makes it possible to automate the process of “rebuilding” the platform in the target technology.
-                <br><br>
-                <H3>Methodology</H3>
-                <br><br>
+            </p>
+        </div>
 
-                <blockquote class="block-solutions">
-                    • Most dataviz tools have two things in common: a semantic layer which forms the interface between
-                    IT and the business and a dashboard editor.
-                    <br><br>
-                    • We leverage {openAudit}'s automated reverse engineering to fully deconstruct the complexity at
-                    source, allowing us to address it again in the target technology.
-                    <br><br>
-                    • {openAudit} will be able to feed the target technology from the single semantic layer, a sort of
-                    “pivot model” (for certain technologies). This model will have been automatically generated from the
-                    data visualization tools to be decommissioned,
-                    <br><br>
-                    • The structure of the initial dashboard will also have been analyzed by {openAudit}, and it can
-                    also be transcribed into the target technology.
-                    <br><br>
-                </blockquote>
-                <br>
+        <div class="separator"></div>
 
-                <div class="informations-container">
-                    <H2 class="big-text-explication"> Uses cases
-                    </H2>
-                </div>
+        <div class="acgauche-usage">
+            <div class="petit-texte">
+                <h3>Parsing granulaire de la technologie dataviz en source </h3>
+                <p class="soustitreban">{openAudit} va récupérer de façon automatisée l’ensemble des instructions qui
+                    sont passées dans la technologie de dataviz en source, au niveau de l’intelligence ou du layout.
+                </p>
+            </div>
+            <object id="svg1" type="image/svg+xml"
+                data="../images/svg/2-3-Parsing de la techno viz  en source.svg">Votre navigateur ne supporte pas
+                SVG</object>
+        </div>
 
-                <div class="contact-container">
-                    <h4 class="petit-titre">Migrate from SAP BO to Looker</h3>
-                    <p>Looker is the data visualization technology of Google Cloud Platform. This technology is
-                        attracting more and more customers, particularly customers who previously used SAP BO. We
-                        learned how to automate the migration between these 2 technologies.
-                    </p>
-                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer15')">En savoir plus</button>
-                </div>
-                
-                <div id="iframeContainer15" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrate-from-sap-bo-to-looker-by.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer15')">×</button>
-                </div>
-
-                <div class="separator"></div>
-
-                <div class="contact-container">
-                    <h4 class="petit-titre">Migrate from SAP BO to Power BI </h4>
-                    <p>Power BI is the data visualization technology most popular with businesses today. SAP does not
-                        have very clear ambitions for Business Object. So, many companies are making this move. We
-                        learned to automate the process.
-                    </p>
-                    <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer16')">En savoir plus</button>
-                </div>
-                
-                <div id="iframeContainer16" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrate-from-sap-bo-to-power-bi.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer16')">×</button>
-                </div>
+        <div class="acdroite-usage">
+            <object id="svg1" type="image/svg+xml" data="../images/svg/2-4_Migration automatisee  partie Viz.svg">Votre
+                navigateur ne supporte pas
+                SVG</object>
+            <div class="petit-texte">
+                <h3>Migration automatisée vers la technologie dataviz cible</h3>
+                <p class="soustitreban">{openAudit} reconstruit l’intelligence de façon totalement automatisée data la
+                    technologie cible: variables, expressions, etc. La structure du dashboard initial est également
+                    reproduite dans la technologie cible.
+                </p>
             </div>
         </div>
+
+        <div class="acgauche-usage">
+            <div class="petit-texte">
+                <h3>Migrations des règles de gestion vers le DWH cible</h3>
+                <p class="soustitreban">Une partie de l’intelligence des dashboards en source est déplacée dans les
+                    dataflows de la plateforme cible, pour factoriser la data prep’, et ainsi baisser massivement la
+                    complexité.
+                </p>
+            </div>
+            <object id="svg1" type="image/svg+xml"
+                data="../images/svg/2-5-Migrations des regles de gestion vers le DWH cible.svg">Votre
+                navigateur ne supporte pas
+                SVG</object>
+        </div>
+
+        <div class="acdroite-usage">
+            <object id="svg1" type="image/svg+xml" data="../images/svg/2-6-Tests de non regression.svg">Votre
+                navigateur ne supporte pas
+                SVG</object>
+            <div class="petit-texte">
+                <h3>Des tests de non régression en masse</h3>
+                <p class="soustitreban">{openAudit} exécute les dashboards en masse, avant migration et après migration,
+                    puis compare les résultats (fonds et forme) pour valider la qualité de la migration.
+                </p>
+            </div>
+        </div>
+
+        <h3 class="big-text-explication-h2">Cas d'usages</h3>
+        <div class="acgauche-usage">
+            <h2 class="petit-texte">Migrer de SAP BO vers Looker</h2>
+      
+            <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer4')">En savoir plus</button>
+        </div>
+
+        <div id="iframeContainer4" class="iframe-container">
+            <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-looker-en.html"
+                style="width:100%; height:600px;"></iframe>
+            <button class="close-button" onclick="toggleIframe('iframeContainer4')">×</button>
+        </div>
+
+        <div class="acgauche-usage">
+            <h2 class="petit-texte">Migrer de SAP BO vers Power BI </h2>
+           
+            <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer5')">En savoir plus</button>
+        </div>
+
+        <div id="iframeContainer5" class="iframe-container">
+            <iframe src="https://ellipsys-bi.blogspot.com/2023/11/migrer-de-sap-bo-vers-power-bi.html"
+                style="width:100%; height:600px;"></iframe>
+            <button class="close-button" onclick="toggleIframe('iframeContainer5')">×</button>
+        </div>
+        <div class="separator"></div>
+        <br><br><br>
     </section>
         <footer class="footer">
             <div class="footer-content">
