@@ -751,7 +751,7 @@ nav .links li a {
 
 /*sous-titre des contenus*/
 .soustitreban {
-    font-size: 26px;
+    font-size: 20px;
     /*font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", Helvetica, Arial, sans-serif;*/
     /* font-family: Söhne, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif, Helvetica Neue, Arial, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji; */
     line-height: 30px;
@@ -1503,7 +1503,7 @@ iframe:hover {
 }
 
 .text-card{
-    font-size: 1.2vw;
+    font-size: 1.1vw;
 }
 
 .text-petit-card{
