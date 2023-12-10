@@ -566,7 +566,7 @@ nav .links li a {
 .bancontainer-centre{
     text-align: center;
     font-size: 65px;
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     flex-shrink: 1;
     min-width: 50px;
     font-weight: bold;
@@ -657,7 +657,7 @@ nav .links li a {
     line-height: 30px;
 }
 
-.acgauche-usage img{
+.acgauche-usage object{
     width: 20%;
     height: auto;
     margin-left: 20px;
@@ -685,7 +685,7 @@ nav .links li a {
     line-height: 30px;
 }
 
-.acdroite-usage img{
+.acdroite-usage object{
     width: 20%;
     height: auto;
     margin-right: 20px;
