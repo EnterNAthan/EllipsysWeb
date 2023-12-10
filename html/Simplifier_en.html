@@ -126,148 +126,141 @@
                     streams
                 </H2>
             </div>
-            <div class="bancontainer-cas">
-                <h3>The problem </h3>
-                <blockquote class="block-probleme">On average, 50% of what is stored in databases has no added value.
-                    These are countless “dead branches” composed of code, tables, views, files, which are wrongly
-                    maintained in the systems with a considerable impact: system inertia, maintenance costs,
-                    unsustainable Cloud bills and high environmental impacts (GHG). <br>
-                </blockquote>
+            <div class="bancontainer-centre">
+                <p class="soustitreban">
+                    Grâce à une analyse des usages de l'information, associée au parcours de l'information (le data
+                    lineage), {openAudit} identifie les flux inutiles et les data points qui y sont associés (tables /
+                    fichiers). C’est ce que nous appelons les « branches mortes » : elles peuvent être décommissionnées
+                    sans risque de régression.
+                </p>
+            </div>
 
-                <div class="soustitreban">
-                    <h3>Our solutions </h3>
-                    Thanks to an analysis of information uses, associated with the information flow (data lineage),
-                    {openAudit} identifies unnecessary flows and the “data points” associated with them (tables /
-                    files). This is what we call dead branches.
-                    <br><br>
+            <div class="separator"></div>
 
-                    <blockquote class="block-solutions">
-                        • {openAudit} analyzes audit database logs and the data visualization layer to discover what
-                        data is actually used.
-                        <br><br>
-                        • From the fields used in the databases to supply data visualization tools, or ad hoc queries
-                        (ODBC, JDBC), or from specific ETL/ELT flows, {openAudit} identifies the information flows, the
-                        tables which are in source, that is to say the "living branches" of the information system.
-                        <br><br>
-                        • In contrast, {openAudit} identifies "dead branches", i.e. tables, procedures, ETL/ELT jobs
-                        which construct useless information.
-                        <br><br>
-                        • {openAudit} implements these analyzes dynamically, and thus allows, by creating a significant
-                        depth of history, to formally identify the branches which are continually unused, with
-                        everything they concentrate: tables, files, procedures, ELT/ETL jobs. Mass decommissioning can
-                        take place in record time.
-                        <br><br>
-                        • In the Cloud, via an analysis of certain logs, {openAudit} identifies the cost of keeping dead
-                        branches in the system. The saveable machine resource is also highlighted. The company can adopt
-                        a FinOps and GreenOps logic.
-                        <br><br>
-                    </blockquote>
-                    <br>
-
-                    <div class="informations-container">
-                        <H2 class="big-text-explication"> Uses cases
-                        </H2>
-                    </div>
-                    <div class="contact-container">
-                        <h4 class="petit-titre">Lower Cloud costs! Identify and remove “dead branches” </h4>
-                        <p>{openAudit} can be used to significantly reduce Cloud bills since on average 50% of what is
-                            found there is not used.
-                        </p>
-                        <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer20')">En savoir
-                            plus</button>
-                    </div>
-
-                    <div id="iframeContainer20" class="iframe-container">
-                        <iframe
-                            src="https://ellipsys-bi.blogspot.com/2023/11/lower-cloud-costs-identify-and-remove.html"
-                            style="width:100%; height:600px;"></iframe>
-                        <button class="close-button" onclick="toggleIframe('iframeContainer20')">×</button>
-                    </div>
-
-                    <div class="separator"></div>
-
-                    <div class="contact-container">
-                        <h4 class="petit-titre">Reduce IT debt - why do it ?</h4>
-                        <p>{openAudit} can help reduce “IT debt”: identify “dead material” to decommission it to make
-                            the systems read intelligible, easier to migrate.</p>
-                            <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer21')">En savoir
-                                plus</button>
-                    </div>
-                    
-                <div id="iframeContainer21" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/03/reduce-it-debt-why.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer21')">×</button>
+            <div class="acgauche-usage">
+                <div class="petit-texte">
+                    <h3>Analyse des usages de l’information </h3>
+                    <p class="soustitreban">
+                        {openAudit} analyse en continu les journaux des bases de données d'audit et la couche de data
+                        visualisation pour découvrir quelles données ont réellement des usages.
+                    </p>
                 </div>
+                <object id="svg1" type="image/svg+xml" data="../images/svg/3-1-Analyse des usages des donnees.svg">Votre
+                    navigateur
+                    ne supporte pas
+                    SVG</object>
+            </div>
+
+            <div class="acdroite-usage">
+                <object id="svg1" type="image/svg+xml"
+                    data="../images/svg/3-2-Identification des branches mortes.svg">Votre
+                    navigateur ne supporte pas
+                    SVG</object>
+                <div class="petit-texte">
+                    <h3>Identification des « branches mortes » dans les dataflows</h3>
+                    <p class="soustitreban">Les données inutilisées sont isolées par opposition, et l’ensemble des
+                        tables, fichiers, procédures, jobs ELT/ETL sous-jacents sont identifiées grâce au data lineage.
+                        Ce sont les « branches mortes »
+                    </p>
                 </div>
             </div>
+
+            <div class="separator"></div>
+
+            <h3 class="big-text-explication-h2">Cas d'usages</h3>
+            <div class="acgauche-usage">
+                <h2 class="petit-texte">Baisser les coûts du Cloud ! Identifier et supprimer les "branches mortes" </h2>
+                <!--            <p>-->
+                <!--                Le data lineage de {openAudit} permet de sensiblement renforcer l’observabilité des données, un-->
+                <!--                sujet de-->
+                <!--                préoccupation fort pour les entreprises.-->
+                <!--            </p>-->
+                <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer1')">En savoir plus</button>
+            </div>
+
+            <div id="iframeContainer1" class="iframe-container">
+                <iframe src="https://ellipsys-bi.blogspot.com/2023/11/baisser-les-couts-du-cloud-identifier.html"
+                    style="width:100%; height:600px;"></iframe>
+                <button class="close-button" onclick="toggleIframe('iframeContainer1')">×</button>
+            </div>
+
+            <div class="acgauche-usage">
+                <h2 class="petit-texte"> Réduire la dette IT - pourquoi faire ?</h2>
+                <!--            <p>-->
+                <!--                BCBS 239 est un texte bancaire relatif à la qualité du reporting de risque. Il impose la
+                    possibilité de
+                    sourcer les données de risque dans les systèmes avec une solution de data lineage.-->
+                <!--            </p>-->
+                <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer2')">En savoir plus</button>
+            </div>
+
+            <div id="iframeContainer2" class="iframe-container">
+                <iframe src="https://ellipsys-bi.blogspot.com/2023/03/reduire-la-dette-it-pourquoi-faire.html"
+                    style="width:100%; height:600px;"></iframe>
+                <button class="close-button" onclick="toggleIframe('iframeContainer2')">×</button>
+            </div>
+
+            <div style="margin-top: 150px" class="separator"></div>
         </section>
         <section id="dataviz">
             <div class="informations-container">
-                <H2 class="big-text-explication-h2">Detect obsolete, replicated <span
-                        class="orange-text-h2">Dashboards</span>
-                </h2>
+                <H2 class="big-text-explication-h2"><span class="orange-text-h2"> Détecter</span> les <span
+                        class="orange-text-h2"> dashboards </span>obsolètes, répliqués
+                </H2>
             </div>
-            <div class="bancontainer-cas">
-                <h3>The problem</h3>
-                <blockquote class="block-probleme">The data visualization layer has often been placed in the hands of
-                    the business.
-                    <br><br>
-                    For good and not so good reasons, the number of dashboards has tended to proliferate.
-                    Indeed, user teams naturally tend to replicate dashboards, often with minor nuances for often very
-                    occasional use. And everything that has been created remains on the platforms indefinitely, creating
-                    cohorts of replicated or obsolete dashboards.
-                </blockquote>
+            <div class="bancontainer-centre">
+                <p class="soustitreban">
+                    {openAudit} parse les fichiers de la solution de dataviz et y associe certains logs des bases
+                    d’audit. Les dashboards obsolètes, cassés, répliqués, sont détectés et peuvent être archivés ou
+                    écartés pour baisser les coûts, faire reculer le risque d’erreurs. Pour SAP BO, nous proposons en
+                    plus des outils d’archivage en masse.
 
-                <div class="soustitreban">
-                    <h3>Our solutions</h3>
-                    We have developed solutions to streamline dataviz platforms in an extremely efficient manner.
-                    {openAudit} will analyze the sources, the queries, the expressions, the variables, the data finally
-                    displayed, to allow optimizations. <br><br>
-                    Obsolete, broken, replicated dashboards are detected and can be
-                    archived or discarded to reduce costs and reduce the risk of errors.
+                </p>
+            </div>
 
-                    <H3>Technically</H3>
-                    <br><br>
+            <div class="separator"></div>
 
-                    <blockquote class="block-solutions">
-                        • {openAudit} will directly parse the files of the data visualization solution to recover the
-                        intelligence, the structure of the dashboards and the semantic layer if there is one.
-                        <br><br>
-                        • {openAudit} will also access the repository to keep the consistency of IDs between the
-                        different dashboard objects (semantic layer, query, dashboard, others).
-                        <br><br>
-                        • An {openAudit} probe will retrieve certain logs from the audit databases which are associated
-                        with the data visualization solutions.
-                        <br><br>
-                        • {openAudit} will compare the dashboards with each other and detect replication based on
-                        different criteria
-                        <br><br>
-                    </blockquote>
-
-                    <div class="separator"></div>
-
-                    <div class="informations-container">
-                        <H2 class="big-text-explication"> Uses cases
-                        </H2>
-                    </div>
-                    <div class="contact-container">
-                        <h4 class="petit-titre">Simply over-administer an SAP BO platform</h4>
-                        <p>Specific functionalities for SAP BO have been developed allowing massive archiving actions of
-                            replicated, obsolete, dysfunctional reports. Which is typically essential when preparing for
-                            a migration.
-                        </p>
-                        <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer22')">En savoir
-                            plus</button>
-                    </div>
-                    
-                <div id="iframeContainer22" class="iframe-container">
-                    <iframe src="https://ellipsys-bi.blogspot.com/2023/10/i-introduction-short-history-of-sap-bo.html" style="width:100%; height:600px;"></iframe>
-                    <button class="close-button" onclick="toggleIframe('iframeContainer22')">×</button>
+            <div class="acgauche-usage">
+                <div class="petit-texte">
+                    <h3>Identification des dashboards obsolètes </h3>
+                    <p class="soustitreban">{openAudit} identifie les dashboards qui ne remontent pas de résultats, ou
+                        ceux qui sont frappés d’obsolescence.
+                    </p>
                 </div>
+                <object id="svg1" type="image/svg+xml"
+                    data="../images/svg/3-3-Identification des dashboards obsoletes.svg">Votre navigateur ne supporte
+                    pas
+                    SVG</object>
+            </div>
+
+            <div class="acdroite-usage">
+                <object id="svg1" type="image/svg+xml"
+                    data="../images/svg/3-4-Detecter les dashboards repliques.svg">Votre
+                    navigateur ne supporte pas
+                    SVG</object>
+                <div class="petit-texte">
+                    <h3>Identification des dashboards répliqués </h3>
+                    <p class="soustitreban">{openAudit} compare les dashboards les uns avec les autres et détecte la
+                        réplication selon divers critères : fond forme, filtres… etc.
+                    </p>
                 </div>
+            </div>
+
+            <h3 class="big-text-explication-h2">Cas d'usages</h3>
+            <div class="acgauche-usage">
+                <h2 class="petit-texte">Sur-administrer une plateforme SAP BO simplement</h2>
+
+                <button class="ensavoirplus2" onclick="toggleIframe('iframeContainer4')">En savoir plus</button>
+            </div>
+
+            <div id="iframeContainer4" class="iframe-container">
+                <iframe src="https://ellipsys-bi.blogspot.com/2023/01/principes-techniques-generaux-pour.html"
+                    style="width:100%; height:600px;"></iframe>
+                <button class="close-button" onclick="toggleIframe('iframeContainer4')">×</button>
             </div>
         </section>
-    </section>
+        <div class="separator"></div>
+        <br><br><br>
     <footer class="footer">
         <div class="footer-content">
             <div class="contact-info">
