@@ -160,7 +160,7 @@ body {
     display: flex;
     padding: 10px;
     white-space: nowrap;
-    background-color: var(--act-color);
+    background-color:#BCBCBC;
     max-height: 120px;
     font-family: Verdana, serif;
     color: white;
@@ -343,7 +343,7 @@ nav .links li a {
 
 /* Bouton contact de l'accueil */
 .btncontact_accueil {
-    width: 70%;
+    width: 35%;
     height: auto;
     padding: 1rem 2rem;
     font-family: Verdana, serif;
@@ -532,7 +532,7 @@ nav .links li a {
 
 .bancontainer h1 {
     text-align: center;
-    font-size: 65px;
+    font-size: 55px;
     letter-spacing: 2px;
     flex-shrink: 1;
     min-width: 50px;
@@ -550,8 +550,9 @@ nav .links li a {
 }
 
 .bancontainer1 h1 {
-    font-size: 3.5rem;
-    font-weight: 400;
+    /* font-size: 2.5rem; */
+    font-size: 3rem;
+    font-weight: 900;
     text-align: left;
     color: var(--text-color);
 }
@@ -571,6 +572,8 @@ nav .links li a {
     min-width: 50px;
     font-weight: bold;
     margin-left: 20px;
+    margin-left: 130px;
+    justify-content: center !important;
 }
 
 .bancontainer-centre p{
@@ -636,7 +639,7 @@ nav .links li a {
 }
 
 .acgauche-usage{
-    padding: 30px;
+    padding: 15px;
     margin-left: 20px;
     display: flex;
     flex-direction: row;
@@ -658,7 +661,7 @@ nav .links li a {
 }
 
 .acgauche-usage object{
-    width: 20%;
+    width: 10%;
     height: auto;
     margin-left: 20px;
 }
@@ -686,7 +689,7 @@ nav .links li a {
 }
 
 .acdroite-usage object{
-    width: 20%;
+    width: 10%;
     height: auto;
     margin-right: 20px;
 }
@@ -772,7 +775,7 @@ nav .links li a {
 .orange-text {
     color: #FE665A;
     font-weight: 700;
-    font-size: 3.5rem;
+    font-size: 3rem;
 }
 
 
@@ -780,7 +783,7 @@ nav .links li a {
 .orange-text-animated {
     color: #FE665A;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 55px;
     /*-webkit-text-stroke: var(--openAudit-anime-stroke);*/
 }
 
@@ -960,7 +963,7 @@ iframe:hover {
     /* ajustement de l'espacement */
     margin-bottom: 30px;
     width: 70%;
-    margin: 0 auto;
+    margin: 15px auto;
 }
 
 /*etude de cas*/
@@ -990,13 +993,13 @@ iframe:hover {
 .big-text-explication {
     font-style: normal;
     margin: 100px 20px;
-    font-size: 3.5rem;
+    font-size: 2.5rem;
 }
 
 
 .big-text-explication-h2 {
     font-style: normal;
-    margin: 100px 20px;
+    margin: 50px 20px;
     font-size: 2.5rem;
     text-align: left;
     color: var(--text-color);
@@ -1021,7 +1024,7 @@ iframe:hover {
 }
 
 .container-question>h1 {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
     font-weight: 700;
     margin-bottom: 100px;
 }
@@ -1202,7 +1205,7 @@ iframe:hover {
     justify-content: center;
 }
 
-.validation-item {
+.validation-item {  
     display: flex;
     align-items: center;
     padding: 10px;
@@ -1211,7 +1214,7 @@ iframe:hover {
 }
 
 .validation-list .validation-item h5 {
-    font-size: 1.3rem;
+    font-size: 1.0rem;
     text-align: left;
     padding-left: 10px;
 }
@@ -1222,7 +1225,7 @@ iframe:hover {
 
 .validation-list .validation-item i {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
     color: #FE665A;
     transition: transform 0.3s ease;
 }
@@ -1289,7 +1292,8 @@ iframe:hover {
     align-items: center;
     text-align: center;
     color: var(--text-color);
-    margin: auto;
+    margin-left: 130px;
+    justify-content: center;
 }
 
 .small-text-explication {
@@ -1444,7 +1448,7 @@ iframe:hover {
     transform-style: preserve-3d;
     border: 2px solid #FE665A;
     border-radius: 30px;
-    background-color: #FE665A;
+    background-color: #BCBCBC;
     box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.25);
 }
 
